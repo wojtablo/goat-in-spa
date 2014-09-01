@@ -1,0 +1,8 @@
+@import "mod___INCLUDES";
+
+// Misja
+.row__misja {
+  // tutaj style dla tekstu + background image + strzałka
+  @extend %arrow--right;
+//  @include arrow--left(4px);
+}

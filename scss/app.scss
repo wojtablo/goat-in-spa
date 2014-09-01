@@ -1,2 +1,56 @@
 @import "settings";
-@import "foundation";
+//@import "foundation";
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  ZURB FOUNDATION
+  Selectively include components.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@import
+   "foundation/components/accordion",
+   "foundation/components/block-grid",
+   "foundation/components/button-groups",
+   "foundation/components/buttons",
+   "foundation/components/clearing",
+   "foundation/components/dropdown",
+   "foundation/components/forms",
+   "foundation/components/inline-lists",
+   "foundation/components/grid",
+   "foundation/components/panels",
+   "foundation/components/inline-lists",
+   "foundation/components/tables",
+   "foundation/components/type",
+   "foundation/components/pricing-tables",
+   "foundation/components/visibility";
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  GENERAL LOOK & FEEL ..
+  tylko globalne style, pozostałe umieścić w odpowiednich modułach
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+#globalContainer {
+  background:$background-color;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  MODULES IMPORTED
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+// Includuje mixiny, placeholdery dostępne dla wszystkich modułów
+@import "sections/mod___INCLUDES";
+
+// Moduły
+@import "sections/mod__home";
+@import "sections/mod__misja";
+@import "sections/mod__dzialalnosc";
+@import "sections/mod__news";
+@import "sections/mod__instytucje-partnerskie";
+@import "sections/mod__organizacja-publiczna";
+@import "sections/mod__o-fundacji";
+@import "sections/mod__rada-i-zarzad";
+@import "sections/mod__patroni";
+@import "sections/mod__statut";
+@import "sections/mod__sprawozdania";
+@import "sections/mod__partnerzy";
+@import "sections/mod__podatek";
+@import "sections/mod__kontakt";
+@import "sections/mod__footer";

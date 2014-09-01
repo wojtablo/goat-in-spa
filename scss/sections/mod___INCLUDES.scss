@@ -1,0 +1,40 @@
+@import "../settings";
+
+/*------------------------------------*\
+    SCHEMATY KOLORYSTYCZNE
+\*------------------------------------*/
+.row--red {
+  background:$red-color;
+  color:#fff;
+}
+.row--blue {
+  background:$blue-color;
+  color:#fff;
+}
+.row--green {
+  background:$green-color;
+  color:#fff;
+}
+.row--green2 {
+  background:$green2-color;
+  color:#fff;
+}
+
+
+/*------------------------------------*\
+    MIXINS
+\*------------------------------------*/
+@mixin arrow--left($base: 5px){
+  padding: $base;
+  margin: $base;
+}
+
+
+%arrow--right {
+  background:blue;
+  content: "xxxxx"
+}
+
+body:before {
+//  content:"teeeest";
+}
