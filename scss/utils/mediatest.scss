@@ -1,0 +1,25 @@
+/**
+  Mixin media-conf generates tiny box with information about current media viewport
+
+  author: Wojciech Mikołajewski <wojciechmikolajewski@gmail.com>
+*/
+
+@mixin media-conf($mediaQueryDefinition, $range, $message, $color) {
+
+  @media #{$mediaQueryDefinition} {
+    body:before{
+//      content: $message "   " + $range;
+      content: $message;
+      background:$color;
+      color:#fff;
+      font:bold 11px "Arial";
+      padding:4px 8px;
+      position: fixed;
+      bottom: 0px;
+      right: 0px;
+      opacity:0.95;
+      z-index: 999;
+    }
+  }
+}
+

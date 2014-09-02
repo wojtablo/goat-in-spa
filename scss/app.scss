@@ -1,5 +1,6 @@
 @import "settings";
 //@import "foundation";
+@import "utils/mediatest";
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   ZURB FOUNDATION
@@ -29,6 +30,22 @@
 
 #globalContainer {
   background:$background-color;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  DEBUGGING MEDIA QUERIES
+  wyświetla informacje o aktywnym media query
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+// Include media-conf helper inside media query
+@media #{$small-only} {
+   @include media-conf( $small-only,   $small-range,  $small-range-label, #488008); // Disable it for LIVE!!
+}
+@media #{$medium-only} {
+   @include media-conf( $medium-only,   $medium-range,  $medium-range-label, #e8c326); // Disable it for LIVE!!
+}
+@media #{$large-only} {
+  @include media-conf( $large-only,   $large-range,  $large-range-label, #e84120); // Disable it for LIVE!!
 }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

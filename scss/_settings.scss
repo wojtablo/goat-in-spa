@@ -162,11 +162,17 @@ $red-color: #e7375b;
 // d. Media Query Ranges
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-$small-range: (0em, 40em);
-$medium-range: (40.063em, 64em);
-$large-range: (64.063em, 90em);
-$xlarge-range: (90.063em, 120em);
-$xxlarge-range: (120.063em, 99999999em);
+$small-range: (0em, 30em);
+$small-range-label:  "SMARTPHONES [0 - 320px - 480px]";
+
+$medium-range: (30.063em, 64em);
+$medium-range-label: "TABLETS [720px-1024]";
+
+$large-range: (64.063em, 90em); // od 720 - 1024 (tablet)
+$large-range-label: "PC [1024px +]";
+
+//$xlarge-range: (90.063em, 120em);
+//$xxlarge-range: (120.063em, 99999999em);
 
 $screen: "only screen";
 
@@ -182,16 +188,16 @@ $medium-only: "#{$screen} and (min-width:#{lower-bound($medium-range)}) and (max
 $large-up: "#{$screen} and (min-width:#{lower-bound($large-range)})";
 $large-only: "#{$screen} and (min-width:#{lower-bound($large-range)}) and (max-width:#{upper-bound($large-range)})";
 
-$xlarge-up: "#{$screen} and (min-width:#{lower-bound($xlarge-range)})";
-$xlarge-only: "#{$screen} and (min-width:#{lower-bound($xlarge-range)}) and (max-width:#{upper-bound($xlarge-range)})";
+//$xlarge-up: "#{$screen} and (min-width:#{lower-bound($xlarge-range)})";
+//$xlarge-only: "#{$screen} and (min-width:#{lower-bound($xlarge-range)}) and (max-width:#{upper-bound($xlarge-range)})";
 
-$xxlarge-up: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)})";
-$xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (max-width:#{upper-bound($xxlarge-range)})";
+//$xxlarge-up: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)})";
+//$xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (max-width:#{upper-bound($xxlarge-range)})";
 
 // Legacy
-// $small: $medium-up;
-// $medium: $medium-up;
-// $large: $large-up;
+$small: $small-only;
+$medium: $medium-up;
+$large: $large-up;
 
 // We use this as cursors values for enabling the option of having custom cursors in the whole site's stylesheet
 // $cursor-crosshair-value: crosshair;
