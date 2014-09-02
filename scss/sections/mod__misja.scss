@@ -21,6 +21,10 @@
 // Misja
 .section__misja {
 
+  .row {
+    padding-bottom:5em;
+  }
+
   // Styles
   .section__header {
     .section__subtitle {
@@ -31,6 +35,5 @@
       }
     }
   }
-  padding-bottom:5em;
 }
 

@@ -1,4 +1,5 @@
 @import "../settings";
+@import "../foundation/components/grid";
 
 /*------------------------------------*\
     SETTINGS
@@ -6,9 +7,13 @@
 $default-arrow-right: "9_strzalka.png";
 $default-arrow-left: "8_strzalka.png";
 
-section {
+section.rowWrapper {
   position: relative;
   min-height:115px;
+  .row {
+    position: relative;
+  }
+
 }
 
 
@@ -29,6 +34,10 @@ section {
 }
 %row--green2 {
   background-color:$green2-color;
+  color:#fff;
+}
+%row--violet {
+  background-color:$violet-color;
   color:#fff;
 }
 
@@ -60,8 +69,8 @@ section {
 @mixin crossSectionArrow($height, $position) {
 
   $margin: 5%;
-  $margin-medium: 10%;
-  $margin-large: 15%;
+  $margin-medium: 1.5rem;
+  $margin-large: 0.5rem;
 
   position: absolute;
   bottom:-2rem;
@@ -79,11 +88,15 @@ section {
 
   @media #{$medium-only} {
     height:6em;
+    bottom:-3rem;
+
     @if $position == "right" { right:$margin-medium; }
     @else if $position == "left"{ left:$margin-medium; }
   }
   @media #{$large-only} {
     height:7em;
+    bottom:-4rem;
+
     @if $position == "right" { right:$margin-large; }
     @else if $position == "left"{ left:$margin-large; }
   }

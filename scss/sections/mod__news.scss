@@ -21,7 +21,7 @@
 .section__news {
 
   // COLOURS SCHEME ------------------------------------------------------
-  h1,h2,h3,h4,h5,h6 { color:#fff; }
+  h1,h2,h3,h4,h5,h6 { color:$font-color; }
 
   // BACKGROUND ----------------------------------------------------------
   // default
@@ -36,5 +36,9 @@
   }
 
   padding:4rem 0px;
+
+  @media #{$medium-up} {
+    background:transparent url("../../gfx/4_motywG.png") bottom left no-repeat;
+  }
 
 }

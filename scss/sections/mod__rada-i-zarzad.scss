@@ -1,6 +1,47 @@
 @import "mod___INCLUDES";
 
-// Rada i zarząd
+/*========================================================================
+  Section           :   Rada i zarząd
+  Functionality     :   Text + image + JS
+  Version:          :   v1.0
+  Updated:          :   02/09/2014
+
+  Każda sekcja powinna mieć możliwie schematyczną budową.
+  Traktujemy sekcje jako swego rodzaju boxy.
+
+  Zadbaj o to aby:
+  - nazwa klasy głównej rozpoczynająca się w konwencji .section__xxxxxx
+  - określamy background lub jego brak
+  - wewnątrz definicji tego stylu wyodrębniony header oraz main content
+  - jeżeli jest jakieś tło to dołączamy je z "mod__ICLUDES" za pomocą @extend
+  - opis tego opisu byl aktualny
+
+=========================================================================*/
+
 .section__radaizarzad {
+
+  .row {
+    padding:4em 0;
+  }
+
+
+  // COLOURS SCHEME ------------------------------------------------------
+  h1,h2,h3,h4,h5,h6 { color:$font-color; }
+
+
+
+
+  // HEADER --------------------------------------------------------------
+  .section__header {
+
+  }
+  // MAIN CONTENT --------------------------------------------------------
+  .section__content {
+
+  }
+
+  @media #{$medium-up} {
+    background:$background-color url("../../gfx/4_motywD.png") top left no-repeat;
+  }
 
 }
