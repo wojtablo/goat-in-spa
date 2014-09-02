@@ -7,7 +7,8 @@ $default-arrow-right: "9_strzalka.png";
 $default-arrow-left: "8_strzalka.png";
 
 section {
-//  min-height:400px;
+  position: relative;
+  min-height:115px;
 }
 
 
@@ -39,10 +40,22 @@ section {
   border-bottom:1px solid #333;
 }
 
-/************************************************************************************
-  Advanced CrossSectionArrows mixin
-  author: Wojciech Mikołajewski <wojciechmikolajewski@gmail.com>
-*/
+/*========================================================================
+  Mixin             :   CASAI (Cross ä Section Arrow Intruder)
+  Version:          :   v1.0
+  Updated:          :   02/09/2014
+
+  @height           : Maximum height of an arrow (image)
+  @position         : Left / Right
+
+  This mixin take two parameters (height of an image, and position) to
+  compile style which gives arrows following behaviour:
+  - arrows must go through two section
+  - it must be mobile optimized (size of an arrow and margines)
+  - if wrapper has some padding or margins it must be this-shit-proof
+  - arrows must be always on top of layers
+
+=========================================================================*/
 
 @mixin crossSectionArrow($height, $position) {
 
@@ -51,11 +64,13 @@ section {
   $margin-large: 15%;
 
   position: absolute;
+  bottom:-2rem;
   height:5.3em;
   @if $position == "right" { right:$margin; }
   @else if $position == "left"{ left:$margin; }
   margin:0px;
   padding:0px;
+  z-index:999;
 
   img {
     display: block;
@@ -68,13 +83,14 @@ section {
     @else if $position == "left"{ left:$margin-medium; }
   }
   @media #{$large-only} {
-    height:6em;
+    height:7em;
     @if $position == "right" { right:$margin-large; }
     @else if $position == "left"{ left:$margin-large; }
   }
 
 }
 
+// Create class objects
 .crossSectionArrow--right {
   @include crossSectionArrow("100px", right);
 }
