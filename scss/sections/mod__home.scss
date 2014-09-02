@@ -22,21 +22,79 @@
 
 // Misja
 .section__home {
-  // tutaj style dla tekstu + background image + strzałka
-  .section__header {
-    .section__title {
-      font-size:1.7em;
-      color:$blue4-color;
-      text-transform: uppercase;
-      @extend %line--top;
-      @extend %line--bottom;
-      span {
-        display: block;
-        font-weight: bold;
-        font-size:1.4em;
+
+  // Presentation
+  background:transparent url("http://launchr.pl/goat-in-spa/gfx/1_motyw.png") top left no-repeat;
+  background-size: 60%;
+
+  @media #{$medium-up} { background-size: 60%; }
+  @media #{$large-up}  { background-size: 60%; }
+
+
+  // Layout --> Table
+  display: table;
+  border-collapse:collapse;
+  min-height: 100% !important;
+  min-width:100%;
+
+
+  // Layout --> Row
+  .row--tr {
+    display:table-row;
+
+    &:nth-of-type(1){
+      .column--td{
+//        display: table-cell;
+        height:45%;
+        width:100%;
+      }
+    }
+
+    &:nth-of-type(2){
+      .column--td{
+//        display: table-cell;
+        height:55%;
+        width:100%;
+
+      }
+    }
+
+    // Layout --> Cell
+//    .columns {
+//      display: table-cell;
+//    }
+  }
+
+
+
+  $logo-height:rem-calc(60);
+
+  // Logotyp
+  .fundacja__logo {
+//    height:$logo-height*3;
+    .logo {
+      position: absolute;
+      top:1rem;
+      right:1rem;
+      width:45%;
+      max-width:155px;
+      @media #{$medium-up} {
+        width:180px;
+      }
+      @media #{$large-up} {
+        width:231px;
       }
     }
   }
-//  padding-bottom:5em;
+
+  // Hedaer
+  .section__header {
+    .section__title {
+      text-transform: uppercase;
+      @extend %font__size--large;
+      @include putBorder(top, $blue4-color, 2px);
+      @include putBorder(bottom, $blue4-color, 2px);
+    }
+  }
 }
 

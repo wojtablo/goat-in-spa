@@ -24,7 +24,7 @@
   h1,h2,h3,h4,h5,h6 { color:$font-color; }
 
   // BACKGROUND ----------------------------------------------------------
-  // default
+  background-color: $background-color;
 
   // HEADER --------------------------------------------------------------
   .section__header {
@@ -38,7 +38,7 @@
   padding:4rem 0px;
 
   @media #{$medium-up} {
-    background:transparent url("../../gfx/4_motywG.png") bottom left no-repeat;
+    background:$background-color url("http://launchr.pl/goat-in-spa/gfx/4_motywG.png") bottom left no-repeat;
   }
 
 }

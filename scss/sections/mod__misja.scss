@@ -20,6 +20,7 @@
 
 // Misja
 .section__misja {
+  background-color: $background-color;
 
   .row {
     padding-bottom:5em;
@@ -28,8 +29,7 @@
   // Styles
   .section__header {
     .section__subtitle {
-      @extend %line--top;
-      @extend %line--bottom;
+
       &::first-line{
         color:$blue3-color;
       }

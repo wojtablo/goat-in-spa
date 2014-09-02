@@ -1,5 +1,38 @@
 @import "../settings";
 @import "../foundation/components/grid";
+@import "compass/css3/font-face";
+
+
+
+html, body, #globalContainer {
+  height: 100%;
+}
+
+
+/*------------------------------------*\
+    FONTS
+\*------------------------------------*/
+
+@include font-face("MyriadPro-LightCond", font-files("MyriadPro-LightCond.otf"));
+@include font-face("MyriadPro-SemiboldCond", font-files("MyriadPro-SemiboldCond.otf"));
+
+
+%font__size--large {
+  font-family:"MyriadPro-LightCond";
+  font-size:2.5em;
+  color:$blue4-color;
+  span {
+    display: block;
+    font-family:"MyriadPro-SemiboldCond";
+    font-size: 2.2em;
+    line-height: 0.9;
+  }
+
+  @media #{$medium-up} { font-size:2.2em; }
+  @media #{$large-up}  { font-size:5.2em; }
+}
+
+
 
 /*------------------------------------*\
     SETTINGS
@@ -41,12 +74,21 @@ section.rowWrapper {
   color:#fff;
 }
 
-// Kreski dla pewnych tekstów
-%line--top {
-  border-top:1px solid #333;
-}
-%line--bottom {
-  border-bottom:1px solid #333;
+/*========================================================================
+  Mixin             :   OUTLIER
+  Version:          :   v1.0
+  Updated:          :   03/09/2014
+
+  @position         : Border position (top/bottom/left/right)
+  @color            : Color
+  @width            : Width (3px, 6em, etc.)
+  @style            : Solid, double etc. (!OPTIONAL)
+
+  This mixin put border in the position.
+
+=========================================================================*/
+@mixin putBorder($position, $color, $width, $style: solid) {
+  border-#{$position}: $width $style $color;
 }
 
 /*========================================================================
@@ -65,7 +107,6 @@ section.rowWrapper {
   - arrows must be always on top of layers
 
 =========================================================================*/
-
 @mixin crossSectionArrow($height, $position) {
 
   $margin: 5%;
@@ -113,11 +154,11 @@ section.rowWrapper {
 }
 
 
-/************************************************************************************
+/*========================================================================
   Mixin robinHoodArrow includes image using background-image property.
-  author: Wojciech Mikołajewski <wojciechmikolajewski@gmail.com>
-*/
 
+  author: Wojciech Mikołajewski <wojciechmikolajewski@gmail.com>
+=========================================================================*/
 @mixin robinHoodArrow($file, $position) {
 
   @if $position == "right" {

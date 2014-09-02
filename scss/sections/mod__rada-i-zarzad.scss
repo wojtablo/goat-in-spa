@@ -26,8 +26,8 @@
 
 
   // COLOURS SCHEME ------------------------------------------------------
-  h1,h2,h3,h4,h5,h6 { color:$font-color; }
-
+  h1,h2,h3,h4,h5,h6 { color:#fff; }
+  background-color: $background-color;
 
 
 
@@ -41,7 +41,7 @@
   }
 
   @media #{$medium-up} {
-    background:$background-color url("../../gfx/4_motywD.png") top left no-repeat;
+    background:$background-color url("http://launchr.pl/goat-in-spa/gfx/4_motywD.png") top left no-repeat;
   }
 
 }
