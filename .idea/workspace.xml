@@ -2,162 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4814e0e8-caeb-46b9-ad60-f7be9cb5acec" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/10_ikonka_email.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/10_ikonka_formularz.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/10_ikonka_fundacja.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/10_ikonka_konto.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/10_ikonka_telefon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/11_logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/11_motyw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/11_motyw_szklo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/11_motywl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/11_motyws.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/1_belkaD.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/1_belkaG.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/1_logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/1_motyw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/1_strzalkaD.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/1_szklo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/2_kreskaG.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/2_kropka.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/2_liczba1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/2_liczba2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/2_liczba3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/2_liczba4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/2_liczba5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/2_motywD.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/2_motywD3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/2_motywDp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/2_motywDs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/2_motywG.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/2_motywG2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/2_motywGl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/2_motywGp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/2_motywGs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/2_numer1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/2_time_line.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/3727_Aveex_for_Kozminski_strona_WWW_v2-2zwinA.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/3_aktualnosci.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/3_aktualnosci_f1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/3_aktualnosci_f1_szklo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/3_kreska.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/3_kropkaP.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/3_kropkaP2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/3_strzalka.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/3_strzalka2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/4_logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/4_motywD.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/4_motywDl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/4_motywDs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/4_motywG.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/4_motywGl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/4_motywGs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/4_szklo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/5_czlonek_K1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/5_czlonek_K2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/5_czlonek_K3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/5_czlonek_M.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/5_czlonek_M2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/5_czlonek_M3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/5_czlonek_M4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/5_czlonek_M_szklo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/5_fundator.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/5_kreska.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/5_logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/5_prezes.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/5_prezes.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/5_prezes_szklo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/5_procent.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/5_rada.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/5_strzalkaD.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/5_strzalkaG.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/6_Patroni.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/6_patroni_K1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/6_patroni_M1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/6_patroni_M1_szklo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/7_motywG.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/7_motywGl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/7_motywGs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/7_motywS.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/7_statut.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/8_ikonka_tekst.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/8_ikonki.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/8_motywD.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/8_motywDl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/8_motywDs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/8_sprawozdania.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/8_strzalka.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/8_tlo_szklo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/8_tlo_szklo_szklo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/9_partnerzy.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/9_partnerzy2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/9_partnerzy_logo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/9_partnerzy_logo_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/9_partnerzy_logo_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/9_partnerzy_logo_3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/9_partnerzy_logo_4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/9_partnerzy_logo_5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/9_partnerzy_logo_6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/9_partnerzy_logo_8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/9_strzalka.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/obrazki/M_logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/css/MyriadPro-LightCond.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/css/MyriadPro-SemiboldCond.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/css/OpenSans-Bold.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/css/OpenSans-Light.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/css/OpenSans-Regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/images/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/images/animal1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/images/animal2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/images/animal3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/images/animal4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/images/animal5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/images/animal6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/images/animal7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/images/animal8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/images/arrows.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/images/cross.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/images/pattern.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/images/ImageAttribution.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/css/base.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/css/component.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/css/demo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/js/dots.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/js/jquery-1.9.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/js/jquery.devrama.slider.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/css/jquery.jscrollpane.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/js/jquery.malihu.PageScroll2id.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/js/jquery.nav.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/js/jquery.scrollto.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/css/jquery_jscrollpane.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/sections/mod___INCLUDES.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/sections/mod__dzialalnosc.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/sections/mod__footer.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/sections/mod__home.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/sections/mod__instytucje-partnerskie.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/sections/mod__kontakt.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/sections/mod__misja.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/sections/mod__news.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/sections/mod__o-fundacji.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/sections/mod__organizacja-publiczna.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/sections/mod__partnerzy.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/sections/mod__patroni.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/sections/mod__podatek.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/sections/mod__rada-i-zarzad.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/sections/mod__sprawozdania.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/sections/mod__statut.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/css/normalize.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/css/onepage-scroll.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/css/reset.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/css/styl2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/css/style3.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_szablon/css/style4.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_settings.scss" afterPath="$PROJECT_DIR$/scss/_settings.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\goat-in-spa\scss\app" afterPath="$PROJECT_DIR$/scss/app.scss" />
     </list>
     <ignored path="goat-in-spa.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -183,18 +29,25 @@
       <file leaf-file-name="mod__organizacja-publiczna.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/sections/mod__organizacja-publiczna.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="187">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="25" />
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mod__patroni.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="mod__patroni.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/sections/mod__patroni.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.12839879" vertical-offset="0" max-vertical-offset="662">
-              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="187">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="9" selection-start="70" selection-end="70" vertical-scroll-proportion="0.095104896" vertical-offset="0" max-vertical-offset="715">
               <folding />
             </state>
           </provider>
@@ -221,7 +74,6 @@
         <option value="$PROJECT_DIR$/testgoat.txt" />
         <option value="$PROJECT_DIR$/test-f1/index.html" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/config.rb" />
         <option value="$PROJECT_DIR$/css/app.css" />
         <option value="$PROJECT_DIR$/_old/scss/app.scss" />
@@ -248,6 +100,7 @@
         <option value="$PROJECT_DIR$/stylesheets/app.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/scss/app.scss" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -272,7 +125,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -349,38 +202,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="goat-in-spa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="goat-in-spa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_szablon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="goat-in-spa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="goat-in-spa" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_szablon" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -390,7 +211,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/_STOFARB/bausolid.pl" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="FullScreen" value="false" />
   </component>
@@ -408,45 +229,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="name" value="Dart" />
-      <option name="saveOutputToFile" value="false" />
-      <option name="showConsoleOnStdErr" value="false" />
-      <option name="showConsoleOnStdOut" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
-      <option name="cucumberJsArguments" />
-      <option name="executablePath" />
-      <option name="filePath" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
-      <setting name="configLocationType" value="CONFIG_FILE" />
-      <setting name="settingsFile" value="" />
-      <setting name="serverType" value="INTERNAL" />
-      <setting name="preferredDebugBrowser" value="Chrome" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <list size="0" />
@@ -473,11 +256,12 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985783" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30085146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30028328" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1544196" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15761448" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -485,7 +269,6 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32890996" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -496,9 +279,6 @@
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
-      <collection />
-    </option>
-    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
   </component>
@@ -518,326 +298,236 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bower_components/foundation/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/foundation/.bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_settings.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2227" max-vertical-offset="24599">
-          <caret line="131" column="22" selection-start-line="131" selection-start-column="22" selection-end-line="131" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="2873">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="tag#section#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#section#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="151878">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_szablon/js/dots.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1190">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/foundation/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/foundation/.bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_settings.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="24599">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="151878">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/foundation/scss/foundation/components/_grid.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/foundation/css/foundation.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/foundation/scss/foundation/components/_top-bar.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_szablon/js/dots.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1037">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/sections/mod__misja.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="889">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/foundation/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/foundation/.bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/sections/mod__dzialalnosc.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="641">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/sections/mod__o-fundacji.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15912637" vertical-offset="0" max-vertical-offset="641">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/sections/mod__rada-i-zarzad.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.02652106" vertical-offset="0" max-vertical-offset="641">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/sections/mod__organizacja-publiczna.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="187">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/sections/mod__partnerzy.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.33333334" vertical-offset="0" max-vertical-offset="187">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_settings.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-49.03846" vertical-offset="935" max-vertical-offset="24769">
-          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/sections/mod__home.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="662">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/sections/mod__news.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="221">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/sections/mod__misja.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.6666666" vertical-offset="0" max-vertical-offset="221">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/sections/mod__instytucje-partnerskie.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15407854" vertical-offset="0" max-vertical-offset="662">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/sections/mod__sprawozdania.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="187">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/sections/mod__statut.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12839879" vertical-offset="0" max-vertical-offset="662">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/sections/mod__podatek.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07703927" vertical-offset="0" max-vertical-offset="662">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/sections/mod__footer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10608424" vertical-offset="0" max-vertical-offset="641">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/sections/mod__kontakt.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05304212" vertical-offset="0" max-vertical-offset="641">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84455127" vertical-offset="0" max-vertical-offset="969">
-          <caret line="175" column="84" selection-start-line="175" selection-start-column="84" selection-end-line="175" selection-end-column="84" />
-          <folding>
-            <element signature="tag#section#2;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#section#3;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="151878">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5762712" vertical-offset="0" max-vertical-offset="1037">
-          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/sections/mod___INCLUDES.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53927493" vertical-offset="0" max-vertical-offset="765">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/sections/mod__patroni.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12839879" vertical-offset="0" max-vertical-offset="662">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/sections/mod__organizacja-publiczna.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/sections/mod__patroni.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/foundation/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/foundation/.bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/_settings.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_szablon/js/dots.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/foundation/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/foundation/.bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/_settings.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/foundation/scss/foundation/components/_grid.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/foundation/css/foundation.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/foundation/scss/foundation/components/_top-bar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_szablon/js/dots.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/foundation/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/foundation/.bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/sections/mod__dzialalnosc.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/sections/mod__o-fundacji.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/sections/mod__rada-i-zarzad.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/sections/mod__organizacja-publiczna.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/sections/mod__partnerzy.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/_settings.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/sections/mod__home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/sections/mod__news.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/sections/mod__misja.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/sections/mod__instytucje-partnerskie.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/sections/mod__sprawozdania.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/sections/mod__statut.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/sections/mod__podatek.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/sections/mod__footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/sections/mod__kontakt.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/sections/mod___INCLUDES.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/sections/mod__patroni.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="9" selection-start="70" selection-end="70" vertical-scroll-proportion="0.095104896" vertical-offset="0" max-vertical-offset="715">
           <folding />
         </state>
       </provider>
