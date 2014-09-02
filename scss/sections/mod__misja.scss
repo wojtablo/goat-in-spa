@@ -6,3 +6,17 @@
   @extend %arrow--right;
 //  @include arrow--left(4px);
 }
+
+
+  .col {
+    width:100%;
+  }
+
+
+@media #{$medium-up} {
+  .col {
+    &.col1 {
+      width:50%;
+    }
+  }
+}
