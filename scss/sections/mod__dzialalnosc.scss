@@ -1,6 +1,37 @@
 @import "mod___INCLUDES";
 
-// Zakres działalności Fundacji
-.row__dzialalnosc {
-  // tutaj style dla tekstu + background image
+/*========================================================================
+  Section           :   Zakres działalności fundacji
+  Functionality     :   Slider na małe oraz "accordion" na dużych
+  Version:          :   v1.0
+  Updated:          :   02/09/2014
+
+  Każda sekcja powinna mieć możliwie schematyczną budową.
+  Traktujemy sekcje jako swego rodzaju boxy.
+
+  Zadbaj o to aby:
+  - nazwa klasy głównej rozpoczynająca się w konwencji .section__xxxxxx
+  - określamy background lub jego brak
+  - wewnątrz definicji tego stylu wyodrębniony header oraz main content
+  - jeżeli jest jakieś tło to dołączamy je z "mod__ICLUDES" za pomocą @extend
+
+=========================================================================*/
+
+.section__dzialalnosc {
+
+  // COLOURS SCHEME ------------------------------------------------------
+  h1,h2,h3,h4,h5,h6 { color:#fff; }
+
+  // BACKGROUND ----------------------------------------------------------
+  @extend %row--red;
+
+  // HEADER --------------------------------------------------------------
+  .section__header {
+
+  }
+  // MAIN CONTENT --------------------------------------------------------
+  .section__content {
+
+  }
+
 }
