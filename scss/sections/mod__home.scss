@@ -96,5 +96,26 @@
       @include putBorder(bottom, $blue4-color, 2px);
     }
   }
+
+  // Content
+  .section__content {
+
+  }
+
+  .btn__arrow--down {
+    @extend %btn__arrow--down;
+
+    position:absolute;
+    bottom:0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:0px;
+    left: 0;
+    right: 0;
+    height:90px;
+    width:90px;
+
+
+  }
 }
 
