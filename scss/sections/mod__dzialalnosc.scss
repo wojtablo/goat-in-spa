@@ -14,16 +14,22 @@
   - określamy background lub jego brak
   - wewnątrz definicji tego stylu wyodrębniony header oraz main content
   - jeżeli jest jakieś tło to dołączamy je z "mod__ICLUDES" za pomocą @extend
+  - opis tego opisu byl aktualny
 
 =========================================================================*/
 
 .section__dzialalnosc {
+
+  // Add arrow as background image
+//  @include robinHoodArrow( $default-arrow-right, right);
+
 
   // COLOURS SCHEME ------------------------------------------------------
   h1,h2,h3,h4,h5,h6 { color:#fff; }
 
   // BACKGROUND ----------------------------------------------------------
   @extend %row--red;
+  padding-top:25px;
 
   // HEADER --------------------------------------------------------------
   .section__header {

@@ -1,12 +1,42 @@
+@import "mod___INCLUDES";
+
+/*========================================================================
+  Section           :   Strona powitalna
+  Functionality     :   Text+image+background images
+  Version:          :   v1.0
+  Updated:          :   02/09/2014
+
+  Każda sekcja powinna mieć możliwie schematyczną budową.
+  Traktujemy sekcje jako swego rodzaju boxy.
+
+  Zadbaj o to aby:
+  - nazwa klasy głównej rozpoczynająca się w konwencji .section__xxxxxx
+  - określamy background lub jego brak
+  - wewnątrz definicji tego stylu wyodrębniony header oraz main content
+  - jeżeli jest jakieś tło to dołączamy je z "mod__ICLUDES" za pomocą @extend
+  - opis tego opisu byl aktualny
+
+=========================================================================*/
 
 
-/**
- * Module: Strona powitalna
- *
- */
 
-// Strona powitalna
-.row__welcome {
-  content:"test";
-  // tu pewnie wrzucimy tą grafikę tła jako background image
+// Misja
+.section__home {
+  // tutaj style dla tekstu + background image + strzałka
+  .section__header {
+    .section__title {
+      font-size:1.7em;
+      color:$blue4-color;
+      text-transform: uppercase;
+      @extend %line--top;
+      @extend %line--bottom;
+      span {
+        display: block;
+        font-weight: bold;
+        font-size:1.4em;
+      }
+    }
+  }
+  padding-bottom:5em;
 }
+

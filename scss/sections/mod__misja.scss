@@ -1,22 +1,36 @@
 @import "mod___INCLUDES";
 
+/*========================================================================
+  Section           :   Misja
+  Functionality     :   Text
+  Version:          :   v1.0
+  Updated:          :   02/09/2014
+
+  Każda sekcja powinna mieć możliwie schematyczną budową.
+  Traktujemy sekcje jako swego rodzaju boxy.
+
+  Zadbaj o to aby:
+  - nazwa klasy głównej rozpoczynająca się w konwencji .section__xxxxxx
+  - określamy background lub jego brak
+  - wewnątrz definicji tego stylu wyodrębniony header oraz main content
+  - jeżeli jest jakieś tło to dołączamy je z "mod__ICLUDES" za pomocą @extend
+  - opis tego opisu byl aktualny
+
+=========================================================================*/
+
 // Misja
-.row__misja {
-  // tutaj style dla tekstu + background image + strzałka
-  @extend %arrow--right;
-//  @include arrow--left(4px);
-}
+.section__misja {
 
-
-  .col {
-    width:100%;
-  }
-
-
-@media #{$medium-up} {
-  .col {
-    &.col1 {
-      width:50%;
+  // Styles
+  .section__header {
+    .section__subtitle {
+      @extend %line--top;
+      @extend %line--bottom;
+      &::first-line{
+        color:$blue3-color;
+      }
     }
   }
+  padding-bottom:5em;
 }
+

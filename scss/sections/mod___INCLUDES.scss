@@ -1,40 +1,108 @@
 @import "../settings";
 
 /*------------------------------------*\
-    SCHEMATY KOLORYSTYCZNE
+    SETTINGS
 \*------------------------------------*/
-.row--red {
-  background:$red-color;
-  color:#fff;
-}
-.row--blue {
-  background:$blue-color;
-  color:#fff;
-}
-.row--green {
-  background:$green-color;
-  color:#fff;
-}
-.row--green2 {
-  background:$green2-color;
-  color:#fff;
+$default-arrow-right: "9_strzalka.png";
+$default-arrow-left: "8_strzalka.png";
+
+section {
+//  min-height:400px;
 }
 
 
 /*------------------------------------*\
-    MIXINS
+    SCHEMATY KOLORYSTYCZNE
 \*------------------------------------*/
-@mixin arrow--left($base: 5px){
-  padding: $base;
-  margin: $base;
+%row--red {
+  background-color:$red-color;
+  color:#fff;
+}
+%row--blue {
+  background-color:$blue-color;
+  color:#fff;
+}
+%row--green {
+  background-color:$green-color;
+  color:#fff;
+}
+%row--green2 {
+  background-color:$green2-color;
+  color:#fff;
+}
+
+// Kreski dla pewnych tekstów
+%line--top {
+  border-top:1px solid #333;
+}
+%line--bottom {
+  border-bottom:1px solid #333;
+}
+
+/************************************************************************************
+  Placeholder crossSectionArrow
+  author: Wojciech Mikołajewski <wojciechmikolajewski@gmail.com>
+*/
+
+@mixin crossSectionArrow($height, $position) {
+
+  $margin: 5%;
+  $margin-medium: 10%;
+  $margin-large: 15%;
+
+  position: absolute;
+  height:5.3em;
+  @if $position == "right" { right:$margin; }
+  @else if $position == "left"{ left:$margin; }
+  margin:0px;
+  padding:0px;
+
+  img {
+    display: block;
+    height:100%;
+  }
+
+  @media #{$medium-only} {
+    height:6em;
+    @if $position == "right" { right:$margin-medium; }
+    @else if $position == "left"{ left:$margin-medium; }
+  }
+  @media #{$large-only} {
+    height:6em;
+    @if $position == "right" { right:$margin-large; }
+    @else if $position == "left"{ left:$margin-large; }
+  }
+
+}
+
+.crossSectionArrow--right {
+  @include crossSectionArrow("100px", right);
+}
+
+.crossSectionArrow--left {
+  @include crossSectionArrow("100px", left);
 }
 
 
-%arrow--right {
-  background:blue;
-  content: "xxxxx"
-}
+/************************************************************************************
+  Mixin robinHoodArrow includes image using background-image property.
+  author: Wojciech Mikołajewski <wojciechmikolajewski@gmail.com>
+*/
 
-body:before {
-//  content:"teeeest";
+@mixin robinHoodArrow($file, $position) {
+
+  @if $position == "right" {
+    background-image:url("../../gfx/#{$file}");
+    background-position: top right;
+  }
+  @else if $position == "left" {
+    background-image:url("../../gfx/#{$file}");
+    background-position: top left;
+  }
+  @else {
+    // error!
+  }
+  background-repeat: no-repeat;
+  background-size: 25%;
+
 }
