@@ -13,13 +13,16 @@ html, body, #globalContainer {
     FONTS
 \*------------------------------------*/
 
-@include font-face("MyriadPro-LightCond", font-files("MyriadPro-LightCond.otf"));
-@include font-face("MyriadPro-SemiboldCond", font-files("MyriadPro-SemiboldCond.otf"));
+@include font-face("MyriadPro-LightCond",     font-files("MyriadPro-LightCond.otf"));
+@include font-face("MyriadPro-SemiboldCond",  font-files("MyriadPro-SemiboldCond.otf"));
+@include font-face("OpenSans-Bold",           font-files("OpenSans-Bold.ttf"));
+@include font-face("OpenSans-Light",          font-files("OpenSans-Light.ttf"));
+@include font-face("OpenSans-Regular",        font-files("OpenSans-Regular.ttf"));
 
 
-%font__size--large {
+%font__size--xlarge {
   font-family:"MyriadPro-LightCond";
-  font-size:2.5em;
+  font-size:2.35em;
   color:$blue4-color;
   span {
     display: block;
@@ -30,6 +33,23 @@ html, body, #globalContainer {
 
   @media #{$medium-up} { font-size:2.2em; }
   @media #{$large-up}  { font-size:5.2em; }
+}
+
+%font__size--large {
+  font-family:"OpenSans-Bold";
+  font-size:2.8em;
+  margin-bottom:0.7em;
+  margin-top:0.23em;
+  @media #{$medium-up} { font-size:4.5em; }
+  @media #{$large-up}  { font-size:4.5em; }
+}
+
+%font__size--medium {
+  font-family:"OpenSans-Regular";
+  font-size:1.8em;
+  line-height:1.15em;
+  @media #{$medium-up} { font-size:4.5em; }
+  @media #{$large-up}  { font-size:4.5em; }
 }
 
 
@@ -74,13 +94,35 @@ section.rowWrapper {
   color:#fff;
 }
 
+.gps_ring {
+  border: 3px solid #999;
+  -webkit-border-radius: 30px;
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  left:20px;
+  top:214px;
+  -webkit-animation: pulsate 1s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  opacity: 0.0
+}
+
 %btn__arrow--down {
   display:inline-block;
   background: transparent url("http://launchr.pl/goat-in-spa/gfx/1_strzalkaD.png") center center no-repeat;
   background-size: 50%;
+  -webkit-animation: pulsate 1s ease-out;
+  -webkit-animation-iteration-count: infinite;
 //  width:103px;
 //  height:103px;
 }
+
+@-webkit-keyframes pulsate {
+  0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+  50% {opacity: 1.0;}
+  100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+}
+
 
 /*========================================================================
   Mixin             :   OUTLIER

@@ -20,25 +20,68 @@
 
 .section__news {
 
+  @media #{$medium-up} {
+//  background:$background-color url("http://launchr.pl/goat-in-spa/gfx/4_motywG.png") bottom left no-repeat;
+
+    background-image: url(http://launchr.pl/goat-in-spa/gfx/4_motywG.png), url(http://launchr.pl/goat-in-spa/gfx/2_motywD3.png);
+    background-position: bottom left, top right;
+    background-repeat: no-repeat;
+}
+
   // COLOURS SCHEME ------------------------------------------------------
-  h1,h2,h3,h4,h5,h6 { color:$font-color; }
+  h1,h2,h3,h4,h5,h6 { color:$blue5-color; }
 
   // BACKGROUND ----------------------------------------------------------
   background-color: $background-color;
 
   // HEADER --------------------------------------------------------------
   .section__header {
-
+    .section__tile {
+      @extend %font__size--large;
+    }
   }
   // MAIN CONTENT --------------------------------------------------------
   .section__content {
 
   }
 
-  padding:4rem 0px;
+  padding:2em 0px;
 
-  @media #{$medium-up} {
-    background:$background-color url("http://launchr.pl/goat-in-spa/gfx/4_motywG.png") bottom left no-repeat;
-  }
 
+
+}
+
+
+/** ==================================================================================================================**/
+.contentSlider {
+  width: 100%;
+}
+//.contentSlider,
+//.contentSlider .rsOverflow,
+//.contentSlider .rsSlide,
+//.contentSlider .rsVideoFrameHolder,
+//.contentSlider .rsThumbs {
+//  background: #eee;
+//  color: #000;
+//}
+
+//.contentSlider .rsSlide,
+//.contentSlider .rsOverflow {
+//  background: #eee;
+//}
+.contentSlider  h3 {
+  font-size: 24px;
+  line-height: 31px;
+  margin: 12px 0 8px;
+  font-weight: bold;
+}
+.contentSlider img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.content-slider-bg {
+  width: 86%;
+  padding: 24px 7%;
+  background: #eee;
 }

@@ -18,93 +18,73 @@
 
 =========================================================================*/
 
-
-
 // Misja
 .section__home {
 
-  // Presentation
-  background:transparent url("http://launchr.pl/goat-in-spa/gfx/1_motyw.png") top left no-repeat;
-  background-size: 60%;
-
-  @media #{$medium-up} { background-size: 60%; }
-  @media #{$large-up}  { background-size: 60%; }
-
-
-  // Layout --> Table
+  // LAYOUT --------------------------
   display: table;
   border-collapse:collapse;
   min-height: 100% !important;
   min-width:100%;
 
-
-  // Layout --> Row
+  // Rows
   .row--tr {
     display:table-row;
 
     &:nth-of-type(1){
       .column--td{
-//        display: table-cell;
+        //        display: table-cell;
         height:45%;
+        min-height:45px;
         width:100%;
       }
     }
 
     &:nth-of-type(2){
       .column--td{
-//        display: table-cell;
+        //        display: table-cell;
         height:55%;
         width:100%;
 
       }
     }
-
-    // Layout --> Cell
-//    .columns {
-//      display: table-cell;
-//    }
   }
 
-
-
-  $logo-height:rem-calc(60);
+  // BACKGROUND --------------------------
+  background:transparent url("http://launchr.pl/goat-in-spa/gfx/1_motyw.png") top left no-repeat;
+  background-size: 60%;
+  @media #{$medium-up} { background-size: 60%; }
+  @media #{$large-up}  { background-size: 60%; }
 
   // Logotyp
   .fundacja__logo {
-//    height:$logo-height*3;
     .logo {
       position: absolute;
       top:1rem;
       right:1rem;
       width:45%;
       max-width:155px;
-      @media #{$medium-up} {
-        width:180px;
-      }
-      @media #{$large-up} {
-        width:231px;
-      }
+      @media #{$medium-up} { width:180px; }
+      @media #{$large-up} { width:231px; }
     }
   }
 
-  // Hedaer
+  // Header
   .section__header {
     .section__title {
       text-transform: uppercase;
-      @extend %font__size--large;
+      @extend %font__size--xlarge;
       @include putBorder(top, $blue4-color, 2px);
       @include putBorder(bottom, $blue4-color, 2px);
     }
   }
 
   // Content
-  .section__content {
+  .section__content { }
 
-  }
-
+  // Buttom
   .btn__arrow--down {
     @extend %btn__arrow--down;
-
     position:absolute;
     bottom:0px;
     margin-left: auto;
@@ -114,8 +94,6 @@
     right: 0;
     height:90px;
     width:90px;
-
-
   }
 }
 

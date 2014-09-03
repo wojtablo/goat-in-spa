@@ -19,6 +19,7 @@
    "foundation/components/panels",
    "foundation/components/inline-lists",
    "foundation/components/tables",
+   "foundation/components/reveal",
    "foundation/components/type",
    "foundation/components/pricing-tables",
    "foundation/components/visibility";
@@ -59,6 +60,8 @@ section {
 
 // Includuje mixiny, placeholdery dostępne dla wszystkich modułów
 @import "sections/mod___INCLUDES";
+
+@import "plugins/slider";
 
 // Moduły
 @import "sections/mod__home";

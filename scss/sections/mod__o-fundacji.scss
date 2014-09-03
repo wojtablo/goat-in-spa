@@ -21,7 +21,13 @@
 .section__ofundacji {
 
   .row {
-    padding:4em 0;
+    padding:1em 0 1em 0;
+  }
+
+  .row__sufix,
+  .row__prefix {
+    background:#238AAF;
+    min-height:4em;
   }
 
 
@@ -33,7 +39,9 @@
 
   // HEADER --------------------------------------------------------------
   .section__header {
-
+    .section__tile {
+      @extend %font__size--large;
+    }
   }
   // MAIN CONTENT --------------------------------------------------------
   .section__content {

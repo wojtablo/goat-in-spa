@@ -4,13 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fundacja Koźmińskich</title>
-    <link rel="stylesheet" href="stylesheets/app.css" />
-    <script src="bower_components/modernizr/modernizr.js"></script>
+      <link rel="stylesheet" href="stylesheets/app.css" />
+      <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
+
   <body>
 
-    <div id="globalContainer">
 
+    <div id="globalContainer">
 
         <!-- Sekcja 1. Strona powitalna -->
         <section id="section-1" class="rowWrapper rowSlide section__home">
@@ -64,7 +65,7 @@
             <div class="row">
                 <div class="large-12 columns">
                     <header class="section__header small-only-text-center">
-                        <h2>Zakres działalności Fundacji:</h2>
+                        <h2 class="section__tile">Zakres działalności Fundacji:</h2>
                     </header>
                     <div class="section__content">
                         ...
@@ -73,44 +74,60 @@
             </div>
         </section>
 
-
         <!-- Sekcja 4. Aktualności -->
         <section id="section-4" class="rowWrapper rowSlide section__news">
             <div class="row">
                 <div class="large-12 columns">
                     <header class="section__header  small-only-text-center">
-                        <h2>Aktualności</h2>
-                        <h3>
-                            Aktywne wspieranie postaw przedsiębiorczości oraz inicjowanie miedzykulturowej wymiany doświadczeń.
-                        </h3>
-                        <h3>
-                            Aktywne wspieranie postaw przedsiębiorczości oraz inicjowanie miedzykulturowej wymiany doświadczeń.
-                        </h3>
-                        <h3>
-                            Aktywne wspieranie postaw przedsiębiorczości oraz inicjowanie miedzykulturowej wymiany doświadczeń.
-                        </h3>
-                        <h3>
-                            Aktywne wspieranie postaw przedsiębiorczości oraz inicjowanie miedzykulturowej wymiany doświadczeń.
-                        </h3>
+                        <h2 class="section__tile">Aktualności</h2>
                     </header>
+                    <div class="section__content">
+
+                        <div id="content-slider-1" class="royalSlider contentSlider rsDefault">
+                            <div class="text-center">
+                                <img class="rsImg" src="gfx/3_aktualnosci_f1.jpg" data-rsw="640" data-rsh="425">
+                                <h3>Warsztat "Podstawy prawa autorskiego a wolne licencje"</h3>
+                                <p>After all, you have many other things you should be doing. Who's paying you to waste this time, anyway?</p>
+                            </div>
+                            <div>
+                                <img class="rsImg" src="http://dimsemenov.com/plugins/royal-slider/img/home.jpg" data-rsw="707" data-rsh="397">
+                                <h3>Slide with Image and Text</h3>
+                                <p>This is dummy copy. It is not meant to be read. Accordingly, it is difficult to figure out when to end it. If this were real copy, it would have ended long ago. But then, this is dummy copy. It is not meant to be read. Period.</p>
+                            </div>
+                            <div>
+                                <img class="rsImg" src="http://dimsemenov.com/plugins/royal-slider/img/boat.jpg" data-rsw="640" data-rsh="425">
+                                <h3>Slide with Video and Text</h3>
+                                <p>This is dummy copy. It is not meant to be read. Accordingly, it is difficult to figure out when to end it. But then, this is dummy copy. It is not meant to be read. Period.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Sekcja 4. O Fundacji -->
         <section id="section-5" class="rowWrapper rowSlide section__ofundacji section--hasArrow">
+            <!-- row prefix for mobile -->
+            <div class="row__prefix show-for-small-only text-center">
+                <h2 class="section__tile">O fundacji</h2>
+            </div>
             <div class="row">
                 <div class="large-12 columns">
-                    <header class="section__header      text-center">
-                        <h2>O fundacji</h2>
-                        <h3 class="line--bottom">
-                            Aktywne wspieranie postaw przedsiębiorczości oraz inicjowanie miedzykulturowej wymiany doświadczeń.
-                        </h3>
-                        <h3 class="line--bottom">
-                            Aktywne wspieranie postaw przedsiębiorczości oraz inicjowanie miedzykulturowej wymiany doświadczeń.
-                        </h3>
+                    <header class="section__header text-center">
+                        <h2 class="section__tile hide-for-small">O fundacji</h2>
                     </header>
+                    <div class="section__content">
+                        <img src="gfx/4_logo.png" alt="" />
+                    </div>
                 </div>
+                <figure class="crossSectionArrow--left show-for-medium-up">
+                    <img src="gfx/8_strzalka.png" alt="" title=""/>
+                </figure>
+            </div>
+            <!-- row sufix for mobile -->
+            <div class="row__sufix show-for-small-only">
                 <figure class="crossSectionArrow--left"><img src="gfx/8_strzalka.png" alt="" title=""/></figure>
             </div>
         </section>
@@ -119,71 +136,124 @@
         <section id="section-6" class="rowWrapper rowSlide section__radaizarzad">
             <div class="row">
                 <div class="large-12 columns">
-                    <header class="section__header      text-center">
-                        <h2>Rada i Zarząd Fundacji</h2>
-                        <h3 class="line--bottom">
-                            Aktywne wspieranie postaw przedsiębiorczości oraz inicjowanie miedzykulturowej wymiany doświadczeń.
-                        </h3>
-                        <h3 class="line--bottom">
-                            Aktywne wspieranie postaw przedsiębiorczości oraz inicjowanie miedzykulturowej wymiany doświadczeń.
-                        </h3>
+                    <header class="section__header text-center">
+                        <h2 class="section__tile">Rada i Zarząd Fundacji</h2>
                     </header>
+                    <div class="section__content">
+                        <ul>
+                            <li class="members__group">
+                                <p class="member__position">Prezes <span>Fundacji</span></p>
+                                <ul>
+                                    <li class="member">
+                                        <a class="member__box" href="#" alt="" data-reveal-id="myModal">
+                                            <img src="gfx/5_prezes.jpg" alt="">
+                                            <p>Magdalena Bąk</p>
+                                        </a>
+                                        <div id="myModal" class="reveal-modal member__details" data-reveal>
+                                            <img src="gfx/5_prezes.jpg" alt="">
+                                            <h2>Magdalena Bąk</h2>
+                                            <p class="lead">Asystentka Rektora ALK</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis tellus, condimentum non nisl ut, ultricies commodo turpis. Ut maximus non sapien a vehicula. Praesent vel elementum urna. Suspendisse ligula purus, vestibulum id metus at, condimentum lacinia felis. Aliquam dictum fermentum augue non efficitur. Nullam finibus commodo ligula, fringilla viverra nibh finibus at. </p>
+                                            <a class="close-reveal-modal">&#215;</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="members__group">
+                                <p>Czlonkowie zarzadu</p>
+                                <ul>
+                                    <li class="member">
+                                        <a class="member__box" href="#" alt="" data-reveal-id="myModal2">
+                                            <img src="gfx/5_prezes.jpg" alt="">
+                                            <p>Jan Kowalski</p>
+                                        </a>
+                                        <div id="myModal2" class="reveal-modal member__details" data-reveal>
+                                            <h2>Jan Kowalski</h2>
+                                            <p class="lead">Dyrektor Sprzedaży</p>
+                                            <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+                                            <a class="close-reveal-modal">&#215;</a>
+                                        </div>
+                                    </li>
+                                    <li class="member">
+                                        <a class="member__box" href="#" alt="" data-reveal-id="myModal3">
+                                            <img src="gfx/5_prezes.jpg" alt="">
+                                            <p>Piotr Nowak</p>
+                                        </a>
+                                        <div id="myModal3" class="reveal-modal member__details" data-reveal>
+                                            <h2>Piotr Nowak</h2>
+                                            <p class="lead">Dyrektor Sprzedaży</p>
+                                            <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+                                            <a class="close-reveal-modal">&#215;</a>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+
                 </div>
             </div>
         </section>
 
+
+
+
+
         <!--------- OD TEGO MIEJSCE JESZCZE TROCHE ZOSTAŁO ----------------------------------->
 
-        <section id="section-7" class="rowWrapper rowSlide section__orgpubliczna">
-            <h2>Patroni</h2>
-            <figure class="crossSectionArrow--left"><img src="gfx/8_strzalka.png" alt="" title=""/></figure>
-        </section>
+        <!--<section id="section-7" class="rowWrapper rowSlide section__orgpubliczna">-->
+            <!--<h2>Patroni</h2>-->
+            <!--<figure class="crossSectionArrow--left"><img src="gfx/8_strzalka.png" alt="" title=""/></figure>-->
+        <!--</section>-->
 
-        <section id="section-8" class="rowWrapper rowSlide section__patroni">
-            <h2>Organizacja pożytku publicznego.</h2>
-        </section>
+        <!--<section id="section-8" class="rowWrapper rowSlide section__patroni">-->
+            <!--<h2>Organizacja pożytku publicznego.</h2>-->
+        <!--</section>-->
 
-        <section id="section-9" class="rowWrapper rowSlide section__statut section--hasArrow">
-            <h2>Statut</h2>
-            <figure class="crossSectionArrow--left"><img src="gfx/8_strzalka.png" alt="" title=""/></figure>
-        </section>
+        <!--<section id="section-9" class="rowWrapper rowSlide section__statut section--hasArrow">-->
+            <!--<h2>Statut</h2>-->
+            <!--<figure class="crossSectionArrow--left"><img src="gfx/8_strzalka.png" alt="" title=""/></figure>-->
+        <!--</section>-->
 
-        <section id="section-10" class="rowWrapper rowSlide section__sprawozdania">
-            <h2>Sprawozdania finansowe</h2>
-        </section>
+        <!--<section id="section-10" class="rowWrapper rowSlide section__sprawozdania">-->
+            <!--<h2>Sprawozdania finansowe</h2>-->
+        <!--</section>-->
 
-        <section id="section-11" class="rowWrapper rowSlide section__partnerzy  section--hasArrow">
-            <h2>Partnerzy Fundacji</h2>
-            <figure class="crossSectionArrow--right"><img src="gfx/9_strzalka.png" alt="" title=""/></figure>
+        <!--<section id="section-11" class="rowWrapper rowSlide section__partnerzy  section--hasArrow">-->
+            <!--<h2>Partnerzy Fundacji</h2>-->
+            <!--<figure class="crossSectionArrow--right"><img src="gfx/9_strzalka.png" alt="" title=""/></figure>-->
 
-        </section>
+        <!--</section>-->
 
-        <section id="section-12" class="rowWrapper rowSlide section__instytucjepartnerskie">
-            <h2>Instytucje partnerskie w projektach</h2>
-        </section>
+        <!--<section id="section-12" class="rowWrapper rowSlide section__instytucjepartnerskie">-->
+            <!--<h2>Instytucje partnerskie w projektach</h2>-->
+        <!--</section>-->
 
-        <section id="section-13" class="rowWrapper rowSlide section__podatek">
-            <h2>1%</h2>
-        </section>
+        <!--<section id="section-13" class="rowWrapper rowSlide section__podatek">-->
+            <!--<h2>1%</h2>-->
+        <!--</section>-->
 
-        <section id="section-14" class="rowWrapper rowSlide section__kontakt">
-            <h2>Kontakt</h2>
-        </section>
+        <!--<section id="section-14" class="rowWrapper rowSlide section__kontakt">-->
+            <!--<h2>Kontakt</h2>-->
+        <!--</section>-->
 
-        <section id="section-15" class="rowWrapper rowSlide section__footer">
-            <h2>Footer</h2>
-        </section>
+        <!--<section id="section-15" class="rowWrapper rowSlide section__footer">-->
+            <!--<h2>Footer</h2>-->
+        <!--</section>-->
 
     </div>
 
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <!-- Load ScrollTo -->
-    <!--<script src="bower_components/jquery.scrollTo/jquery.scrollTo.min.js"></script>-->
-    <!-- Load LocalScroll -->
-    <!--<script src="bower_components/jquery.localScroll/jquery.localScroll.min.js"></script>-->
+    <script class="rs-file" src="bower_components/royal_slider/royalslider/jquery.royalslider.min.js"></script>
+
     <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
+    <script id="addJS" src="js/app.js"></script>
+
 
   </body>
 </html>

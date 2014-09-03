@@ -20,7 +20,12 @@
 
 // Misja
 .section__misja {
-  background-color: $background-color;
+  background:$background-color;
+  @media #{$medium-up} {
+    background:$background-color url("http://launchr.pl/goat-in-spa/gfx/2_motywG2.png") bottom right no-repeat;
+  }
+
+  h1,h2,h3,h4,h5,h6 { color:$blue5-color; }
 
   .row {
     padding-bottom:5em;
@@ -28,8 +33,14 @@
 
   // Styles
   .section__header {
+    .section__tile {
+      @extend %font__size--large;
+    }
     .section__subtitle {
-
+      padding:0.8rem 0px;
+      @extend %font__size--medium;
+      @include putBorder(top, $blue3-color, 2px);
+      @include putBorder(bottom, $blue6-color, 1px);
       &::first-line{
         color:$blue3-color;
       }

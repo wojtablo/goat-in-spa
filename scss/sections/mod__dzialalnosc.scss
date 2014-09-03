@@ -33,7 +33,9 @@
 
   // HEADER --------------------------------------------------------------
   .section__header {
-
+    .section__tile {
+      @extend %font__size--medium;
+    }
   }
   // MAIN CONTENT --------------------------------------------------------
   .section__content {
