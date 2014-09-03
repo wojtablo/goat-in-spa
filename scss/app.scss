@@ -39,8 +39,8 @@
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 section {
-  border-bottom:2px dotted #00ff0a;
-  box-shadow:3px 3px 3px #222;
+//  border-bottom:2px dotted #00ff0a;
+//  box-shadow:3px 3px 3px #222;
 }
 
 // Include media-conf helper inside media query
@@ -48,10 +48,10 @@ section {
    @include media-conf( $small-only,   $small-range,  $small-range-label, #488008); // Disable it for LIVE!!
 }
 @media #{$medium-only} {
-   @include media-conf( $medium-only,   $medium-range,  $medium-range-label, #e8c326); // Disable it for LIVE!!
+   @include media-conf( $medium-only,   $medium-range,  $medium-range-label, #e84615); // Disable it for LIVE!!
 }
 @media #{$large-only} {
-  @include media-conf( $large-only,   $large-range,  $large-range-label, #e84120); // Disable it for LIVE!!
+  @include media-conf( $large-only,   $large-range,  $large-range-label, #6e47e8); // Disable it for LIVE!!
 }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

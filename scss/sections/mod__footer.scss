@@ -1,6 +1,45 @@
 @import "mod___INCLUDES";
 
-// Status
+/*========================================================================
+  Section           :   Stopka
+  Functionality     :   Text + image
+  Version:          :   v1.0
+  Updated:          :   03/09/2014
+
+  Każda sekcja powinna mieć możliwie schematyczną budową.
+  Traktujemy sekcje jako swego rodzaju boxy.
+
+  Zadbaj o to aby:
+  - nazwa klasy głównej rozpoczynająca się w konwencji .section__xxxxxx
+  - określamy background lub jego brak
+  - wewnątrz definicji tego stylu wyodrębniony header oraz main content
+  - jeżeli jest jakieś tło to dołączamy je z "mod__ICLUDES" za pomocą @extend
+  - opis tego opisu byl aktualny
+
+=========================================================================*/
+
 .section__footer {
+
+  .row {
+//    padding:1em 0 1em 0;
+  }
+
+  // COLOURS SCHEME ------------------------------------------------------
+  h1,h2,h3,h4,h5,h6 { color:#fff; }
+
+  // BACKGROUND ----------------------------------------------------------
+  @extend %row--footer;
+
+  // HEADER --------------------------------------------------------------
+  .section__header {
+    p {
+      font-size:0.8em;
+      line-height: 3em;
+    }
+  }
+  // MAIN CONTENT --------------------------------------------------------
+  .section__content {
+
+  }
 
 }

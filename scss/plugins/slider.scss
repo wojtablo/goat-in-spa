@@ -358,17 +358,18 @@ img.rsImg {
   position: absolute;
   z-index: 35;
   left: 0;
-  bottom: 0;
+  top: 0;
   width: 100%;
   height: auto;
   margin: 0 auto;
 
-//  background: #000;
+//  background: #fff;
 //  background: rgba(0,0,0,0.75);
 
   text-align: center;
-  line-height: 8px;
-  overflow: hidden;
+  line-height: 11px;
+  padding-bottom:4px;
+//  overflow: hidden;
 }
 .rsDefault .rsBullet {
   width: 8px;

@@ -7,6 +7,10 @@
 html, body, #globalContainer {
   height: 100%;
 }
+p {
+  margin:0px;
+  padding:0px;
+}
 
 
 /*------------------------------------*\
@@ -37,7 +41,7 @@ html, body, #globalContainer {
 
 %font__size--large {
   font-family:"OpenSans-Bold";
-  font-size:2.8em;
+  font-size:2.63em;
   margin-bottom:0.7em;
   margin-top:0.23em;
   @media #{$medium-up} { font-size:4.5em; }
@@ -46,10 +50,9 @@ html, body, #globalContainer {
 
 %font__size--medium {
   font-family:"OpenSans-Regular";
-  font-size:1.8em;
-  line-height:1.15em;
-  @media #{$medium-up} { font-size:4.5em; }
-  @media #{$large-up}  { font-size:4.5em; }
+  font-size:1.8em; line-height:1.15em;
+  @media #{$medium-up} { font-size:3.1em; line-height:1.25em;}
+  @media #{$large-up}  { font-size:3.2em; line-height:1.15em }
 }
 
 
@@ -62,7 +65,7 @@ $default-arrow-left: "8_strzalka.png";
 
 section.rowWrapper {
   position: relative;
-  min-height:115px;
+//  min-height:50px;
   .row {
     position: relative;
   }
@@ -91,6 +94,11 @@ section.rowWrapper {
 }
 %row--violet {
   background-color:$violet-color;
+  color:#fff;
+}
+%row--footer {
+  border-top:6px solid $info-color;
+  background-color:$blue3-color;
   color:#fff;
 }
 
@@ -154,7 +162,7 @@ section.rowWrapper {
   - arrows must go through two section
   - it must be mobile optimized (size of an arrow and margines)
   - if wrapper has some padding or margins it must be this-shit-proof
-  - arrows must be always on top of layers
+  - arrows must be always on top of layers (unless you know what you're doing).
 
 =========================================================================*/
 @mixin crossSectionArrow($height, $position) {

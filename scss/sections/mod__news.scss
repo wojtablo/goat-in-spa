@@ -20,32 +20,64 @@
 
 .section__news {
 
-  @media #{$medium-up} {
-//  background:$background-color url("http://launchr.pl/goat-in-spa/gfx/4_motywG.png") bottom left no-repeat;
-
-    background-image: url(http://launchr.pl/goat-in-spa/gfx/4_motywG.png), url(http://launchr.pl/goat-in-spa/gfx/2_motywD3.png);
-    background-position: bottom left, top right;
-    background-repeat: no-repeat;
-}
-
-  // COLOURS SCHEME ------------------------------------------------------
-  h1,h2,h3,h4,h5,h6 { color:$blue5-color; }
+  padding:0px 0px 2em 0px;
 
   // BACKGROUND ----------------------------------------------------------
   background-color: $background-color;
+
+  @media #{$medium-up} {
+    background-image: url(http://launchr.pl/goat-in-spa/gfx/4_motywG.png), url(http://launchr.pl/goat-in-spa/gfx/2_motywD3.png);
+    background-position: bottom left, top right;
+    background-repeat: no-repeat;
+
+    padding:14em 0;
+  }
+
+  // COLOURS SCHEME ------------------------------------------------------
+  h1,h2,h3,h4,h5,h6 { color:$blue5-color; }
 
   // HEADER --------------------------------------------------------------
   .section__header {
     .section__tile {
       @extend %font__size--large;
+      margin:0.25em !important;
     }
   }
   // MAIN CONTENT --------------------------------------------------------
   .section__content {
 
+    //Slider
+    .contentSlider {
+      .rsSlide {
+        .slide__title {
+
+        }
+        .slide__subTitle {
+          font-family: "OpenSans-Regular";
+          color: $blue5-color;
+          font-size:1.2em;
+          line-height: 1.2em;
+          padding-bottom:0.6em;
+          @include putBorder(bottom, $blue5-color, 1px)
+        }
+        .slide__intro {
+          font-family: "OpenSans-Light";
+          color: $blue5-color;
+          margin:0px;
+          padding-bottom:0.8em;
+        }
+        .slide--more {
+          font-size:0.9em;
+          color:$blue-color;
+          text-decoration: none;
+          text-transform: uppercase;
+        }
+      }
+    }
+
   }
 
-  padding:2em 0px;
+
 
 
 
@@ -78,7 +110,7 @@
 .contentSlider img {
   max-width: 100%;
   height: auto;
-  display: block;
+//  display: block;
 }
 .content-slider-bg {
   width: 86%;
