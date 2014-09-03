@@ -1,6 +1,90 @@
 @import "mod___INCLUDES";
 
-// Status
+/*========================================================================
+  Section           :   Kontakt
+  Functionality     :   Text + images + forms
+  Version:          :   v1.0
+  Updated:          :   02/09/2014
+
+  Każda sekcja powinna mieć możliwie schematyczną budową.
+  Traktujemy sekcje jako swego rodzaju boxy.
+
+  Zadbaj o to aby:
+  - nazwa klasy głównej rozpoczynająca się w konwencji .section__xxxxxx
+  - określamy background lub jego brak
+  - wewnątrz definicji tego stylu wyodrębniony header oraz main content
+  - jeżeli jest jakieś tło to dołączamy je z "mod__ICLUDES" za pomocą @extend
+  - opis tego opisu byl aktualny
+
+=========================================================================*/
+
+
+// Kontakt
 .section__kontakt {
+  background:$background-color;
+
+  /*
+    Those background images must be under controll.
+
+  */
+  @media #{$medium-up} { }
+
+  h1,h2,h3,h4,h5,h6 { color:$blue5-color; }
+
+  .row {
+//    padding-bottom:5em;
+  }
+
+  // Styles
+  .section__header {
+    .section__tile {
+      @extend %font__size--large;
+    }
+
+    @media #{$medium-up} {
+      padding:0.8rem 2em 14em 2em;
+    }
+    @media #{$large-up} {
+      padding-bottom:6em;
+    }
+  }
+
+  .kontakt__data {
+    li {
+      list-style:none;
+      margin-bottom:1em;
+    }
+    .kontakt__address {
+      .kontakt__icon {
+        background:transparent url("http://launchr.pl/goat-in-spa/gfx/10_ikonka_fundacja.png") no-repeat;
+        background-position: center top ;
+        padding-top:30px;
+      }
+    }
+    .kontakt__email {
+      .kontakt__icon {
+        background:transparent url("http://launchr.pl/goat-in-spa/gfx/10_ikonka_email.png") no-repeat;
+        background-position: center top ;
+        padding-top:30px;
+      }
+    }
+    .kontakt__tel {
+      .kontakt__icon {
+        background:transparent url("http://launchr.pl/goat-in-spa/gfx/10_ikonka_telefon.png") no-repeat;
+        background-position: center top ;
+        padding-top:30px;
+      }
+    }
+    .kontakt__bank {
+      .kontakt__icon {
+        background:transparent url("http://launchr.pl/goat-in-spa/gfx/10_ikonka_konto.png") no-repeat;
+        background-position: center top ;
+        padding-top:30px;
+      }
+    }
+  }
+
+
 
 }
+
