@@ -21,6 +21,7 @@
 // Partnerzy
 .section__partnerzy {
   background:$background-color;
+  padding-bottom: 2em;
 
   /*
     Those background images must be under controll.
@@ -31,9 +32,9 @@
 
   h1,h2,h3,h4,h5,h6 { color:$blue5-color; }
 
-  .row {
-    padding-bottom:5em;
-  }
+//  .row {
+//    padding-bottom:5em;
+//  }
 
   // Styles
   .section__header {
@@ -58,5 +59,6 @@
 
   .partner {
     text-align:center !important;
+    margin:0px 20px;
   }
 }
