@@ -6,10 +6,11 @@
     <title>Fundacja Koźmińskich</title>
       <link rel="stylesheet" href="stylesheets/app.css" />
       <script src="bower_components/modernizr/modernizr.js"></script>
+
+      <script id="" src="js/head.load.min.js"></script>
+
   </head>
-
   <body>
-
 
     <div id="globalContainer">
 
@@ -650,12 +651,8 @@
     </div>
 
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script class="rs-file" src="bower_components/royal_slider/royalslider/jquery.royalslider.min.js"></script>
-
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script id="addJS" src="js/app.js"></script>
-
-
+    <script>
+        head.load("bower_components/jquery/dist/jquery.min.js", "bower_components/royal_slider/royalslider/jquery.royalslider.min.js", "bower_components/foundation/js/foundation.min.js", "js/app.js");
+    </script>
   </body>
 </html>
