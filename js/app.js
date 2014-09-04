@@ -35,6 +35,23 @@ jQuery(document).ready(function($) {
         navigateByClick: false,
         transitionSpeed:300
     });
+    $('#slider-statut').royalSlider({
+        autoHeight: true,
+        arrowsNav: true,
+        fadeinLoadedSlide: false,
+        arrowsNavAutoHide: true,
+        controlNavigationSpacing: 0,
+        controlNavigation: 'bullets',
+        imageScaleMode: 'none',
+        imageAlignCenter:false,
+        loop: true,
+        loopRewind: true,
+        numImagesToPreload: 6,
+        keyboardNavEnabled: true,
+        usePreloader: false,
+        navigateByClick: false,
+        transitionSpeed:300
+    });
     if(Modernizr.mq('only all and (max-width: 720px)')){
         $('#content-slider-2').royalSlider({
             autoHeight: true,
