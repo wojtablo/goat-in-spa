@@ -132,6 +132,7 @@ $blue3-color:#255a78; // Mostly to style first line of some text content..
 $blue4-color:#0987ce; // Welcome text on first screen
 $blue5-color:#012f48;
 $blue6-color:#BCC9D0;
+$blue7-color:#8fc6d6;
 $red-color: #e7375b;
 
 
@@ -258,9 +259,9 @@ $large: $large-up;
 // $paragraph-font-family: inherit;
 // $paragraph-font-weight: $font-weight-normal;
 // $paragraph-font-size: 1rem;
-// $paragraph-line-height: 1.6;
-// $paragraph-margin-bottom: rem-calc(20);
-// $paragraph-aside-font-size: rem-calc(14);
+$paragraph-line-height: 1.5;
+$paragraph-margin-bottom: rem-calc(20);
+$paragraph-aside-font-size: rem-calc(14);
 // $paragraph-aside-line-height: 1.35;
 // $paragraph-aside-font-style: italic;
 // $paragraph-text-rendering: optimizeLegibility;
@@ -646,8 +647,8 @@ $large: $large-up;
 // $input-font-family: inherit;
 // $input-font-color: rgba(0,0,0,0.75);
 // $input-font-size: rem-calc(14);
-// $input-bg-color: $white;
-// $input-focus-bg-color: scale-color($white, $lightness: -2%);
+$input-bg-color: #d7e2e4;
+$input-focus-bg-color: #e9e6cc;
 // $input-border-color: scale-color($white, $lightness: -20%);
 // $input-focus-border-color: scale-color($white, $lightness: -40%);
 // $input-border-style: solid;

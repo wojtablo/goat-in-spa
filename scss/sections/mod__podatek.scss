@@ -18,28 +18,67 @@
 
 =========================================================================*/
 
+// Misja
 .section__podatek {
 
-  // Add arrow as background image  
-  //  @include robinHoodArrow( $default-arrow-right, right);
+  //---------------------------------------------------------------
+  // Media Queries
+  //---------------------------------------------------------------
+  @media #{$medium-up} {
+  }
 
-
-  // COLOURS SCHEME ------------------------------------------------------
+  //---------------------------------------------------------------
+  // General look
+  //---------------------------------------------------------------
   h1,h2,h3,h4,h5,h6 { color:#fff; }
-
-  // BACKGROUND ----------------------------------------------------------
   @extend %row--violet;
-  //  padding-top:25px;
 
-  // HEADER --------------------------------------------------------------
-  .section__header {
 
+  // Section margines
+  .row {
+//    @include setSectionMobile(0 0 5em 0);
+    @include setSectionTablet(1.3em 0 1.3em 0);
+    @include setSectionPc(1.2em 0 0.4em 0);
   }
-  // MAIN CONTENT --------------------------------------------------------
+
+  // ---------------------------------------------------------------
+  // SECTION's header
+  //---------------------------------------------------------------
+  .section__header {  }
+  // ---------------------------------------------------------------
+  // SECTION's content
+  //---------------------------------------------------------------
   .section__content {
+    font-family:"OpenSans-Regular";
+    padding-left:4em;
 
+    font-size: 1.3em;
+    line-height: 1.4em;
+
+    &:before {
+      font-family:"MyriadPro-SemiboldCond";
+      content: "1%";
+      float:left;
+      margin-left:-2.5em;
+      font-size:1.9em;
+      line-height:2em;
+      font-weight: bold;
+    }
   }
 
-  padding-top:2em;
 
+  @media #{$medium-only} {
+    .section__content {
+      font-size: 1.3em;
+      line-height: 1.4em;
+      &:before {
+        margin-left:-1.5em;
+      }
+    }
+  }
+
+  @media #{$large-up} {
+
+
+  }
 }

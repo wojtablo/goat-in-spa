@@ -18,6 +18,7 @@
 
 =========================================================================*/
 
+
 // Statut
 .section__statut {
 
@@ -39,7 +40,11 @@
   // ---------------------------------------------------------------
   // SECTION's header
   //---------------------------------------------------------------
-  .section__header { }
+  .section__header {
+    .section__title {
+      @extend %font__size--large;
+    }
+  }
 
   // ---------------------------------------------------------------
   // SECTION's main content
@@ -49,16 +54,13 @@
   .contentSlider {
     width: 100%;
     .rsBullets {
-      @extend %rsBulletsTop;
+      @extend %rsBulletsBottom;
     }
   }
 }
 
 
-@media #{$medium-only} {
 
-}
+@media #{$medium-only} {  }
 
-@media #{$large-up} {
-
-}
+@media #{$large-up} {  }

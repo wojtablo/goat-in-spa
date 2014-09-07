@@ -20,22 +20,30 @@
 
 // Partnerzy
 .section__partnerzy2 {
+
+  //---------------------------------------------------------------
+  // Media Queries
+  //---------------------------------------------------------------
+  @media #{$medium-up} {
+    @include putSectionImage($background-color,"2_motywG2.png","", bottom right,"");
+  }
+
+  //---------------------------------------------------------------
+  // General look
+  //---------------------------------------------------------------
+  h1,h2,h3,h4,h5,h6 { color:$blue5-color; }
   background:$background-color;
 
-  /*
-    Those background images must be under controll.
+  // Section margines
+  @include setSectionMobile(0 0 1em 0);
+  @include setSectionTablet(0 0 6em 0);
+  @include setSectionPc(0 0 6em 0);
 
-  */
-  @media #{$medium-up} {
-  }
 
-  h1,h2,h3,h4,h5,h6 { color:$blue5-color; }
+  // ---------------------------------------------------------------
+  // SECTION's header
+  //---------------------------------------------------------------
 
-  .row {
-    padding-bottom:5em;
-  }
-
-  // Styles
   .section__header {
     .section__title {
       @extend %font__size--large;
@@ -47,17 +55,47 @@
       @include putBorder  (top, $blue3-color, 2px);
       @include putBorder  (bottom, $blue6-color, 1px);
     }
-
-    @media #{$medium-up} {
-      padding:0.8rem 2em 14em 2em;
-    }
-    @media #{$large-up} {
-      padding-bottom:6em;
-    }
   }
 
   .partner {
     text-align:center !important;
-    margin:20px;
+    margin:0px 20px;
+    margin-bottom: 1em;
+
+    .imp--wrapper{
+      display: block;
+      line-height: auto;
+
+    }
+    .partner--name {
+      font-size:1em;
+      margin-top:0px;
+    }
+    .partner--description {
+      font-size:0.8em;
+      margin-bottom:0px;
+      color:$blue5-color;
+
+    }
+    a, a:visited {
+      color:$blue5-color;
+      font-size:0.8em;
+      &:hover {
+        text-decoration:underline;
+      }
+    }
   }
+}
+
+@media #{$medium-up} {
+  .partner {
+    margin-bottom:0em !important;
+    .imp--wrapper{
+      line-height: 10em;
+    }
+  }
+}
+
+@media #{$large-up} {
+
 }

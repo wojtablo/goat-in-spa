@@ -55,13 +55,9 @@
 html, body, #globalContainer {
   height: 100%;
 }
-p {
-  margin:0px;
-  padding:0px;
-}
 
 $graphicMode          :   false;
-$allowMargins         :   false;
+$allowMargins         :   true;
 $allowMarginsMobile   :   $allowMargins;
 $allowMarginsTablet   :   $allowMarginsMobile;
 $allowMarginsPc       :   $allowMarginsMobile;
@@ -99,6 +95,9 @@ $dir_GFX              :   "http://launchr.pl/goat-in-spa/gfx/";
   src:  url("/fonts/OpenSans-Regular.ttf");
 }
 
+p {
+  font-family: 'OpenSans-Light';
+}
 
 
 %font__size--xlarge {
@@ -118,13 +117,17 @@ $dir_GFX              :   "http://launchr.pl/goat-in-spa/gfx/";
 
 %font__size--large {
   font-family:"OpenSans-Bold";
-  font-size:2.33em;
-  line-height: 2em;
+  font-size:2em;
+//  line-height: 2em;
   line-height: 1.1em;
-//  margin-bottom:0.7em;
-//  margin-top:0.23em;
-  @media #{$medium-up} { font-size:4.5em; }
-  @media #{$large-up}  { font-size:4.5em; }
+  margin:1.2em 0 0.9em;
+  @media #{$medium-up} {
+    font-size:2.6em;
+  }
+  @media #{$large-up}  {
+    font-size:3em;
+
+  }
 }
 
 %font__size--medium {
@@ -226,14 +229,21 @@ section.rowWrapper {
 =========================================================================*/
 %rsBulletsBottom {
   position: relative;
-//  padding:10px 0px;
+  padding:1.3em 0 2.4em 0px;
+
+
+  @media #{$medium-up} {
+    padding:2.6em 0 !important;
+  }
 }
 
 // Position changed in app.js
 %rsBulletsTop {
   position: relative !important;
-//  padding:0.6em 0px;
+  padding:1em 0 1.3em 0px;
 }
+
+
 
 /*========================================================================
   Mixin             :   SECTIONS
@@ -298,6 +308,29 @@ section.rowWrapper {
 @mixin putBorder($position, $color, $width, $style: solid) {
   border-#{$position}: $width $style $color;
 }
+
+/*========================================================================
+Mixin             :   Put Separtor
+Version:          :   v1.0
+Updated:          :   03/09/2014
+
+@position         : Border position (top/bottom/left/right)
+@color            : Color
+@width            : Width (3px, 6em, etc.)
+@style            : Solid, double etc. (!OPTIONAL)
+
+This mixin put border in the position.
+
+=========================================================================*/
+@mixin putSeparator($color, $width) {
+  display: block;
+  height:1px;
+  max-height: 1px;
+  width:$width;
+  margin:0 auto;
+  background:$color;
+}
+
 
 /*========================================================================
   Mixin             :   THROW-UP

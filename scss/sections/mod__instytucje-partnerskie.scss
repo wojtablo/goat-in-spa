@@ -20,40 +20,58 @@
 
 // Partnerzy
 .section__instytucjepartnerskie {
-  background:$background-color;
 
-  /*
-    Those background images must be under controll.
-
-  */
+  //---------------------------------------------------------------
+  // Media Queries
+  //---------------------------------------------------------------
   @media #{$medium-up} {
   }
 
+  //---------------------------------------------------------------
+  // General look
+  //---------------------------------------------------------------
   h1,h2,h3,h4,h5,h6 { color:$blue5-color; }
+  background:$background-color;
 
+  // Section margines
+  .row {
+    @include setSectionMobile(2em 0 2em 0);
+    @include setSectionTablet(3em 0 0.5em 0);
+    @include setSectionPc(4.5em 0 2em 0);
+  }
 
-  // Styles
+  // ---------------------------------------------------------------
+  // SECTION's header
+  //---------------------------------------------------------------
   .section__header {
     .section__title {
-      @extend %font__size--large;
-    }
-    .section__subtitle {
-      &::first-line       { color:$blue3-color; }
-      padding:            0.8rem 0px;
-      @extend             %font__size--medium;
-      @include putBorder  (top, $blue3-color, 2px);
-      @include putBorder  (bottom, $blue6-color, 1px);
-    }
+      font-family:"OpenSans-Regular";
+      color:$blue7-color;
+      font-size:2em;
+      line-height: 1.1em;
+      margin:1.2em 0 0.9em;
 
-    @media #{$medium-up} {
-      padding:0.8rem 2em 14em 2em;
+      span {
+        color:$blue3-color;
+        font-family:"OpenSans-Light";
+      }
+      span { display: block; }
     }
-    @media #{$large-up} {
-      padding-bottom:6em;
+    .sep {
+      &.sep--top {
+        @include putSeparator( $blue3-color, 40%);
+        margin-bottom:0.5em;
+      }
+      &.sep--bottom {
+        @include putSeparator( $blue3-color, 50%);
+        margin-top:0.5em;
+      }
     }
   }
 
-  .partner {
-    text-align:center !important;
-  }
 }
+
+
+@media #{$medium-only} {  }
+
+@media #{$large-up} {  }

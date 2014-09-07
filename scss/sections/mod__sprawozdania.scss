@@ -40,6 +40,12 @@
     }
   }
 
+  .sep {
+    @include putSeparator(#c9f033, 40%);
+    margin-top:0;
+    margin-bottom:$paragraph-margin-bottom;
+  }
+
   // ---------------------------------------------------------------
   // SECTION's header
   //---------------------------------------------------------------
@@ -62,7 +68,7 @@
       .contentSlider {
         width: 100%;
         .rsBullets {
-          @extend %rsBulletsTop;
+          @extend %rsBulletsBottom;
         }
       }
       // Geeneral settings for list
@@ -90,7 +96,9 @@
 }
 
 @media #{$small-only} {
-
+  .section__sprawozdania {
+    border-bottom:1.3em solid $green2-color;
+  }
 }
 
 @media #{$medium-up} {
