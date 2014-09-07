@@ -2,6 +2,16 @@
 // Documentation can be found at: http://foundation.zurb.com/docs
 $(document).foundation();
 
+WebFont.load({
+    custom: {
+        families: ['MyriadPro-LightCond','MyriadPro-SemiboldCond,OpenSans-Bold,OpenSans-Light,OpenSans-Regular'],
+        urls: ['/stylesheets/app.css']
+    },
+    timeout: 5000
+
+});
+
+
 jQuery(document).ready(function($) {
     // Please note that autoHeight option has some conflicts with options like imageScaleMode, imageAlignCenter and autoScaleSlider
     // it's recommended to disable them when using autoHeight module
@@ -17,24 +27,36 @@ jQuery(document).ready(function($) {
 //        $('#NoGallery').attr('id', 'slider');
 //        $('#content-slider-2').addClass('royalSlider');
 //    }
+//    $(document).on('open.fndtn.reveal', '[data-reveal]', function () {
+//        var modal = $(this);
+//
+//        $('body').on({
+//            'mousewheel': function(e) {
+//                if (e.target.id == 'el') return;
+//                e.preventDefault();
+//                e.stopPropagation();
+//            }
+//        })
+//    });
+//
+//    $(document).on('close.fndtn.reveal', '[data-reveal]', function () {
+//        $('body').on({
+//            'mousewheel': function(e) {
+//                if (e.target.id == 'el') return;
+//                e.preventDefault();
+//                e.stopPropagation();
+//            }
+//        })
+//    });
 
-    $('#content-slider-1').royalSlider({
-        autoHeight: true,
-        arrowsNav: true,
-        fadeinLoadedSlide: false,
-        arrowsNavAutoHide: true,
-        controlNavigationSpacing: 0,
-        controlNavigation: 'bullets',
-        imageScaleMode: 'none',
-        imageAlignCenter:false,
-        loop: true,
-        loopRewind: true,
-        numImagesToPreload: 6,
-        keyboardNavEnabled: true,
-        usePreloader: false,
-        navigateByClick: false,
-        transitionSpeed:300
+    $(window).bind('resize', function(){
+
+
     });
+
+
+
+
     $('#slider-statut').royalSlider({
         autoHeight: true,
         arrowsNav: true,
@@ -52,6 +74,10 @@ jQuery(document).ready(function($) {
         navigateByClick: false,
         transitionSpeed:300
     });
+
+    //var sliderStatut = $('#slider-statut');
+    //sliderStatut.prepend(sliderStatut.find('.rsNav'));
+
     if(Modernizr.mq('only all and (max-width: 720px)')){
         $('#content-slider-2').royalSlider({
             autoHeight: true,
@@ -70,6 +96,65 @@ jQuery(document).ready(function($) {
             navigateByClick: false,
             transitionSpeed:300
         });
+    }
+
+    if(Modernizr.mq('only all and (max-width: 920px)')){
+
+        $('#slider-news').royalSlider({
+            autoHeight: true,
+            arrowsNav: true,
+            fadeinLoadedSlide: false,
+            arrowsNavAutoHide: true,
+            controlNavigationSpacing: 0,
+            controlNavigation: 'bullets',
+            imageScaleMode: 'none',
+            imageAlignCenter:false,
+            loop: true,
+            loopRewind: true,
+            numImagesToPreload: 6,
+            keyboardNavEnabled: true,
+            usePreloader: false,
+            navigateByClick: false,
+            transitionSpeed:300
+        });
+    }
+    else {
+        var si = $('#slider-news').royalSlider({
+            addActiveClass: true,
+            arrowsNav: true,
+            controlNavigation: 'none',
+//            autoScaleSlider: true,
+//            autoScaleSliderWidth: 800,
+//            autoScaleSliderHeight: 350,
+            loop: true,
+
+            imageScaleMode: 'fit',
+            imageAlignCenter: true,
+            autoScaleSlider: true,
+            transitionSpeed:300,
+
+            fadeinLoadedSlide: false,
+            globalCaption: true,
+            keyboardNavEnabled: false,
+            globalCaptionInside: false,
+
+            visibleNearby: {
+                enabled: true,
+                centerArea: 0.3,
+                center: true,
+                breakpoint: 650,
+                breakpointCenterArea: 0.64,
+                navigateByCenterClick: false
+            }
+        }).data('royalSlider');
+
+        // link to fifth slide from slider description.
+        $('.slide4link').click(function(e) {
+            si.goTo(4);
+            return false;
+        });
+
+        $(".rsMainSlideImage").css("margin-top",0);
     }
 
 });

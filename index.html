@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Fundacja Koźmińskich</title>
       <link rel="stylesheet" href="stylesheets/app.css" />
       <script src="bower_components/modernizr/modernizr.js"></script>
@@ -17,32 +17,24 @@
         <!-- Sekcja 1. Strona powitalna -->
         <section id="section-1" class="rowWrapper rowSlide section__home">
             <!-- Row #1 -->
-            <div class="row--tr">
-                <div class="row">
-                    <div class="large-12 columns fundacja__logo">
-                        <div class="column--td">
-                            <img class="logo" src="gfx/1_logo.png" alt="Fundacja Koźmińskich" />
-                        </div>
-                    </div>
+            <div class="row row-1">
+                <div class="large-12 columns fundacja__logo">
+                    <img class="logo" src="gfx/1_logo.png" alt="Fundacja Koźmińskich" />
                 </div>
             </div>
             <!-- Row #2 -->
-            <div class="row--tr">
-                <div class="row">
-                    <div class="large-12 columns">
-                        <div class="column--td">
-                            <header class="section__header text-center">
-                                <h1 class="section__title">
-                                    Witamy na stronie<span>Fundacji</span>
-                                </h1>
-                            </header>
-                            <div class="section__content medium-text-right small-text-center">
-                            </div>
-                        </div>
+            <div class="row row-2">
+                <div class="large-12 columns">
+                    <header class="section__header text-center">
+                        <h1 class="section__title">
+                            Witamy na stronie<span>Fundacji</span>
+                        </h1>
+                    </header>
+                    <div class="section__content medium-text-right small-text-center">
                     </div>
                 </div>
-                <a class="btn__arrow--down" href="#section-2"></a>
             </div>
+            <a class="btn__arrow--down" href="#section-2"></a>
         </section>
 
         <!-- Sekcja 2. Misja -->
@@ -50,7 +42,7 @@
             <div class="row">
                 <div class="large-12 columns">
                     <header class="section__header text-center">
-                        <h1 class="section__tile">Misja</h1>
+                        <h1 class="section__title">Misja</h1>
                         <h3 class="section__subtitle">
                             Aktywne wspieranie postaw przedsiębiorczych oraz inicjowanie międzykulturowej wymiany doświadczeń.
                         </h3>
@@ -66,7 +58,7 @@
             <div class="row">
                 <div class="large-12 columns">
                     <header class="section__header small-only-text-center">
-                        <h2 class="section__tile">Zakres działalności Fundacji:</h2>
+                        <h2 class="section__title">Zakres działalności Fundacji:</h2>
                     </header>
                     <div class="section__content">
                         ...
@@ -79,22 +71,20 @@
         <section id="section-4" class="rowWrapper rowSlide section__news">
             <div class="row">
                 <div class="large-12 columns">
-                    <header class="section__header  medium-text-center">
-                        <h2 class="section__tile">Aktualności</h2>
+                    <header class="section__header  text-center">
+                        <h2 class="section__title">Aktualności</h2>
                     </header>
                     <div class="section__content">
-                        <div id="content-slider-1" class="royalSlider contentSlider rsDefault">
+                        <div id="slider-news" class="royalSlider contentSlider rsDefault visibleNearby">
                             <div class="text-center">
                                 <img class="rsImg" src="gfx/news-sample.jpg" data-rsw="540" data-rsh="325">
                                 <h3 class="slide__subTitle">Warsztat "Podstawy prawa autorskiego a wolne licencje"</h3>
                                 <p class="slide__intro">After all, you have many other things you should be doing. Who's paying you to waste this time, anyway?</p>
                                 <a class="slide--more" data-reveal-id="news-1" href="#">Czytaj więcej</a>
 
-                                <div id="news-1" class="reveal-modal member__details" data-reveal>
+                                <div id="news-1" class="reveal-modal member__details full" data-reveal>
                                     <h3 class="slide__subTitle">Warsztat "Podstawy prawa autorskiego a wolne licencje"</h3>
-                                    <figure class="hide-for-small text-center">
-                                        <img class="rsImg" src="gfx/news-sample.jpg" data-rsw="540" data-rsh="325">
-                                    </figure>
+
                                     <!--<p class="lead">Asystentka Rektora ALK</p>-->
                                     <p class="slide__intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis tellus, condimentum non nisl ut, ultricies commodo turpis. Ut maximus non sapien a vehicula. Praesent vel elementum urna. Suspendisse ligula purus, vestibulum id metus at, condimentum lacinia felis. Aliquam dictum fermentum augue non efficitur. Nullam finibus commodo ligula, fringilla viverra nibh finibus at. </p>
                                     <a class="close-reveal-modal">&#215;</a>
@@ -107,7 +97,7 @@
                                 <p class="slide__intro">After all, you have many other things you should be doing. Who's paying you to waste this time, anyway?</p>
                                 <a class="slide--more" data-reveal-id="news-2" href="#">Czytaj więcej</a>
 
-                                <div id="news-2" class="reveal-modal member__details" data-reveal>
+                                <div id="news-2" class="reveal-modal member__details full" data-reveal>
                                     <h3 class="slide__subTitle">Warsztat "Podstawy prawa autorskiego a wolne licencje"</h3>
                                     <figure class="hide-for-small text-center">
                                         <img class="rsImg" src="gfx/news-sample.jpg" data-rsw="540" data-rsh="325">
@@ -123,7 +113,7 @@
                                 <p class="slide__intro">After all, you have many other things you should be doing. Who's paying you to waste this time, anyway?</p>
                                 <a class="slide--more" data-reveal-id="news-3" href="#">Czytaj więcej</a>
 
-                                <div id="news-3" class="reveal-modal member__details" data-reveal>
+                                <div id="news-3" class="reveal-modal member__details full" data-reveal>
                                     <figure class="hide-for-small text-center">
                                         <img class="rsImg" src="gfx/3_aktualnosci_f1.jpg" data-rsw="540" data-rsh="325">
                                     </figure>
@@ -143,12 +133,12 @@
         <section id="section-5" class="rowWrapper rowSlide section__ofundacji section--hasArrow">
             <!-- row prefix for mobile -->
             <div class="row__prefix show-for-small-only text-center">
-                <h2 class="section__tile">O fundacji</h2>
+                <h2 class="section__title">O fundacji</h2>
             </div>
             <div class="row">
                 <div class="large-12 columns">
                     <header class="section__header text-center">
-                        <h2 class="section__tile hide-for-small">O fundacji</h2>
+                        <h2 class="section__title hide-for-small">O fundacji</h2>
                     </header>
                     <div class="section__content">
                         <img src="gfx/4_logo.png" alt="" />
@@ -169,7 +159,7 @@
             <div class="row">
                 <div class="large-12 columns">
                     <header class="section__header text-center">
-                        <h2 class="section__tile">Rada i Zarząd Fundacji</h2>
+                        <h2 class="section__title">Rada i Zarząd Fundacji</h2>
                     </header>
                     <div class="section__content">
                         <ul>
@@ -241,7 +231,7 @@
             <div class="row">
                 <div class="large-12 columns">
                     <header class="section__header text-center">
-                        <h1 class="section__tile">Patroni</h1>
+                        <h1 class="section__title">Patroni</h1>
                     </header>
                     <div class="section__content">
 
@@ -287,7 +277,7 @@
             <div class="row">
                 <div class="large-12 columns">
                     <header class="section__header text-center">
-                        <h1 class="section__tile">Statut</h1>
+                        <h1 class="section__title">Statut</h1>
                     </header>
                     <div class="section__content">
                         <div id="slider-statut" class="royalSlider contentSlider rsDefault">
@@ -339,86 +329,92 @@
             <div class="row">
                 <div class="large-12 columns">
                     <header class="section__header text-center">
-                        <h1 class="section__tile">Sprawozdania finansowe</h1>
+                        <h1 class="section__title">Sprawozdania finansowe</h1>
                     </header>
                 </div>
             </div>
-            <div class="row">
+            <section class="subSection__rowWrapper">
+                <div class="row">
+                    <div class="section__content">
+                        <div id="content-slider-2" class="royalSlider contentSlider rsDefault">
+                            <div class="small-12 medium-6 columns">
+                                <div class="column__header hidden-for-small"></div>
+                                <div>
+                                    <ul class="list__files">
+                                        <li class="list__item">
+                                            <a href="#" title="">Sprawozdanie finansowe 2012</a>
+                                        </li>
+                                        <li class="list__item">
+                                            <a href="#" title="">Sprawozdanie finansowe 2012</a>
 
-                <div id="content-slider-2" class="royalSlider contentSlider rsDefault">
-                    <div class="small-12 medium-6 columns">
-                        <div>
-                            <ul class="list__files">
-                                <li class="list__item">
-                                    <a href="#" title="">Sprawozdanie finansowe 2012</a>
-                                </li>
-                                <li class="list__item">
-                                    <a href="#" title="">Sprawozdanie finansowe 2012</a>
+                                        </li>
+                                        <li class="list__item">
+                                            <a href="#" title="">Sprawozdanie finansowe 2012</a>
 
-                                </li>
-                                <li class="list__item">
-                                    <a href="#" title="">Sprawozdanie finansowe 2012</a>
+                                        </li>
+                                        <li class="list__item">
+                                            <a href="#" title="">Sprawozdanie finansowe 2012</a>
 
-                                </li>
-                                <li class="list__item">
-                                    <a href="#" title="">Sprawozdanie finansowe 2012</a>
+                                        </li>
+                                        <li class="list__item">
+                                            <a href="#" title="">Sprawozdanie finansowe 2012</a>
+                                        </li>
+                                        <li class="list__item">
+                                            <a href="#" title="">Sprawozdanie finansowe 2012</a>
 
-                                </li>
-                                <li class="list__item">
-                                    <a href="#" title="">Sprawozdanie finansowe 2012</a>
-                                </li>
-                                <li class="list__item">
-                                    <a href="#" title="">Sprawozdanie finansowe 2012</a>
+                                        </li>
+                                        <li class="list__item">
+                                            <a href="#" title="">Sprawozdanie finansowe 2012</a>
 
-                                </li>
-                                <li class="list__item">
-                                    <a href="#" title="">Sprawozdanie finansowe 2012</a>
+                                        </li>
+                                        <li class="list__item">
+                                            <a href="#" title="">Sprawozdanie finansowe 2012</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="small-12 medium-6 columns">
+                                <div class="column__header hidden-for-small"></div>
+                                <div>
+                                    <ul class="list__files">
+                                        <li class="list__item">
+                                            <a href="#" title="">Sprawozdanie finansowe 2012</a>
+                                        </li>
+                                        <li class="list__item">
+                                            <a href="#" title="">Sprawozdanie finansowe 2012</a>
 
-                                </li>
-                                <li class="list__item">
-                                    <a href="#" title="">Sprawozdanie finansowe 2012</a>
-                                </li>
-                            </ul>
+                                        </li>
+                                        <li class="list__item">
+                                            <a href="#" title="">Sprawozdanie finansowe 2012</a>
+
+                                        </li>
+                                        <li class="list__item">
+                                            <a href="#" title="">Sprawozdanie finansowe 2012</a>
+
+                                        </li>
+                                        <li class="list__item">
+                                            <a href="#" title="">Sprawozdanie finansowe 2012</a>
+                                        </li>
+                                        <li class="list__item">
+                                            <a href="#" title="">Sprawozdanie finansowe 2012</a>
+
+                                        </li>
+                                        <li class="list__item">
+                                            <a href="#" title="">Sprawozdanie finansowe 2012</a>
+
+                                        </li>
+                                        <li class="list__item">
+                                            <a href="#" title="">Sprawozdanie finansowe 2012</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="small-12 medium-6 columns">
-                        <div>
-                            <ul class="list__files">
-                                <li class="list__item">
-                                    <a href="#" title="">Sprawozdanie finansowe 2012</a>
-                                </li>
-                                <li class="list__item">
-                                    <a href="#" title="">Sprawozdanie finansowe 2012</a>
 
-                                </li>
-                                <li class="list__item">
-                                    <a href="#" title="">Sprawozdanie finansowe 2012</a>
-
-                                </li>
-                                <li class="list__item">
-                                    <a href="#" title="">Sprawozdanie finansowe 2012</a>
-
-                                </li>
-                                <li class="list__item">
-                                    <a href="#" title="">Sprawozdanie finansowe 2012</a>
-                                </li>
-                                <li class="list__item">
-                                    <a href="#" title="">Sprawozdanie finansowe 2012</a>
-
-                                </li>
-                                <li class="list__item">
-                                    <a href="#" title="">Sprawozdanie finansowe 2012</a>
-
-                                </li>
-                                <li class="list__item">
-                                    <a href="#" title="">Sprawozdanie finansowe 2012</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
 
-            </div>
+            </section>
         </section>
 
         <!-- Sekcja 11. Partnerzy Fundacji -->
@@ -426,7 +422,7 @@
             <div class="row">
                 <div class="large-12 columns">
                     <header class="section__header small-only-text-center">
-                        <h2 class="section__tile">Partnerzy Fundacji</h2>
+                        <h2 class="section__title">Partnerzy Fundacji</h2>
                     </header>
                 </div>
             </div>
@@ -479,7 +475,7 @@
             <div class="row">
                 <div class="large-12 columns">
                     <header class="section__header text-center">
-                        <h2 class="section__tile">
+                        <h2 class="section__title">
                             Instytucje partnerskie
                             <span>w projektach:</span>
                         </h2>
@@ -530,19 +526,19 @@
                         <a class="partner_www">www.kozminski.edui.pl</a>
                     </div>
                 </div>
-                <div class="small-12 medium-4 columns">
-                    <div class="partner">
-                        <img src="gfx/9_partnerzy_logo_4.jpg" alt="" title="">
-                        <h4 class="partner--name">Akademia Leona Koźmińskiego</h4>
-                        <p class="partner--description">
-                            Polska niepubliczna uczelnia
-                            akademicka, specjalizująca się
-                            w zakresie nauk ekonomicznych,
-                            humanistycznych i prawnych.
-                        </p>
-                        <a class="partner_www">www.kozminski.edui.pl</a>
-                    </div>
-                </div>
+                <!--<div class="small-12 medium-4 columns">-->
+                    <!--<div class="partner">-->
+                        <!--<img src="gfx/9_partnerzy_logo_4.jpg" alt="" title="">-->
+                        <!--<h4 class="partner--name">Akademia Leona Koźmińskiego</h4>-->
+                        <!--<p class="partner--description">-->
+                            <!--Polska niepubliczna uczelnia-->
+                            <!--akademicka, specjalizująca się-->
+                            <!--w zakresie nauk ekonomicznych,-->
+                            <!--humanistycznych i prawnych.-->
+                        <!--</p>-->
+                        <!--<a class="partner_www">www.kozminski.edui.pl</a>-->
+                    <!--</div>-->
+                <!--</div>-->
             </div>
         </section>
 
@@ -563,7 +559,7 @@
             <div class="row">
                 <div class="large-12 columns">
                     <header class="section__header small-only-text-center">
-                        <h2 class="section__tile">Kontakt</h2>
+                        <h2 class="section__title">Kontakt</h2>
                     </header>
                 </div>
             </div>
@@ -652,7 +648,45 @@
 
 
     <script>
-        head.load("bower_components/jquery/dist/jquery.min.js", "bower_components/royal_slider/royalslider/jquery.royalslider.min.js", "bower_components/foundation/js/foundation.min.js", "js/app.js");
+        // you can also give scripts a name (label)
+        head.load(
+                { jquery: "bower_components/jquery/dist/jquery.min.js" },
+                { royalSlider: "bower_components/royal_slider/royalslider/jquery.royalslider.min.js" },
+                { foundation: "bower_components/foundation/js/foundation.min.js" },
+                { webfont: "js/webfont.js" },
+                { main: "js/app.js" },
+                function() {
+//                    alert("All sctitts loaded");
+        });
+
+        // Labels are usually used in conjuntion with: head.ready()
+        head.ready("jquery", function() {
+            console.log("jQuery loaded");
+        });
+        head.ready("royalSlider", function() {
+            console.log("royalSlider loaded");
+        });
+        head.ready("foundation", function() {
+            console.log("Foundation loaded");
+        });
+        head.ready("webfont", function() {
+            console.log("WebFontLoader loaded");
+        });
+        head.ready("main", function() {
+            console.log("Main.js loaded");
+        });
+
+
+//        head.ready(["bower_components/jquery/dist/jquery.min.js", "file2.js"], function() {
+//            // execute this function, only when file1.js AND file2.js has finished loading
+//            // used in conjunction with head.load("file1.js", "file2.js");
+//        });
+//        head.load(
+//                "bower_components/jquery/dist/jquery.min.js",
+//                "bower_components/royal_slider/royalslider/jquery.royalslider.min.js",
+//                "bower_components/foundation/js/foundation.min.js",
+//                "js/webfont.js",
+//                "js/app.js");
     </script>
   </body>
 </html>

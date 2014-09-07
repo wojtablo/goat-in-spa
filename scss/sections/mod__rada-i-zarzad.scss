@@ -20,28 +20,33 @@
 
 .section__radaizarzad {
 
+  //---------------------------------------------------------------
+  // Media Queries
+  //---------------------------------------------------------------
   @media #{$medium-up} {
-    background:$background-color url("http://launchr.pl/goat-in-spa/gfx/4_motywD.png") top left no-repeat;
+    @include putSectionImage($background-color,"4_motywD.png","", top left,"");
   }
 
-  .row {
-    padding:4em 0;
-  }
-
-
-  // COLOURS SCHEME ------------------------------------------------------
+  //---------------------------------------------------------------
+  // General look
+  //---------------------------------------------------------------
   h1,h2,h3,h4,h5,h6 { color:$blue5-color; }
   background-color: $background-color;
+  .row {
+    @include setSectionMobile(4em 0);
+  }
 
-
-
-  // HEADER --------------------------------------------------------------
+  // ---------------------------------------------------------------
+  // SECTION's header
+  //---------------------------------------------------------------
   .section__header {
-    .section__tile {
+    .section__title {
       @extend %font__size--large;
     }
   }
-  // MAIN CONTENT --------------------------------------------------------
+  // ---------------------------------------------------------------
+  // SECTION's main content
+  //---------------------------------------------------------------
   .section__content {
 
     .members__group {

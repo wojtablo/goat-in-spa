@@ -37,7 +37,7 @@
 
   // Styles
   .section__header {
-    .section__tile {
+    .section__title {
       @extend %font__size--large;
     }
 
@@ -56,28 +56,28 @@
     }
     .kontakt__address {
       .kontakt__icon {
-        background:transparent url("http://launchr.pl/goat-in-spa/gfx/10_ikonka_fundacja.png") no-repeat;
+        background:transparent url("#{$dir_GFX}10_ikonka_fundacja.png") no-repeat;
         background-position: center top ;
         padding-top:30px;
       }
     }
     .kontakt__email {
       .kontakt__icon {
-        background:transparent url("http://launchr.pl/goat-in-spa/gfx/10_ikonka_email.png") no-repeat;
+        background:transparent url("#{$dir_GFX}10_ikonka_email.png") no-repeat;
         background-position: center top ;
         padding-top:30px;
       }
     }
     .kontakt__tel {
       .kontakt__icon {
-        background:transparent url("http://launchr.pl/goat-in-spa/gfx/10_ikonka_telefon.png") no-repeat;
+        background:transparent url("#{$dir_GFX}10_ikonka_telefon.png") no-repeat;
         background-position: center top ;
         padding-top:30px;
       }
     }
     .kontakt__bank {
       .kontakt__icon {
-        background:transparent url("http://launchr.pl/goat-in-spa/gfx/10_ikonka_konto.png") no-repeat;
+        background:transparent url("#{$dir_GFX}10_ikonka_konto.png") no-repeat;
         background-position: center top ;
         padding-top:30px;
       }

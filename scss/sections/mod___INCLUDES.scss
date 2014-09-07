@@ -3,6 +3,54 @@
 @import "compass/css3/font-face";
 
 
+.wf-loading{
+  #globalContainer:before {
+    background: #476eee;
+    content:"Loading...";
+    position:absolute;
+    right:0px;
+    top:0px;
+    color:#fff;
+    font:bold 11px "Arial";
+    padding:4px 8px;
+    opacity:0.95;
+    z-index: 999;;
+  }
+}
+.wf-active {
+  #globalContainer:before {
+    background: #74ee12;
+    content:"Font's loaded!";
+    position:absolute;
+    right:0px;
+    top:0px;
+    color:#fff;
+    font:bold 11px "Arial";
+    padding:4px 8px;
+    opacity:0.95;
+    z-index: 999;;
+  }
+}
+.wf-inactive{
+  #globalContainer:before {
+    background: red;
+    content:"Font's wasn't not loded!";
+    position:absolute;
+    right:0px;
+    top:0px;
+    color:#fff;
+    font:bold 11px "Arial";
+    padding:4px 8px;
+    opacity:0.95;
+    z-index: 999;
+  }
+}
+
+%maxHeight {
+  min-height:                100% !important;
+  height:                    100%; // For Firefox
+  min-width:                 100%;
+}
 
 html, body, #globalContainer {
   height: 100%;
@@ -12,16 +60,45 @@ p {
   padding:0px;
 }
 
+$graphicMode          :   false;
+$allowMargins         :   false;
+$allowMarginsMobile   :   $allowMargins;
+$allowMarginsTablet   :   $allowMarginsMobile;
+$allowMarginsPc       :   $allowMarginsMobile;
+$dir_GFX              :   "http://launchr.pl/goat-in-spa/gfx/";
+
 
 /*------------------------------------*\
     FONTS
 \*------------------------------------*/
 
-@include font-face("MyriadPro-LightCond",     font-files("MyriadPro-LightCond.otf"));
-@include font-face("MyriadPro-SemiboldCond",  font-files("MyriadPro-SemiboldCond.otf"));
-@include font-face("OpenSans-Bold",           font-files("OpenSans-Bold.ttf"));
-@include font-face("OpenSans-Light",          font-files("OpenSans-Light.ttf"));
-@include font-face("OpenSans-Regular",        font-files("OpenSans-Regular.ttf"));
+//@include font-face("MyriadPro-LightCond",     font-files("MyriadPro-LightCond.otf"));
+//@include font-face("MyriadPro-SemiboldCond",  font-files("MyriadPro-SemiboldCond.otf"));
+//@include font-face("OpenSans-Bold",           font-files("OpenSans-Bold.ttf"));
+//@include font-face("OpenSans-Light",          font-files("OpenSans-Light.ttf"));
+//@include font-face("OpenSans-Regular",        font-files("OpenSans-Regular.ttf"));
+
+@font-face {
+  font-family: 'MyriadPro-LightCond';
+  src: url("/fonts/MyriadPro-LightCond.otf");
+}
+@font-face {
+  font-family: 'MyriadPro-SemiboldCond';
+  src:  url("/fonts/MyriadPro-SemiboldCond.otf");
+}
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src:  url("/fonts/OpenSans-Bold.ttf");
+}
+@font-face {
+  font-family: 'OpenSans-Light';
+  src:  url("/fonts/OpenSans-Light.ttf");
+}
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src:  url("/fonts/OpenSans-Regular.ttf");
+}
+
 
 
 %font__size--xlarge {
@@ -44,8 +121,8 @@ p {
   font-size:2.33em;
   line-height: 2em;
   line-height: 1.1em;
-  margin-bottom:0.7em;
-  margin-top:0.23em;
+//  margin-bottom:0.7em;
+//  margin-top:0.23em;
   @media #{$medium-up} { font-size:4.5em; }
   @media #{$large-up}  { font-size:4.5em; }
 }
@@ -119,7 +196,7 @@ section.rowWrapper {
 
 %btn__arrow--down {
   display:inline-block;
-  background: transparent url("http://launchr.pl/goat-in-spa/gfx/1_strzalkaD.png") center center no-repeat;
+  background: transparent url("#{$dir_GFX}1_strzalkaD.png") center center no-repeat;
   background-size: 50%;
   -webkit-animation: pulsate 1s ease-out;
   -webkit-animation-iteration-count: infinite;
@@ -133,6 +210,77 @@ section.rowWrapper {
   100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
 }
 
+
+/*========================================================================
+  Mixin             :   Slier options
+  Version:          :   v1.0
+  Updated:          :   03/09/2014
+
+  @position         : Border position (top/bottom/left/right)
+  @color            : Color
+  @width            : Width (3px, 6em, etc.)
+  @style            : Solid, double etc. (!OPTIONAL)
+
+  This mixin put border in the position.
+
+=========================================================================*/
+%rsBulletsBottom {
+  position: relative;
+//  padding:10px 0px;
+}
+
+// Position changed in app.js
+%rsBulletsTop {
+  position: relative !important;
+//  padding:0.6em 0px;
+}
+
+/*========================================================================
+  Mixin             :   SECTIONS
+  Version:          :   v1.0
+  Updated:          :   03/09/2014
+
+  @position         : Border position (top/bottom/left/right)
+  @color            : Color
+  @width            : Width (3px, 6em, etc.)
+  @style            : Solid, double etc. (!OPTIONAL)
+
+  This mixin put border in the position.
+
+=========================================================================*/
+
+@mixin setSectionMobile( $padding: 0, $ignore: false){
+  @if $allowMarginsMobile == true {
+    @if $padding != 0 {
+      padding:$padding;
+    }
+  }
+  @else if $ignore == true {
+    padding:$padding;
+  }
+}
+@mixin setSectionTablet( $padding: 0, $ignore: false){
+  @if $allowMarginsTablet == true {
+    @if $padding != 0 {
+      @media #{$medium-up} {
+        padding:$padding;
+      }
+    }
+  }
+  @else if $ignore == true {
+    padding:$padding;
+  }
+}
+@mixin setSectionPc( $padding: 0, $ignore: false){
+  @if $allowMarginsPc == true {
+    @if $padding != 0 {
+      @media #{$large-up} { padding:$padding; }
+    }
+  }
+  @else if $ignore == true {
+    padding:$padding;
+  }
+}
 
 /*========================================================================
   Mixin             :   OUTLIER
@@ -149,6 +297,53 @@ section.rowWrapper {
 =========================================================================*/
 @mixin putBorder($position, $color, $width, $style: solid) {
   border-#{$position}: $width $style $color;
+}
+
+/*========================================================================
+  Mixin             :   THROW-UP
+  Version:          :   v1.0
+  Updated:          :   04/09/2014
+
+  @position         : Insert background image under condition
+  @bgColor          : Background color
+  @filename         : Background image filename
+  @position         : background-position
+
+  This mixin put background image into any container under condition
+
+=========================================================================*/
+@mixin putSectionImage($bgColor, $filename, $filename2, $position, $position2){
+  @if $graphicMode == true {
+    background-color:$bgColor;
+    @if $position2 != "" {
+      background-image: url("#{$dir_GFX}#{$filename}"), url("#{$dir_GFX}#{$filename2}");
+      background-position: $position, $position2;
+    }
+    @else {
+      background-image: url("#{$dir_GFX}#{$filename}");
+      background-position: $position;
+    }
+    background-repeat:no-repeat;
+  }
+}
+
+/*========================================================================
+  Mixin             :   SPACE BETWEEN SECTIONS
+  Version:          :   v1.0
+  Updated:          :   03/09/2014
+
+  @position         : Border position (top/bottom/left/right)
+  @color            : Color
+  @width            : Width (3px, 6em, etc.)
+  @style            : Solid, double etc. (!OPTIONAL)
+
+  This mixin put border in the position.
+
+=========================================================================*/
+@mixin setSpace($padding) {
+  @if $allowMargins == true {
+    padding:$padding;
+  }
 }
 
 /*========================================================================

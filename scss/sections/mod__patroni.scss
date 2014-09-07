@@ -18,25 +18,38 @@
 
 =========================================================================*/
 
-$shape-height: 459px;
-$shape-width: 2600px;
-
 // Misja
 .section__patroni {
-  background:$background-color;
 
-
+  //---------------------------------------------------------------
+  // Media Queries
+  //---------------------------------------------------------------
   @media #{$medium-up} { }
 
+  //---------------------------------------------------------------
+  // General look
+  //---------------------------------------------------------------
+  background:$background-color;
   h1,h2,h3,h4,h5,h6 { color:$blue5-color; }
 
   .row {
-    padding-bottom:5em;
+    @include setSectionMobile(5em);
   }
 
-  // Styles
+  // ---------------------------------------------------------------
+  // SECTION's header
+  //---------------------------------------------------------------
   .section__header {
-    .section__tile {
+    // MQ
+    @media #{$medium-up} {
+      @include setSectionTablet(0.8rem 2em 14em 2em);
+    }
+    @media #{$large-up} {
+      @include setSectionTablet(0 0 6em 0);
+    }
+
+    // Style
+    .section__title {
       @extend %font__size--large;
     }
     .section__subtitle {
@@ -47,12 +60,7 @@ $shape-width: 2600px;
       @include putBorder  (bottom, $blue6-color, 1px);
     }
 
-    @media #{$medium-up} {
-      padding:0.8rem 2em 14em 2em;
-    }
-    @media #{$large-up} {
-      padding-bottom:6em;
-    }
+
   }
 }
 

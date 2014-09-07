@@ -18,71 +18,59 @@
 
 =========================================================================*/
 
-// Misja
+// Strona głowna
 .section__home {
 
-  // LAYOUT --------------------------
-  display: table;
-  border-collapse:collapse;
-  min-height: 100% !important;
-  min-width:100%;
+  //---------------------------------------------------------------
+  // Media Queries
+  //---------------------------------------------------------------
+  @media #{$medium-up}       { background-size: 60%; }
+  @media #{$large-up}        { background-size: 60%; }
+
+  //---------------------------------------------------------------
+  // General look
+  //---------------------------------------------------------------
+  @extend                    %maxHeight;
+  @include                   putSectionImage($background-color,"1_motyw.png","", top left,"");
+  background-size:           60%;
 
   // Rows
-  .row--tr {
-    display:table-row;
-
-    &:nth-of-type(1){
-      .column--td{
-        //        display: table-cell;
-        height:45%;
-        min-height:45px;
-        width:100%;
-      }
-    }
-
-    &:nth-of-type(2){
-      .column--td{
-        //        display: table-cell;
-        height:55%;
-        width:100%;
-
-      }
-    }
+  .row {
+    &.row-1 { height:        40%;}
+    &.row-2 { height:        48%;}
   }
-
-  // BACKGROUND --------------------------
-  background:transparent url("http://launchr.pl/goat-in-spa/gfx/1_motyw.png") top left no-repeat;
-  background-size: 60%;
-  @media #{$medium-up} { background-size: 60%; }
-  @media #{$large-up}  { background-size: 60%; }
 
   // Logotyp
   .fundacja__logo {
     .logo {
-      position: absolute;
-      top:1rem;
-      right:1rem;
-      width:45%;
-      max-width:155px;
-      @media #{$medium-up} { width:180px; }
-      @media #{$large-up} { width:231px; }
+      @media #{$medium-up}  { width:180px; }
+      @media #{$large-up}   { width:231px; }
+      position:             absolute;
+      top:                  1rem;
+      right:                1rem;
+      width:                45%;
+      max-width:            155px;
     }
   }
 
-  // Header
+  // ---------------------------------------------------------------
+  // SECTION's header
+  //---------------------------------------------------------------
   .section__header {
     .section__title {
-      text-transform: uppercase;
-      @extend %font__size--xlarge;
-      @include putBorder(top, $blue4-color, 2px);
-      @include putBorder(bottom, $blue4-color, 2px);
+      text-transform:       uppercase;
+      @extend               %font__size--xlarge;
+      @include              putBorder(top, $blue4-color, 2px);
+      @include              putBorder(bottom, $blue4-color, 2px);
     }
   }
 
-  // Content
+  // ---------------------------------------------------------------
+  // SECTION's main content
+  //---------------------------------------------------------------
   .section__content { }
 
-  // Buttom
+  // Button
   .btn__arrow--down {
     @extend %btn__arrow--down;
     position:absolute;
