@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Fundacja Koźmińskich</title>
       <link rel="stylesheet" href="stylesheets/app.css" />
-      <script src="bower_components/modernizr/modernizr.js"></script>
-      <script src="js/head.load.min.js"></script>
+      <script src="js/require.js"></script>
+      <script src="js/app.js"></script>
   </head>
   <body id="home">
 
@@ -1593,87 +1593,6 @@
         </section>
 
     </div>
-
-
-
-  <!--<script src="/bower_components/jquery/dist/jquery.min.js"></script>-->
-  <!--<script src="/bower_components/royal_slider/royalslider/jquery.royalslider.min.js"></script>-->
-  <!--<script src="/bower_components/foundation/js/foundation.min.js"></script>-->
-  <!--<script src="/js/webfont.js"></script>-->
-  <!--<script src="/js/app.js"></script>-->
-
-
-
-  <script>
-
-
-
-//      // you can also give scripts a name (label)
-              head.load(
-                      { jquery: "bower_components/jquery/dist/jquery.min.js" },
-                      { royalSlider: "bower_components/royal_slider/royalslider/jquery.royalslider.min.js" },
-                      { foundation: "bower_components/foundation/js/foundation.min.js" },
-                      { webfont: "js/webfont.js" },
-                      { main: "js/app.js" },
-                      function() {
-                          $(".xx").hide();
-                          $(".news__more").click(function() {
-                              event.preventDefault();
-                              var that = $(this);
-                              that.prev().toggle("fast", function() {
-                                  that.text($(this).is(':visible') ? "Ukryj" : "Czytaj więcej");
-                              });
-                          });
-
-                          var windowH = $(window).height();
-                          var wrapperH = $('#wrapper').height();
-                          if(windowH > wrapperH) {
-                              $('#globalContainer').css({'height':($(window).height())+'px'});
-                          }
-                          $(window).resize(function(){
-                              var windowH = $(window).height();
-                              var wrapperH = $('#section-1').height();
-                              var differenceH = windowH - wrapperH;
-                              var newH = wrapperH + differenceH;
-                              var truecontentH = $('#truecontent').height();
-                              if(windowH > truecontentH) {
-                                  $('#section-1').css('height', (newH)+'px');
-                              }
-
-                          })
-                      });
-//      //
-//              // Labels are usually used in conjuntion with: head.ready()
-//              head.ready("jquery", function() {
-//                  console.log("jQuery loaded");
-//              });
-//              head.ready("royalSlider", function() {
-//                  console.log("royalSlider loaded");
-//              });
-//              head.ready("foundation", function() {
-//                  console.log("Foundation loaded");
-//              });
-//              head.ready("webfont", function() {
-//                  console.log("WebFontLoader loaded");
-//              });
-//              head.ready("main", function() {
-//                  console.log("Main.js loaded");
-//              });
-
-
-      //        head.ready(["bower_components/jquery/dist/jquery.min.js", "file2.js"], function() {
-      //            // execute this function, only when file1.js AND file2.js has finished loading
-      //            // used in conjunction with head.load("file1.js", "file2.js");
-      //        });
-      //        head.load(
-      //                "bower_components/jquery/dist/jquery.min.js",
-      //                "bower_components/royal_slider/royalslider/jquery.royalslider.min.js",
-      //                "bower_components/foundation/js/foundation.min.js",
-      //                "js/webfont.js",
-      //                "js/app.js");
-  </script>
-
-
 
   </body>
 </html>
