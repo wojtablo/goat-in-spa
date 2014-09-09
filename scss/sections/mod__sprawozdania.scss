@@ -93,38 +93,34 @@
     }
   }
 
-}
-
-@media #{$small-only} {
-  .section__sprawozdania {
-    border-bottom:1.3em solid $green2-color;
+  @media #{$small-only} {
+    .section__sprawozdania {
+      border-bottom:1.3em solid $green2-color;
+    }
   }
-}
 
-@media #{$medium-up} {
-
-  .section__content {
-    .column__header {
-      display: block;
-      background: transparent url("#{$dir_GFX}8_ikonki.png") top center no-repeat;
-      background-size: 22%;
-      width: auto;
-      height: 80px;
-    }
-    .columns.medium-6{
-      background:#a8c72e url("#{$dir_GFX}8_tlo_szklo_szklo.png") top right no-repeat;
-      margin-top:-0.6rem;
-    }
-    ul.list__files {
-      .list__item {
-        padding-left: 30px;
-        background-size: 6% !important;
+  @media #{$medium-up} {
+    .section__content {
+      .column__header {
+        display: block;
+        background: transparent url("#{$dir_GFX}8_ikonki.png") top center no-repeat;
+        background-size: 22%;
+        width: auto;
+        height: 80px;
+      }
+      .columns.medium-6{
+        background:#a8c72e url("#{$dir_GFX}8_tlo_szklo_szklo.png") top right no-repeat;
+        margin-top:-0.6rem;
+      }
+      ul.list__files {
+        .list__item {
+          padding-left: 30px;
+          background-size: 6% !important;
+        }
       }
     }
   }
 
-}
-
-@media #{$large-up} {
+  @media #{$large-up} {  }
 
 }

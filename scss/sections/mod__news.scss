@@ -25,7 +25,7 @@
   // Media Queries
   //---------------------------------------------------------------
   @media #{$medium-up} {
-    @include setSectionMobile(14em 0);
+//    @include setSectionMobile(14em 0);
     @include putSectionImage($background-color,"4_motywG.png","2_motywD3.png", bottom left, top right);
   }
 
@@ -34,7 +34,13 @@
   //---------------------------------------------------------------
   h1,h2,h3,h4,h5,h6 { color:$blue5-color; }
   background-color: $background-color;
-  @include setSectionMobile(0 0 3em 0);
+
+  // Section margines
+  > .row {
+    @include setSectionMobile(2em 0 2em 0);
+    @include setSectionTablet(21em 0 14em 0);
+    @include setSectionPc(14em 0 0.5em 0);
+  }
 
   // ---------------------------------------------------------------
   // SECTION's header
@@ -42,7 +48,7 @@
   .section__header {
     .section__title {
       @extend %font__size--large;
-      margin:0.25em !important;
+//      margin:0.25em !important;
     }
   }
 
@@ -112,7 +118,7 @@
     }
     .content-slider-bg {
       width: 86%;
-      padding: 24px 7%;
+//      padding: 24px 7%;
       background: #eee;
     }
   }

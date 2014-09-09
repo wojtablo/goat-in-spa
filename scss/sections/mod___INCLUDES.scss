@@ -1,6 +1,6 @@
 @import "../settings";
 @import "../foundation/components/grid";
-@import "compass/css3/font-face";
+@import "compass/css3";
 
 
 .wf-loading{
@@ -56,7 +56,7 @@ html, body, #globalContainer {
   height: 100%;
 }
 
-$graphicMode          :   false;
+$graphicMode          :   true;
 $allowMargins         :   true;
 $allowMarginsMobile   :   $allowMargins;
 $allowMarginsTablet   :   $allowMarginsMobile;
@@ -120,7 +120,7 @@ p {
   font-size:2em;
 //  line-height: 2em;
   line-height: 1.1em;
-  margin:1.2em 0 0.9em;
+  margin:0.5em 0 0.9em;
   @media #{$medium-up} {
     font-size:2.6em;
   }
@@ -133,10 +133,18 @@ p {
 %font__size--medium {
   font-family:"OpenSans-Regular";
   font-size:1.8em; line-height:1.15em;
-  @media #{$medium-up} { font-size:3.1em; line-height:1.25em;}
-  @media #{$large-up}  { font-size:3.2em; line-height:1.15em }
+  @media #{$medium-up} { font-size:2.6em; line-height:1.25em;}
+  @media #{$large-up}  { font-size:2.8em; line-height:1.15em }
 }
 
+// Menu
+.top-bar {
+  .menu-icon {
+    * {
+      color:$font-color !important;
+    }
+  }
+}
 
 
 /*------------------------------------*\
@@ -184,6 +192,11 @@ section.rowWrapper {
   color:#fff;
 }
 
+%partner--hover {
+  @include box-shadow(#000000 0px 0px 25px);
+
+}
+
 .gps_ring {
   border: 3px solid #999;
   -webkit-border-radius: 30px;
@@ -213,6 +226,19 @@ section.rowWrapper {
   100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
 }
 
+/*------------------------------------*\
+    TOP BAR
+\*------------------------------------*/
+#top--nav {
+  opacity:0.92;
+  .title-area {
+    h1 {
+      img {
+        height:51px;
+      }
+    }
+  }
+}
 
 /*========================================================================
   Mixin             :   Slier options
@@ -408,7 +434,7 @@ This mixin put border in the position.
   @else if $position == "left"{ left:$margin; }
   margin:0px;
   padding:0px;
-  z-index:999;
+  z-index:9;
 
   img {
     display: block;

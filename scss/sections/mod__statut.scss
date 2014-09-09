@@ -34,7 +34,13 @@
   //---------------------------------------------------------------
   h1,h2,h3,h4,h5,h6 { color:#fff; }
   @extend %row--green;
-  @include setSectionMobile(2em 0 0 0);
+
+  // Section margines
+  .row {
+    @include setSectionMobile(1em 0 0 0);
+    @include setSectionTablet(0 0 0 0);
+    @include setSectionPc(0 0 0 0);
+  }
 
 
   // ---------------------------------------------------------------

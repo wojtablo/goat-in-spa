@@ -20,18 +20,22 @@
    "foundation/components/inline-lists",
    "foundation/components/tables",
    "foundation/components/reveal",
+   "foundation/components/tabs",
+   "foundation/components/top-bar",
    "foundation/components/type",
    "foundation/components/pricing-tables",
    "foundation/components/visibility";
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-  GENERAL LOOK & FEEL ..
+  GENERAL LOOK & FEEL ♛
   tylko globalne style, pozostałe umieścić w odpowiednich modułach
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 #globalContainer {
     background-color:$background-color;
 }
+
+
 
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -81,3 +85,17 @@ section {
 @import "sections/mod__podatek";
 @import "sections/mod__kontakt";
 @import "sections/mod__footer";
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  TOP MENU
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+#mobile-header {
+  display: none;
+}
+@media only screen and (max-width: 767px){
+  #mobile-header {
+    display: block;
+  }
+}

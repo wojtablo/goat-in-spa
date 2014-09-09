@@ -36,9 +36,9 @@
 
   // Section margines
   .row {
-    @include setSectionMobile(0 0 5em 0);
-    @include setSectionTablet(0 0 5em 0);
-    @include setSectionPc(0 0 5em 0);
+    @include setSectionMobile(0 0 3em 0);
+    @include setSectionTablet(2em 0 12.5em 0);
+    @include setSectionPc(0 0 15.5em 0);
   }
 
   // ---------------------------------------------------------------
@@ -50,14 +50,25 @@
     }
     .section__subtitle {
       //MQ
-      @media #{$medium-up} { @include setSpace(0.8rem 2em 14em 2em); }
-      @media #{$large-up}  { @include setSpace(0 0 6em 0); }
+      @media #{$medium-up} { @include setSpace(0.8em 2em 1em 2em); }
+      @media #{$large-up}  { @include setSpace(1em 0 1em 0); }
       //Styles
-      &::first-line        { color:$blue3-color; }
+      .first__line        { color:$blue3-color; }
       padding:             0.8rem 0px;
       @extend              %font__size--medium;
-      @include putBorder   (top, $blue3-color, 2px);
-      @include putBorder   (bottom, $blue6-color, 1px);
+//      @include putBorder   (top, $blue3-color, 2px);
+//      @include putBorder   (bottom, $blue6-color, 1px);
+    }
+
+    .sep {
+      &.sep--top {
+        @include putSeparator( $blue3-color, 60%);
+        margin-bottom:0.5em;
+      }
+      &.sep--bottom {
+        @include putSeparator( $blue3-color, 40%);
+        margin-top:0.5em;
+      }
     }
   }
 }

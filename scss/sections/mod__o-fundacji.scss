@@ -55,5 +55,16 @@
   // ---------------------------------------------------------------
   // SECTION's main content
   //---------------------------------------------------------------
-  .section__content { }
+  .section__content {
+    @media #{$medium-up} {
+      img {
+        max-height:180px;
+      }
+    }
+    @media #{$large-up} {
+      img {
+        max-height:350px;
+      }
+    }
+  }
 }

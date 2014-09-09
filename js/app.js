@@ -1,6 +1,5 @@
 // Foundation JavaScript
 // Documentation can be found at: http://foundation.zurb.com/docs
-$(document).foundation();
 
 WebFont.load({
     custom: {
@@ -12,7 +11,29 @@ WebFont.load({
 });
 
 
+
+
+
 jQuery(document).ready(function($) {
+
+    $(document).foundation({
+        reveal : {
+            animation_speed: 500
+        },
+        equalizer : {
+            // Specify if Equalizer should make elements equal height once they become stacked.
+            equalize_on_stack: true
+        },
+        tooltip : {
+            disable_for_touch: true
+        },
+        topbar : {
+            scrolltop: false,
+            back_text: 	'Wróć'
+        }
+    });
+
+
     // Please note that autoHeight option has some conflicts with options like imageScaleMode, imageAlignCenter and autoScaleSlider
     // it's recommended to disable them when using autoHeight module
 
@@ -49,12 +70,6 @@ jQuery(document).ready(function($) {
 //        })
 //    });
 
-    $(window).bind('resize', function(){
-
-
-    });
-
-
 
 
     $('#slider-statut').royalSlider({
@@ -78,6 +93,12 @@ jQuery(document).ready(function($) {
     //var sliderStatut = $('#slider-statut');
     //sliderStatut.prepend(sliderStatut.find('.rsNav'));
 
+
+
+    if(Modernizr.mq('only all and (min-width: 720px)')){
+//        console.log("removed");
+//        $( ".__events--slide" ).remove();
+    }
     if(Modernizr.mq('only all and (max-width: 720px)')){
         $('#content-slider-2').royalSlider({
             autoHeight: true,
@@ -96,6 +117,24 @@ jQuery(document).ready(function($) {
             navigateByClick: false,
             transitionSpeed:300
         });
+        $('#slider-dzialalnosc').royalSlider({
+            autoHeight: true,
+            arrowsNav: true,
+            fadeinLoadedSlide: false,
+            arrowsNavAutoHide: true,
+            controlNavigationSpacing: 0,
+            controlNavigation: 'bullets',
+            imageScaleMode: 'none',
+            imageAlignCenter:false,
+            loop: true,
+            loopRewind: true,
+            numImagesToPreload: 6,
+            keyboardNavEnabled: true,
+            usePreloader: false,
+            navigateByClick: false,
+            transitionSpeed:300
+        });
+
     }
 
     if(Modernizr.mq('only all and (max-width: 920px)')){

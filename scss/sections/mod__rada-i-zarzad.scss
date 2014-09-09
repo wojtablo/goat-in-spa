@@ -32,8 +32,12 @@
   //---------------------------------------------------------------
   h1,h2,h3,h4,h5,h6 { color:$blue5-color; }
   background-color: $background-color;
-  .row {
-    @include setSectionMobile(4em 0);
+
+  // Section margines
+  > .row {
+    @include setSectionMobile(0 0 0 0);
+    @include setSectionTablet(7em 0 2em 0);
+    @include setSectionPc(7em 0 2em 0);
   }
 
   // ---------------------------------------------------------------
@@ -48,16 +52,66 @@
   // SECTION's main content
   //---------------------------------------------------------------
   .section__content {
-
-    .members__group {
-      .member {
-        .member__box {
-          img {
-            display:none;
-            @media #{$medium-up} {
-              display: block;
+    .extra__label {
+      font-family:"OpenSans-Light";
+      font-size:1.8em;
+      span {
+        color: #8fc6d6;
+      }
+    }
+    .tabs {
+      dd {
+        a {
+          padding:0 !important;
+        }
+        a.person__image {
+          display:block;
+          &:hover {
+            img {
+              display:block;
+              @extend %partner--hover;
             }
           }
+        }
+      }
+    }
+
+    .columns {
+      position: relative;
+    }
+
+    .row__zarzad {
+      .columns:nth-of-type(2){
+        .extra__label {
+          position: absolute;
+          top: 70px;
+        }
+      }
+    }
+    .row__rada {
+      .columns:nth-of-type(2){
+        .extra__label {
+          position: absolute;
+          top: 40px;
+        }
+      }
+    }
+
+    // Grid
+    .row__decoration {
+      .columns {
+        background:transparent url("#{$dir_GFX}2_time_line.jpg") center center repeat-x;
+        padding-right:0px;
+        a {
+          margin-top:30%;
+        }
+        &:first-of-type{
+          padding-left:0px;
+          a {
+            margin-top:0%;
+          }
+        }
+        &:last-of-type{
         }
       }
     }
