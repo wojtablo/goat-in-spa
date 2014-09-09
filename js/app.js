@@ -4,7 +4,7 @@
 WebFont.load({
     custom: {
         families: ['MyriadPro-LightCond','MyriadPro-SemiboldCond,OpenSans-Bold,OpenSans-Light,OpenSans-Regular'],
-        urls: ['/stylesheets/app.css']
+        urls: ['/fundacja/stylesheets/app.css']
     },
     timeout: 5000
 

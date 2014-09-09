@@ -18,21 +18,32 @@
 
 =========================================================================*/
 
+//html {
+//  background: $background-color;
+//}
+
+
+html {
+  background:$background-color;
+  @include putSectionImage($background-color,"1_motyw.png","", top left,"");
+  background-size:           60%;
+}
+
 // Strona głowna
 .section__home {
 
   //---------------------------------------------------------------
   // Media Queries
   //---------------------------------------------------------------
-  @media #{$medium-up}       { background-size: 60%; }
-  @media #{$large-up}        { background-size: 60%; }
+//  @media #{$medium-up}       { background-size: 60%; }
+//  @media #{$large-up}        { background-size: 60%; }
 
   //---------------------------------------------------------------
   // General look
   //---------------------------------------------------------------
-  @extend                    %maxHeight;
-  @include                   putSectionImage($background-color,"1_motyw.png","", top left,"");
-  background-size:           60%;
+//  @extend                    %maxHeight;
+//  @include                   putSectionImage($background-color,"1_motyw.png","", top left,"");
+//  background-size:           60%;
 
   // Rows
   .row {
