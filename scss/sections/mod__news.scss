@@ -48,21 +48,37 @@
   .section__header {
     .section__title {
       @extend %font__size--large;
-//      margin:0.25em !important;
+    }
+    .section__subtitle {
+      @extend %font__size--medium;
+      padding-bottom:2em;
+      span {
+        font-family:"OpenSans-Regular" !important;
+        color:$blue3-color;
+      }
+    }
+    .sep {
+      &.sep--top {
+        @include putSeparator( $blue3-color, 60%);
+        margin-bottom:0.5em;
+      }
+      &.sep--bottom {
+        @include putSeparator( $blue3-color, 40%);
+        margin-top:0.5em;
+      }
     }
   }
 
 
   .section__content {
     //Slider
-    .slide__title {}
+    .section__title {}
     .slide__subTitle {
       font-family: "OpenSans-Regular";
       color: $blue5-color;
       font-size:1.2em;
       line-height: 1.2em;
       padding-bottom:0.6em;
-      @include putBorder(bottom, $blue5-color, 1px)
     }
     .slide__intro {
       font-family: "OpenSans-Light";
