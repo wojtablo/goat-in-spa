@@ -139,16 +139,16 @@ requirejs(["jquery.min",
 
 
         // Hide address bar on mobile devices (except if #hash present, so we don't mess up deep linking).
-        if (Modernizr.touch && !window.location.hash) {
-            $(window).load(function () {
-                setTimeout(function () {
-                    // At load, if user hasn't scrolled more than 20px or so...
-                    if( $(window).scrollTop() < 20 ) {
-                        window.scrollTo(0, 1);
-                    }
-                }, 0);
-            });
-        }
+        //if (Modernizr.touch && !window.location.hash) {
+        //    $(window).load(function () {
+        //        setTimeout(function () {
+        //            // At load, if user hasn't scrolled more than 20px or so...
+        //            if( $(window).scrollTop() < 20 ) {
+        //                window.scrollTo(0, 1);
+        //            }
+        //        }, 0);
+        //    });
+        //}
 
         // UNCOMMENT THE LINE YOU WANT BELOW IF YOU WANT IE8 SUPPORT AND ARE USING .block-grids
         // $('.block-grid.two-up>li:nth-child(2n+1)').css({clear: 'both'});
