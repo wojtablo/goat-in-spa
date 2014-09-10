@@ -4,16 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Fundacja Koźmińskich</title>
-      <link rel="stylesheet" href="stylesheets/app.css" />
-      <script src="js/require.js"></script>
-      <script src="js/app.js"></script>
+    <link rel="stylesheet" href="stylesheets/app.css" />
+
   </head>
   <body id="home">
 
-
-
-  <div id="globalContainer">
-
+      <div id="globalContainer">
 
         <!-- Sekcja 1. Strona powitalna -->
         <section id="section-1" class="rowWrapper rowSlide section__home">
@@ -326,13 +322,13 @@
                          <div class="row collapse row__decoration" data-equalizer>
                              <dl class="tabs" data-tab>
                                  <dd  data-equalizer-watch class="active small-12 medium-3 columns">
-                                     <a class="hide-for-medium-up" href="#" data-reveal-id="patron-1aa"  >Prof. Leon Koźmiński</a>
-                                     <a class="person__image hidden-for-small-only" data-reveal-id="patron-1aa" ><img src="gfx/5_prezes.png" alt="" /></a>
+                                     <a class="hide-for-medium-up" href="#" data-reveal-id="rada1"  >Prof. Leon Koźmiński</a>
+                                     <a class="person__image hidden-for-small-only" data-reveal-id="rada1" href="#" ><img src="gfx/5_prezes.png" alt="" /></a>
                                  </dd>
                                  <dd  data-equalizer-watch class="small-12 medium-1 columns">&nbsp;</dd>
                                  <dd  data-equalizer-watch class="small-12 medium-2 columns">
-                                     <a class="hide-for-medium-up" href="#" data-reveal-id="patron-1aa"  >Prof. Leon Koźmiński</a>
-                                     <a class="person__image hidden-for-small-only" data-reveal-id="patron-1aa" ><img src="gfx/5_czlonek_M.jpg" alt="" /></a>
+                                     <a class="hide-for-medium-up" href="#" data-reveal-id="rada1"  >Prof. Leon Koźmiński</a>
+                                     <a class="person__image hidden-for-small-only" data-reveal-id="rada1" ><img src="gfx/5_czlonek_M.jpg" alt="" /></a>
                                  </dd>
                                  <dd  data-equalizer-watch class="small-12 medium-2 columns">
                                      <a class="hide-for-medium-up" href="#" data-reveal-id="patron-2aa">Małgorzata Heit</a>
@@ -349,13 +345,13 @@
                              </dl>
                          </div>
                          <div class="tabs-content text-center">
-                             <div class="content" id="panel1aa">
+                             <div class="content" id="panel1rada">
                                  <h2>Prof. Leon Koźmiński</h2>
                                  <p><strong>Wybór Prof. Leona Koźmińskiego na patrona fundacji nie był przypadkowy. Profesor urodził się 1904 roku na Ukrainie. Szkołę średnią ukończył w Lozannie, w Szwajcarii. Następnie studiował w kraju, w Szkole Głównej Handlowej, w której uzyskał magisterium.</strong></p>
                                  <p>Stopień doktora obronił na Sorbonie, w Paryżu, w wieku 26 lat. Był to rok 1929. Habilitował się w latach 30-tych. Był docentem w SGH specjalizującym się w organizacji i technice handlu. Uczył tam też języka francuskiego. </p>
                                  <p>This is the first panel of the basic tab example. This is the first panel of the basic tab example.</p>
-                                 <a class="slide--more" data-reveal-id="patron-1aa" href="#">Szczegóły</a>
-                                 <div id="patron-1aa" class="reveal-modal member__details" data-reveal>
+                                 <a class="slide--more" data-reveal-id="rada1" href="#">Szczegóły</a>
+                                 <div id="rada1" class="reveal-modal member__details" data-reveal>
                                      <h3 class="slide__subTitle">Prof. Leon Koźmiński</h3>
                                      <figure class="text-center">
                                          <img class="hide-for-small-only rsImg"
@@ -620,8 +616,8 @@
                         <div class="row collapse row__decoration" data-equalizer>
                             <dl class="tabs" data-tab>
                                 <dd  data-equalizer-watch class="active small-12 medium-3 columns">
-                                    <a class="hide-for-medium-up" href="#" data-reveal-id="patron-1aa"  >Prof. Leon Koźmiński</a>
-                                    <a class="person__image hidden-for-small-only" data-reveal-id="patron-1aa" ><img src="gfx/5_prezes.png" alt="" /></a>
+                                    <a class="hide-for-medium-up" href="#" data-reveal-id="rada1"  >Prof. Leon Koźmiński</a>
+                                    <a class="person__image hidden-for-small-only" data-reveal-id="rada1" ><img src="gfx/5_prezes.png" alt="" /></a>
                                 </dd>
                                 <dd  data-equalizer-watch class="small-12 medium-3 columns">&nbsp;</dd>
                                 <dd  data-equalizer-watch class="small-12 medium-2 columns">
@@ -1592,7 +1588,28 @@
             </div>
         </section>
 
-    </div>
+      </div>
 
+      <script>
+          /**
+           * Self executing function to determine viewport height and set it as a value for welcome screen section
+           */
+          (function() {
+              var oDiv = document.getElementById("home");
+              var welcomeScreen = document.getElementById("section-1");
+              var sOriginalOverflow = oDiv.style.overflow;
+              var sOriginalHeight = oDiv.style.height;
+              oDiv.style.overflow = "";
+              oDiv.style.height = "";
+              var height = oDiv.offsetHeight;
+              oDiv.style.height = sOriginalHeight;
+              oDiv.style.overflow = sOriginalOverflow;
+              welcomeScreen.setAttribute("style","height:"+height+"px;");
+              console.log("Real height is " + height);
+          })();
+      </script>
+
+      <script src="js/require.js"></script>
+      <script src="js/app.js"></script>
   </body>
 </html>

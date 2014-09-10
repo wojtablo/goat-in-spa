@@ -60,12 +60,12 @@ $allowMarginsMobile   :   $allowMargins;
 $allowMarginsTablet   :   $allowMarginsMobile;
 $allowMarginsPc       :   $allowMarginsMobile;
 
-// Live
+// Live defaults
 $dir_GFX              :   "http://beta.kozminski.edu.pl/fundacja/gfx/";
-$dir_FONTS            :   "http://beta.kozminski.edu.pl/fundacja/fonts/";
+//$dir_FONTS            :   "http://beta.kozminski.edu.pl/fundacja/fonts/";
 
-// Local
-//$dir_FONTS            :   "/fonts/";
+// Local defaults
+$dir_FONTS            :   "/fonts/";
 
 /*------------------------------------*\
     FONTS
