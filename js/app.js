@@ -14,16 +14,14 @@ require.config({
         'modernizr': 'modernizr',
         'royalslider': 'jquery.royalslider.min',
         'sliders' : 'jquery.contentsliders',
-        'webfontload' :  'webfont',
-        'handlebars' : 'handlebars.min'
+        'webfontload' :  'webfont'
     },
     shim: {
         'foundation.core': {
             deps: [
                 'jquery',
                 'modernizr',
-                'webfont',
-                'handlebars'
+                'webfont'
             ],
             exports: 'Foundation'
         },
@@ -56,8 +54,7 @@ require.config({
     }
 });
 
-requirejs([ "handlebars",
-    "jquery.min",
+requirejs([ "jquery.min",
     "jquery.cookie",
     "foundation.core",
     "sliders"], function ($) {
