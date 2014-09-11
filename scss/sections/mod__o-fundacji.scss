@@ -3,8 +3,8 @@
 /*========================================================================
   Section           :   O Fundacji
   Functionality     :   Text + image
-  Version:          :   v1.0
-  Updated:          :   02/09/2014
+  Version:          :   v1.1
+  Updated:          :   11/09/2014
 
   Każda sekcja powinna mieć możliwie schematyczną budową.
   Traktujemy sekcje jako swego rodzaju boxy.
@@ -26,22 +26,45 @@
   //---------------------------------------------------------------
   @media #{$medium-up} { }
 
+  // Section margines
+  .row__prefix {
+    @include setSectionMobile(0em 0 0em 0);
+    @include setSectionTablet(0em 0 0em 0);
+    @include setSectionPc(3.5em 0 4em 0);
+  }
+  .row {
+    @include setSectionMobile(0em 0 0em 0);
+    @include setSectionTablet(0em 0 0em 0);
+    @include setSectionPc(4em 0 4em 0);
+  }
+
+  border-bottom:solid 7em #138fbb;
+
   //---------------------------------------------------------------
   // General look
   //---------------------------------------------------------------
   h1,h2,h3,h4,h5,h6 { color:#fff; }
-  background-color: $background-color;
+  @include putSectionImage($background-color,"4_szklo.png","", "","",top right,"","","");
+  background-size:55% 100%;
   @extend %row--blue;
 
-  .row {
-    @include setSectionMobile(1em 0 1em 0);
-  }
 
-  .row__sufix,
-  .row__prefix {
-    background:#238AAF;
+
+  .row__sufix{
+    background:#138fbb;
 //    min-height:4em;
   }
+  .row__prefix{
+    background:#138fbb;
+  }
+
+  .sep {
+    &.sep--bottom {
+      @include putSeparator( #bae1ed, 60%);
+      margin:1em auto;
+    }
+  }
+
 
   // ---------------------------------------------------------------
   // SECTION's header
@@ -51,11 +74,23 @@
       @extend %font__size--large;
     }
   }
+  .row__prefix {
+    .section__header {
+      .section__title {
+        margin:0px !important;
+      }
+    }
+  }
 
   // ---------------------------------------------------------------
   // SECTION's main content
   //---------------------------------------------------------------
   .section__content {
+    p {
+      color:#bae1ed;
+      font-size:2.6em;
+      line-height:1.2em;
+    }
     @media #{$medium-up} {
       img {
         max-height:180px;
