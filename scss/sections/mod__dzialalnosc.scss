@@ -42,7 +42,7 @@
     .section__title {
       @extend %font__size--medium;
       font-family: "OpenSans-Regular" !important;
-      padding-bottom:2em;
+      padding-bottom:1em;
     }
   }
   // ---------------------------------------------------------------
@@ -192,6 +192,7 @@
       .__event {
         float:none !important;
         margin-top:-1px;
+        margin-bottom:0px !important;
 
 
         // Left side ----------------------------------------------

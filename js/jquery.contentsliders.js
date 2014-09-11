@@ -51,7 +51,7 @@ else {
 
 $('#slider-statut').royalSlider({
     autoHeight: true,
-    arrowsNav: true,
+    arrowsNav: false,
     fadeinLoadedSlide: false,
     arrowsNavAutoHide: true,
     controlNavigationSpacing: 0,
@@ -75,7 +75,7 @@ if (Modernizr.mq('only all and (min-width: 720px)')) {
 if (Modernizr.mq('only all and (max-width: 720px)')) {
     $('#content-slider-2').royalSlider({
         autoHeight: true,
-        arrowsNav: true,
+        arrowsNav: false,
         fadeinLoadedSlide: false,
         arrowsNavAutoHide: true,
         controlNavigationSpacing: 0,
@@ -92,7 +92,7 @@ if (Modernizr.mq('only all and (max-width: 720px)')) {
     });
     $('#slider-dzialalnosc').royalSlider({
         autoHeight: true,
-        arrowsNav: true,
+        arrowsNav: false,
         fadeinLoadedSlide: false,
         arrowsNavAutoHide: true,
         controlNavigationSpacing: 0,

@@ -53,6 +53,13 @@
 }
 
 
+html.wf-inactive {
+  body {
+    * {
+      font-family:Arial, sans-serif !important;
+    }
+  }
+}
 
 $graphicMode          :   true;
 $allowMargins         :   true;
@@ -120,7 +127,7 @@ p {
 
 %font__size--large {
   font-family:"OpenSans-Bold";
-  font-size:2em;
+  font-size:2.4em;
 //  line-height: 2em;
   line-height: 1.1em;
   margin:0.5em 0 0.9em;
