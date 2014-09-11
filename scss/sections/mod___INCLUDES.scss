@@ -380,12 +380,12 @@ This mixin put border in the position.
   This mixin put background image into any container under condition
 
 =========================================================================*/
-@mixin putSectionImage($bgColor, $filename, $filename2, $position, $position2){
+@mixin putSectionImage($bgColor, $filename, $filename2,$filename3,$filename4, $position, $position2, $position3, $position4){
   @if $graphicMode == true {
     background-color:$bgColor;
     @if $position2 != "" {
-      background-image: url("#{$dir_GFX}#{$filename}"), url("#{$dir_GFX}#{$filename2}");
-      background-position: $position, $position2;
+      background-image: url("#{$dir_GFX}#{$filename}"), url("#{$dir_GFX}#{$filename2}"), url("#{$dir_GFX}#{$filename3}"), url("#{$dir_GFX}#{$filename4}");
+      background-position: $position, $position2, $position3, $position4;
     }
     @else {
       background-image: url("#{$dir_GFX}#{$filename}");
@@ -497,5 +497,86 @@ This mixin put border in the position.
   }
   background-repeat: no-repeat;
   background-size: 25%;
+
+}
+
+
+/*========================================================================
+  Arrow navigation styles for some sliders
+
+  author: Wojciech Mikołajewski <wojciechmikolajewski@gmail.com>
+=========================================================================*/
+%put-sliderArrowsMain {
+  .visibleNearby {
+    width: 100%;
+    .rsSlide img {
+      //        opacity: 0.45;
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1);
+      margin-left:0px !important;
+    }
+    .rsActiveSlide img {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1);
+    }
+
+    // Arrows
+    $arrow-height:70px;
+    $arrow-width:70px;
+
+    .rsArrow {
+      height: 100%;
+      width: $arrow-width;
+      position: absolute;
+      display: block;
+      cursor: pointer;
+      z-index: 21;
+    }
+    .rsArrowIcn {
+      width: $arrow-width;
+      height: $arrow-height;
+      top: 30%;
+      left: 0;
+      margin-top:-$arrow-height;
+      margin-left: 0;
+      position: absolute;
+      cursor: pointer;
+      background-color: transparent;
+      *background-color: transparent;
+      border-radius: 2px;
+    }
+    .rsArrowIcn:hover {
+      background-color: transparent;
+    }
+
+    .rsArrowLeft {
+      left: -$arrow-width; top: 0;
+      .rsArrowIcn {
+        background: url('http://launchr.pl/goat-in-spa/gfx/3_strzalka.png');
+        background-size:$arrow-width;
+      }
+    }
+    .rsArrowRight {
+      right: -$arrow-width; top:0;
+      .rsArrowIcn {
+        background: url('http://launchr.pl/goat-in-spa/gfx/3_strzalka2.png');
+        background-size:$arrow-width;
+      }
+    }
+    .rsArrowDisabled {
+      .rsArrowIcn { opacity: .2; filter: alpha(opacity=20);  *display: none; }
+    }
+  }
 
 }

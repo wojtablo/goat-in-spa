@@ -25,7 +25,7 @@
   // Media Queries
   //---------------------------------------------------------------
   @media #{$medium-up} {
-    @include putSectionImage(transparent,"2_motywG2.png","", bottom right,"");
+    @include putSectionImage(transparent,"2_motywG2.png","", "","",bottom right,"","","");
   }
 
   //---------------------------------------------------------------
@@ -53,6 +53,7 @@
       //MQ
       @media #{$medium-up} { @include setSpace(0.8em 2em 1em 2em); }
       @media #{$large-up}  { @include setSpace(1em 0 1em 0); }
+
       //Styles
       .first__line        {
         font-family:"OpenSans-Regular" !important;

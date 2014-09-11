@@ -25,7 +25,7 @@
 
 html {
   background:$background-color;
-  @include putSectionImage($background-color,"1_motyw.png","", top left,"");
+  @include putSectionImage($background-color,"1_motyw.png","","","", top left,"","","");
   background-size:           60%;
 }
 

@@ -26,7 +26,7 @@
   //---------------------------------------------------------------
   @media #{$medium-up} {
 //    @include setSectionMobile(14em 0);
-    @include putSectionImage($background-color,"4_motywG.png","2_motywD3.png", bottom left, top right);
+    @include putSectionImage($background-color,"4_motywG.png","2_motywD3.png", "4_motywDs.png","", bottom left, top right, bottom right, bottom right );
   }
 
   //---------------------------------------------------------------
@@ -39,7 +39,7 @@
   > .row {
     @include setSectionMobile(2em 0 2em 0);
     @include setSectionTablet(21em 0 14em 0);
-    @include setSectionPc(14em 0 0.5em 0);
+    @include setSectionPc(14em 0 10.5em 0);
   }
 
   // Separator
@@ -107,7 +107,46 @@
         margin-bottom:0.5em;
       }
     }
+
+    // Reveal
+    .contentSlider.withRelativeReveal {
+      .slide__dateTime2 {
+        font-family:"OpenSans-Light";
+        font-size:1em;
+        border-bottom:1px solid $blue3-color;
+        display: inline-block;
+        margin-bottom:10px;
+      }
+      .slide__subTitle2 {
+        font-family:"OpenSans-Regular";
+        font-size:1.1em;
+      }
+      .rsImg2 {
+        float:left;
+        margin-right:4%;
+      }
+      .close-reveal-modal {
+        position:relative !important;
+        font-size:1em;
+        font-family:"OpenSans-Regular";
+        color:$blue3-color;
+        text-transform:lowercase;
+        float:right;
+        background:transparent url("#{$dir_GFX}9_strzalka.png") right 5px no-repeat;
+        height: 100px;
+        background-size: 30%;
+        padding-right: 30px;
+        margin-right:-45px;
+        &:hover {
+          opacity:0.9;
+          text-decoration:underline;
+        }
+      }
+    }
   }
+
+
+  @extend %put-sliderArrowsMain;
 
 
   @media #{$small-only} {
@@ -161,81 +200,22 @@
   }
 
   @media #{$large-up} {
-
-    /***************
-      *   SLIDER
-      ****************/
-    .visibleNearby {
-      width: 100%;
-      .rsSlide img {
-//        opacity: 0.45;
-        -webkit-transition: all 0.3s ease-out;
-        -moz-transition: all 0.3s ease-out;
-        transition: all 0.3s ease-out;
-
-        -webkit-transform: scale(1);
-        -moz-transform: scale(1);
-        -ms-transform: scale(1);
-        -o-transform: scale(1);
-        transform: scale(1);
-        margin-left:0px !important;
-      }
-      .rsActiveSlide img {
-        opacity: 1;
-        -webkit-transform: scale(1);
-        -moz-transform: scale(1);
-        -ms-transform: scale(1);
-        -o-transform: scale(1);
-        transform: scale(1);
-      }
-
-      // Arrows
-      $arrow-height:103px;
-      $arrow-width:103px;
-
-      .rsArrow {
-        height: 100%;
-        width: $arrow-width;
-        position: absolute;
-        display: block;
-        cursor: pointer;
-        z-index: 21;
-      }
-      .rsArrowIcn {
-        width: $arrow-width;
-        height: $arrow-height;
-        top: 30%;
-        left: 0;
-        margin-top:-$arrow-height;
-        margin-left: 0;
-        position: absolute;
-        cursor: pointer;
-        background-color: transparent;
-        *background-color: transparent;
-        border-radius: 2px;
-      }
-      .rsArrowIcn:hover {
-        background-color: transparent;
-      }
-
-      .rsArrowLeft {
-        left: -$arrow-width; top: 0;
-        .rsArrowIcn {
-          background: url('http://launchr.pl/goat-in-spa/gfx/3_strzalka.png');
-        }
-      }
-      .rsArrowRight {
-        right: -$arrow-width; top:0;
-        .rsArrowIcn {
-          background: url('http://launchr.pl/goat-in-spa/gfx/3_strzalka2.png');
-        }
-      }
-      .rsArrowDisabled {
-        .rsArrowIcn { opacity: .2; filter: alpha(opacity=20);  *display: none; }
-      }
-    }
   }
 
 }
 
 
+
+  .reveal-modal,
+  dialog.full {
+    width: 95% !important;
+    height: 100% !important;
+  }
+
+  .reveal-modal-bg {
+    top:auto !important
+  }
+  .reveal-modal {
+    top:auto !important;
+    background:$background-color;
+  }
