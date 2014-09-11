@@ -3,8 +3,8 @@
 /*========================================================================
   Section           :   Aktualności
   Functionality     :   Slider
-  Version:          :   v1.0
-  Updated:          :   02/09/2014
+  Version:          :   v1.2
+  Updated:          :   11/09/2014
 
   Każda sekcja powinna mieć możliwie schematyczną budową.
   Traktujemy sekcje jako swego rodzaju boxy.
@@ -42,6 +42,18 @@
     @include setSectionPc(14em 0 0.5em 0);
   }
 
+  // Separator
+  .sep {
+    &.sep--top {
+      @include putSeparator( $blue3-color, 60%);
+      margin-bottom:0.5em;
+    }
+    &.sep--bottom {
+      @include putSeparator( $blue3-color, 40%);
+      margin-top:0.5em;
+    }
+  }
+
   // ---------------------------------------------------------------
   // SECTION's header
   //---------------------------------------------------------------
@@ -57,89 +69,102 @@
         color:$blue3-color;
       }
     }
-    .sep {
-      &.sep--top {
-        @include putSeparator( $blue3-color, 60%);
-        margin-bottom:0.5em;
-      }
-      &.sep--bottom {
-        @include putSeparator( $blue3-color, 40%);
-        margin-top:0.5em;
-      }
-    }
   }
 
 
   .section__content {
     //Slider
-    .section__title {}
+    .slide__title {
+      font-family: "OpenSans-Bold";
+      color: #255a78;
+      font-size:1.16em;
+      line-height: 1.2em;
+      margin-top:1em;
+    }
     .slide__subTitle {
       font-family: "OpenSans-Regular";
-      color: $blue5-color;
-      font-size:1.2em;
+      color: #13688d;
+      font-size:rem-calc(14);
       line-height: 1.2em;
-      padding-bottom:0.6em;
+      padding-bottom:0.8em;
     }
     .slide__intro {
       font-family: "OpenSans-Light";
       color: $blue5-color;
       margin:0px;
-      padding-bottom:0.8em;
+      padding-bottom:0.2em;
     }
     .slide--more {
+      font-family: "OpenSans-Regular";
       font-size:0.9em;
       color:$blue-color;
       text-decoration: none;
       text-transform: uppercase;
     }
+    .sep {
+      &.sep--top {
+        @include putSeparator( $blue3-color, 63%);
+        margin-bottom:0.5em;
+      }
+    }
   }
 
 
   @media #{$small-only} {
-    .contentSlider {
-      width: 100%;
-      h3 {
-        font-size: 24px;
-        line-height: 31px;
-        margin: 12px 0 8px;
-        font-weight: bold;
+    #slider-news {
+      .rsSlide {
+        > div {
+          margin:0px 50px;
+        }
       }
-      img {
-        max-width: 100%;
-        height: auto;
-        //  display: block;
+      div {
+        text-align:center;
       }
-    }
-    .content-slider-bg {
-      width: 86%;
-      padding: 24px 7%;
-      background: #eee;
     }
   }
 
   @media #{$medium-only} {
-    .contentSlider {
-      width: 100%;
-      h3 {
-        font-size: 24px;
-        line-height: 31px;
-        margin: 12px 0 8px;
-        font-weight: bold;
+    .section__content {
+      //Slider
+      .slide__title {
+        font-size:1em;
+        line-height: 1.2em;
+        margin-top:1em;
       }
-      img {
-        max-width: 100%;
-        height: auto;
-        //  display: block;
+      .slide__subTitle {
+        font-family: "OpenSans-Regular";
+        color: #13688d;
+        font-size:0.75em;
+        line-height: 1.2em;
+        padding-bottom:0.8em;
       }
-    }
-    .content-slider-bg {
-      width: 86%;
-//      padding: 24px 7%;
-      background: #eee;
+      .slide__intro {
+        font-family: "OpenSans-Light";
+        color: $blue5-color;
+        margin:0px;
+        padding-bottom:0.2em;
+      }
+      .slide--more {
+        font-family: "OpenSans-Regular";
+        font-size:0.9em;
+        color:$blue-color;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      .sep {
+        &.sep--top {
+          @include putSeparator( $blue3-color, 63%);
+          margin-bottom:0.5em;
+        }
+      }
     }
   }
 
   @media #{$large-up} {
+
+    /***************
+      *   SLIDER
+      ****************/
     .visibleNearby {
       width: 100%;
       .rsSlide img {
@@ -148,11 +173,12 @@
         -moz-transition: all 0.3s ease-out;
         transition: all 0.3s ease-out;
 
-        -webkit-transform: scale(0.9);
-        -moz-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-        -o-transform: scale(0.9);
-        transform: scale(0.9);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+        margin-left:0px !important;
       }
       .rsActiveSlide img {
         opacity: 1;
@@ -162,7 +188,54 @@
         -o-transform: scale(1);
         transform: scale(1);
       }
+
+      // Arrows
+      $arrow-height:103px;
+      $arrow-width:103px;
+
+      .rsArrow {
+        height: 100%;
+        width: $arrow-width;
+        position: absolute;
+        display: block;
+        cursor: pointer;
+        z-index: 21;
+      }
+      .rsArrowIcn {
+        width: $arrow-width;
+        height: $arrow-height;
+        top: 30%;
+        left: 0;
+        margin-top:-$arrow-height;
+        margin-left: 0;
+        position: absolute;
+        cursor: pointer;
+        background-color: transparent;
+        *background-color: transparent;
+        border-radius: 2px;
+      }
+      .rsArrowIcn:hover {
+        background-color: transparent;
+      }
+
+      .rsArrowLeft {
+        left: -$arrow-width; top: 0;
+        .rsArrowIcn {
+          background: url('http://launchr.pl/goat-in-spa/gfx/3_strzalka.png');
+        }
+      }
+      .rsArrowRight {
+        right: -$arrow-width; top:0;
+        .rsArrowIcn {
+          background: url('http://launchr.pl/goat-in-spa/gfx/3_strzalka2.png');
+        }
+      }
+      .rsArrowDisabled {
+        .rsArrowIcn { opacity: .2; filter: alpha(opacity=20);  *display: none; }
+      }
     }
   }
 
 }
+
+

@@ -120,6 +120,20 @@ requirejs([ "jquery.min",
             });
         });
 
+        /*************************************************************************************
+         * SLIDERS
+         *
+         * @type {*|jQuery|HTMLElement}
+         */
+
+        /**
+         * Section 4. Aktualności
+         */
+
+        // Move navigation outside wrapper with overflow hidden, to make arrows visible
+        var sliderNews = $('#slider-news');
+        sliderNews.prepend(sliderNews.find('.rsArrow'));
+
     })($, window);
 
 });

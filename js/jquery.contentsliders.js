@@ -1,12 +1,12 @@
 
 // Sliders
-if (Modernizr.mq('only all and (max-width: 920px)')) {
+if (Modernizr.mq('only all and (max-width: 720px)')) {
 
     $('#slider-news').royalSlider({
         autoHeight: true,
         arrowsNav: true,
         fadeinLoadedSlide: false,
-        arrowsNavAutoHide: true,
+        arrowsNavAutoHide: false,
         controlNavigationSpacing: 0,
         controlNavigation: 'bullets',
         imageScaleMode: 'none',
@@ -24,10 +24,12 @@ else {
     var si = $('#slider-news').royalSlider({
         addActiveClass: true,
         arrowsNav: true,
-        controlNavigation: 'none',
+        controlNavigation: 'bullets',
+        arrowsNavAutoHide: false,
+
         loop: true,
 
-        imageScaleMode: 'fit',
+        imageScaleMode: 'fit-if-smaller',
         imageAlignCenter: true,
         autoScaleSlider: true,
         transitionSpeed: 300,
