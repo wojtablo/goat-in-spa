@@ -120,6 +120,10 @@
         .list__item {
           padding-left: 30px;
           background-size: 6% !important;
+          margin-bottom:1em !important;
+          a, a:visited {
+            font-size:1.4em !important;
+          }
         }
       }
     }

@@ -69,10 +69,10 @@ $allowMarginsPc       :   $allowMarginsMobile;
 
 // Live defaults
 $dir_GFX              :   "http://beta.kozminski.edu.pl/fundacja/gfx/";
-//$dir_FONTS            :   "http://beta.kozminski.edu.pl/fundacja/fonts/";
+$dir_FONTS            :   "http://beta.kozminski.edu.pl/fundacja/fonts/";
 
 // Local defaults
-$dir_FONTS            :   "/fonts/";
+//$dir_FONTS            :   "/fonts/";
 
 /*------------------------------------*\
     FONTS
@@ -457,9 +457,9 @@ This mixin put border in the position.
     @if $position == "right" { right:$margin-medium; }
     @else if $position == "left"{ left:$margin-medium; }
   }
-  @media #{$large-only} {
-    height:7em;
-    bottom:-4rem;
+  @media #{$large-up} {
+    height:180px;
+    bottom:-7rem;
 
     @if $position == "right" { right:$margin-large; }
     @else if $position == "left"{ left:$margin-large; }

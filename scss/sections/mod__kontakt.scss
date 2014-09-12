@@ -25,8 +25,12 @@
   //---------------------------------------------------------------
   // Media Queries
   //---------------------------------------------------------------
+
   @media #{$medium-up} {
+    @include putSectionImage(transparent,"11_motywl.png","11_motyws.png", "","",bottom left,bottom right,bottom right,bottom right);
+    background-repeat: no-repeat, repeat-x;
   }
+
 
   //---------------------------------------------------------------
   // General look
@@ -35,11 +39,14 @@
   background:$background-color;
 
   // Section margines
-//  .row {
-//    @include setSectionMobile(0 0 5em 0);
-//    @include setSectionTablet(0 0 5em 0);
-//    @include setSectionPc(0 0 5em 0);
-//  }
+  > .row {
+    @include setSectionMobile(0 0 5em 0);
+    @include setSectionTablet(0 0 5em 0);
+    @include setSectionPc(0 0 5em 0);
+  }
+  > .row:first-of-type {
+    padding-bottom:0px;
+  }
 
 
   // ---------------------------------------------------------------

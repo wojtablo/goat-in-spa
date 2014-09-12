@@ -46,6 +46,12 @@
     right: 1% !important;
   }
 
+  img.right-join {
+    position: absolute;
+    right: -20px;
+    top: 424px;
+  }
+
   // ---------------------------------------------------------------
   // SECTION's header
   //---------------------------------------------------------------
@@ -58,6 +64,7 @@
   // SECTION's main content
   //---------------------------------------------------------------
   .section__content {
+
     &:first-of-type {
       margin-bottom:4em;
     }

@@ -96,19 +96,23 @@
       right:  -15% !important; top: 0;
     }
   }
-}
 
 
-
-@media #{$medium-only} {
-  .rsArrow {
-    visibility: hidden;
+  @media #{$medium-only} {
+    .rsArrow {
+      visibility: hidden;
+    }
   }
-}
-@media #{$large-only} {
-  .rsArrow {
-    visibility: hidden;
+  @media #{$large-only} {
+    .rsArrow {
+      visibility: hidden;
+    }
   }
+
+  @media #{$large-up} {
+
+  }
+
 }
 
-@media #{$large-up} {  }
+

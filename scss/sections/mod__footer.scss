@@ -20,8 +20,12 @@
 
 .section__footer {
 
-  .row {
-//    padding:1em 0 1em 0;
+  @media #{$medium-up} {
+    border-top:none !important;
+  }
+
+  > .row {
+    padding:1.5em 0 1em 0;
   }
 
   // COLOURS SCHEME ------------------------------------------------------
