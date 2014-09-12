@@ -169,16 +169,16 @@ $global-radius: 0px;
 // d. Media Query Ranges
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-$small-range: (0em, 45.000em);
-$small-range-label:  "SMARTPHONES [0 x 720px]";
+$small-range: (0em, rem-calc(719));
+$small-range-label:  "SMARTPHONES [0 x 719px]";
 
-$medium-range: (720px, 1010px);
-$medium-range-label: "TABLETS [720 x 1010px]";
+$medium-range: (rem-calc(720), rem-calc(1009));
+$medium-range-label: "TABLETS [720 x 1009px]";
 
-$large-range: (1011px, 1498px);
-$large-range-label: "PC Screens [1010px + 1600px ]";
+$large-range: ( rem-calc(1010), rem-calc(1599));
+$large-range-label: "PC Screens [1010px + 1599px ]";
 
-$xlarge-range: (1500px, 120em);
+$xlarge-range: (rem-calc(1600), 120em);
 $xlarge-range-label: "FULL HD [1600px ++ ]";
 //$xxlarge-range: (120.063em, 99999999em);
 

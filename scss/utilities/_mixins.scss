@@ -1,50 +1,6 @@
-@import "../settings";
-@import "../foundation/components/grid";
-@import "compass/css3";
 
 
-.wf-loading{
-  #globalContainer:before {
-    background: #476eee;
-    content:"Loading...";
-    position:absolute;
-    right:0px;
-    top:0px;
-    color:#fff;
-    font:bold 11px "Arial";
-    padding:4px 8px;
-    opacity:0.95;
-    z-index: 999;;
-  }
-}
-.wf-active {
-  #globalContainer:before {
-    background: #74ee12;
-    content:"Font's loaded!";
-    position:absolute;
-    right:0px;
-    top:0px;
-    color:#fff;
-    font:bold 11px "Arial";
-    padding:4px 8px;
-    opacity:0.95;
-    z-index: 999;;
-  }
-}
-.wf-inactive{
-  #globalContainer:before {
-    background: red;
-    content:"Font's wasn't not loded!";
-    position:absolute;
-    right:0px;
-    top:0px;
-    color:#fff;
-    font:bold 11px "Arial";
-    padding:4px 8px;
-    opacity:0.95;
-    z-index: 999;
-  }
-}
+
 
 %maxHeight {
   min-height:                100% !important;
@@ -61,53 +17,7 @@ html.wf-inactive {
   }
 }
 
-$graphicMode          :   true;
-$allowMargins         :   true;
-$allowMarginsMobile   :   $allowMargins;
-$allowMarginsTablet   :   $allowMarginsMobile;
-$allowMarginsPc       :   $allowMarginsMobile;
 
-// Live defaults
-$dir_GFX              :   "http://beta.kozminski.edu.pl/fundacja/gfx/";
-$dir_FONTS            :   "http://beta.kozminski.edu.pl/fundacja/fonts/";
-
-// Local defaults
-//$dir_FONTS            :   "/fonts/";
-
-/*------------------------------------*\
-    FONTS
-\*------------------------------------*/
-
-//@include font-face("MyriadPro-LightCond",     font-files("MyriadPro-LightCond.otf"));
-//@include font-face("MyriadPro-SemiboldCond",  font-files("MyriadPro-SemiboldCond.otf"));
-//@include font-face("OpenSans-Bold",           font-files("OpenSans-Bold.ttf"));
-//@include font-face("OpenSans-Light",          font-files("OpenSans-Light.ttf"));
-//@include font-face("OpenSans-Regular",        font-files("OpenSans-Regular.ttf"));
-
-@font-face {
-  font-family: 'MyriadPro-LightCond';
-  src: url("#{$dir_FONTS}MyriadPro-LightCond.otf");
-}
-@font-face {
-  font-family: 'MyriadPro-SemiboldCond';
-  src:  url("#{$dir_FONTS}MyriadPro-SemiboldCond.otf");
-}
-@font-face {
-  font-family: 'OpenSans-Bold';
-  src:  url("#{$dir_FONTS}OpenSans-Bold.ttf");
-}
-@font-face {
-  font-family: 'OpenSans-Light';
-  src:  url("#{$dir_FONTS}OpenSans-Light.ttf");
-}
-@font-face {
-  font-family: 'OpenSans-Regular';
-  src:  url("#{$dir_FONTS}OpenSans-Regular.ttf");
-}
-
-p {
-  font-family: 'OpenSans-Light';
-}
 
 
 %font__size--xlarge {
@@ -128,7 +38,7 @@ p {
 %font__size--large {
   font-family:"OpenSans-Bold";
   font-size:2.4em;
-//  line-height: 2em;
+  //  line-height: 2em;
   line-height: 1.1em;
   margin:0.5em 0 0.9em;
   @media #{$medium-up} {
@@ -164,7 +74,7 @@ $default-arrow-left: "8_strzalka.png";
 
 section.rowWrapper {
   position: relative;
-//  min-height:50px;
+  //  min-height:50px;
   .row {
     position: relative;
   }
@@ -225,8 +135,8 @@ section.rowWrapper {
   background-size: 50%;
   -webkit-animation: pulsate 1s ease-out;
   -webkit-animation-iteration-count: infinite;
-//  width:103px;
-//  height:103px;
+  //  width:103px;
+  //  height:103px;
 }
 
 @-webkit-keyframes pulsate {

@@ -1,41 +1,79 @@
-@import "settings";
-//@import "foundation";
-@import "utils/mediatest";
+/*------------------------------------*\
+    SETTINGS
+\*------------------------------------*/
 
-/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-  ZURB FOUNDATION
-  Selectively include components.
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+$graphicMode: true;
+$allowMargins: true;
+$allowMarginsMobile: $allowMargins;
+$allowMarginsTablet: $allowMarginsMobile;
+$allowMarginsPc: $allowMarginsMobile;
+
+// Live defaults
+$dir_GFX: "http://beta.kozminski.edu.pl/fundacja/gfx/";
+//$dir_FONTS: "http://beta.kozminski.edu.pl/fundacja/fonts/";
+
+// Local defaults
+$dir_FONTS: "/fonts/";
+
+
+
+/*------------------------------------*\
+    MAIN IMPORTER
+\*------------------------------------*/
+
 @import
-   "foundation/components/accordion",
-   "foundation/components/block-grid",
-//   "foundation/components/button-groups",
-//   "foundation/components/buttons",
-   "foundation/components/clearing",
-   "foundation/components/dropdown",
-   "foundation/components/forms",
-   "foundation/components/inline-lists",
-   "foundation/components/grid",
-   "foundation/components/panels",
-   "foundation/components/inline-lists",
-   "foundation/components/tables",
-   "foundation/components/reveal",
-   "foundation/components/tabs",
-   "foundation/components/top-bar",
-   "foundation/components/type",
-   "foundation/components/pricing-tables",
-   "foundation/components/visibility";
 
-/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-  GENERAL LOOK & FEEL ♛
-  tylko globalne style, pozostałe umieścić w odpowiednich modułach
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+    // Include Foundation settings
+    "settings",
 
-#globalContainer {
-//    background-color:$background-color;
-}
+    // Fonts & typography
+    "objects/fonts",
 
+    // compass mixins
+    "compass/css3",
 
+    // Include mixins for debugging RWD
+    "utilities/mediatest",
+
+    // Foundation selectively include components.
+    "../bower_components/foundation/scss/foundation/components/accordion",
+    "../bower_components/foundation/scss/foundation/components/block-grid",
+    "../bower_components/foundation/scss/foundation/components/clearing",
+    "../bower_components/foundation/scss/foundation/components/dropdown",
+    "../bower_components/foundation/scss/foundation/components/forms",
+    "../bower_components/foundation/scss/foundation/components/inline-lists",
+    "../bower_components/foundation/scss/foundation/components/grid",
+    "../bower_components/foundation/scss/foundation/components/panels",
+    "../bower_components/foundation/scss/foundation/components/inline-lists",
+    "../bower_components/foundation/scss/foundation/components/tables",
+    "../bower_components/foundation/scss/foundation/components/reveal",
+    "../bower_components/foundation/scss/foundation/components/tabs",
+    "../bower_components/foundation/scss/foundation/components/top-bar",
+    "../bower_components/foundation/scss/foundation/components/type",
+    "../bower_components/foundation/scss/foundation/components/pricing-tables",
+    "../bower_components/foundation/scss/foundation/components/visibility",
+
+    // Include main mixins set
+    "utilities/mixins",
+
+    // Sekcje
+    "sections/_home",
+    "sections/_misja",
+    "sections/_dzialalnosc",
+    "sections/_news",
+    "sections/_instytucje-partnerskie",
+    "sections/_partnerzy2",
+    "sections/_organizacja-publiczna",
+    "sections/_o-fundacji",
+    "sections/_rada-i-zarzad",
+    "sections/_patroni",
+    "sections/_statut",
+    "sections/_sprawozdania",
+    "sections/_partnerzy",
+    "sections/_podatek",
+    "sections/_kontakt",
+    "sections/_footer"
+;
 
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -48,7 +86,7 @@ section {
 //  box-shadow:3px 3px 3px #222;
 }
 
-// Include media-conf helper inside media query
+//Include media-conf helper inside media query
 @media #{$small-only} {
    @include media-conf( $small-only,   $small-range,  $small-range-label, #488008); // Disable it for LIVE!!
 }
@@ -60,45 +98,4 @@ section {
 }
 @media #{$xlarge-only} {
   @include media-conf( $xlarge-only,   $xlarge-range,  $xlarge-range-label, #65e86b); // Disable it for LIVE!!
-}
-
-/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-  MODULES IMPORTED
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-
-// Includuje mixiny, placeholdery dostępne dla wszystkich modułów
-@import "sections/mod___INCLUDES";
-
-@import "plugins/slider";
-
-// Moduły
-@import "sections/mod__home";
-@import "sections/mod__misja";
-@import "sections/mod__dzialalnosc";
-@import "sections/mod__news";
-@import "sections/mod__instytucje-partnerskie";
-@import "sections/mod__partnerzy2";
-@import "sections/mod__organizacja-publiczna";
-@import "sections/mod__o-fundacji";
-@import "sections/mod__rada-i-zarzad";
-@import "sections/mod__patroni";
-@import "sections/mod__statut";
-@import "sections/mod__sprawozdania";
-@import "sections/mod__partnerzy";
-@import "sections/mod__podatek";
-@import "sections/mod__kontakt";
-@import "sections/mod__footer";
-
-
-/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-  TOP MENU
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-
-#mobile-header {
-  display: none;
-}
-@media only screen and (max-width: 767px){
-  #mobile-header {
-    display: block;
-  }
 }

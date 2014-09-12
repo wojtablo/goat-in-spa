@@ -1,4 +1,4 @@
-@import "mod___INCLUDES";
+
 
 /*========================================================================
   Section           :   Instytucje partnerskie
@@ -19,7 +19,7 @@
 =========================================================================*/
 
 // Partnerzy
-.section__instytucjepartnerskie {
+.section__partnerzy2 {
 
   //---------------------------------------------------------------
   // Media Queries
@@ -34,44 +34,67 @@
   background:$background-color;
 
   // Section margines
-  .row {
-    @include setSectionMobile(2em 0 2em 0);
-    @include setSectionTablet(3em 0 0.5em 0);
-    @include setSectionPc(4.5em 0 2em 0);
-  }
+  @include setSectionMobile(0 0 1em 0);
+  @include setSectionTablet(0 0 6em 0);
+  @include setSectionPc(0 0 6em 0);
+
 
   // ---------------------------------------------------------------
   // SECTION's header
   //---------------------------------------------------------------
+
   .section__header {
     .section__title {
-      font-family:"OpenSans-Regular";
-      color:$blue7-color;
-      font-size:2.5em;
-      line-height: 1.1em;
-      margin:1.2em 0 0.9em;
-
-      span {
-        color:$blue3-color;
-        font-family:"OpenSans-Light";
-      }
-      span { display: block; }
+      @extend %font__size--large;
     }
-    .sep {
-      &.sep--top {
-        @include putSeparator( $blue3-color, 40%);
-        margin-bottom:0.5em;
-      }
-      &.sep--bottom {
-        @include putSeparator( $blue3-color, 50%);
-        margin-top:0.5em;
-      }
+    .section__subtitle {
+      &::first-line       { color:$blue3-color; }
+      padding:            0.8rem 0px;
+      @extend             %font__size--medium;
+      @include putBorder  (top, $blue3-color, 2px);
+      @include putBorder  (bottom, $blue6-color, 1px);
     }
   }
 
+  .partner {
+    text-align:center !important;
+    margin:0px 20px;
+    margin-bottom: 1em;
+
+    .imp--wrapper{
+      display: block;
+      line-height: auto;
+
+    }
+    .partner--name {
+      font-size:1em;
+      margin-top:0px;
+    }
+    .partner--description {
+      font-size:0.8em;
+      margin-bottom:0px;
+      color:$blue5-color;
+
+    }
+    a, a:visited {
+      color:$blue5-color;
+      font-size:0.8em;
+      &:hover {
+        text-decoration:underline;
+      }
+    }
+  }
 }
 
+@media #{$medium-up} {
+  .partner {
+    margin-bottom:0em !important;
+    .imp--wrapper{
+      line-height: 10em;
+    }
+  }
+}
 
-@media #{$medium-only} {  }
+@media #{$large-up} {
 
-@media #{$large-up} {  }
+}

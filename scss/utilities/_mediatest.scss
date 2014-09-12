@@ -8,18 +8,17 @@
 
   @media #{$mediaQueryDefinition} {
     body:before{
-//      content: $message "   " + $range;
       content: $message;
       background:$color;
       color:#fff;
-      font:bold 11px "Arial";
-      padding:4px 8px;
+      font:bold 12px "Arial", serif;
+      padding:7px 8px;
       position: fixed;
       top: 0px;
       left: 0px;
       opacity:0.95;
       z-index: 999;
+      width:100%;
     }
   }
 }
-
