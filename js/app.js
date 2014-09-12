@@ -14,14 +14,15 @@ require.config({
         'modernizr': 'modernizr',
         'royalslider': 'jquery.royalslider.min',
         'sliders' : 'jquery.contentsliders',
-        'webfontload' :  'webfont'
+        'webfontload' :  'webfont',
+        'nanobar' : 'nanobar.min'
     },
     shim: {
         'foundation.core': {
             deps: [
                 'jquery',
                 'modernizr',
-                'webfont'
+                'nanobar'
             ],
             exports: 'Foundation'
         },
@@ -70,17 +71,23 @@ requirejs([ "jquery.min",
         var $doc = $(document),
             Modernizr = window.Modernizr;
 
+        var options = {
+            bg: '#50CE09'
+        };
+        var nanobar = new Nanobar(options);
+        nanobar.go(50);
+
         /**
          * Web font loader
          */
-        WebFont.load({
-            custom: {
-                families: ['MyriadPro-LightCond','MyriadPro-SemiboldCond,OpenSans-Bold,OpenSans-Light,OpenSans-Regular'],
-                urls: ['/stylesheets/app.css']
-            },
-            timeout: 5000
-
-        });
+//        WebFont.load({
+//            custom: {
+//                families: ['MyriadPro-LightCond','MyriadPro-SemiboldCond,OpenSans-Bold,OpenSans-Light,OpenSans-Regular'],
+//                urls: ['/stylesheets/app.css']
+//            },
+//            timeout: 5000
+//
+//        });
         /**
          * Royal slider
          */
@@ -140,7 +147,6 @@ requirejs([ "jquery.min",
             });
         });
 
-
         // Section 3. Patroni
         $(".full-desc").hide();
         $(".slide--more").click(function(event) {
@@ -168,6 +174,11 @@ requirejs([ "jquery.min",
 
         var sliderStatut = $('#slider-statut');
         sliderStatut.prepend(sliderStatut.find('.rsArrow'));
+
+        window.onload = function(){
+            nanobar.go(100);
+        }
+
 
     })($, window);
 
