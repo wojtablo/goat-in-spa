@@ -26,6 +26,11 @@
   //---------------------------------------------------------------
   @media #{$medium-up} { }
 
+  @media #{$medium-up} {
+    @include putSectionImage(transparent,"7_motywGl.png","7_motywGs.png", "7_motywGs.png","7_motywGs.png",bottom left,bottom right,bottom right,bottom right);
+    background-repeat: no-repeat, repeat-x;
+  }
+
   //---------------------------------------------------------------
   // General look
   //---------------------------------------------------------------
@@ -36,7 +41,23 @@
   .row {
     @include setSectionMobile(0 0 0 0);
     @include setSectionTablet(0.5em 0 0.5em 0);
-    @include setSectionPc(1em 0 0.5em 0);
+    @include setSectionPc(1em 0 3.5em 0);
+  }
+
+  .row__decoration {
+    .columns {
+      background:transparent url("#{$dir_GFX}2_time_line.jpg") center center repeat-x;
+      padding-right:0px;
+
+      &:first-of-type{
+        padding-left:0px;
+        a {
+          margin-top:0%;
+        }
+      }
+      &:last-of-type{
+      }
+    }
   }
 
   // ---------------------------------------------------------------
@@ -59,7 +80,10 @@
   .section__content {
     .tabs {
       dd {
-
+        padding-bottom:5em;
+       figure {
+          visibility: hidden;
+        }
         > a {
           padding:0 !important;
 
@@ -70,13 +94,38 @@
           }
         }
         &.active {
+          figure {
+            visibility: visible;
+          }
           a {
             img {
+              opacity:0.6;
               @extend %partner--hover;
             }
           }
-
         }
+
+      }
+    }
+    .tabs-content {
+      h2:first-of-type {
+        border-top:1px solid $blue3-color;
+        border-bottom:1px solid $blue3-color;
+        font-family:"OpenSans-Bold";
+        font-size:2.5em;
+        display: inline-block !important;
+        //  line-height: 2em;
+        line-height: 1.1em;
+        margin:0.5em 0 0.9em;
+        color:#255A78;
+      }
+      p {
+        font-family:"OpenSans-Regular";
+        font-size:1.4em;
+      }
+      .slide--more {
+        display:block;
+        text-align:center;
       }
     }
   }

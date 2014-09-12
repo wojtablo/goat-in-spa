@@ -100,6 +100,10 @@
   }
 
   @media #{$medium-up} {
+    .subSection__rowWrapper {
+      border-bottom:4.5em solid $green2-color;
+    }
+
     .section__content {
       .column__header {
         display: block;

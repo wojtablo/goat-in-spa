@@ -507,7 +507,8 @@ This mixin put border in the position.
   author: Wojciech Mikołajewski <wojciechmikolajewski@gmail.com>
 =========================================================================*/
 %put-sliderArrowsMain {
-  .visibleNearby {
+  .visibleNearby,
+  .slierNavArrows{
     width: 100%;
     .rsSlide img {
       //        opacity: 0.45;

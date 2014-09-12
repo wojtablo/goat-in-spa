@@ -3,8 +3,8 @@
 /*========================================================================
   Section           :   Rada i zarząd
   Functionality     :   Text + image + JS
-  Version:          :   v1.0
-  Updated:          :   02/09/2014
+  Version:          :   v1.1
+  Updated:          :   11/09/2014
 
   Każda sekcja powinna mieć możliwie schematyczną budową.
   Traktujemy sekcje jako swego rodzaju boxy.
@@ -40,6 +40,12 @@
     @include setSectionPc(7em 0 2em 0);
   }
 
+  .crossSectionArrow--right {
+    height:160px !important;
+    bottom: -8rem;
+    right: 1% !important;
+  }
+
   // ---------------------------------------------------------------
   // SECTION's header
   //---------------------------------------------------------------
@@ -52,9 +58,13 @@
   // SECTION's main content
   //---------------------------------------------------------------
   .section__content {
+    &:first-of-type {
+      margin-bottom:4em;
+    }
     .extra__label {
-      font-family:"OpenSans-Light";
-      font-size:1.8em;
+      font-family:"OpenSans-Regular";
+      font-size:2.8em;
+      line-height:1.2em;
       span {
         color: #8fc6d6;
       }
@@ -66,6 +76,10 @@
         }
         a.person__image {
           display:block;
+          background:transparent url("#{$dir_GFX}5_prezes_szklo.png") top right no-repeat;
+          img {
+
+          }
           &:hover {
             img {
               display:block;
@@ -116,6 +130,12 @@
       }
     }
 
+  }
+
+  @media #{$large-up} {
+    .crossSectionArrow--right {
+      right: -3% !important;
+    }
   }
 
 }

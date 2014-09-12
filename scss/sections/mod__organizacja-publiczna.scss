@@ -3,4 +3,41 @@
 // Fundacja Koźmińskich to organizacja pożytku publicznego.
 .section__orgpubliczna {
 
+  //---------------------------------------------------------------
+  // Media Queries
+  //---------------------------------------------------------------
+  @media #{$medium-up} {
+  }
+
+  //---------------------------------------------------------------
+  // General look
+  //---------------------------------------------------------------
+  h1,h2,h3,h4,h5,h6 { color:$blue5-color; }
+  //  background-color:$background-color;
+
+  // Section margines
+  .row {
+    @include setSectionMobile(4em 0 3em 0);
+    @include setSectionTablet(2em 0 4.5em 0);
+    @include setSectionPc(2em 0 5.5em 0);
+  }
+
+  .crossSectionArrow--left {
+    height:160px !important;
+    left: 1% !important;
+  }
+
+
+  // ---------------------------------------------------------------
+  // SECTION's header
+  //---------------------------------------------------------------
+  .section__header {
+
+  }
+
+  @media #{$large-up} {
+    .crossSectionArrow--right {
+      right: -3% !important;
+    }
+  }
 }

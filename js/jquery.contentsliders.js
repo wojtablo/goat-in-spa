@@ -53,9 +53,9 @@ else {
 
 $('#slider-statut').royalSlider({
     autoHeight: true,
-    arrowsNav: false,
+    arrowsNav: true,
     fadeinLoadedSlide: false,
-    arrowsNavAutoHide: true,
+    arrowsNavAutoHide: false,
     controlNavigationSpacing: 0,
     controlNavigation: 'bullets',
     imageScaleMode: 'none',
@@ -66,7 +66,7 @@ $('#slider-statut').royalSlider({
     keyboardNavEnabled: true,
     usePreloader: false,
     navigateByClick: false,
-    transitionSpeed: 300
+    transitionSpeed: 800
 });
 
 

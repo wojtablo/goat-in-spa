@@ -3,8 +3,8 @@
 /*========================================================================
   Section           :   Partnerzy
   Functionality     :   Text
-  Version:          :   v1.0
-  Updated:          :   04/09/2014
+  Version:          :   v1.1
+  Updated:          :   12/09/2014
 
   Każda sekcja powinna mieć możliwie schematyczną budową.
   Traktujemy sekcje jako swego rodzaju boxy.
@@ -24,7 +24,11 @@
   //---------------------------------------------------------------
   // Media Queries
   //---------------------------------------------------------------
-  @media #{$medium-up} {  }
+  @media #{$medium-up} {
+    @include putSectionImage(transparent,"8_motywDl.png","8_motywDs.png", "","",top left,"bottom right","","");
+    background-repeat:no-repeat, repeat-x;
+  }
+
 
   //---------------------------------------------------------------
   // General look

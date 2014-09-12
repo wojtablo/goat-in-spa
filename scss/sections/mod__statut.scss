@@ -29,6 +29,7 @@
     @include setSectionTablet(2em 0 2em 0 !important, false);
   }
 
+
   //---------------------------------------------------------------
   // General look
   //---------------------------------------------------------------
@@ -42,6 +43,16 @@
     @include setSectionPc(0 0 0 0);
   }
 
+  .sep {
+    &.sep--top {
+      @include putSeparator( #fff, 60%);
+      margin-bottom:0.5em;
+    }
+    &.sep--bottom {
+      @include putSeparator( #fff, 40%);
+      margin-top:0.5em;
+    }
+  }
 
   // ---------------------------------------------------------------
   // SECTION's header
@@ -50,23 +61,54 @@
     .section__title {
       @extend %font__size--large;
     }
+    .section__subtitle {
+      @extend %font__size--medium;
+      padding-bottom:0.8em;
+      span {
+        font-family:"OpenSans-Regular" !important;
+        color:#fff;
+      }
+    }
   }
+
+  @extend %put-sliderArrowsMain;
 
   // ---------------------------------------------------------------
   // SECTION's main content
   //---------------------------------------------------------------
-  .section__content {}
+  .section__content {
+    p {
+      font-size:1.3em;
+    }
+  }
 
   .contentSlider {
     width: 100%;
+
+
     .rsBullets {
       @extend %rsBulletsBottom;
+    }
+    .rsArrowLeft {
+      left: -15% !important; top: 0;
+    }
+    .rsArrowRight {
+      right:  -15% !important; top: 0;
     }
   }
 }
 
 
 
-@media #{$medium-only} {  }
+@media #{$medium-only} {
+  .rsArrow {
+    visibility: hidden;
+  }
+}
+@media #{$large-only} {
+  .rsArrow {
+    visibility: hidden;
+  }
+}
 
 @media #{$large-up} {  }

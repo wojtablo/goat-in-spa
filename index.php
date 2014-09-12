@@ -36,13 +36,13 @@
 <?php include_once("templates/sections/_organizacja-publiczna.html"); ?>
 
 <!-- Sekcja 8. Patroni -->
-<?php include_once("templates/sections/_patroni.html"); ?>
+<?php  include_once("templates/sections/_patroni.html"); ?>
 
 <!-- Sekcja 9. Statut -->
-<?php include_once("templates/sections/_statut.html"); ?>
+<?php  include_once("templates/sections/_statut.html"); ?>
 
 <!-- Sekcja 10. Sprawozdania finansowe -->
-<?php include_once("templates/sections/_sprawozdania-finansowe.html"); ?>
+<?php  include_once("templates/sections/_sprawozdania-finansowe.html"); ?>
 
 <!-- Sekcja 11. Partnerzy -->
 <?php include_once("templates/sections/_partnerzy.html"); ?>

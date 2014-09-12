@@ -86,6 +86,8 @@ requirejs([ "jquery.min",
          */
         $(".rsMainSlideImage").css("margin-top",0);
 
+
+
         /**
          * Include Foundation settings
          */
@@ -127,7 +129,7 @@ requirejs([ "jquery.min",
         /**
          * Custom jQuery
          */
-        // Section 3. Działalność
+            // Section 3. Działalność
         $(".xx").hide();
         $(".news__more").click(function() {
             event.preventDefault();
@@ -135,6 +137,18 @@ requirejs([ "jquery.min",
             that.prev().toggle("fast", function() {
                 that.parent().toggleClass("selected");
                 that.text($(this).is(':visible') ? "Ukryj" : "Czytaj więcej");
+            });
+        });
+
+
+        // Section 3. Patroni
+        $(".full-desc").hide();
+        $(".slide--more").click(function() {
+            event.preventDefault();
+            var that = $(this);
+            that.prev().toggle("fast", function() {
+                that.parent().toggleClass("selected");
+                that.text($(this).is(':visible') ? "Zwiń" : "Czytaj więcej");
             });
         });
 
@@ -151,6 +165,9 @@ requirejs([ "jquery.min",
         // Move navigation outside wrapper with overflow hidden, to make arrows visible
         var sliderNews = $('#slider-news');
         sliderNews.prepend(sliderNews.find('.rsArrow'));
+
+        var sliderStatut = $('#slider-statut');
+        sliderStatut.prepend(sliderStatut.find('.rsArrow'));
 
     })($, window);
 
