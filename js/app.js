@@ -131,7 +131,7 @@ requirejs([ "jquery.min",
          */
             // Section 3. Działalność
         $(".xx").hide();
-        $(".news__more").click(function() {
+        $(".news__more").click(function(event) {
             event.preventDefault();
             var that = $(this);
             that.prev().toggle("fast", function() {
@@ -143,7 +143,7 @@ requirejs([ "jquery.min",
 
         // Section 3. Patroni
         $(".full-desc").hide();
-        $(".slide--more").click(function() {
+        $(".slide--more").click(function(event) {
             event.preventDefault();
             var that = $(this);
             that.prev().toggle("fast", function() {
