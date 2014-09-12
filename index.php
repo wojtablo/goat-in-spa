@@ -16,13 +16,13 @@
 
 <!-- Main navigation -->
 <?php include_once("templates/sections/_menu.html"); ?>
-<!---->
-<!--<!-- Sekcja 2. Misja -->
+
+<!-- Sekcja 2. Misja -->
 <?php include_once("templates/sections/_misja.html"); ?>
-<!---->
-<!--<!-- Sekcja 3. Działalność -->
-<?php //include_once("templates/sections/_dzialalnosc.html"); ?>
-<!---->
+
+<!-- Sekcja 3. Działalność -->
+<?php include_once("templates/sections/_dzialalnosc.html"); ?>
+
 <!--<!-- Sekcja 3. Aktualności -->
 <?php //include_once("templates/sections/_news.html"); ?>
 <!---->

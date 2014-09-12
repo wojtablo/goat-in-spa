@@ -9,8 +9,20 @@
 .section__misja {
 
   //---------------------------------------------------------------
-  // Media Queries
+  // Ustawienia
   //---------------------------------------------------------------
+
+//  $header-configuration: (
+//          color: #4dff36,
+//          color2: #e84615,
+//          color3: #e8e514,
+//  );
+
+  $primary-color: #012f48;
+
+                    //---------------------\\
+                   //    Media Queries      \\
+  //--------------------------------------------------------------
   @media #{$medium-up} {
     @include putSectionImage(transparent,"2_motywG2.png","", "","",bottom right,"","","");
   }
@@ -18,10 +30,11 @@
   //---------------------------------------------------------------
   // General look
   //---------------------------------------------------------------
-  h1,h2,h3,h4,h5,h6 { color:$blue5-color; }
-//  background-color:$background-color;
+  h1,h2,h3,h4,h5,h6 { color:$primary-color; }
 
-  // Section margines
+  // ---------------------------------------------------------------
+  // Layout
+  //---------------------------------------------------------------
   .row {
     @include setSectionMobile(4em 0 3em 0);
     @include setSectionTablet(2em 0 12.5em 0);
@@ -32,24 +45,12 @@
   // SECTION's header
   //---------------------------------------------------------------
   .section__header {
-    .section__title {
-      @extend %font__size--large;
-      margin-bottom:0 !important;
-    }
-    .section__subtitle {
-      //MQ
-      @media #{$medium-up} { @include setSpace(0.8em 2em 1em 2em); }
-      @media #{$large-up}  { @include setSpace(1em 0 1em 0); }
-
-      //Styles
-      .first__line        {
-        font-family:"OpenSans-Regular" !important;
-        color:$blue3-color;
-      }
-      padding:             0.8rem 0px;
-      @extend              %font__size--medium;
-    }
-
+//    @include module__header($header-configuration);
+    @include module__header();
   }
-}
 
+  // ---------------------------------------------------------------
+  // SECTION's content
+  //---------------------------------------------------------------
+  .section__content { }
+}

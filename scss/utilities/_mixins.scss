@@ -52,7 +52,7 @@ html.wf-inactive {
 %font__size--medium {
   font-family:"OpenSans-Light";
   font-size:1.8em; line-height:1.15em;
-  @media #{$medium-up} { font-size:2.6em; line-height:1.25em;}
+  @media #{$medium-up} { font-size:2.4em; line-height:1.25em;}
   @media #{$large-up}  { font-size:2.8em; line-height:1.15em }
 }
 
@@ -345,6 +345,75 @@ This mixin put border in the position.
     padding:$padding;
   }
 }
+
+/*========================================================================
+  Mixin             :   HEADER GENERAETOR
+  Version:          :   v1.0
+  Updated:          :   12/09/2014
+
+  @position         : Border position (top/bottom/left/right)
+  @color            : Color
+  @width            : Width (3px, 6em, etc.)
+  @style            : Solid, double etc. (!OPTIONAL)
+
+  This mixin put border in the position.
+
+=========================================================================*/
+
+@mixin module__header($conf: (), $medium-up-conf:(), $large-up-conf: () ) {
+  // Extending the default arguments with the given object
+
+  $conf: map-merge((
+          color: $primary-color,
+          color2: $primary-color,
+          color3: $blue3-color,
+          title-margin: 0 !important,
+          subtitle-margin: 0.8rem 0px,
+  ), $conf);
+
+  $medium-up-conf: map-merge((
+          color: #fff,
+          color2: #000,
+          color3: #000,
+          title-margin: 0 !important,
+          subtitle-margin: 0.8rem 0px,
+  ), $medium-up-conf);
+
+  $large-up-conf: map-merge((
+          color: #fff,
+          color2: #000,
+          color3: #000,
+          title-margin: 0 !important,
+          subtitle-margin: 0.8rem 0px,
+  ), $large-up-conf);
+
+//  @media #{$medium-up} { @include setSpace(0.8em 2em 1em 2em); }
+//  @media #{$large-up}  { @include setSpace(1em 0 1em 0); }
+
+  &.section__header {
+    // Header title
+    .section__title {
+      @extend %font__size--large;
+      margin-bottom: map-get($conf, title-margin);
+      color: map-get($conf, color);
+    }
+    // Header subtitle
+    .section__subtitle {
+      color: map-get($conf, color2);
+      //Styles
+      .first__line {
+        font-family: "OpenSans-Regular" !important;
+        color: map-get($conf, color3);
+      }
+      padding: map-get($conf, subtitle-margin);
+      @extend %font__size--medium;
+    }
+  }
+
+}
+
+
+
 
 /*========================================================================
   Mixin             :   CASAI (Cross ä Section Arrow Intruder)

@@ -113,14 +113,6 @@ $body-font-family: Arial, sans-serif;
 // $last-child-float: $opposite-direction;
 
 // We use these as default colors throughout
-$primary-color: #008CBA;
-$secondary-color: #e7e7e7;
-$alert-color: #f04124;
-$success-color: #43AC6A;
-$warning-color: #f08a24;
-$info-color: #a0d3e8;
-
-$font-color: #203c52;
 
 $background-color: #ECEBE9;
 $green-color: #0fa752;
@@ -135,6 +127,14 @@ $blue6-color:#BCC9D0;
 $blue7-color:#8fc6d6;
 $red-color: #e7375b;
 
+$primary-color: $blue5-color;
+$secondary-color: $blue3-color;
+$alert-color: #f04124;
+$success-color: #43AC6A;
+$warning-color: #f08a24;
+$info-color: #a0d3e8;
+
+$font-color: #203c52;
 
 
 $white       : #FFFFFF;

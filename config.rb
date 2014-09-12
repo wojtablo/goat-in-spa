@@ -25,5 +25,5 @@ javascripts_dir = "js"
 # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
 disable_warnings = true
 
-output_style   = :compressed
-environment    = :productionzzzzz
+#output_style   = :compressed
+#environment    = :productionzzzzz

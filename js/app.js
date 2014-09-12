@@ -133,6 +133,7 @@ requirejs([ "jquery.min",
             }
         });
 
+
         /**
          * Custom jQuery
          */
@@ -168,7 +169,7 @@ requirejs([ "jquery.min",
          * Section 4. Aktualności
          */
 
-        // Move navigation outside wrapper with overflow hidden, to make arrows visible
+        //Move navigation outside wrapper with overflow hidden, to make arrows visible
         var sliderNews = $('#slider-news');
         sliderNews.prepend(sliderNews.find('.rsArrow'));
 
@@ -176,6 +177,7 @@ requirejs([ "jquery.min",
         sliderStatut.prepend(sliderStatut.find('.rsArrow'));
 
         window.onload = function(){
+            //alert("stop, teraz wegorz");
             nanobar.go(100);
         }
 

@@ -15,8 +15,6 @@ $dir_GFX: "http://beta.kozminski.edu.pl/fundacja/gfx/";
 // Local defaults
 $dir_FONTS: "/fonts/";
 
-
-
 /*------------------------------------*\
     MAIN IMPORTER
 \*------------------------------------*/
@@ -53,10 +51,13 @@ $dir_FONTS: "/fonts/";
     "../bower_components/foundation/scss/foundation/components/pricing-tables",
     "../bower_components/foundation/scss/foundation/components/visibility",
 
-    // Include main mixins set
+    // Royal slider
+    "plugins/slider",
+
+    // Include main mixins set "utilities/mixins", "utilities/_mixins",
     "utilities/mixins",
 
-    // Sekcje
+  // Sekcje
     "sections/_home",
     "sections/_misja",
     "sections/_dzialalnosc",
