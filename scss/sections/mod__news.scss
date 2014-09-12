@@ -71,6 +71,12 @@
     }
   }
 
+  .contentSlider {
+    .rsBullets {
+      @extend %rsBulletsBottom;
+      padding:0px !important;
+    }
+  }
 
   .section__content {
     //Slider
@@ -199,7 +205,13 @@
     }
   }
 
-  @media #{$large-up} {
+  @media #{$medium-up} {
+    #slider-news.contentSlider {
+      .rsBullets {
+        padding:0px !important;
+        margin-top:-2em;
+      }
+    }
   }
 
 }
