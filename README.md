@@ -6,8 +6,9 @@
 
   * Ruby 1.9+
   * [compass](http://compass-style.org/): `gem install compass`
-  * [sass]: minimum v.3.3 "Mapnastic Maple"
+  * [sass](http://sass-lang.com/): v.3.3+
   * [bower](http://bower.io): `npm install bower -g`
+  & [apache]: or another local server
 
 ## Quickstart
 
