@@ -21,12 +21,25 @@
 // News
 .section__news {
 
+  $header-configuration: (
+          title-margin: 0em 0 0.7em 0 !important,
+          subtitle-margin: 0 0 1.2em 0 !important
+  );
+
+  $primary-color: #012f48;
+
   //---------------------------------------------------------------
   // Media Queries
   //---------------------------------------------------------------
   @media #{$medium-up} {
-//    @include setSectionMobile(14em 0);
-    @include putSectionImage($background-color,"4_motywG.png","2_motywD3.png", "4_motywDs.png","", bottom left, top right, bottom right, bottom right );
+    @include putSectionImage( $background-color,
+                              "4_motywG.png","2_motywD3.png", "4_motywDs.png","",
+                              5% 100%, 70% 0%, bottom right, bottom right );
+  }
+  @media #{$xlarge-up} {
+    @include putSectionImage( $background-color,
+            "4_motywG.png","2_motywD3.png", "4_motywDs.png","",
+            0% 100%, 100% 0%, bottom right, bottom right );
   }
 
   //---------------------------------------------------------------
@@ -37,9 +50,9 @@
 
   // Section margines
   > .row {
-    @include setSectionMobile(2em 0 2em 0);
-    @include setSectionTablet(21em 0 14em 0);
-    @include setSectionPc(14em 0 10.5em 0);
+    @include setSectionMobile(2em 0 3em 0);
+    @include setSectionTablet(10em 0 14em 0);
+    @include setSectionPc(12em 0 10.5em 0);
   }
 
   // Separator
@@ -58,20 +71,12 @@
   // SECTION's header
   //---------------------------------------------------------------
   .section__header {
-    .section__title {
-      @extend %font__size--large;
-    }
-    .section__subtitle {
-      @extend %font__size--medium;
-      padding-bottom:2em;
-      span {
-        font-family:"OpenSans-Regular" !important;
-        color:$blue3-color;
-      }
-    }
+    @include module__header($header-configuration);
   }
 
   .contentSlider {
+    @extend %put-sliderArrowsMain;
+    @extend %slider__arrows;
     .rsBullets {
       @extend %rsBulletsBottom;
       padding:0px !important;
@@ -150,9 +155,6 @@
       }
     }
   }
-
-
-  @extend %put-sliderArrowsMain;
 
 
   @media #{$small-only} {

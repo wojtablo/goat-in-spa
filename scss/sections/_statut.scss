@@ -1,34 +1,18 @@
-
-
 /*========================================================================
   Section           :   Statut
   Functionality     :   Slider
-  Version:          :   v1.0
-  Updated:          :   04/09/2014
-
-  Każda sekcja powinna mieć możliwie schematyczną budową.
-  Traktujemy sekcje jako swego rodzaju boxy.
-
-  Zadbaj o to aby:
-  - nazwa klasy głównej rozpoczynająca się w konwencji .section__xxxxxx
-  - określamy background lub jego brak
-  - wewnątrz definicji tego stylu wyodrębniony header oraz main content
-  - jeżeli jest jakieś tło to dołączamy je z "mod__ICLUDES" za pomocą @extend
-  - opis tego opisu byl aktualny
-
+  Version:          :   v1.1
+  Updated:          :   13/09/2014
 =========================================================================*/
 
-
-// Statut
 .section__statut {
 
   //---------------------------------------------------------------
   // Media Queries
   //---------------------------------------------------------------
   @media #{$medium-up} {
-    @include setSectionTablet(2em 0 2em 0 !important, false);
+//    @include setSectionTablet(2em 0 2em 0 !important, false);
   }
-
 
   //---------------------------------------------------------------
   // General look
@@ -40,7 +24,7 @@
   .row {
     @include setSectionMobile(1em 0 0 0);
     @include setSectionTablet(0 0 0 0);
-    @include setSectionPc(0 0 0 0);
+    @include setSectionPc(1em 0 4em 0);
   }
 
   .sep {
@@ -71,49 +55,34 @@
     }
   }
 
-  @extend %put-sliderArrowsMain;
 
   // ---------------------------------------------------------------
   // SECTION's main content
   //---------------------------------------------------------------
   .section__content {
-    p {
-      font-size:1.3em;
-    }
-  }
-
-  .contentSlider {
-    width: 100%;
-
-
-    .rsBullets {
-      @extend %rsBulletsBottom;
-
-    }
-    .rsArrowLeft {
-      left: -15% !important; top: 0;
-    }
-    .rsArrowRight {
-      right:  -15% !important; top: 0;
+    .contentSlider {
+      @extend %put-sliderArrowsMain;
+      @extend %slider__arrows;
+      .rsBullets {
+        @extend %rsBulletsBottom;
+        padding:0px !important;
+      }
     }
   }
 
 
   @media #{$medium-only} {
-    .rsArrow {
-      visibility: hidden;
-    }
+
   }
+
   @media #{$large-only} {
-    .rsArrow {
-      visibility: hidden;
+    .contentSlider {
+      width:70% !important;
+      margin:0 auto;
     }
   }
 
   @media #{$large-up} {
 
   }
-
 }
-
-

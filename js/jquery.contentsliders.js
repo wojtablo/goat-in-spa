@@ -1,56 +1,3 @@
-
-// Sliders
-if (Modernizr.mq('only all and (max-width: 720px)')) {
-
-    $('#slider-news').royalSlider({
-        autoHeight: true,
-        arrowsNav: true,
-        fadeinLoadedSlide: false,
-        arrowsNavAutoHide: false,
-        controlNavigationSpacing: 0,
-        controlNavigation: 'bullets',
-        imageScaleMode: 'none',
-        imageAlignCenter: false,
-        loop: true,
-        loopRewind: true,
-        numImagesToPreload: 6,
-        keyboardNavEnabled: true,
-        usePreloader: false,
-        navigateByClick: false,
-        transitionSpeed: 300
-    });
-}
-else {
-    var si = $('#slider-news').royalSlider({
-        addActiveClass: true,
-        arrowsNav: true,
-        controlNavigation: 'bullets',
-        arrowsNavAutoHide: false,
-
-        loop: true,
-
-        imageScaleMode: 'fit-if-smaller',
-        imageAlignCenter: true,
-        autoScaleSlider: true,
-        transitionSpeed: 300,
-
-        fadeinLoadedSlide: false,
-        globalCaption: true,
-        keyboardNavEnabled: false,
-        globalCaptionInside: false,
-
-        visibleNearby: {
-            enabled: true,
-            centerArea: 0.3,
-            center: true,
-            breakpoint: 650,
-            breakpointCenterArea: 0.64,
-            navigateByCenterClick: false
-        }
-    }).data('royalSlider');
-}
-
-
 $('#slider-statut').royalSlider({
     autoHeight: true,
     arrowsNav: true,
@@ -70,44 +17,85 @@ $('#slider-statut').royalSlider({
 });
 
 
-if (Modernizr.mq('only all and (min-width: 720px)')) {
-//        console.log("removed");
-//        $( ".__events--slide" ).remove();
-}
+
 if (Modernizr.mq('only all and (max-width: 720px)')) {
-    $('#content-slider-2').royalSlider({
+    $('#slider-news').royalSlider({
         autoHeight: true,
         arrowsNav: false,
-        fadeinLoadedSlide: false,
-        arrowsNavAutoHide: true,
+        fadeinLoadedSlide: true,
+        arrowsNavAutoHide: false,
         controlNavigationSpacing: 0,
         controlNavigation: 'bullets',
         imageScaleMode: 'none',
         imageAlignCenter: false,
-        loop: true,
-        loopRewind: true,
-        numImagesToPreload: 6,
+        loop: false,
+        loopRewind: false,
+        numImagesToPreload: 2,
         keyboardNavEnabled: true,
-        usePreloader: false,
+        usePreloader: true,
         navigateByClick: false,
-        transitionSpeed: 300
+        transitionSpeed: 200
+    });
+    $('#content-slider-2').royalSlider({
+        autoHeight: true,
+        arrowsNav: false,
+        fadeinLoadedSlide: true,
+        arrowsNavAutoHide: false,
+        controlNavigationSpacing: 0,
+        controlNavigation: 'bullets',
+        imageScaleMode: 'none',
+        imageAlignCenter: false,
+        loop: false,
+        loopRewind: false,
+        numImagesToPreload: 2,
+        keyboardNavEnabled: true,
+        usePreloader: true,
+        navigateByClick: false,
+        transitionSpeed: 200
     });
     $('#slider-dzialalnosc').royalSlider({
         autoHeight: true,
         arrowsNav: false,
-        fadeinLoadedSlide: false,
-        arrowsNavAutoHide: true,
+        fadeinLoadedSlide: true,
+        arrowsNavAutoHide: false,
         controlNavigationSpacing: 0,
         controlNavigation: 'bullets',
         imageScaleMode: 'none',
         imageAlignCenter: false,
-        loop: true,
-        loopRewind: true,
-        numImagesToPreload: 6,
+        loop: false,
+        loopRewind: false,
+        numImagesToPreload: 2,
         keyboardNavEnabled: true,
-        usePreloader: false,
+        usePreloader: true,
         navigateByClick: false,
-        transitionSpeed: 300
+        transitionSpeed: 200
     });
 
+}
+else {
+    var si = $('#slider-news').royalSlider({
+        addActiveClass: true,
+        arrowsNav: true,
+        controlNavigation: 'bullets',
+        arrowsNavAutoHide: false,
+        loop: true,
+        imageScaleMode: 'fit-if-smaller',
+        imageAlignCenter: false,
+        autoScaleSlider: true,
+        transitionSpeed: 300,
+
+        fadeinLoadedSlide: false,
+        globalCaption: true,
+        keyboardNavEnabled: false,
+        globalCaptionInside: false,
+
+        visibleNearby: {
+            enabled: true,
+            centerArea: 0.3,
+            center: true,
+            breakpoint: 650,
+            breakpointCenterArea: 0.64,
+            navigateByCenterClick: false
+        }
+    }).data('royalSlider');
 }

@@ -21,6 +21,15 @@
 // O fundacji
 .section__ofundacji {
 
+  $header-configuration: (
+          color2: red,
+          color3: red,
+          title-margin: 0em 0 0em 0 !important,
+          subtitle-margin: 0 0 1.2em 0 !important
+  );
+
+  $primary-color: rgba(255, 255, 255, 1);
+
   //---------------------------------------------------------------
   // Media Queries
   //---------------------------------------------------------------
@@ -28,23 +37,28 @@
 
   // Section margines
   .row__prefix {
-    @include setSectionMobile(0em 0 0em 0);
+    @include setSectionMobile(1em 0 1em 0);
     @include setSectionTablet(0em 0 0em 0);
-    @include setSectionPc(3.5em 0 4em 0);
+    @include setSectionPc(2.5em 0 3em 0);
   }
   .row {
-    @include setSectionMobile(0em 0 0em 0);
+    @include setSectionMobile(1.5em 1em);
     @include setSectionTablet(0em 0 0em 0);
     @include setSectionPc(4em 0 4em 0);
   }
 
-  border-bottom:solid 7em #138fbb;
+  border-bottom:solid 2em #138fbb;
+  @media #{$medium-up} {
+    border-bottom:solid 7em #138fbb;
+
+  }
+
 
   //---------------------------------------------------------------
   // General look
   //---------------------------------------------------------------
   h1,h2,h3,h4,h5,h6 { color:#fff; }
-  @include putSectionImage($background-color,"4_szklo.png","", "","",top right,"","","");
+  @include putSectionImage($blue-color,"4_szklo.png","", "","",top right,"","","");
   background-size:55% 100%;
   @extend %row--blue;
 
@@ -70,15 +84,11 @@
   // SECTION's header
   //---------------------------------------------------------------
   .section__header {
-    .section__title {
-      @extend %font__size--large;
-    }
+    @include module__header($header-configuration);
   }
   .row__prefix {
     .section__header {
-      .section__title {
-        margin:0px !important;
-      }
+      @include module__header($header-configuration);
     }
   }
 
@@ -88,10 +98,22 @@
   .section__content {
     p {
       color:#bae1ed;
-      font-size:2.6em;
+      font-size:1.1em;
       line-height:1.2em;
     }
+    .section__subtitle {
+      font-size:1.1em;
+      color:#fff;
+    }
     @media #{$medium-up} {
+      .section__subtitle {
+        font-family:"OpenSans-Light" !important;
+      }
+      p {
+        color:#bae1ed;
+        font-size:2.6em;
+        line-height:1.2em;
+      }
       img {
         max-height:180px;
       }

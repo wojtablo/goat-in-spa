@@ -149,7 +149,11 @@ section.rowWrapper {
     TOP BAR
 \*------------------------------------*/
 #top--nav {
-  opacity:0.92;
+  opacity:0.97;
+//  background-clip: padding-box;
+//  padding-bottom: 1em;
+//  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+//  border-top: 1px solid rgba(255, 255, 255, 0.3);
   .title-area {
     h1 {
       img {
@@ -173,35 +177,63 @@ section.rowWrapper {
 
 =========================================================================*/
 %rsBulletsBottom {
+  $bullet:0.7em;
+  $bullet-medium: 1.5em;
+  $bullet-large: 2em;
+
   position: relative;
   padding:1.3em 0 2.4em 0px;
 
   .rsBullet {
+    width:$bullet !important;
+    height:$bullet !important;
+    margin-right:0.8em;
+
     &.rsNavSelected {
       span {
         background:#fff !important;
       }
     }
     span {
-      background-color:transparent !important;
+      background-color:transparent;
       border:2px solid #fff;
+      width:$bullet !important;
+      height:$bullet !important;
+      &:hover {
+        background:#fff;
+        opacity:0.8;
+      }
+    }
+    &:hover {
+      cursor:$cursor-pointer-value;
     }
   }
-
   @media #{$medium-up} {
     padding:2.6em 0 !important;
 
     .rsBullet {
-      width:2em !important;
-      height:2em !important;
+      width:$bullet-medium !important;
+      height:$bullet-medium !important;
       margin-right:1em;
       span {
-        width:2em !important;
-        height:2em !important;
+        width:$bullet-medium !important;
+        height:$bullet-medium !important;
       }
     }
   }
+  @media #{$large-up} {
+    padding:2.6em 0 !important;
 
+    .rsBullet {
+      width:$bullet-large !important;
+      height:$bullet-large !important;
+      margin-right:1em;
+      span {
+        width:$bullet-large !important;
+        height:$bullet-large !important;
+      }
+    }
+  }
 }
 
 // Position changed in app.js
@@ -252,6 +284,16 @@ section.rowWrapper {
   @if $allowMarginsPc == true {
     @if $padding != 0 {
       @media #{$large-up} { padding:$padding; }
+    }
+  }
+  @else if $ignore == true {
+    padding:$padding;
+  }
+}
+@mixin setSectionHD( $padding: 0, $ignore: false){
+  @if $allowMarginsHD == true {
+    @if $padding != 0 {
+      @media #{$xlarge-up} { padding:$padding; }
     }
   }
   @else if $ignore == true {
@@ -360,32 +402,25 @@ This mixin put border in the position.
 
 =========================================================================*/
 
-@mixin module__header($conf: (), $medium-up-conf:(), $large-up-conf: () ) {
+@mixin module__header($conf: (), $large-up-conf: () ) {
   // Extending the default arguments with the given object
 
   $conf: map-merge((
-          color: $primary-color,
-          color2: $primary-color,
-          color3: $blue3-color,
-          title-margin: 0 !important,
-          subtitle-margin: 0.8rem 0px,
-  ), $conf);
+                      font: large,
+                      color: $primary-color,
+                      color2: $primary-color,
+                      color3: $blue3-color,
+                      title-margin: 0 !important,
+                      subtitle-margin: 0.8rem 0px ), $conf);
 
-  $medium-up-conf: map-merge((
-          color: #fff,
-          color2: #000,
-          color3: #000,
-          title-margin: 0 !important,
-          subtitle-margin: 0.8rem 0px,
-  ), $medium-up-conf);
 
   $large-up-conf: map-merge((
-          color: #fff,
-          color2: #000,
-          color3: #000,
-          title-margin: 0 !important,
-          subtitle-margin: 0.8rem 0px,
-  ), $large-up-conf);
+                      color: map-get($conf, color),
+                      color2: map-get($conf, color2),
+                      color3: map-get($conf, color3),
+                      title-margin: map-get($conf, title-margin),
+                      subtitle-margin: 0.8rem 0px ), $large-up-conf);
+
 
 //  @media #{$medium-up} { @include setSpace(0.8em 2em 1em 2em); }
 //  @media #{$large-up}  { @include setSpace(1em 0 1em 0); }
@@ -393,20 +428,46 @@ This mixin put border in the position.
   &.section__header {
     // Header title
     .section__title {
-      @extend %font__size--large;
-      margin-bottom: map-get($conf, title-margin);
+      @if map-get($conf,font) == large {
+        @extend %font__size--large;
+      }
+      @else if map-get($conf,font) == medium{
+        @extend %font__size--medium;
+      }
+      margin: map-get($conf, title-margin);
       color: map-get($conf, color);
     }
     // Header subtitle
     .section__subtitle {
       color: map-get($conf, color2);
+      padding: map-get($conf, subtitle-margin);
+      @extend %font__size--medium;
       //Styles
       .first__line {
         font-family: "OpenSans-Regular" !important;
         color: map-get($conf, color3);
       }
-      padding: map-get($conf, subtitle-margin);
-      @extend %font__size--medium;
+    }
+  }
+
+  @media #{$medium-up} {
+
+    &.section__header {
+      // Header title
+      .section__title {
+        margin: map-get($large-up-conf, title-margin);
+        color: map-get($large-up-conf, color);
+      }
+      // Header subtitle
+      .section__subtitle {
+        color: map-get($large-up-conf, color2);
+        padding: map-get($large-up-conf, subtitle-margin);
+        //Styles
+        .first__line {
+          font-family: "OpenSans-Regular" !important;
+          color: map-get($large-up-conf, color3);
+        }
+      }
     }
   }
 
@@ -508,8 +569,8 @@ This mixin put border in the position.
   author: Wojciech Mikołajewski <wojciechmikolajewski@gmail.com>
 =========================================================================*/
 %put-sliderArrowsMain {
-  .visibleNearby,
-  .slierNavArrows{
+
+  .visibleNearby {
     width: 100%;
     .rsSlide img {
       //        opacity: 0.45;
@@ -532,10 +593,15 @@ This mixin put border in the position.
       -o-transform: scale(1);
       transform: scale(1);
     }
+  }
+
+}
+
+%slider__arrows {
 
     // Arrows
-    $arrow-height:70px;
-    $arrow-width:70px;
+    $arrow-height:30px;
+    $arrow-width:30px;
 
     .rsArrow {
       height: 100%;
@@ -563,14 +629,14 @@ This mixin put border in the position.
     }
 
     .rsArrowLeft {
-      left: -$arrow-width; top: 0;
+      visibility: hidden;
       .rsArrowIcn {
         background: url('http://launchr.pl/goat-in-spa/gfx/3_strzalka.png');
         background-size:$arrow-width;
       }
     }
     .rsArrowRight {
-      right: -$arrow-width; top:0;
+      visibility: hidden;
       .rsArrowIcn {
         background: url('http://launchr.pl/goat-in-spa/gfx/3_strzalka2.png');
         background-size:$arrow-width;
@@ -579,6 +645,55 @@ This mixin put border in the position.
     .rsArrowDisabled {
       .rsArrowIcn { opacity: .2; filter: alpha(opacity=20);  *display: none; }
     }
-  }
 
+  @media #{$large-up} {
+    $arrow-height:40px;
+    $arrow-width:40px;
+    .rsArrow {
+      width: $arrow-width;
+    }
+    .rsArrowIcn {
+      width: $arrow-width;
+      height: $arrow-height;
+      margin-top: -$arrow-height;
+    }
+    .rsArrowLeft {
+      visibility: visible;
+      left: -$arrow-width/2.2; top: 0;
+      .rsArrowIcn {
+        background-size:$arrow-width;
+      }
+    }
+    .rsArrowRight {
+      visibility: visible;
+      right: -$arrow-width/2.2; top:0;
+      .rsArrowIcn {
+        background-size:$arrow-width;
+      }
+    }
+  }
+  @media #{$xlarge-up} {
+    $arrow-height:70px;
+    $arrow-width:70px;
+    .rsArrow {
+      width: $arrow-width;
+    }
+    .rsArrowIcn {
+      width: $arrow-width;
+      height: $arrow-height;
+      margin-top: -$arrow-height;
+    }
+    .rsArrowLeft {
+      left: -$arrow-width; top: 0;
+      .rsArrowIcn {
+        background-size:$arrow-width;
+      }
+    }
+    .rsArrowRight {
+      right: -$arrow-width; top:0;
+      .rsArrowIcn {
+        background-size:$arrow-width;
+      }
+    }
+  }
 }

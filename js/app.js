@@ -91,7 +91,7 @@ requirejs([ "jquery.min",
         /**
          * Royal slider
          */
-        $(".rsMainSlideImage").css("margin-top",0);
+        //$(".rsMainSlideImage").css("margin-top",0);
 
 
 
