@@ -139,6 +139,8 @@
 
     .section__content {
 
+
+
       /**
         We gonna wrap events in __events--slide because of that on mobile we change this section into slider,
         and following class is needed to wrap some portions of events. Otherwise we'd have single event as single slider.
@@ -232,6 +234,9 @@
             width:50%;
             .__info {
               padding:1em;
+              .news__title {
+                font-size:1.5em;
+              }
             }
           }
           .__sep {

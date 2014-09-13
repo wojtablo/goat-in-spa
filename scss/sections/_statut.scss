@@ -76,13 +76,13 @@
   }
 
   @media #{$large-only} {
+
+  }
+
+  @media #{$large-up} {
     .contentSlider {
       width:70% !important;
       margin:0 auto;
     }
-  }
-
-  @media #{$large-up} {
-
   }
 }

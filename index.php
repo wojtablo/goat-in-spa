@@ -5,7 +5,6 @@
  * Date: 11.09.14
  * Time: 16:16
  */
-
 ?>
 
 <!-- Meta -->
@@ -26,20 +25,20 @@
 <!-- Sekcja 3. Aktualności -->
 <?php include_once("templates/sections/_news.html"); ?>
 
-<!--<!-- Sekcja 4. O Fundacji -->
+<!-- Sekcja 4. O Fundacji -->
 <?php include_once("templates/sections/_o-fundacji.html"); ?>
-<!---->
-<!--<!-- Sekcja 5. Rada i zarząd -->
-<?php //include_once("templates/sections/_radaizarzad.html"); ?>
+
+<!-- Sekcja 5. Rada i zarząd -->
+<?php include_once("templates/sections/_radaizarzad.html"); ?>
 
 <!-- Sekcja 7. Organizacja publiczna -->
 <?php include_once("templates/sections/_organizacja-publiczna.html"); ?>
 
 <!-- Sekcja 8. Patroni -->
-<?php // include_once("templates/sections/_patroni.html"); ?>
+<?php include_once("templates/sections/_patroni.html"); ?>
 
 <!-- Sekcja 9. Statut -->
-<?php  include_once("templates/sections/_statut.html"); ?>
+<?php include_once("templates/sections/_statut.html"); ?>
 
 <!-- Sekcja 10. Sprawozdania finansowe -->
 <?php include_once("templates/sections/_sprawozdania-finansowe.html"); ?>
