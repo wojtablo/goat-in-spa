@@ -16,6 +16,12 @@ $dir_GFX: "http://beta.kozminski.edu.pl/fundacja/gfx/";
 // Local defaults
 $dir_FONTS: "/fonts/";
 
+
+$bullet:0.7em;
+$bullet-medium: 1.3em;
+$bullet-large: 1.4em;
+
+
 /*------------------------------------*\
     MAIN IMPORTER
 \*------------------------------------*/
@@ -59,6 +65,7 @@ $dir_FONTS: "/fonts/";
     "utilities/mixins",
 
   // Sekcje
+    "sections/_navi",
     "sections/_home",
     "sections/_misja",
     "sections/_dzialalnosc",
@@ -76,7 +83,6 @@ $dir_FONTS: "/fonts/";
     "sections/_kontakt",
     "sections/_footer"
 ;
-
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   DEBUGGING MEDIA QUERIES

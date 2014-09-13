@@ -165,8 +165,8 @@ section.rowWrapper {
 
 /*========================================================================
   Mixin             :   Slier options
-  Version:          :   v1.0
-  Updated:          :   03/09/2014
+  Version:          :   v1.1
+  Updated:          :   13/09/2014
 
   @position         : Border position (top/bottom/left/right)
   @color            : Color
@@ -176,6 +176,72 @@ section.rowWrapper {
   This mixin put border in the position.
 
 =========================================================================*/
+.rsBullets {
+
+    position: relative;
+    padding:1.3em 0 2.4em 0px;
+
+    .rsBullet {
+      width:$bullet !important;
+      height:$bullet !important;
+      margin-right:0.8em;
+
+      &.rsNavSelected {
+        span {
+          background:#fff !important;
+        }
+      }
+      span {
+        background-color:transparent;
+        border:2px solid #fff;
+        width:$bullet !important;
+        height:$bullet !important;
+        &:hover {
+          background:#fff;
+          opacity:0.8;
+        }
+      }
+      &:hover {
+        cursor:$cursor-pointer-value;
+      }
+    }
+    @media #{$medium-up} {
+      padding:2.6em 0 !important;
+
+      .rsBullet {
+        width:$bullet-medium !important;
+        height:$bullet-medium !important;
+        margin-right:1em;
+        span {
+          width:$bullet-medium !important;
+          height:$bullet-medium !important;
+        }
+      }
+    }
+    @media #{$large-up} {
+      padding:2em 0 !important;
+
+      .rsBullet {
+        width:$bullet-large !important;
+        height:$bullet-large !important;
+        margin-right:1em;
+        span {
+          width:$bullet-large !important;
+          height:$bullet-large !important;
+        }
+      }
+    }
+
+}
+
+
+// Position changed in app.js
+%rsBulletsTop {
+  position: relative !important;
+  padding:1em 0 1.3em 0px;
+}
+
+
 %rsBulletsBottom {
   $bullet:0.7em;
   $bullet-medium: 1.5em;
@@ -235,14 +301,6 @@ section.rowWrapper {
     }
   }
 }
-
-// Position changed in app.js
-%rsBulletsTop {
-  position: relative !important;
-  padding:1em 0 1.3em 0px;
-}
-
-
 
 /*========================================================================
   Mixin             :   SECTIONS
@@ -340,7 +398,6 @@ This mixin put border in the position.
   background:$color;
 }
 
-
 /*========================================================================
   Mixin             :   THROW-UP
   Version:          :   v1.0
@@ -354,12 +411,24 @@ This mixin put border in the position.
   This mixin put background image into any container under condition
 
 =========================================================================*/
-@mixin putSectionImage($bgColor, $filename, $filename2,$filename3,$filename4, $position, $position2, $position3, $position4){
+@mixin putSectionImage($bgColor, $filename, $filename2, $filename3, $filename4, $position, $position2, $position3, $position4){
   @if $graphicMode == true {
     background-color:$bgColor;
-    @if $position2 != "" {
-      background-image: url("#{$dir_GFX}#{$filename}"), url("#{$dir_GFX}#{$filename2}"), url("#{$dir_GFX}#{$filename3}"), url("#{$dir_GFX}#{$filename4}");
-      background-position: $position, $position2, $position3, $position4;
+    @if $filename2 != "" {
+      @if $filename3 != "" {
+        @if $filename4 != "" {
+          background-image: url("#{$dir_GFX}#{$filename}"), url("#{$dir_GFX}#{$filename2}"), url("#{$dir_GFX}#{$filename3}"), url("#{$dir_GFX}#{$filename4}");
+          background-position: $position, $position2, $position3, $position4;
+        }
+        @else {
+          background-image: url("#{$dir_GFX}#{$filename}"), url("#{$dir_GFX}#{$filename2}"), url("#{$dir_GFX}#{$filename3}");
+          background-position: $position, $position2, $position3;
+        }
+      }
+      @else {
+        background-image: url("#{$dir_GFX}#{$filename}"), url("#{$dir_GFX}#{$filename2}");
+        background-position: $position, $position2;
+      }
     }
     @else {
       background-image: url("#{$dir_GFX}#{$filename}");
@@ -647,8 +716,8 @@ This mixin put border in the position.
     }
 
   @media #{$large-up} {
-    $arrow-height:40px;
-    $arrow-width:40px;
+    $arrow-height:57px;
+    $arrow-width:57px;
     .rsArrow {
       width: $arrow-width;
     }
@@ -659,38 +728,40 @@ This mixin put border in the position.
     }
     .rsArrowLeft {
       visibility: visible;
-      left: -$arrow-width/2.2; top: 0;
+      left: -$arrow-width*1.5; top: 0;
       .rsArrowIcn {
         background-size:$arrow-width;
       }
     }
     .rsArrowRight {
       visibility: visible;
-      right: -$arrow-width/2.2; top:0;
+      right: -$arrow-width*1.5; top:0;
       .rsArrowIcn {
         background-size:$arrow-width;
       }
     }
   }
+
   @media #{$xlarge-up} {
-    $arrow-height:70px;
-    $arrow-width:70px;
+    $arrow-height:60px;
+    $arrow-width:60px;
     .rsArrow {
       width: $arrow-width;
     }
     .rsArrowIcn {
       width: $arrow-width;
       height: $arrow-height;
-      margin-top: -$arrow-height;
+      top:0px;
+      margin-top: 0;
     }
     .rsArrowLeft {
-      left: -$arrow-width; top: 0;
+      left: -$arrow-width*2.5; top: 0;
       .rsArrowIcn {
         background-size:$arrow-width;
       }
     }
     .rsArrowRight {
-      right: -$arrow-width; top:0;
+      right: -$arrow-width*2.5; top:0;
       .rsArrowIcn {
         background-size:$arrow-width;
       }

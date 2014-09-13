@@ -41,8 +41,8 @@
   // Section margines
   > .row {
     @include setSectionMobile(0 0 5em 0);
-    @include setSectionTablet(0 0 8em 0);
-    @include setSectionPc(0 0 8em 0);
+    @include setSectionTablet(3em 0 8em 0);
+    @include setSectionPc(3em 0 8em 0);
   }
   > .row:first-of-type {
     padding-bottom:0px;

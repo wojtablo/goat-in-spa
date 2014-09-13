@@ -34,7 +34,7 @@
   @media #{$medium-up} {
     @include putSectionImage( $background-color,
                               "4_motywG.png","2_motywD3.png", "4_motywDs.png","",
-                              5% 100%, 70% 0%, bottom right, bottom right );
+                              5% 100%, 70% 0%, bottom right, none );
   }
   @media #{$xlarge-up} {
     @include putSectionImage( $background-color,

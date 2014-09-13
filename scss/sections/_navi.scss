@@ -1,0 +1,11 @@
+.fixed.expanded:not(.top-bar){
+  .top-bar-section {
+     z-index: 98;
+     margin-top: 0px;
+  }
+  .title-area {
+     position: relative;
+     width: auto;
+     z-index: auto;
+  }
+}

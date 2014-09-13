@@ -23,8 +23,9 @@
   // Section margines
   .row {
     @include setSectionMobile(1em 0 0 0);
-    @include setSectionTablet(0 0 0 0);
-    @include setSectionPc(1em 0 4em 0);
+    @include setSectionTablet(3.3em 0 0 0);
+    @include setSectionPc(4em 0 2.5em 0);
+    @include setSectionHD(4em 0 2.5em 0);
   }
 
   .sep {
@@ -47,14 +48,13 @@
     }
     .section__subtitle {
       @extend %font__size--medium;
-      padding-bottom:0.8em;
+      padding-bottom:0.4em;
       span {
         font-family:"OpenSans-Regular" !important;
         color:#fff;
       }
     }
   }
-
 
   // ---------------------------------------------------------------
   // SECTION's main content
@@ -63,26 +63,32 @@
     .contentSlider {
       @extend %put-sliderArrowsMain;
       @extend %slider__arrows;
-      .rsBullets {
-        @extend %rsBulletsBottom;
-        padding:0px !important;
-      }
+      @extend .rsBullets;
     }
   }
 
 
   @media #{$medium-only} {
-
+    .contentSlider {
+      width: 80% !important;
+      margin: 0 auto;
+    }
   }
 
-  @media #{$large-only} {
-
-  }
+  @media #{$large-only} {  }
 
   @media #{$large-up} {
     .contentSlider {
-      width:70% !important;
+      width:80% !important;
       margin:0 auto;
+      .rsArrowIcn {
+        top:180px !important;
+      }
+      .rsSlide {
+        p {
+          font-size:1.1em;
+        }
+      }
     }
   }
 }

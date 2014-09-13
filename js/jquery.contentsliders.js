@@ -7,13 +7,13 @@ $('#slider-statut').royalSlider({
     controlNavigation: 'bullets',
     imageScaleMode: 'none',
     imageAlignCenter: false,
-    loop: true,
-    loopRewind: true,
-    numImagesToPreload: 6,
-    keyboardNavEnabled: true,
+    loop: false,
+    loopRewind: false,
+    numImagesToPreload: 2,
+    keyboardNavEnabled: false,
     usePreloader: false,
     navigateByClick: false,
-    transitionSpeed: 800
+    transitionSpeed: 300
 });
 
 

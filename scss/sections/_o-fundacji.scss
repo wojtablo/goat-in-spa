@@ -39,7 +39,8 @@
   .row__prefix {
     @include setSectionMobile(1em 0 1em 0);
     @include setSectionTablet(0em 0 0em 0);
-    @include setSectionPc(2.5em 0 3em 0);
+    @include setSectionPc(5.5em 0 3em 0);
+    @include setSectionHD(6em 0 3em 0);
   }
   .row {
     @include setSectionMobile(1.5em 1em);
