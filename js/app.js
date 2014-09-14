@@ -133,7 +133,6 @@ requirejs([ "jquery.min",
             }
         });
 
-
         /**
          * Custom jQuery
          */
@@ -175,10 +174,10 @@ requirejs([ "jquery.min",
 
         var sliderStatut = $('#slider-statut');
         sliderStatut.prepend(sliderStatut.find('.rsArrow'));
+        nanobar.go(100);
 
         window.onload = function(){
             //alert("stop, teraz wegorz");
-            nanobar.go(100);
         }
 
 
