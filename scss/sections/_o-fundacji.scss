@@ -33,25 +33,34 @@
   //---------------------------------------------------------------
   // Media Queries
   //---------------------------------------------------------------
+  .crossSectionArrow--left {
+    bottom: -4rem;
+  }
   @media #{$medium-up} { }
+  @media #{$large-up} {
+    .crossSectionArrow--left {
+      height: 201px;
+      bottom: -15rem;
+      left: 0.5rem;
+    }
+  }
 
   // Section margines
   .row__prefix {
-    @include setSectionMobile(1em 0 1em 0);
-    @include setSectionTablet(0em 0 0em 0);
+    @include setSectionMobile(5em 0 1em 0);
+    @include setSectionTablet(6em 0 2em 0);
     @include setSectionPc(5.5em 0 3em 0);
     @include setSectionHD(6em 0 3em 0);
   }
   .row {
     @include setSectionMobile(1.5em 1em);
-    @include setSectionTablet(0em 0 0em 0);
+    @include setSectionTablet(4em 0 3em 0);
     @include setSectionPc(4em 0 4em 0);
   }
 
   border-bottom:solid 2em #138fbb;
-  @media #{$medium-up} {
+  @media #{$large-up} {
     border-bottom:solid 7em #138fbb;
-
   }
 
 
@@ -101,6 +110,7 @@
       color:#bae1ed;
       font-size:1.1em;
       line-height:1.2em;
+      font-family:'OpenSans-Light';
     }
     .section__subtitle {
       font-size:1.1em;

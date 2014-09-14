@@ -24,6 +24,9 @@
   // Media Queries
   //---------------------------------------------------------------
   @media #{$medium-up} {
+    @include putSectionImage($background-color,"4_motywD.png","","","", 6% -1%,"","","");
+  }
+  @media #{$large-up} {
     @include putSectionImage($background-color,"4_motywD.png","","","", top left,"","","");
   }
 

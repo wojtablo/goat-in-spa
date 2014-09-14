@@ -22,7 +22,7 @@
 
   // Section margines
   .row {
-    @include setSectionMobile(1em 0 0 0);
+    @include setSectionMobile(4em 0 0 0);
     @include setSectionTablet(3.3em 0 0 0);
     @include setSectionPc(4em 0 2.5em 0);
     @include setSectionHD(4em 0 2.5em 0);
@@ -45,6 +45,7 @@
   .section__header {
     .section__title {
       @extend %font__size--large;
+      margin-bottom:0.3em;
     }
     .section__subtitle {
       @extend %font__size--medium;
