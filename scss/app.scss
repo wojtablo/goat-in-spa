@@ -10,14 +10,15 @@ $allowMarginsPc: $allowMarginsMobile;
 $allowMarginsHD: $allowMarginsMobile;
 
 // Live defaults
-$dir_GFX: "http://beta.kozminski.edu.pl/fundacja/gfx/";
+$dir_GFX: "/gfx/";
 //$dir_FONTS: "http://beta.kozminski.edu.pl/fundacja/fonts/";
 
 // Local defaults
 $dir_FONTS: "/fonts/";
+//$dir_FONTS: "/fonts/";
 
 
-$bullet:0.7em;
+$bullet:1em;
 $bullet-medium: 1.3em;
 $bullet-large: 1.4em;
 
@@ -61,7 +62,7 @@ $bullet-large: 1.4em;
     // Royal slider
     "plugins/slider",
 
-    // Include main mixins set "utilities/mixins", "utilities/_mixins",
+    // Include main mixins set "utilities/mixins", "utilities/_mixins"
     "utilities/mixins",
 
   // Sekcje
@@ -88,6 +89,11 @@ $bullet-large: 1.4em;
   DEBUGGING MEDIA QUERIES
   wyświetla informacje o aktywnym media query
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.clearandfloat {
+  clear:both;
+  float: none;
+}
 
 section {
 //  border-bottom:2px dotted #00ff0a;

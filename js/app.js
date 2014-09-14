@@ -138,8 +138,8 @@ requirejs([ "jquery.min",
          * Custom jQuery
          */
             // Section 3. Działalność
-        $(".xx").hide();
-        $(".news__more").click(function(event) {
+        $(".section__dzialalnosc .xx").hide();
+        $(".section__dzialalnosc .news__more").click(function(event) {
             event.preventDefault();
             var that = $(this);
             that.prev().toggle("fast", function() {
@@ -149,8 +149,8 @@ requirejs([ "jquery.min",
         });
 
         // Section 3. Patroni
-        $(".full-desc").hide();
-        $(".slide--more").click(function(event) {
+        $(".section__patroni .full-desc").hide();
+        $(".section__patroni .slide--more").click(function(event) {
             event.preventDefault();
             var that = $(this);
             that.prev().toggle("fast", function() {

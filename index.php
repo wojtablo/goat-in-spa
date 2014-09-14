@@ -29,13 +29,13 @@
 <?php include_once("templates/sections/_o-fundacji.html"); ?>
 
 <!-- Sekcja 5. Rada i zarząd -->
-<?php  include_once("templates/sections/_radaizarzad.html"); ?>
+<?php  //include_once("templates/sections/_radaizarzad.html"); ?>
 
 <!-- Sekcja 7. Organizacja publiczna -->
-<?php include_once("templates/sections/_organizacja-publiczna.html"); ?>
+<?php //include_once("templates/sections/_organizacja-publiczna.html"); ?>
 
 <!-- Sekcja 8. Patroni -->
-<?php  include_once("templates/sections/_patroni.html"); ?>
+<?php  //include_once("templates/sections/_patroni.html"); ?>
 
 <!-- Sekcja 9. Statut -->
 <?php include_once("templates/sections/_statut.html"); ?>
