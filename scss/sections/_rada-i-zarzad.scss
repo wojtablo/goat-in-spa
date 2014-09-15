@@ -41,6 +41,9 @@
     @include setSectionMobile(0 0 0 0);
     @include setSectionTablet(7em 0 2em 0);
     @include setSectionPc(7em 0 2em 0);
+    > .columns {
+      padding-right:$column-gutter*2;
+    }
   }
 
   .crossSectionArrow--right {
@@ -51,8 +54,9 @@
 
   img.right-join {
     position: absolute;
-    right: -20px;
-    top: 424px;
+    right:0px;
+    top: 40%;
+    width: 5.95%;
   }
 
   // ---------------------------------------------------------------
@@ -142,7 +146,7 @@
 
   }
 
-  @media #{$large-up} {
+  @media #{$xlarge-up} {
     .crossSectionArrow--right {
       right: -3% !important;
     }
