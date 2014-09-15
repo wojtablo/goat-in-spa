@@ -113,13 +113,17 @@
       font-family:'OpenSans-Light';
     }
     .section__subtitle {
-      font-size:1.1em;
-      color:#fff;
+      font-family:'OpenSans-Regular';
+      font-size: 3.0em;
+      color: #bae1ed;
+      position: relative;
+      margin-top: -20px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
     }
     @media #{$medium-up} {
-      .section__subtitle {
-        font-family:"OpenSans-Light" !important;
-      }
+
       p {
         color:#bae1ed;
         font-size:2.6em;

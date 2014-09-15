@@ -48,6 +48,7 @@
       @extend %font__size--large;
     }
     .section__subtitle {
+      display:none;
       &::first-line       { color:$blue3-color; }
       padding:            0.8rem 0px;
       @extend             %font__size--medium;

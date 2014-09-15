@@ -72,6 +72,11 @@
   //---------------------------------------------------------------
   .section__header {
     @include module__header($header-configuration);
+    .section__subtitle {
+      &:first-line {
+        color:#255a78 !important;
+      }
+    }
   }
 
   .section__content {

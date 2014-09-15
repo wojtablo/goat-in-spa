@@ -45,7 +45,7 @@ html.wf-inactive {
     font-size:2.6em;
   }
   @media #{$large-up}  {
-    font-size:4em;
+    font-size:4.4em;
   }
 }
 
@@ -132,11 +132,16 @@ section.rowWrapper {
 %btn__arrow--down {
   display:inline-block;
   background: transparent url("#{$dir_GFX}1_strzalkaD.png") center center no-repeat;
-  background-size: 50%;
-  -webkit-animation: pulsate 1s ease-out;
-  -webkit-animation-iteration-count: infinite;
+  background-size: 70%;
+//  -webkit-animation: pulsate 1s ease-out;
+//  -webkit-animation-iteration-count: infinite;
   //  width:103px;
   //  height:103px;
+  @media #{$large-up}{
+    width:103px !important;
+    height:103px !important;
+    background-size: 100% !important;
+  }
 }
 
 @-webkit-keyframes pulsate {
@@ -157,7 +162,7 @@ section.rowWrapper {
   .title-area {
     h1 {
       img {
-        height:51px;
+        height:74px;
       }
     }
   }
@@ -218,8 +223,9 @@ section.rowWrapper {
         }
       }
     }
+
     @media #{$large-up} {
-      padding:2em 0 !important;
+      padding:0 !important;
 
       .rsBullet {
         width:$bullet-large !important;
@@ -705,8 +711,9 @@ This mixin put border in the position.
     .rsArrowRight {
       visibility: hidden;
       .rsArrowIcn {
-        background: url('http://launchr.pl/goat-in-spa/gfx/3_strzalka2.png');
+        background: url('http://launchr.pl/goat-in-spa/gfx/3_strzalka.png');
         background-size:$arrow-width;
+        @include transform(rotate(-180deg));
       }
     }
     .rsArrowDisabled {
@@ -714,8 +721,8 @@ This mixin put border in the position.
     }
 
   @media #{$large-up} {
-    $arrow-height:57px;
-    $arrow-width:57px;
+    $arrow-height:80px;
+    $arrow-width:80px;
     .rsArrow {
       width: $arrow-width;
     }
@@ -741,15 +748,15 @@ This mixin put border in the position.
   }
 
   @media #{$xlarge-up} {
-    $arrow-height:60px;
-    $arrow-width:60px;
+    $arrow-height:103px;
+    $arrow-width:103px;
     .rsArrow {
       width: $arrow-width;
     }
     .rsArrowIcn {
       width: $arrow-width;
       height: $arrow-height;
-      top:0px;
+      top:70px;
       margin-top: 0;
     }
     .rsArrowLeft {

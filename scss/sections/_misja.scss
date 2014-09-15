@@ -27,6 +27,20 @@
     @include putSectionImage(transparent,"2_motywG2.png","", "","",bottom right,"","","");
   }
 
+
+  // Separator
+  .sep {
+    &.sep--top {
+      @include putSeparator( $blue3-color, 60%);
+      margin-bottom:0.5em;
+    }
+    &.sep--bottom {
+      @include putSeparator( $blue3-color, 40%);
+      margin-top:0.5em;
+    }
+  }
+
+
   //---------------------------------------------------------------
   // General look
   //---------------------------------------------------------------
@@ -47,10 +61,29 @@
   //---------------------------------------------------------------
   .section__header {
     @include module__header();
+    .section__subtitle {
+      &:first-line {
+        font-family: "OpenSans-Regular" !important;
+        color: red;
+      }
+    }
   }
 
   // ---------------------------------------------------------------
   // SECTION's content
   //---------------------------------------------------------------
   .section__content { }
+
+  .crossSectionArrow--right {
+    @media #{$large-up} {
+      height: 180px;
+      bottom: 2rem;
+      right: 0.5rem;
+    }
+    @media #{$xlarge-up} {
+      height: 180px;
+      bottom: 1rem;
+      right: 0.5rem;
+    }
+  }
 }

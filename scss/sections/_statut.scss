@@ -65,6 +65,9 @@
       @extend %put-sliderArrowsMain;
       @extend %slider__arrows;
       @extend .rsBullets;
+      p {
+        font-family:"OpenSans-Light";
+      }
     }
   }
 

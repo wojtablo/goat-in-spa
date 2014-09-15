@@ -49,19 +49,18 @@
   // SECTION's content
   //---------------------------------------------------------------
   .section__content {
-    font-family:"OpenSans-Regular";
-    padding-left:4em;
-
+    font-family: "OpenSans-Regular";
+    padding-left: 10em;
     font-size: 1.3em;
     line-height: 1.4em;
 
     &:before {
-      font-family:"MyriadPro-SemiboldCond";
+      font-family: "MyriadPro-SemiboldCond";
       content: "1%";
-      float:left;
-      margin-left:-2.5em;
-      font-size:1.9em;
-      line-height:2em;
+      float: left;
+      margin-left: -1.5em;
+      font-size: 2.9em;
+      line-height: 1.2em;
       font-weight: bold;
     }
   }

@@ -62,42 +62,70 @@
   h2 {
     font-family:"OpenSans-Regular";
     font-size:1.9em;
+    margin-bottom:0.89em;
+  }
+
+  .button.tiny {
+    background:transparent;
+    padding-left:0px;
+    color:$blue5-color;
+    font-family: "OpenSans-Light";
+    font-size:1.6em;
+  }
+
+  input, textarea {
+    font-family: "OpenSans-Light" !important;
+
+  }
+
+  h2.kontakt_form--label {
+    background:transparent url("#{$dir_GFX}10_ikonka_formularz.png") no-repeat;
+    background-position: left center ;
+    padding-left:40px;
   }
 
   .kontakt__data {
     p{
-      margin-bottom:0.2em;
+      margin-bottom:0.1em;
+      padding-left: 45px;
+      font-family: "OpenSans-Light";
+      font-size:1.3em;
     }
     li {
       list-style:none;
-      margin-bottom:1em;
+      margin-bottom:1.8em;
     }
     .kontakt__address {
+      margin-top:3em;
       .kontakt__icon {
         background:transparent url("#{$dir_GFX}10_ikonka_fundacja.png") no-repeat;
-        background-position: center top ;
-        padding-top:40px;
+        background-position: left center ;
+        padding-left:40px;
+        font-size:1.5em;
+        > span {
+          font-weight: bold;
+        }
       }
     }
     .kontakt__email {
       .kontakt__icon {
         background:transparent url("#{$dir_GFX}10_ikonka_email.png") no-repeat;
-        background-position: center top ;
-        padding-top:40px;
+        background-position: left center ;
+        padding-left:40px;
       }
     }
     .kontakt__tel {
       .kontakt__icon {
         background:transparent url("#{$dir_GFX}10_ikonka_telefon.png") no-repeat;
-        background-position: center top ;
-        padding-top:40px;
+        background-position: left center ;
+        padding-left:40px;
       }
     }
     .kontakt__bank {
       .kontakt__icon {
         background:transparent url("#{$dir_GFX}10_ikonka_konto.png") no-repeat;
-        background-position: center top ;
-        padding-top:40px;
+        background-position: left center ;
+        padding-left:40px;
       }
     }
   }

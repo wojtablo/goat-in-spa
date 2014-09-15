@@ -48,7 +48,15 @@ html {
 
   // Rows
   .row {
-    &.row-1 { height:        40%;}
+    &.row-1 {
+      height:        40%;
+      @media #{$large-up} {
+        max-width: 95%;
+        .fundacja__logo {
+          top:1.8em;
+        }
+      }
+    }
     &.row-2 { height:        48%;}
   }
 
@@ -72,8 +80,8 @@ html {
     .section__title {
       text-transform:       uppercase;
       @extend               %font__size--xlarge;
-      @include              putBorder(top, $blue4-color, 2px);
-      @include              putBorder(bottom, $blue4-color, 2px);
+      @include              putBorder(top, $blue4-color, 4px);
+      @include              putBorder(bottom, $blue4-color, 4px);
     }
     @media #{$xlarge-only} {
       position: absolute;
@@ -100,6 +108,11 @@ html {
     right: 0;
     height:90px;
     width:90px;
+    @media #{$large-up} {
+      left:auto !important;
+      right: 8% !important;
+      bottom: 17% !important;
+    }
   }
 }
 

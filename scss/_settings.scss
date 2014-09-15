@@ -646,22 +646,22 @@ $accordion-content-active-bg-color: $background-color;
 // $form-label-font-size: rem-calc(14);
 // $form-label-font-weight: $font-weight-normal;
 // $form-label-line-height: 1.5;
-// $form-label-font-color: scale-color($black, $lightness: 30%);
+$form-label-font-color:  rgba(0,0,0,0.75);
 // $form-label-small-transform: capitalize;
 // $form-label-bottom-margin: 0;
 // $input-font-family: inherit;
-// $input-font-color: rgba(0,0,0,0.75);
-// $input-font-size: rem-calc(14);
+$input-font-color: rgba(0,0,0,0.75);
+$input-font-size: rem-calc(17);
 $input-bg-color: #d7e2e4;
 $input-focus-bg-color: #e9e6cc;
-// $input-border-color: scale-color($white, $lightness: -20%);
+$input-border-color: #E5E5E5;
 // $input-focus-border-color: scale-color($white, $lightness: -40%);
 // $input-border-style: solid;
 // $input-border-width: 1px;
 // $input-border-radius: $global-radius;
 // $input-disabled-bg: $gainsboro;
 // $input-disabled-cursor: $cursor-default-value;
-// $input-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+$input-box-shadow: none;
 
 // We use these to style the fieldset border and spacing.
 // $fieldset-border-style: solid;
@@ -1393,7 +1393,7 @@ $topbar-bg-color: #fff;
 $topbar-bg: #fff;
 
 // Height and margin
-$topbar-height: 62px;
+$topbar-height: 80px;
 $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
@@ -1412,14 +1412,14 @@ $topbar-dropdown-link-bg: $font-color;
 // Set the link colors and styles for top-level nav
 $topbar-link-color:$font-color;
 $topbar-link-color-hover:  $font-color;
-$topbar-link-color-active:  #ccc;
+$topbar-link-color-active:  #fff;
 $topbar-link-color-active-hover: $blue-color;
 // $topbar-link-weight: $font-weight-normal;
 // $topbar-link-font-size: rem-calc(13);
 $topbar-link-hover-lightness: -40%; // Darken by 10%
 $topbar-link-bg: #fff;
 $topbar-link-bg-color-hover:#fff;
-$topbar-link-bg-hover: #f1f1f1;
+$topbar-link-bg-hover: #fff;
 $topbar-link-bg-active: #fff;
 $topbar-link-bg-active-hover: #fff;
 $topbar-link-font-family: "OpenSans-Light";
