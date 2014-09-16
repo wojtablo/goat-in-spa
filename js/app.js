@@ -5,8 +5,8 @@
  * Require config
  */
 require.config({
-    //baseUrl: 'fileadmin/templates/fundacjakozminski/_tmpl/_pages/js/',
-    baseUrl: 'js/',
+    baseUrl: 'fileadmin/templates/fundacjakozminski/_tmpl/_pages/js/',
+    //baseUrl: 'js/',
     paths: {
         'jquery': 'jquery.min',
         'foundation.core': 'foundation',
@@ -79,6 +79,26 @@ requirejs([ "jquery.min",
         var nanobar = new Nanobar(options);
         nanobar.go(50);
 
+        //callResize();
+
+        window.addEventListener("orientationchange", function() {
+            // Announce the new orientation number
+            window.location.reload()
+        }, false);
+
+        $(window).resize(function() {
+            // the call to checkMq here will execute every time the window is resized
+            //callResize();
+
+            if(callResize()){
+                //$("#top--nav #section-10").parent().hide();
+                $('#top--nav a[href$="#section-10"]').parent().hide();
+            }
+            else {
+                $('#top--nav a[href$="#section-10"]').parent().show();
+            }
+        });
+
 
         /***************************************************************************************************************
          Scroll
@@ -116,6 +136,17 @@ requirejs([ "jquery.min",
         $(".top-bar-section a").click(function(evn){
             evn.preventDefault();
             $('html,body').scrollTo(this.hash, this.hash);
+        });
+
+        $("#top--nav .name a").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#home").offset().top
+            }, 600);
+        });
+        $("#section-1 .btn__arrow--down").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#section-2").offset().top
+            }, 600);
         });
 
 
@@ -251,3 +282,23 @@ requirejs([ "jquery.min",
     })($, window);
 
 });
+
+function callResize(){
+    if (Modernizr.mq('only all and (min-width: 1010px) and (max-width: 1400px)')) {
+        //console.log("------------------------------")
+        //console.log("BREAKPOINT REACHED! (min-width: 1010px && max-width: 1400px)")
+        return true;
+    }
+    else {
+        return false;
+    }
+
+    //if (Modernizr.mq('only screen and (min-width: 1140px)')) {
+    //    $('div#ss1').html('<div>[snip]</div>');
+    //    $('div#ss1').append('<div><gcse:searchbox-only></gcse:searchbox-only></div>');
+    //}
+    //if (Modernizr.mq('only screen and (max-width: 1139px)')) {
+    //    $('div#ss2').html('<div>[snip]</div>');
+    //    $('div#ss2').append('<div><gcse:searchbox-only></gcse:searchbox-only></div>');
+    //}
+}

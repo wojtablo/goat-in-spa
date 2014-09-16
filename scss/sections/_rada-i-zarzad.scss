@@ -40,7 +40,7 @@
   > .row {
     @include setSectionMobile(0 0 0 0);
     @include setSectionTablet(7em 0 2em 0);
-    @include setSectionPc(7em 0 2em 0);
+    @include setSectionPc(7em 0 6em 0);
     > .columns {
       padding-right:$column-gutter*2;
     }
@@ -145,10 +145,18 @@
     }
 
   }
-
+  @media #{$large-up} {
+    .crossSectionArrow--right {
+      right: 0% !important;
+      height: 203px !important;
+      bottom: -19em;
+    }
+  }
   @media #{$xlarge-up} {
     .crossSectionArrow--right {
-      right: -3% !important;
+      right: -11% !important;
+      height: 203px !important;
+      bottom: -19em;
     }
   }
 

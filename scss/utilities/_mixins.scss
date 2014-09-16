@@ -342,14 +342,22 @@ section.rowWrapper {
     padding:$padding;
   }
 }
-@mixin setSectionPc( $padding: 0, $ignore: false){
+@mixin setSectionPc( $padding: 0, $ignore: false, $margin:false){
+  $_value: $padding;
   @if $allowMarginsPc == true {
-    @if $padding != 0 {
-      @media #{$large-up} { padding:$padding; }
+    @if $_value != 0 {
+      @media #{$large-up} {
+        @if $margin == false {
+          padding:$_value;
+        }
+        @else {
+          margin:$_value;
+        }
+      }
     }
   }
   @else if $ignore == true {
-    padding:$padding;
+    padding:$_value;
   }
 }
 @mixin setSectionHD( $padding: 0, $ignore: false){

@@ -25,7 +25,15 @@
      z-index: auto;
   }
 }
-
+@media #{$sliders-gap}{
+  .top-bar-section {
+    li {
+      a {
+        font-size:0.9em !important;
+      }
+    }
+  }
+}
 @media #{$large-up}{
   #top--nav {
     &.contain-to-grid {

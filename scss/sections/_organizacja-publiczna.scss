@@ -6,8 +6,7 @@
   //---------------------------------------------------------------
   // Media Queries
   //---------------------------------------------------------------
-  @media #{$medium-up} {
-  }
+
 
   //---------------------------------------------------------------
   // General look
@@ -17,10 +16,22 @@
 
   // Section margines
   .row {
-    @include setSectionMobile(4em 0 3em 0);
-    @include setSectionTablet(2em 0 4.5em 0);
-    @include setSectionPc(2em 0 5.5em 0);
+    max-width: 80%;
+    @media #{$medium-only} {
+      max-width: 95%;
+    }
+    @media #{$sliders-gap} {
+      max-width: 89%;
+    }
+
+    .section__content {
+      @include setSectionMobile(4em 0 3em 0);
+      @include setSectionTablet(2em 0 4.5em 0);
+      @include setSectionPc(0px 0 5.5em 0, false, true);
+    }
   }
+
+
 
   .crossSectionArrow--left {
     height:160px !important;
@@ -35,9 +46,62 @@
 
   }
 
+  .section__content {
+
+    @media #{$sliders-gap} {
+      margin-left:5%  !important;
+      width:90% !important;
+    }
+
+
+
+    .section__content--wrapper {
+      padding-left:200px;
+    }
+
+    @media #{$medium-up} {
+      @include putSectionImage( $background-color,
+              "5_procent.png","", "","",
+              0% 192px, none , none, none );
+    }
+
+
+    padding-left: 204px;
+
+
+    figure {
+      margin:0px;
+      padding:0px;
+    }
+    figcaption {
+      margin-bottom:20px;
+    }
+    p,figcaption {
+      font-family:"OpenSans-Light";
+      font-size: 1.7em;
+      color: #203c52;
+      line-height: 31px;
+      text-align: left;
+    }
+    a {
+      display: block;
+      color:#0987ce;
+    }
+  }
+
   @media #{$large-up} {
-    .crossSectionArrow--right {
+    .crossSectionArrow--left {
       right: -3% !important;
+      height: 203px !important;
+      bottom: -1em !important;
+
+    }
+  }
+  @media #{$xlarge-only} {
+    .crossSectionArrow--left {
+      left: 17% !important;
+      height: 203px !important;
+      bottom: -1em !important;
     }
   }
 }
