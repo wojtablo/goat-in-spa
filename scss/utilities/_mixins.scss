@@ -131,7 +131,7 @@ section.rowWrapper {
 
 %btn__arrow--down {
   display:inline-block;
-  background: transparent url("#{$dir_GFX}1_strzalkaD.png") center center no-repeat;
+  background: transparent url("1_strzalkaD.png") center center no-repeat;
   background-size: 70%;
 //  -webkit-animation: pulsate 1s ease-out;
 //  -webkit-animation-iteration-count: infinite;
@@ -429,21 +429,21 @@ This mixin put border in the position.
     @if $filename2 != "" {
       @if $filename3 != "" {
         @if $filename4 != "" {
-          background-image: url("#{$dir_GFX}#{$filename}"), url("#{$dir_GFX}#{$filename2}"), url("#{$dir_GFX}#{$filename3}"), url("#{$dir_GFX}#{$filename4}");
+          background-image:  image-url("#{$filename}"),  image-url("#{$filename2}"),  image-url("#{$filename3}"),  image-url("#{$filename4}");
           background-position: $position, $position2, $position3, $position4;
         }
         @else {
-          background-image: url("#{$dir_GFX}#{$filename}"), url("#{$dir_GFX}#{$filename2}"), url("#{$dir_GFX}#{$filename3}");
+          background-image:  image-url("#{$filename}"),  image-url("#{$filename2}"),  image-url("#{$filename3}");
           background-position: $position, $position2, $position3;
         }
       }
       @else {
-        background-image: url("#{$dir_GFX}#{$filename}"), url("#{$dir_GFX}#{$filename2}");
+        background-image:  image-url("#{$filename}"),  image-url("#{$filename2}");
         background-position: $position, $position2;
       }
     }
     @else {
-      background-image: url("#{$dir_GFX}#{$filename}");
+      background-image:  image-url("#{$filename}");
       background-position: $position;
     }
     background-repeat:no-repeat;

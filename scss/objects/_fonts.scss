@@ -2,32 +2,32 @@
     FONTS
 \*------------------------------------*/
 
-//@include font-face("MyriadPro-LightCond",     font-files("MyriadPro-LightCond.otf"));
-//@include font-face("MyriadPro-SemiboldCond",  font-files("MyriadPro-SemiboldCond.otf"));
-//@include font-face("OpenSans-Bold",           font-files("OpenSans-Bold.ttf"));
-//@include font-face("OpenSans-Light",          font-files("OpenSans-Light.ttf"));
-//@include font-face("OpenSans-Regular",        font-files("OpenSans-Regular.ttf"));
+@include font-face("MyriadPro-LightCond",     font-files("MyriadPro-LightCond.otf"));
+@include font-face("MyriadPro-SemiboldCond",  font-files("MyriadPro-SemiboldCond.otf"));
+@include font-face("OpenSans-Bold",           font-files("OpenSans-Bold.ttf"));
+@include font-face("OpenSans-Light",          font-files("OpenSans-Light.ttf"));
+@include font-face("OpenSans-Regular",        font-files("OpenSans-Regular.ttf"));
 
-@font-face {
-  font-family: 'MyriadPro-LightCond';
-  src: url("#{$dir_FONTS}MyriadPro-LightCond.otf");
-}
-@font-face {
-  font-family: 'MyriadPro-SemiboldCond';
-  src:  url("#{$dir_FONTS}MyriadPro-SemiboldCond.otf");
-}
-@font-face {
-  font-family: 'OpenSans-Bold';
-  src:  url("#{$dir_FONTS}OpenSans-Bold.ttf");
-}
-@font-face {
-  font-family: 'OpenSans-Light';
-  src:  url("#{$dir_FONTS}OpenSans-Light.ttf");
-}
-@font-face {
-  font-family: 'OpenSans-Regular';
-  src:  url("#{$dir_FONTS}OpenSans-Regular.ttf");
-}
+//@font-face {
+//  font-family: 'MyriadPro-LightCond';
+//  src: url("#{$dir_FONTS}MyriadPro-LightCond.otf");
+//}
+//@font-face {
+//  font-family: 'MyriadPro-SemiboldCond';
+//  src:  url("#{$dir_FONTS}MyriadPro-SemiboldCond.otf");
+//}
+//@font-face {
+//  font-family: 'OpenSans-Bold';
+//  src:  url("#{$dir_FONTS}OpenSans-Bold.ttf");
+//}
+//@font-face {
+//  font-family: 'OpenSans-Light';
+//  src:  url("#{$dir_FONTS}OpenSans-Light.ttf");
+//}
+//@font-face {
+//  font-family: 'OpenSans-Regular';
+//  src:  url("#{$dir_FONTS}OpenSans-Regular.ttf");
+//}
 
 p {
   font-family: 'OpenSans-Light';

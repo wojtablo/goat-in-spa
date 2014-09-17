@@ -130,7 +130,7 @@
     $icon-distance-top: 28px;
 
     .__icon{
-      background:transparent url("#{$dir_GFX}2_kropka.png") center center no-repeat;
+      background:transparent url("2_kropka.png") center center no-repeat;
       width:31px;
       height:31px;
       display: block !important;
@@ -198,7 +198,7 @@
           border-collapse: collapse;
           width:100%;
           .__container {
-            background: transparent url("#{$dir_GFX}2_kropka-line.png") 0 top repeat-y;
+            background: transparent url("2_kropka-line.png") 0 top repeat-y;
             .__info { margin-left:70px !important; }
             .__icon { top: $icon-distance-top; }
           }
@@ -219,7 +219,7 @@
             .__icon { top:15px; }
           }
           .__sep {
-            background: transparent url("#{$dir_GFX}2_kropka-line.png") 0 top repeat-y;
+            background: transparent url("2_kropka-line.png") 0 top repeat-y;
             .__icon { top:$icon-distance-top; margin-left:0px; }
           }
         }
