@@ -1,6 +1,6 @@
 <?php
 /**
- * Created by PhpStorm.
+ * Created by PhpStorm..
  * User: Wojciech Mikołajewski
  * Date: 11.09.14
  * Time: 16:16
