@@ -81,7 +81,8 @@ else if (Modernizr.mq('(min-width: 760px) and (max-width: 770px)')) {
         arrowsNav: true,
         controlNavigation: 'bullets',
         arrowsNavAutoHide: false,
-        loop: true,
+        loop: false,
+        loopRewind: true,
         imageScaleMode: 'fit-if-smaller',
         imageAlignCenter: false,
         transitionSpeed: 300,
@@ -110,6 +111,8 @@ else {
         controlNavigation: 'bullets',
         arrowsNavAutoHide: false,
         loop: true,
+        loopRewind: false,
+
         imageScaleMode: 'fit-if-smaller',
         imageAlignCenter: false,
         transitionSpeed: 300,
@@ -121,8 +124,8 @@ else {
 
         visibleNearby: {
             enabled: true,
-            centerArea: 0.3,
-            center: true,
+            centerArea: 0.328,
+            center: false,
             breakpoint: 650,
             breakpointCenterArea: 0.64,
             navigateByCenterClick: false
