@@ -1,0 +1,218 @@
+
+
+/*========================================================================
+  Section           :   Rada i zarząd
+  Functionality     :   Text + image + JS
+  Version:          :   v1.1
+  Updated:          :   11/09/2014
+
+  Każda sekcja powinna mieć możliwie schematyczną budową.
+  Traktujemy sekcje jako swego rodzaju boxy.
+
+  Zadbaj o to aby:
+  - nazwa klasy głównej rozpoczynająca się w konwencji .section__xxxxxx
+  - określamy background lub jego brak
+  - wewnątrz definicji tego stylu wyodrębniony header oraz main content
+  - jeżeli jest jakieś tło to dołączamy je z "mod__ICLUDES" za pomocą @extend
+  - opis tego opisu byl aktualny
+
+=========================================================================*/
+
+.section__radaizarzad {
+
+  //---------------------------------------------------------------
+  // Media Queries
+  //---------------------------------------------------------------
+  @media #{$medium-up} {
+    @include putSectionImage($background-color,"4_motywD.png","","","", 6% -1%,"","","");
+  }
+  @media #{$large-up} {
+    @include putSectionImage($background-color,"4_motywD.png","","","", top left,"","","");
+  }
+
+  //---------------------------------------------------------------
+  // General look
+  //---------------------------------------------------------------
+  h1,h2,h3,h4,h5,h6 { color:$blue5-color; }
+  background-color: $background-color;
+
+  // Section margines
+  > .row {
+    @include setSectionMobile(0 0 0 0);
+    @include setSectionTablet(7em 0 2em 0);
+    @include setSectionPc(7em 0 6em 0);
+    > .columns {
+      padding-right:$column-gutter*2;
+    }
+  }
+
+  .crossSectionArrow--right {
+    height:160px !important;
+    bottom: -8rem;
+    right: 1% !important;
+  }
+
+  img.right-join {
+    position: absolute;
+    right:0px;
+    top: 40%;
+    width: 5.95%;
+  }
+
+  // ---------------------------------------------------------------
+  // SECTION's header
+  //---------------------------------------------------------------
+  .section__header {
+    .section__title {
+      @extend %font__size--large;
+    }
+  }
+  // ---------------------------------------------------------------
+  // SECTION's main content
+  //---------------------------------------------------------------
+  .section__content {
+
+    &:first-of-type {
+      margin-bottom:4em;
+    }
+    .extra__label {
+      font-family:"OpenSans-Regular";
+      font-size:2.8em;
+      line-height:1.2em;
+      span {
+        color: #8fc6d6;
+      }
+    }
+    .tabs {
+      dd {
+        a {
+          padding:0 !important;
+        }
+        a.person__image {
+          display:block;
+          background:transparent url("#{$dir_GFX}5_prezes_szklo.png") top right no-repeat;
+          img {
+
+          }
+          &:hover {
+            img {
+              display:block;
+              @extend %partner--hover;
+            }
+          }
+        }
+      }
+    }
+
+    .columns {
+      position: relative;
+    }
+
+    .row__zarzad {
+      .columns:nth-of-type(2){
+        .extra__label {
+          position: absolute;
+          top: 70px;
+        }
+      }
+    }
+    .row__rada {
+      .columns:nth-of-type(2){
+        .extra__label {
+          position: absolute;
+          top: 40px;
+        }
+      }
+    }
+
+    // Grid
+    .row__decoration {
+      .columns {
+        background:transparent url("#{$dir_GFX}2_time_line.jpg") center center repeat-x;
+        padding-right:0px;
+        a {
+          margin-top:30%;
+        }
+        &:first-of-type{
+          padding-left:0px;
+          a {
+            margin-top:0%;
+          }
+        }
+        &:last-of-type{
+        }
+      }
+    }
+
+  }
+  @media #{$large-up} {
+    .crossSectionArrow--right {
+      right: 0% !important;
+      height: 203px !important;
+      bottom: -19em;
+    }
+  }
+  @media #{$xlarge-up} {
+    .crossSectionArrow--right {
+      right: -11% !important;
+      height: 203px !important;
+      bottom: -19em;
+    }
+  }
+}
+
+.reveal-modal.member__details {
+  height:100%;
+  max-width:100%;
+  margin:0px;
+  padding:0px;
+  background-color: rgba(9, 135, 206, 0.95);
+  text-align:center;
+  .member__details--wrapper {
+    padding:10%;
+    // Separator
+    .sep {
+      &.sep--top {
+        @include putSeparator( #fff, 60%);
+        margin-top:3%;
+        margin-bottom:3%;
+      }
+      &.sep--bottom {
+        @include putSeparator( #fff, 40%);
+        margin-top:3%;
+        margin-bottom:3%;
+      }
+    }
+    p {
+      font-family: "OpenSans-Light";
+      padding: 0 10%;
+      font-size: 1.4em;
+    }
+  }
+  * {
+    color:#fff !important;
+  }
+  img {
+    display: inline !important;
+  }
+}
+.reveal-modal-bg-thecrew {
+  @include reveal-bg();
+
+  @include reveal-modal-style(
+    // Sets background color of reveal modal. Default: $reveal-modal-bg or #fff
+  $bg:transparent,
+    // Set reveal border style. Default: $reveal-border-style or solid
+  $border:solid,
+    // Width of border (i.e. 1px). Default: $reveal-border-width.
+  $border-style:3px,
+    // Color of border. Default: $reveal-border-color.
+  $border-width:$reveal-border-width,
+    // Color of border. Default: $reveal-border-color.
+  $border-color:red,
+    // Choose whether or not to include the default box-shadow. Default: true, Options: false
+  $box-shadow:true,
+    // Default: $reveal-position-top or 50px
+  $top-offset:auto !important
+  );
+}

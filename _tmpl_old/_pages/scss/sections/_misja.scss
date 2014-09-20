@@ -1,0 +1,89 @@
+/*========================================================================
+  Section           :   Misja
+  Functionality     :   Text
+  Version:          :   v1.1
+  Updated:          :   12/09/2014
+=========================================================================*/
+
+// Misja
+.section__misja {
+
+  //---------------------------------------------------------------
+  // Ustawienia
+  //---------------------------------------------------------------
+
+  $primary-color: #012f48;
+
+                    //---------------------\\
+                   //    Media Queries      \\
+  //--------------------------------------------------------------
+  @media #{$medium-up} {
+    @include putSectionImage(transparent,"2_motywG2.png","", "","",90% 100%,"","","");
+  }
+  @media #{$large-up} {
+    @include putSectionImage(transparent,"2_motywG2.png","", "","",92% 100%,"","","");
+  }
+  @media #{$xlarge-up} {
+    @include putSectionImage(transparent,"2_motywG2.png","", "","",bottom right,"","","");
+  }
+
+
+  // Separator
+  .sep {
+    &.sep--top {
+      @include putSeparator( $blue3-color, 60%);
+      margin-bottom:0.5em;
+    }
+    &.sep--bottom {
+      @include putSeparator( $blue3-color, 40%);
+      margin-top:0.5em;
+    }
+  }
+
+
+  //---------------------------------------------------------------
+  // General look
+  //---------------------------------------------------------------
+  h1,h2,h3,h4,h5,h6 { color:$primary-color; }
+
+  // ---------------------------------------------------------------
+  // Layout
+  //---------------------------------------------------------------
+  .row {
+    @include setSectionMobile(4em 0 3em 0);
+    @include setSectionTablet(4em 0 12.5em 0);
+    @include setSectionPc(7em 0 13.5em 0);
+    @include setSectionHD(7em 0 11.5em 0);
+  }
+
+  // ---------------------------------------------------------------
+  // SECTION's header
+  //---------------------------------------------------------------
+  .section__header {
+    @include module__header();
+    .section__subtitle {
+      &:first-line {
+        font-family: "OpenSans-Regular" !important;
+        color: red;
+      }
+    }
+  }
+
+  // ---------------------------------------------------------------
+  // SECTION's content
+  //---------------------------------------------------------------
+  .section__content { }
+
+  .crossSectionArrow--right {
+    @media #{$large-up} {
+      height: 180px;
+      bottom: 2rem;
+      right: 0.5rem;
+    }
+    @media #{$xlarge-up} {
+      height: 180px;
+      bottom: 1rem;
+      right: 0.5rem;
+    }
+  }
+}

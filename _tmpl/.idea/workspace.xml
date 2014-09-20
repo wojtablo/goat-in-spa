@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8e64b269-e01a-4f4c-be32-3ff9813bf835" name="Default" comment="">
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\.bowerrc" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\README.md" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_extensions\tx_thecrew\tmpl--list__news.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_extensions\tx_thecrew\tmpl--list__partnerzy.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_extensions\tx_thecrew\tmpl--list__patroni.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_extensions\tx_thecrew\tmpl--list__rada.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_extensions\tx_thecrew\tmpl--list__zarzad.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\css\MyriadPro-LightCond.otf" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\css\MyriadPro-SemiboldCond.otf" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\css\OpenSans-Bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\css\OpenSans-Light.ttf" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\css\OpenSans-Regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\css\base.css" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\css\component.css" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\css\demo.css" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\css\jquery.jscrollpane.css" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\css\jquery_jscrollpane.css" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\css\normalize.css" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\css\onepage-scroll.css" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\css\reset.css" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\css\styl2.css" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\css\style.css" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\css\style3.css" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\css\style4.css" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\images\ImageAttribution.txt" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\images\Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\images\animal1.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\images\animal2.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\images\animal3.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\images\animal4.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\images\animal5.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\images\animal6.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\images\animal7.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\images\animal8.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\images\arrows.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\images\cross.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\images\pattern.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\index.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\js\dots.js" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\js\jquery-1.9.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\js\jquery.devrama.slider.js" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\js\jquery.malihu.PageScroll2id.js" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\js\jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\js\jquery.nav.js" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\js\jquery.scrollto.js" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\10_ikonka_email.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\10_ikonka_formularz.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\10_ikonka_fundacja.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\10_ikonka_konto.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\10_ikonka_telefon.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\11_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\11_motyw.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\11_motyw_szklo.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\11_motywl.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\11_motyws.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\1_belkaD.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\1_belkaG.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\1_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\1_motyw.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\1_strzalkaD.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\1_szklo.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\2_kreskaG.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\2_kropka.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\2_liczba1.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\2_liczba2.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\2_liczba3.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\2_liczba4.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\2_liczba5.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\2_motywD.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\2_motywD3.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\2_motywDp.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\2_motywDs.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\2_motywG.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\2_motywG2.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\2_motywGl.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\2_motywGp.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\2_motywGs.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\2_numer1.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\2_time_line.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\3727_Aveex_for_Kozminski_strona_WWW_v2-2zwinA.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\3_aktualnosci.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\3_aktualnosci_f1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\3_aktualnosci_f1_szklo.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\3_kreska.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\3_kropkaP.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\3_kropkaP2.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\3_strzalka.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\3_strzalka2.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\4_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\4_motywDl.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\4_motywDs.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\4_motywGl.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\4_motywGs.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\4_szklo.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\5_czlonek_K1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\5_czlonek_K2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\5_czlonek_K3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\5_czlonek_M.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\5_czlonek_M2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\5_czlonek_M3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\5_czlonek_M4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\5_czlonek_M_szklo.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\5_fundator.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\5_kreska.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\5_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\5_prezes.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\5_prezes.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\5_prezes_szklo.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\5_procent.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\5_rada.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\5_strzalkaD.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\5_strzalkaG.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\6_Patroni.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\6_patroni_K1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\6_patroni_M1.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\6_patroni_M1_szklo.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\7_motywG.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\7_motywGl.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\7_motywGs.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\7_motywS.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\7_statut.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\8_ikonka_tekst.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\8_ikonki.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\8_motywD.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\8_motywDl.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\8_motywDs.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\8_sprawozdania.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\8_strzalka.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\8_tlo_szklo.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\8_tlo_szklo_szklo.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\9_partnerzy.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\9_partnerzy2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\9_partnerzy_logo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\9_partnerzy_logo_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\9_partnerzy_logo_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\9_partnerzy_logo_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\9_partnerzy_logo_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\9_partnerzy_logo_5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\9_partnerzy_logo_6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\9_partnerzy_logo_8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\9_strzalka.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\_szablon\obrazki\M_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\config.rb" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\fonts\MyriadPro-LightCond.otf" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\fonts\MyriadPro-SemiboldCond.otf" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\fonts\OpenSans-Bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\fonts\OpenSans-Light.ttf" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\fonts\OpenSans-Regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\10_ikonka_email.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\10_ikonka_formularz.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\10_ikonka_fundacja.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\10_ikonka_konto.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\10_ikonka_telefon.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\11_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\11_motywl.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\11_motyws.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\1_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\1_motyw.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\1_strzalkaD.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\2_kropka-line.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\2_kropka-selected.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\2_kropka.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\2_motywD.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\2_motywD3.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\2_motywDp.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\2_motywG2.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\2_motywGp.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\2_time_line.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\3_aktualnosci_f1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\3_strzalka.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\3_strzalka2.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\4_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\4_motywD.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\4_motywDs.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\4_motywG-min.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\4_motywG.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\4_motywGl.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\4_motywGs.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\4_szklo.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\5_czlonek_K1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\5_czlonek_K1.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\5_czlonek_K2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\5_czlonek_K2.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\5_czlonek_K3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\5_czlonek_K3.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\5_czlonek_M.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\5_czlonek_M.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\5_czlonek_M2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\5_czlonek_M2.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\5_czlonek_M3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\5_czlonek_M3.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\5_czlonek_M4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\5_czlonek_M4.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\5_czlonek_M_szklo.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\5_fundator.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\5_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\5_prezes.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\5_prezes.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\5_prezes_szklo.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\5_procent.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\5_strzalkaD.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\5_strzalkaG.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\6_patroni_K1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\6_patroni_K1.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\6_patroni_M1.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\7_motywG.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\7_motywGl.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\7_motywGs.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\7_motywS.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\8_ikonka_tekst.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\8_ikonki.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\8_motywD.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\8_motywDl.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\8_motywDs.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\8_strzalka.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\8_tlo_szklo_szklo.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\9_partnerzy.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\9_partnerzy2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\9_partnerzy_logo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\9_partnerzy_logo_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\9_partnerzy_logo_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\9_partnerzy_logo_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\9_partnerzy_logo_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\9_partnerzy_logo_5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\9_partnerzy_logo_6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\9_partnerzy_logo_8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\9_strzalka.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\M_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\_outdated\10_ikonka_email.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\_outdated\10_ikonka_fundacja.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\_outdated\10_ikonka_konto.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\_outdated\10_ikonka_telefon.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\_outdated\2_kropka.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\_outdated\5_czlonek_K1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\_outdated\5_czlonek_K2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\_outdated\5_czlonek_K3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\_outdated\5_czlonek_M.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\_outdated\5_czlonek_M2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\_outdated\5_czlonek_M3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\_outdated\5_czlonek_M4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\_outdated\5_fundator.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\_outdated\6_patroni_K1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\fundacjak.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\grab.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\grabbing.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\news-sample.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\preloaders\preloader-white.gif" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\preloaders\preloader.gif" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\right.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\rs-default.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\gfx\sprites_set1.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\index.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\index.php" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\index_build.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\_settings.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\app.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\_configuration.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\_css3.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\_layout.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\_reset-legacy.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\_reset.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\_support.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\_typography.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\_utilities.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\css3\_animation.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\css3\_appearance.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\css3\_background-clip.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\css3\_background-origin.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\css3\_background-size.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\css3\_border-radius.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\css3\_box-shadow.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\css3\_box-sizing.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\css3\_box.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\css3\_columns.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\css3\_deprecated-support.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\css3\_filter.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\css3\_flexbox.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\css3\_font-face.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\css3\_hyphenation.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\css3\_images.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\css3\_inline-block.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\css3\_opacity.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\css3\_pie.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\css3\_regions.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\css3\_selection.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\css3\_shared.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\css3\_text-shadow.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\css3\_transform.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\css3\_transition.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\css3\_user-interface.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\layout\_grid-background.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\layout\_sticky-footer.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\layout\_stretching.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\reset\_utilities-legacy.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\reset\_utilities.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\typography\_links.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\typography\_lists.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\typography\_text.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\typography\_units.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\typography\_vertical_rhythm.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\typography\links\_hover-link.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\typography\links\_link-colors.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\typography\links\_unstyled-link.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\typography\lists\_bullets.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\typography\lists\_horizontal-list.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\typography\lists\_inline-block-list.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\typography\lists\_inline-list.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\typography\text\_ellipsis.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\typography\text\_force-wrap.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\typography\text\_nowrap.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\typography\text\_replacement.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\_color.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\_general.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\_links.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\_lists.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\_print.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\_sass.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\_sprites.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\_tables.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\_text.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\color\_brightness.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\color\_contrast.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\general\_clearfix.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\general\_float.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\general\_hacks.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\general\_min.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\general\_reset.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\general\_tabs.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\general\_tag-cloud.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\links\_hover-link.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\links\_link-colors.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\links\_unstyled-link.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\lists\_bullets.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\lists\_horizontal-list.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\lists\_inline-block-list.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\lists\_inline-list.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\sass\_lists.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\sass\_maps.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\sprites\_base.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\sprites\_sprite-img.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\tables\_alternating-rows-and-columns.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\tables\_borders.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\tables\_scaffolding.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\text\_ellipsis.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\text\_nowrap.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\compass\utilities\text\_replacement.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\_functions.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\_settings.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_accordion.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_alert-boxes.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_block-grid.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_breadcrumbs.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_button-groups.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_buttons.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_clearing.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_dropdown-buttons.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_dropdown.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_flex-video.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_forms.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_global.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_grid.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_icon-bar.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_inline-lists.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_joyride.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_keystrokes.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_labels.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_magellan.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_offcanvas.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_orbit.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_pagination.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_panels.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_pricing-tables.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_progress-bars.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_range-slider.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_reveal.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_side-nav.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_split-buttons.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_sub-nav.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_switches.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_tables.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_tabs.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_thumbs.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_toolbar.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_tooltips.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_top-bar.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_type.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\foundation\components\_visibility.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\objects\_fonts.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\plugins\blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\plugins\grab.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\plugins\grabbing.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\plugins\rs-default.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\plugins\slider.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\plugins\topmenu.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\sections\_dzialalnosc.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\sections\_footer.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\sections\_home.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\sections\_instytucje-partnerskie.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\sections\_kontakt.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\sections\_misja.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\sections\_navi.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\sections\_news.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\sections\_o-fundacji.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\sections\_organizacja-publiczna.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\sections\_partnerzy.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\sections\_partnerzy2.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\sections\_patroni.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\sections\_podatek.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\sections\_rada-i-zarzad.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\sections\_sprawozdania.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\sections\_statut.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\utilities\_mediatest.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\scss\utilities\_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\template.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\template2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\templates\_footer.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\templates\_header.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\templates\sections\_dzialalnosc.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\templates\sections\_inwestycje.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\templates\sections\_kontakt.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\templates\sections\_menu.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\templates\sections\_misja.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\templates\sections\_news.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\templates\sections\_o-fundacji.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\templates\sections\_organizacja-pozytku-publicznego.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\templates\sections\_organizacja-publiczna.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\templates\sections\_partnerzy.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\templates\sections\_patroni.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\templates\sections\_radaizarzad.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\templates\sections\_sprawozdania-finansowe.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\templates\sections\_statut.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\__HTDOCS\kozminski\www\www-alk\fileadmin\templates\fundacjakozminski\_tmpl\templates\sections\_welcome.html" afterPath="" />
+    </list>
+    <ignored path="_tmpl.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="_tmpl" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="true" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Wojciech Mikołajewski &lt;wojc..." />
+        <option value="Wojtek &lt;wocjiechmikolajewski@gmail.com&gt;" />
+        <option value="Wojciech Mikołajewski &lt;wojciechmikolajewski@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1186" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_tmpl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_tmpl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_tmpl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.lastSelected" value="web-ide.project.structure" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="149" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="148" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="149" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="823" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="149" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="148" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="149" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="823" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="name" value="Dart" />
+      <option name="saveOutputToFile" value="false" />
+      <option name="showConsoleOnStdErr" value="false" />
+      <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8e64b269-e01a-4f4c-be32-3ff9813bf835" name="Default" comment="" />
+      <created>1411243354805</created>
+      <updated>1411243354805</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Include Compass scss files - temporary.">
+      <created>1411243747517</created>
+      <updated>1411243747517</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Templates for plugins.">
+      <created>1411243940652</created>
+      <updated>1411243940652</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Configuration update.">
+      <created>1411244216580</created>
+      <updated>1411244216580</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Patch v.3.7. Slider improvements">
+      <created>1411244274358</created>
+      <updated>1411244274358</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1186" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923368" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30457935" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923368" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="Include Compass scss files - temporary." />
+    <MESSAGE value="Templates for plugins." />
+    <MESSAGE value="Configuration update." />
+    <MESSAGE value="Patch v.3.7. Slider improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Patch v.3.7. Slider improvements" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17474303" vertical-offset="0" max-vertical-offset="681">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

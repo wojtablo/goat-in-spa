@@ -1,0 +1,316 @@
+
+
+/*========================================================================
+  Section           :   Aktualności
+  Functionality     :   Slider
+  Version:          :   v1.3
+  Updated:          :   11/09/2014
+
+  Każda sekcja powinna mieć możliwie schematyczną budową.
+  Traktujemy sekcje jako swego rodzaju boxy.
+
+  Zadbaj o to aby:
+  - nazwa klasy głównej rozpoczynająca się w konwencji .section__xxxxxx
+  - określamy background lub jego brak
+  - wewnątrz definicji tego stylu wyodrębniony header oraz main content
+  - jeżeli jest jakieś tło to dołączamy je z "mod__ICLUDES" za pomocą @extend
+  - opis tego opisu byl aktualny
+
+=========================================================================*/
+
+// News
+.section__news {
+
+  $header-configuration: (
+          title-margin: 0em 0 0.7em 0 !important,
+          subtitle-margin: 0 0 1.2em 0 !important
+  );
+
+  $primary-color: #012f48;
+
+  //---------------------------------------------------------------
+  // Media Queries
+  //---------------------------------------------------------------
+  @media #{$medium-up} {
+    @include putSectionImage( $background-color,
+                              "4_motywG.png","2_motywD3.png", "4_motywDs.png","",
+                              5% 100%, 70% 0%, bottom right, none );
+  }
+  @media #{$xlarge-up} {
+    @include putSectionImage( $background-color,
+            "4_motywG.png","2_motywD3.png", "4_motywDs.png","",
+            0% 100%, 100% 0%, bottom right, bottom right );
+  }
+
+  //---------------------------------------------------------------
+  // General look
+  //---------------------------------------------------------------
+  h1,h2,h3,h4,h5,h6 { color:$blue5-color; }
+  background-color: $background-color;
+
+  // Section margines
+  > .row {
+    @include setSectionMobile(5em 0 3em 0);
+    @include setSectionTablet(10em 0 14em 0);
+    @include setSectionPc(12em 0 10.5em 0);
+  }
+
+  // Separator
+  .sep {
+    &.sep--top {
+      @include putSeparator( $blue3-color, 60%);
+      margin-bottom:0.5em;
+    }
+    &.sep--bottom {
+      @include putSeparator( $blue3-color, 40%);
+      margin-top:0.5em;
+    }
+  }
+
+  // ---------------------------------------------------------------
+  // SECTION's header
+  //---------------------------------------------------------------
+  .section__header {
+    @include module__header($header-configuration);
+    .section__subtitle {
+      &:first-line {
+        color:#255a78 !important;
+      }
+    }
+  }
+
+  .section__content {
+    .contentSlider {
+      @extend %put-sliderArrowsMain;
+      @extend %slider__arrows;
+      @extend .rsBullets;
+    }
+  }
+
+  .section__content {
+    //Slider
+    .slide__title {
+      font-family: "OpenSans-Bold";
+      color: #255a78;
+      font-size:1.16em;
+      line-height: 1.2em;
+      margin-top:1em;
+    }
+    .slide__subTitle {
+      font-family: "OpenSans-Regular";
+      color: #13688d;
+      font-size:rem-calc(14);
+      line-height: 1.2em;
+      padding-bottom:0.8em;
+    }
+    .slide__intro {
+      font-family: "OpenSans-Light";
+      color: $blue5-color;
+      margin:0px;
+      padding-bottom:0.2em;
+    }
+    .slide--more {
+      font-family: "OpenSans-Regular";
+      font-size:0.9em;
+      color:$blue-color;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .sep {
+      &.sep--top {
+        @include putSeparator( $blue3-color, 63%);
+        margin-bottom:0.5em;
+      }
+    }
+
+
+    // Reveal
+    .contentSlider.withRelativeReveal {
+      .slide__dateTime2 {
+        font-family:"OpenSans-Light";
+        font-size:1em;
+        border-bottom:1px solid $blue3-color;
+        display: inline-block;
+        margin-bottom:10px;
+        color:$blue3-color;
+      }
+      .slide__subTitle2 {
+        font-family:"OpenSans-Regular";
+        font-size:1.1em;
+      }
+      .rsImg2 {
+        float:left;
+        margin-right:4%;
+      }
+      .close-reveal-modal {
+        position:relative !important;
+        font-size:1em;
+        font-family:"OpenSans-Regular";
+        color:$blue3-color;
+        text-transform:lowercase;
+        float:right;
+        background:transparent url("#{$dir_GFX}9_strzalka.png") right 5px no-repeat;
+        height: 100px;
+        background-size: 30%;
+        padding-right: 30px;
+        margin-right:-45px;
+        &:hover {
+          opacity:0.9;
+          text-decoration:underline;
+        }
+      }
+    }
+  }
+
+
+  @media #{$small-only} {
+    .collapse-for-small {
+      .columns {
+        padding:0px;
+        margin:0px;
+      }
+    }
+
+    #slider-news {
+      .rsSlide {
+        > div {
+//          margin:0px 50px;
+        }
+      }
+      div {
+        text-align:center;
+      }
+     .rsBullets {
+       margin-top:2em;
+     }
+
+      text-align:center;
+
+      .rsImg2 {
+        float:none;
+        text-align:center;
+      }
+      .slide__dateTime2 {
+        display:block;
+        border:none;
+      }
+
+//        .reveal-modal {
+//        width:100% !important;
+//        height:auto;
+//        margin:0px;
+//        padding:0px;
+//      }
+    }
+
+//    .close-reveal-modal {
+//      background:none !important;
+//      height: auto !important;
+//      padding-right: 1em !important;
+//      padding:2em;
+//      margin-right:0px !important;
+//      @include grid-column(12);
+//    }
+
+  }
+
+  @media #{$medium-only} {
+    .section__content {
+      //Slider
+      .slide__title {
+        font-size:1em;
+        line-height: 1.2em;
+        margin-top:1em;
+      }
+      .slide__subTitle {
+        font-family: "OpenSans-Regular";
+        color: #13688d;
+        font-size:0.75em;
+        line-height: 1.2em;
+        padding-bottom:0.8em;
+      }
+      .slide__intro {
+        font-family: "OpenSans-Light";
+        color: $blue5-color;
+        margin:0px;
+        padding-bottom:0.2em;
+      }
+      .slide--more {
+        font-family: "OpenSans-Regular";
+        font-size:0.9em;
+        color:$blue-color;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      .sep {
+        &.sep--top {
+          @include putSeparator( $blue3-color, 63%);
+          margin-bottom:0.5em;
+        }
+      }
+    }
+  }
+
+  @media #{$sliders-gap}{
+    .rsArrow {
+      display: none!important;
+    }
+  }
+
+//  @media #{$medium-up} {
+//    #slider-news.contentSlider {
+//      .rsBullets {
+//        padding:0px !important;
+//        margin-top:-3em;
+//      }
+//    }
+//  }
+
+}
+
+#slider-news {
+  .reveal-modal {
+    top: auto !important;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    background:$background-color;
+  }
+}
+
+.reveal-modal-bg-special {
+  @include reveal-bg();
+
+  @include reveal-modal-style(
+    // Sets background color of reveal modal. Default: $reveal-modal-bg or #fff
+  $bg:transparent,
+    // Set reveal border style. Default: $reveal-border-style or solid
+  $border:solid,
+    // Width of border (i.e. 1px). Default: $reveal-border-width.
+  $border-style:3px,
+    // Color of border. Default: $reveal-border-color.
+  $border-width:$reveal-border-width,
+    // Color of border. Default: $reveal-border-color.
+  $border-color:red,
+    // Choose whether or not to include the default box-shadow. Default: true, Options: false
+  $box-shadow:true,
+    // Default: $reveal-position-top or 50px
+  $top-offset:auto !important
+  );
+}
+
+
+
+//  .reveal-modal,
+//  dialog.full {
+//    width: 95% !important;
+//    height: 100% !important;
+//  }
+//
+//  .reveal-modal-bg {
+//    top:auto !important
+//  }
+//  .reveal-modal {
+//    top:auto !important;
+//    background:$background-color;
+//  }

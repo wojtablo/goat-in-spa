@@ -1,0 +1,115 @@
+/*------------------------------------*\
+    SETTINGS
+\*------------------------------------*/
+
+$graphicMode: true;
+$allowMargins: true;
+$allowMarginsMobile: $allowMargins;
+$allowMarginsTablet: $allowMarginsMobile;
+$allowMarginsPc: $allowMarginsMobile;
+$allowMarginsHD: $allowMarginsMobile;
+
+// Live defaults
+$dir_GFX: "http://beta.kozminski.edu.pl/fileadmin/templates/fundacjakozminski/_tmpl/_pages/gfx/";
+$dir_FONTS: "http://beta.kozminski.edu.pl/fileadmin/templates/fundacjakozminski/_tmpl/_pages/fonts/";
+
+//Local defaults
+//$dir_FONTS: "/fonts/";
+//$dir_GFX: "/gfx/";
+
+
+$bullet:1em;
+$bullet-medium: 1.3em;
+$bullet-large: 1.4em;
+
+
+/*------------------------------------*\
+    MAIN IMPORTER
+\*------------------------------------*/
+
+@import
+
+    // Include Foundation settings
+    "settings",
+
+    // Fonts & typography
+    "objects/fonts",
+
+    // compass mixins
+    "compass/css3",
+
+    // Include mixins for debugging RWD
+    "utilities/mediatest",
+
+    // Foundation selectively include components.
+    "../bower_components/foundation/scss/foundation/components/accordion",
+    "../bower_components/foundation/scss/foundation/components/block-grid",
+    "../bower_components/foundation/scss/foundation/components/clearing",
+    "../bower_components/foundation/scss/foundation/components/dropdown",
+    "../bower_components/foundation/scss/foundation/components/forms",
+    "../bower_components/foundation/scss/foundation/components/inline-lists",
+    "../bower_components/foundation/scss/foundation/components/grid",
+    "../bower_components/foundation/scss/foundation/components/panels",
+    "../bower_components/foundation/scss/foundation/components/inline-lists",
+    "../bower_components/foundation/scss/foundation/components/tables",
+    "../bower_components/foundation/scss/foundation/components/reveal",
+    "../bower_components/foundation/scss/foundation/components/tabs",
+    "../bower_components/foundation/scss/foundation/components/top-bar",
+    "../bower_components/foundation/scss/foundation/components/type",
+    "../bower_components/foundation/scss/foundation/components/pricing-tables",
+    "../bower_components/foundation/scss/foundation/components/visibility",
+
+    // Royal slider
+    "plugins/slider",
+
+    // Include main mixins set "utilities/mixins", "utilities/_mixins"
+    "utilities/mixins",
+
+  // Sekcje
+    "sections/_navi",
+    "sections/_home",
+    "sections/_misja",
+    "sections/_dzialalnosc",
+    "sections/_news",
+    "sections/_instytucje-partnerskie",
+    "sections/_partnerzy2",
+    "sections/_organizacja-publiczna",
+    "sections/_o-fundacji",
+    "sections/_rada-i-zarzad",
+    "sections/_patroni",
+    "sections/_statut",
+    "sections/_sprawozdania",
+    "sections/_partnerzy",
+    "sections/_podatek",
+    "sections/_kontakt",
+    "sections/_footer"
+;
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  DEBUGGING MEDIA QUERIES
+  wyświetla informacje o aktywnym media query
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.clearandfloat {
+  clear:both;
+  float: none;
+}
+
+section {
+//  border-bottom:2px dotted #00ff0a;
+//  box-shadow:3px 3px 3px #222;
+}
+
+//Include media-conf helper inside media query
+//@media #{$small-only} {
+//   @include media-conf( $small-only,   $small-range,  $small-range-label, #488008); // Disable it for LIVE!!
+//}
+//@media #{$medium-only} {
+//   @include media-conf( $medium-only,   $medium-range,  $medium-range-label, #e84615); // Disable it for LIVE!!
+//}
+//@media #{$large-only} {
+//  @include media-conf( $large-only,   $large-range,  $large-range-label, #6e47e8); // Disable it for LIVE!!
+//}
+//@media #{$xlarge-only} {
+//  @include media-conf( $xlarge-only,   $xlarge-range,  $xlarge-range-label, #65e86b); // Disable it for LIVE!!
+//}

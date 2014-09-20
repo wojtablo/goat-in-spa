@@ -1,0 +1,101 @@
+
+
+/*========================================================================
+  Section           :   Partnerzy
+  Functionality     :   Text
+  Version:          :   v1.1
+  Updated:          :   12/09/2014
+
+  Każda sekcja powinna mieć możliwie schematyczną budową.
+  Traktujemy sekcje jako swego rodzaju boxy.
+
+  Zadbaj o to aby:
+  - nazwa klasy głównej rozpoczynająca się w konwencji .section__xxxxxx
+  - określamy background lub jego brak
+  - wewnątrz definicji tego stylu wyodrębniony header oraz main content
+  - jeżeli jest jakieś tło to dołączamy je z "mod__ICLUDES" za pomocą @extend
+  - opis tego opisu byl aktualny
+
+=========================================================================*/
+
+// Partnerzy
+.section__partnerzy {
+
+  //---------------------------------------------------------------
+  // Media Queries
+  //---------------------------------------------------------------
+  @media #{$medium-up} {
+    @include putSectionImage(transparent,"8_motywDl.png","8_motywDs.png", "","",top left,"bottom right","","");
+    background-repeat:no-repeat, repeat-x;
+  }
+
+
+  //---------------------------------------------------------------
+  // General look
+  //---------------------------------------------------------------
+  background:$background-color;
+  h1,h2,h3,h4,h5,h6 { color:#fff; }
+  @include setSectionMobile(4em 0 0 0);
+  @include setSectionPc(5em 0 2em 0);
+
+
+  h1,h2,h3,h4,h5,h6 { color:$blue5-color; }
+
+
+  // Styles
+  .section__header {
+    .section__title {
+      @extend %font__size--large;
+    }
+    .section__subtitle {
+      display:none;
+      &::first-line       { color:$blue3-color; }
+      padding:            0.8rem 0px;
+      @extend             %font__size--medium;
+      @include putBorder  (top, $blue3-color, 2px);
+      @include putBorder  (bottom, $blue6-color, 1px);
+    }
+  }
+
+  .partner {
+    text-align:center !important;
+    margin:0px 20px;
+    margin-bottom: 1em;
+
+    .imp--wrapper{
+      display: block;
+      line-height: auto;
+
+    }
+    .partner--name {
+      font-size:1em;
+      margin-top:0px;
+    }
+    .partner--description {
+      font-size:0.8em;
+      margin-bottom:0px;
+      color:$blue5-color;
+
+    }
+    a, a:visited {
+      color:$blue5-color;
+      font-size:0.8em;
+      &:hover {
+        text-decoration:underline;
+      }
+    }
+  }
+}
+
+@media #{$medium-up} {
+  .partner {
+    margin-bottom:0em !important;
+    .imp--wrapper{
+      line-height: 10em;
+    }
+  }
+}
+
+@media #{$large-up} {
+
+}

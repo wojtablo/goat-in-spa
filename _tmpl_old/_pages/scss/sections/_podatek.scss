@@ -1,0 +1,83 @@
+
+
+/*========================================================================
+  Section           :   Podatek
+  Functionality     :   Responsive table
+  Version:          :   v1.0
+  Updated:          :   03/09/2014
+
+  Każda sekcja powinna mieć możliwie schematyczną budową.
+  Traktujemy sekcje jako swego rodzaju boxy.
+
+  Zadbaj o to aby:
+  - nazwa klasy głównej rozpoczynająca się w konwencji .section__xxxxxx
+  - określamy background lub jego brak
+  - wewnątrz definicji tego stylu wyodrębniony header oraz main content
+  - jeżeli jest jakieś tło to dołączamy je z "mod__ICLUDES" za pomocą @extend
+  - opis tego opisu byl aktualny
+
+=========================================================================*/
+
+// Misja
+.section__podatek {
+
+  //---------------------------------------------------------------
+  // Media Queries
+  //---------------------------------------------------------------
+  @media #{$medium-up} {
+  }
+
+  //---------------------------------------------------------------
+  // General look
+  //---------------------------------------------------------------
+  h1,h2,h3,h4,h5,h6 { color:#fff; }
+  @extend %row--violet;
+
+
+  // Section margines
+  .row {
+//    @include setSectionMobile(0 0 5em 0);
+    @include setSectionTablet(1.3em 0 1.3em 0);
+    @include setSectionPc(1.2em 0 0.4em 0);
+  }
+
+  // ---------------------------------------------------------------
+  // SECTION's header
+  //---------------------------------------------------------------
+  .section__header {  }
+  // ---------------------------------------------------------------
+  // SECTION's content
+  //---------------------------------------------------------------
+  .section__content {
+    font-family: "OpenSans-Regular";
+    padding-left: 10em;
+    font-size: 1.3em;
+    line-height: 1.4em;
+
+    &:before {
+      font-family: "MyriadPro-SemiboldCond";
+      content: "1%";
+      float: left;
+      margin-left: -1.5em;
+      font-size: 2.9em;
+      line-height: 1.2em;
+      font-weight: bold;
+    }
+  }
+
+
+  @media #{$medium-only} {
+    .section__content {
+      font-size: 1.3em;
+      line-height: 1.4em;
+      &:before {
+        margin-left:-1.5em;
+      }
+    }
+  }
+
+  @media #{$large-up} {
+
+
+  }
+}

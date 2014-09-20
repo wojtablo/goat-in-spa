@@ -1,0 +1,40 @@
+
+    <!-- Sekcja 15. Stopka -->
+    <section id="section-15" class="rowWrapper rowSlide section__footer">
+        <div class="row">
+            <div class="large-12 columns">
+                <header class="section__header text-center">
+                    <a id="logo__footer" class="hide-for-small-only" href="">
+                        <img src="gfx/11_logo.png" alt="" title=""/>
+                    </a>
+                    <p>Fundacja Koźmińskich // copyright 2014</p>
+                </header>
+            </div>
+        </div>
+    </section>
+
+    </div><!--/eo @globalContainer -->
+
+<script>
+    /**
+     * Self executing function to determine viewport height and set it as a value for welcome screen section
+     */
+    (function() {
+        var oDiv = document.getElementById("home");
+        var welcomeScreen = document.getElementById("section-1");
+        var sOriginalOverflow = oDiv.style.overflow;
+        var sOriginalHeight = oDiv.style.height;
+        oDiv.style.overflow = "";
+        oDiv.style.height = "";
+        var height = oDiv.offsetHeight;
+        oDiv.style.height = sOriginalHeight;
+        oDiv.style.overflow = sOriginalOverflow;
+        welcomeScreen.setAttribute("style","height:"+height+"px;");
+        console.log("Browser window height: " + height);
+    })();
+</script>
+
+<script src="js/require.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,783 @@
+
+
+
+
+%maxHeight {
+  min-height:                100% !important;
+  height:                    100%; // For Firefox
+  min-width:                 100%;
+}
+
+
+html.wf-inactive {
+  body {
+    * {
+      font-family:Arial, sans-serif !important;
+    }
+  }
+}
+
+
+
+
+%font__size--xlarge {
+  font-family:"MyriadPro-LightCond";
+  font-size:2.35em;
+  color:$blue4-color;
+  span {
+    display: block;
+    font-family:"MyriadPro-SemiboldCond";
+    font-size: 2.2em;
+    line-height: 0.9;
+  }
+
+  @media #{$medium-up} { font-size:2.2em; }
+  @media #{$large-up}  { font-size:5.2em; }
+}
+
+%font__size--large {
+  font-family:"OpenSans-Bold";
+  font-size:2.4em;
+  //  line-height: 2em;
+  line-height: 1.1em;
+  margin:0.5em 0 0.9em;
+  @media #{$medium-up} {
+    font-size:2.6em;
+  }
+  @media #{$large-up}  {
+    font-size:4.4em;
+  }
+}
+
+%font__size--medium {
+  font-family:"OpenSans-Light";
+  font-size:1.8em; line-height:1.15em;
+  @media #{$medium-up} { font-size:2.4em; line-height:1.25em;}
+  @media #{$large-up}  { font-size:2.8em; line-height:1.15em }
+}
+
+// Menu
+.top-bar {
+  .menu-icon {
+    * {
+      color:$font-color !important;
+    }
+  }
+}
+
+
+/*------------------------------------*\
+    SETTINGS
+\*------------------------------------*/
+$default-arrow-right: "9_strzalka.png";
+$default-arrow-left: "8_strzalka.png";
+
+section.rowWrapper {
+  position: relative;
+  //  min-height:50px;
+  .row {
+    position: relative;
+  }
+
+}
+
+
+/*------------------------------------*\
+    SCHEMATY KOLORYSTYCZNE
+\*------------------------------------*/
+%row--red {
+  background-color:$red-color;
+  color:#fff;
+}
+%row--blue {
+  background-color:$blue-color;
+  color:#fff;
+}
+%row--green {
+  background-color:$green-color;
+  color:#fff;
+}
+%row--green2 {
+  background-color:$green2-color;
+  color:#fff;
+}
+%row--violet {
+  background-color:$violet-color;
+  color:#fff;
+}
+%row--footer {
+  border-top:6px solid $info-color;
+  background-color:$blue3-color;
+  color:#fff;
+}
+
+%partner--hover {
+  @include box-shadow(#000000 0px 0px 25px);
+
+}
+
+.gps_ring {
+  border: 3px solid #999;
+  -webkit-border-radius: 30px;
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  left:20px;
+  top:214px;
+  -webkit-animation: pulsate 1s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  opacity: 0.0
+}
+
+%btn__arrow--down {
+  display:inline-block;
+  background: transparent url("#{$dir_GFX}1_strzalkaD.png") center center no-repeat;
+  background-size: 70%;
+//  -webkit-animation: pulsate 1s ease-out;
+//  -webkit-animation-iteration-count: infinite;
+  //  width:103px;
+  //  height:103px;
+  @media #{$large-up}{
+    width:103px !important;
+    height:103px !important;
+    background-size: 100% !important;
+  }
+}
+
+@-webkit-keyframes pulsate {
+  0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+  50% {opacity: 1.0;}
+  100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+}
+
+/*------------------------------------*\
+    TOP BAR
+\*------------------------------------*/
+#top--nav {
+  opacity:0.97;
+//  background-clip: padding-box;
+//  padding-bottom: 1em;
+//  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+//  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  .title-area {
+    h1 {
+      img {
+        height:74px;
+      }
+    }
+  }
+}
+
+/*========================================================================
+  Mixin             :   Slier options
+  Version:          :   v1.1
+  Updated:          :   13/09/2014
+
+  @position         : Border position (top/bottom/left/right)
+  @color            : Color
+  @width            : Width (3px, 6em, etc.)
+  @style            : Solid, double etc. (!OPTIONAL)
+
+  This mixin put border in the position.
+
+=========================================================================*/
+.rsBullets {
+
+    position: relative;
+    padding:1.3em 0 2.4em 0px;
+
+    .rsBullet {
+      width:$bullet !important;
+      height:$bullet !important;
+      margin-right:0.8em;
+
+      &.rsNavSelected {
+        span {
+          background:#fff !important;
+        }
+      }
+      span {
+        background-color:transparent;
+        border:2px solid #fff;
+        width:$bullet !important;
+        height:$bullet !important;
+        &:hover {
+          background:#fff;
+          opacity:0.8;
+        }
+      }
+      &:hover {
+        cursor:$cursor-pointer-value;
+      }
+    }
+    @media #{$medium-up} {
+      padding:2.6em 0 !important;
+
+      .rsBullet {
+        width:$bullet-medium !important;
+        height:$bullet-medium !important;
+        margin-right:1em;
+        span {
+          width:$bullet-medium !important;
+          height:$bullet-medium !important;
+        }
+      }
+    }
+
+    @media #{$large-up} {
+      padding:0 !important;
+
+      .rsBullet {
+        width:$bullet-large !important;
+        height:$bullet-large !important;
+        margin-right:1em;
+        span {
+          width:$bullet-large !important;
+          height:$bullet-large !important;
+        }
+      }
+    }
+
+}
+
+
+// Position changed in app.js
+%rsBulletsTop {
+  position: relative !important;
+  padding:1em 0 1.3em 0px;
+}
+
+
+%rsBulletsBottom {
+
+
+  position: relative;
+  padding:1.3em 0 2.4em 0px;
+
+  .rsBullet {
+    width:$bullet !important;
+    height:$bullet !important;
+    margin-right:0.8em;
+
+    &.rsNavSelected {
+      span {
+        background:#fff !important;
+      }
+    }
+    span {
+      background-color:transparent;
+      border:2px solid #fff;
+      width:$bullet !important;
+      height:$bullet !important;
+      &:hover {
+        background:#fff;
+        opacity:0.8;
+      }
+    }
+    &:hover {
+      cursor:$cursor-pointer-value;
+    }
+  }
+  @media #{$medium-up} {
+    padding:2.6em 0 !important;
+
+    .rsBullet {
+      width:$bullet-medium !important;
+      height:$bullet-medium !important;
+      margin-right:1em;
+      span {
+        width:$bullet-medium !important;
+        height:$bullet-medium !important;
+      }
+    }
+  }
+  @media #{$large-up} {
+    padding:2.6em 0 !important;
+
+    .rsBullet {
+      width:$bullet-large !important;
+      height:$bullet-large !important;
+      margin-right:1em;
+      span {
+        width:$bullet-large !important;
+        height:$bullet-large !important;
+      }
+    }
+  }
+}
+
+/*========================================================================
+  Mixin             :   SECTIONS
+  Version:          :   v1.0
+  Updated:          :   03/09/2014
+
+  @position         : Border position (top/bottom/left/right)
+  @color            : Color
+  @width            : Width (3px, 6em, etc.)
+  @style            : Solid, double etc. (!OPTIONAL)
+
+  This mixin put border in the position.
+
+=========================================================================*/
+
+@mixin setSectionMobile( $padding: 0, $ignore: false){
+  @if $allowMarginsMobile == true {
+    @if $padding != 0 {
+      padding:$padding;
+    }
+  }
+  @else if $ignore == true {
+    padding:$padding;
+  }
+}
+@mixin setSectionTablet( $padding: 0, $ignore: false){
+  @if $allowMarginsTablet == true {
+    @if $padding != 0 {
+      @media #{$medium-up} {
+        padding:$padding;
+      }
+    }
+  }
+  @else if $ignore == true {
+    padding:$padding;
+  }
+}
+@mixin setSectionPc( $padding: 0, $ignore: false, $margin:false){
+  $_value: $padding;
+  @if $allowMarginsPc == true {
+    @if $_value != 0 {
+      @media #{$large-up} {
+        @if $margin == false {
+          padding:$_value;
+        }
+        @else {
+          margin:$_value;
+        }
+      }
+    }
+  }
+  @else if $ignore == true {
+    padding:$_value;
+  }
+}
+@mixin setSectionHD( $padding: 0, $ignore: false){
+  @if $allowMarginsHD == true {
+    @if $padding != 0 {
+      @media #{$xlarge-up} { padding:$padding; }
+    }
+  }
+  @else if $ignore == true {
+    padding:$padding;
+  }
+}
+
+/*========================================================================
+  Mixin             :   OUTLIER
+  Version:          :   v1.0
+  Updated:          :   03/09/2014
+
+  @position         : Border position (top/bottom/left/right)
+  @color            : Color
+  @width            : Width (3px, 6em, etc.)
+  @style            : Solid, double etc. (!OPTIONAL)
+
+  This mixin put border in the position.
+
+=========================================================================*/
+@mixin putBorder($position, $color, $width, $style: solid) {
+  border-#{$position}: $width $style $color;
+}
+
+/*========================================================================
+Mixin             :   Put Separtor
+Version:          :   v1.0
+Updated:          :   03/09/2014
+
+@position         : Border position (top/bottom/left/right)
+@color            : Color
+@width            : Width (3px, 6em, etc.)
+@style            : Solid, double etc. (!OPTIONAL)
+
+This mixin put border in the position.
+
+=========================================================================*/
+@mixin putSeparator($color, $width) {
+  display: block;
+  height:1px;
+  max-height: 1px;
+  width:$width;
+  margin:0 auto;
+  background:$color;
+}
+
+/*========================================================================
+  Mixin             :   THROW-UP
+  Version:          :   v1.0
+  Updated:          :   04/09/2014
+
+  @position         : Insert background image under condition
+  @bgColor          : Background color
+  @filename         : Background image filename
+  @position         : background-position
+
+  This mixin put background image into any container under condition
+
+=========================================================================*/
+@mixin putSectionImage($bgColor, $filename, $filename2, $filename3, $filename4, $position, $position2, $position3, $position4){
+  @if $graphicMode == true {
+    background-color:$bgColor;
+    @if $filename2 != "" {
+      @if $filename3 != "" {
+        @if $filename4 != "" {
+          background-image: url("#{$dir_GFX}#{$filename}"), url("#{$dir_GFX}#{$filename2}"), url("#{$dir_GFX}#{$filename3}"), url("#{$dir_GFX}#{$filename4}");
+          background-position: $position, $position2, $position3, $position4;
+        }
+        @else {
+          background-image: url("#{$dir_GFX}#{$filename}"), url("#{$dir_GFX}#{$filename2}"), url("#{$dir_GFX}#{$filename3}");
+          background-position: $position, $position2, $position3;
+        }
+      }
+      @else {
+        background-image: url("#{$dir_GFX}#{$filename}"), url("#{$dir_GFX}#{$filename2}");
+        background-position: $position, $position2;
+      }
+    }
+    @else {
+      background-image: url("#{$dir_GFX}#{$filename}");
+      background-position: $position;
+    }
+    background-repeat:no-repeat;
+  }
+}
+
+/*========================================================================
+  Mixin             :   SPACE BETWEEN SECTIONS
+  Version:          :   v1.0
+  Updated:          :   03/09/2014
+
+  @position         : Border position (top/bottom/left/right)
+  @color            : Color
+  @width            : Width (3px, 6em, etc.)
+  @style            : Solid, double etc. (!OPTIONAL)
+
+  This mixin put border in the position.
+
+=========================================================================*/
+@mixin setSpace($padding) {
+  @if $allowMargins == true {
+    padding:$padding;
+  }
+}
+
+/*========================================================================
+  Mixin             :   HEADER GENERAETOR
+  Version:          :   v1.0
+  Updated:          :   12/09/2014
+
+  @position         : Border position (top/bottom/left/right)
+  @color            : Color
+  @width            : Width (3px, 6em, etc.)
+  @style            : Solid, double etc. (!OPTIONAL)
+
+  This mixin put border in the position.
+
+=========================================================================*/
+
+@mixin module__header($conf: (), $large-up-conf: () ) {
+  // Extending the default arguments with the given object
+
+  $conf: map-merge((
+                      font: large,
+                      color: $primary-color,
+                      color2: $primary-color,
+                      color3: $blue3-color,
+                      title-margin: 0 !important,
+                      subtitle-margin: 0.8rem 0px ), $conf);
+
+
+  $large-up-conf: map-merge((
+                      color: map-get($conf, color),
+                      color2: map-get($conf, color2),
+                      color3: map-get($conf, color3),
+                      title-margin: map-get($conf, title-margin),
+                      subtitle-margin: 0.8rem 0px ), $large-up-conf);
+
+
+//  @media #{$medium-up} { @include setSpace(0.8em 2em 1em 2em); }
+//  @media #{$large-up}  { @include setSpace(1em 0 1em 0); }
+
+  &.section__header {
+    // Header title
+    .section__title {
+      @if map-get($conf,font) == large {
+        @extend %font__size--large;
+      }
+      @else if map-get($conf,font) == medium{
+        @extend %font__size--medium;
+      }
+      margin: map-get($conf, title-margin);
+      color: map-get($conf, color);
+    }
+    // Header subtitle
+    .section__subtitle {
+      color: map-get($conf, color2);
+      padding: map-get($conf, subtitle-margin);
+      @extend %font__size--medium;
+      //Styles
+      .first__line {
+        font-family: "OpenSans-Regular" !important;
+        color: map-get($conf, color3);
+      }
+    }
+  }
+
+  @media #{$medium-up} {
+
+    &.section__header {
+      // Header title
+      .section__title {
+        margin: map-get($large-up-conf, title-margin);
+        color: map-get($large-up-conf, color);
+      }
+      // Header subtitle
+      .section__subtitle {
+        color: map-get($large-up-conf, color2);
+        padding: map-get($large-up-conf, subtitle-margin);
+        //Styles
+        .first__line {
+          font-family: "OpenSans-Regular" !important;
+          color: map-get($large-up-conf, color3);
+        }
+      }
+    }
+  }
+
+}
+
+
+
+
+/*========================================================================
+  Mixin             :   CASAI (Cross ä Section Arrow Intruder)
+  Version:          :   v1.0
+  Updated:          :   02/09/2014
+
+  @height           : Maximum height of an arrow (image)
+  @position         : Left / Right
+
+  This mixin take two parameters (height of an image, and position) to
+  compile style which gives arrows following behaviour:
+  - arrows must go through two section
+  - it must be mobile optimized (size of an arrow and margines)
+  - if wrapper has some padding or margins it must be this-shit-proof
+  - arrows must be always on top of layers (unless you know what you're doing).
+
+=========================================================================*/
+@mixin crossSectionArrow($height, $position) {
+
+  $margin: 5%;
+  $margin-medium: 1.5rem;
+  $margin-large: 0.5rem;
+
+  position: absolute;
+  bottom:-2rem;
+  height:5.3em;
+  @if $position == "right" { right:$margin; }
+  @else if $position == "left"{ left:$margin; }
+  margin:0px;
+  padding:0px;
+  z-index:9;
+
+  img {
+    display: block;
+    height:100%;
+  }
+
+  @media #{$medium-only} {
+    height:6em;
+    bottom:-3rem;
+
+    @if $position == "right" { right:$margin-medium; }
+    @else if $position == "left"{ left:$margin-medium; }
+  }
+  @media #{$large-up} {
+    height:180px;
+    bottom:-7rem;
+
+    @if $position == "right" { right:$margin-large; }
+    @else if $position == "left"{ left:$margin-large; }
+  }
+
+}
+
+// Create class objects
+.crossSectionArrow--right {
+  @include crossSectionArrow("100px", right);
+}
+
+.crossSectionArrow--left {
+  @include crossSectionArrow("100px", left);
+}
+
+
+/*========================================================================
+  Mixin robinHoodArrow includes image using background-image property.
+
+  author: Wojciech Mikołajewski <wojciechmikolajewski@gmail.com>
+=========================================================================*/
+@mixin robinHoodArrow($file, $position) {
+
+  @if $position == "right" {
+    background-image:url("../../gfx/#{$file}");
+    background-position: top right;
+  }
+  @else if $position == "left" {
+    background-image:url("../../gfx/#{$file}");
+    background-position: top left;
+  }
+  @else {
+    // error!
+  }
+  background-repeat: no-repeat;
+  background-size: 25%;
+
+}
+
+
+/*========================================================================
+  Arrow navigation styles for some sliders
+
+  author: Wojciech Mikołajewski <wojciechmikolajewski@gmail.com>
+=========================================================================*/
+%put-sliderArrowsMain {
+
+  .visibleNearby {
+    width: 100%;
+    .rsSlide img {
+      //        opacity: 0.45;
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1);
+      margin-left:0px !important;
+    }
+    .rsActiveSlide img {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+
+}
+
+%slider__arrows {
+
+    // Arrows
+    $arrow-height:30px;
+    $arrow-width:30px;
+
+    .rsArrow {
+      height: 100%;
+      width: $arrow-width;
+      position: absolute;
+      display: block;
+      cursor: pointer;
+      z-index: 21;
+    }
+    .rsArrowIcn {
+      width: $arrow-width;
+      height: $arrow-height;
+      top: 30%;
+      left: 0;
+      margin-top:-$arrow-height;
+      margin-left: 0;
+      position: absolute;
+      cursor: pointer;
+      background-color: transparent;
+      *background-color: transparent;
+      border-radius: 2px;
+    }
+    .rsArrowIcn:hover {
+      background-color: transparent;
+    }
+
+    .rsArrowLeft {
+      visibility: hidden;
+      .rsArrowIcn {
+        background: url('http://launchr.pl/goat-in-spa/gfx/3_strzalka.png');
+        background-size:$arrow-width;
+      }
+    }
+    .rsArrowRight {
+      visibility: hidden;
+      .rsArrowIcn {
+        background: url('http://launchr.pl/goat-in-spa/gfx/3_strzalka.png');
+        background-size:$arrow-width;
+        @include transform(rotate(-180deg));
+      }
+    }
+    .rsArrowDisabled {
+      .rsArrowIcn { opacity: .2; filter: alpha(opacity=20);  *display: none; }
+    }
+
+  @media #{$large-up} {
+    $arrow-height:80px;
+    $arrow-width:80px;
+    .rsArrow {
+      width: $arrow-width;
+    }
+    .rsArrowIcn {
+      width: $arrow-width;
+      height: $arrow-height;
+      margin-top: -$arrow-height;
+    }
+    .rsArrowLeft {
+      visibility: visible;
+      left: -$arrow-width*1.5; top: 0;
+      .rsArrowIcn {
+        background-size:$arrow-width;
+      }
+    }
+    .rsArrowRight {
+      visibility: visible;
+      right: -$arrow-width*1.5; top:0;
+      .rsArrowIcn {
+        background-size:$arrow-width;
+      }
+    }
+  }
+
+  @media #{$xlarge-up} {
+    $arrow-height:103px;
+    $arrow-width:103px;
+    .rsArrow {
+      width: $arrow-width;
+    }
+    .rsArrowIcn {
+      width: $arrow-width;
+      height: $arrow-height;
+      top:70px;
+      margin-top: 0;
+    }
+    .rsArrowLeft {
+      left: -$arrow-width*2.5; top: 0;
+      .rsArrowIcn {
+        background-size:$arrow-width;
+      }
+    }
+    .rsArrowRight {
+      right: -$arrow-width*2.5; top:0;
+      .rsArrowIcn {
+        background-size:$arrow-width;
+      }
+    }
+  }
+}

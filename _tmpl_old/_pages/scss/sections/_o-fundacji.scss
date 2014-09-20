@@ -1,0 +1,142 @@
+
+
+/*========================================================================
+  Section           :   O Fundacji
+  Functionality     :   Text + image
+  Version:          :   v1.1
+  Updated:          :   11/09/2014
+
+  Każda sekcja powinna mieć możliwie schematyczną budową.
+  Traktujemy sekcje jako swego rodzaju boxy.
+
+  Zadbaj o to aby:
+  - nazwa klasy głównej rozpoczynająca się w konwencji .section__xxxxxx
+  - określamy background lub jego brak
+  - wewnątrz definicji tego stylu wyodrębniony header oraz main content
+  - jeżeli jest jakieś tło to dołączamy je z "mod__ICLUDES" za pomocą @extend
+  - opis tego opisu byl aktualny
+
+=========================================================================*/
+
+// O fundacji
+.section__ofundacji {
+
+  $header-configuration: (
+          color2: red,
+          color3: red,
+          title-margin: 0em 0 0em 0 !important,
+          subtitle-margin: 0 0 1.2em 0 !important
+  );
+
+  $primary-color: rgba(255, 255, 255, 1);
+
+  //---------------------------------------------------------------
+  // Media Queries
+  //---------------------------------------------------------------
+  .crossSectionArrow--left {
+    bottom: -4rem;
+  }
+  @media #{$medium-up} { }
+  @media #{$large-up} {
+    .crossSectionArrow--left {
+      height: 201px;
+      bottom: -15rem;
+      left: 0.5rem;
+    }
+  }
+
+  // Section margines
+  .row__prefix {
+    @include setSectionMobile(5em 0 1em 0);
+    @include setSectionTablet(6em 0 2em 0);
+    @include setSectionPc(5.5em 0 3em 0);
+    @include setSectionHD(6em 0 3em 0);
+  }
+  .row {
+    @include setSectionMobile(1.5em 1em);
+    @include setSectionTablet(4em 0 3em 0);
+    @include setSectionPc(4em 0 4em 0);
+  }
+
+  border-bottom:solid 2em #138fbb;
+  @media #{$large-up} {
+    border-bottom:solid 7em #138fbb;
+  }
+
+
+  //---------------------------------------------------------------
+  // General look
+  //---------------------------------------------------------------
+  h1,h2,h3,h4,h5,h6 { color:#fff; }
+  @include putSectionImage($blue-color,"4_szklo.png","", "","",top right,"","","");
+  background-size:55% 100%;
+  @extend %row--blue;
+
+
+
+  .row__sufix{
+    background:#138fbb;
+//    min-height:4em;
+  }
+  .row__prefix{
+    background:#138fbb;
+  }
+
+  .sep {
+    &.sep--bottom {
+      @include putSeparator( #bae1ed, 60%);
+      margin:1em auto;
+    }
+  }
+
+
+  // ---------------------------------------------------------------
+  // SECTION's header
+  //---------------------------------------------------------------
+  .section__header {
+    @include module__header($header-configuration);
+  }
+  .row__prefix {
+    .section__header {
+      @include module__header($header-configuration);
+    }
+  }
+
+  // ---------------------------------------------------------------
+  // SECTION's main content
+  //---------------------------------------------------------------
+  .section__content {
+    p {
+      color:#bae1ed;
+      font-size:1.1em;
+      line-height:1.2em;
+      font-family:'OpenSans-Light';
+    }
+    .section__subtitle {
+      font-family:'OpenSans-Regular';
+      font-size: 3.0em;
+      color: #bae1ed;
+      position: relative;
+      margin-top: -20px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+    @media #{$medium-up} {
+
+      p {
+        color:#bae1ed;
+        font-size:2.6em;
+        line-height:1.2em;
+      }
+      img {
+        max-height:180px;
+      }
+    }
+    @media #{$large-up} {
+      img {
+        max-height:350px;
+      }
+    }
+  }
+}
