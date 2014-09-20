@@ -2,7 +2,7 @@
 add_import_path "bower_components/foundation/scss"
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
-relative_assets     =   FALSE
+relative_assets     =   true
 
 # Set this to the root of your project when deployed
 # Relative path to assets used when relative_assets == true ...

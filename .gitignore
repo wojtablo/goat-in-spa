@@ -4,3 +4,5 @@
 /stylesheets/*
 /.idea/*
 .idea/*
+scss/compass
+scss/foundation
