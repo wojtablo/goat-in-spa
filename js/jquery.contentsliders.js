@@ -106,14 +106,18 @@ else if (Modernizr.mq('(min-width: 760px) and (max-width: 770px)')) {
 else {
     var si = $('#slider-news').royalSlider({
         autoScaleSlider: true,
+        autoScaleSliderWidth:200,
+        autoScaleSliderHeight:122,
         addActiveClass: true,
+        navigateByClick: false,
+        imageScalePadding: 6,
         arrowsNav: true,
         controlNavigation: 'bullets',
         arrowsNavAutoHide: false,
         loop: true,
         loopRewind: false,
 
-        imageScaleMode: 'fit-if-smaller',
+        imageScaleMode: 'fit',
         imageAlignCenter: false,
         transitionSpeed: 300,
 
@@ -127,7 +131,7 @@ else {
             centerArea: 0.328,
             center: false,
             breakpoint: 650,
-            breakpointCenterArea: 0.64,
+            breakpointCenterArea: 0.328,
             navigateByCenterClick: false
         }
     }).data('royalSlider');

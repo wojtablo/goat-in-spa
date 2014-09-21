@@ -241,6 +241,34 @@ requirejs([ "jquery.min",
             }
         });
 
+//        var bullets = true;
+//
+//        si.ev.on('rsAfterSlideChange', function(event) {
+//            alert("zmiana slajdu");
+//        });
+//        si.ev.on('rsBeforeAnimStart', function(event) {
+//            alert("zaraz zmiana slajdu");
+//            $("#slider-news .rsBullets").toggle("fast", function() {
+//                $("#slider-news .rsBullets").toggleClass("selected");
+//            });
+//        });
+
+
+        $("#slider-news .slide--more").click(function(event) {
+            event.preventDefault();
+            var that = $(this);
+            $("#slider-news .rsBullets").toggle("fast", function() {
+                that.parent().toggleClass("selected");
+            });
+        });
+        $("#slider-news .close-reveal-modal").click(function(event) {
+            event.preventDefault();
+            var that = $(this);
+            $("#slider-news .rsBullets").toggle("fast", function() {
+                that.parent().toggleClass("selected");
+            });
+        });
+
         /**
          * Custom jQuery
          */

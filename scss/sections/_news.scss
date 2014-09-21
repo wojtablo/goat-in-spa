@@ -108,6 +108,7 @@
       color: $blue5-color;
       margin:0px;
       padding-bottom:0.2em;
+      margin-right: 8%;
     }
     .slide--more {
       font-family: "OpenSans-Regular";
@@ -123,9 +124,17 @@
       }
     }
 
+    figure.news__image {
+      display: block;
+      float: left;
+      padding: 0px;
+      margin: 0px;
+      margin-right: 2em;
+    }
 
     // Reveal
     .contentSlider.withRelativeReveal {
+
       .slide__dateTime2 {
         font-family:"OpenSans-Light";
         font-size:1em;
