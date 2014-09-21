@@ -1,0 +1,99 @@
+<f:layout name="Default" />
+
+<f:comment>
+    Do not use this file as a foundation for new templates!
+    Use file in subdirectory /Specials/DefaultTemplate.html
+</f:comment>
+
+
+<f:section name="main">
+    <f:flashMessages />
+
+    <div class="section__content small-only-text-center">
+
+        <div class="row row__zarzad">
+            <div class="columns medium-3">
+                <h3 class="extra__label">Prezes <br/>Fundacji</h3>
+            </div>
+            <dd class="medium-1 columns">&nbsp;</dd>
+            <div class="columns medium-8">
+                <h3 class="extra__label">Członkowie&nbsp;<span>Zarządu</span></h3>
+            </div>
+        </div>
+
+        <div class="row collapse row__decoration" data-equalizer>
+            <dl class="tabs" data-tab>
+                <f:for each="{clients}" as="client" iteration="i">
+
+                    <f:if condition="{i.index} == 0">
+                        <dd data-equalizer-watch class="small-12 medium-3 columns">
+                            <a class="hide-for-medium-up" href="#" data-reveal-id="rada{client.uid}">{client.name}</a>
+                            <a class="person__image hidden-for-small-only" data-reveal-id="rada{client.uid}" href="#">
+                                <img alt="{client.name}" src="http://beta.kozminski.edu.pl/fileadmin/templates/fundacjakozminski/gfx/{client.image}" alt=""/>
+                            </a>
+                        </dd>
+                        <dd data-equalizer-watch class="small-12 medium-3 columns">&nbsp;</dd>
+                    </f:if>
+
+                    <f:if condition="{i.index} > 0 ">
+                        <dd data-equalizer-watch class="small-12 medium-2 columns">
+                            <a class="hide-for-medium-up" href="#" data-reveal-id="rada{client.uid}">{client.name} </a>
+                            <a class="person__image hidden-for-small-only" data-reveal-id="rada{client.uid}" href="#">
+                                <img alt="{client.name}" src="http://beta.kozminski.edu.pl/fileadmin/templates/fundacjakozminski/gfx/{client.image}" alt=""/>
+                            </a>
+                        </dd>
+                    </f:if>
+
+                </f:for>
+            </dl>
+        </div>
+
+        <div class="tabs-content text-center">
+            <f:for each="{clients}" as="client">
+                <div class="content" id="panel{client.uid}">
+                    <h2>{client.name}</h2>
+
+                    <p><strong>Wybór Prof. Leona Koźmińskiego na patrona fundacji nie był przypadkowy. Profesor urodził się 1904 roku na
+                        Ukrainie. Szkołę średnią ukończył w Lozannie, w Szwajcarii. Następnie studiował w kraju, w Szkole Głównej
+                        Handlowej, w której uzyskał magisterium.</strong></p>
+
+                    <p>Stopień doktora obronił na Sorbonie, w Paryżu, w wieku 26 lat. Był to rok 1929. Habilitował się w latach 30-tych.
+                        Był docentem w SGH specjalizującym się w organizacji i technice handlu. Uczył tam też języka francuskiego. </p>
+
+                    <p>This is the first panel of the basic tab example. This is the first panel of the basic tab example.</p>
+                    <a class="slide--more" data-reveal-id="rada{client.uid}" href="#">Szczegóły</a>
+
+                    <div id="rada{client.uid}" class="reveal-modal member__details" data-reveal>
+                        <h3 class="slide__subTitle">{client.name}</h3>
+                        <figure class="text-center">
+                            <img alt="{client.name}" src="http://beta.kozminski.edu.pl/fileadmin/templates/fundacjakozminski/gfx/{client.image}" alt="" data-rsw="340" data-rsh="225">
+                        </figure>
+                        <p class="slide__intro">
+                        <p>
+                            Wybór Prof. Leona Koźmińskiego na patrona fundacji nie był przypadkowy. Profesor
+                            urodził się 1904 roku na Ukrainie. Szkołę średnią ukończył w Lozannie, w
+                            Szwajcarii. Następnie studiował w kraju, w Szkole Głównej Handlowej, w której
+                            uzyskał magisterium.
+                        </p>
+                        <p>Stopień doktora obronił na Sorbonie, w Paryżu, w wieku 26 lat. Był to rok 1929.
+                            Habilitował się w latach 30-tych. Był docentem w SGH specjalizującym się w
+                            organizacji i technice handlu. Uczył tam też języka francuskiego. </p>
+                        <p>We wrześniu 1939 roku walczył jako porucznik w 21 pułku piechoty. Udało mu się
+                            uniknąć niewoli rosyjskiej. Idea szerzenia wiedzy była zawsze bardzo Mu bliska.
+                            W czasie okupacji niemieckiej uczył w Miejskiej Szkole Handlowej w Warszawie,
+                            która była faktycznie zakonspirowaną SGH oraz w Instytucie Morskim przy tajnym
+                            Uniwersytecie Ziem Zachodnich. Był wielki patriotą. Działał w konspiracji, w
+                            komórce „Z”- „Ziemie Zachodnie”, przy Delegaturze rządu londyńskiego na kraj. W
+                            stopniu porucznika walczył na Mokotowie w Powstaniu Warszawskim jako członek
+                            dowództwa Zgrupowania AK „Baszta”. Po upadku Powstania został wywieziony do
+                            Niemiec. </p>
+                        </p>
+                        <a class="close-reveal-modal">&#215;</a>
+                    </div>
+                </div>
+            </f:for>
+        </div>
+    </div>
+    <figure class="crossSectionArrow--right"><img src="fileadmin/templates/fundacjakozminski/gfx/5_strzalkaG.png" alt="" title=""/></figure>
+
+</f:section>

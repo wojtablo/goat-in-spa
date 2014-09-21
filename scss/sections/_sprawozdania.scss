@@ -78,7 +78,7 @@
         margin:0px;
         padding:0px;
         .list__item {
-          background:transparent url("8_ikonka_tekst.png") center left no-repeat;
+          background:transparent image-url("8_ikonka_tekst.png") center left no-repeat;
           padding-left: 30px;
           background-size: 4%;
           margin-bottom:5px;
@@ -108,13 +108,13 @@
     .section__content {
       .column__header {
         display: block;
-        background: transparent url("8_ikonki.png") top center no-repeat;
+        background: transparent image-url("8_ikonki.png") top center no-repeat;
         background-size: 22%;
         width: auto;
         height: 80px;
       }
       .columns.medium-6{
-        background:#a8c72e url("8_tlo_szklo_szklo.png") top right no-repeat;
+        background:#a8c72e image-url("8_tlo_szklo_szklo.png") top right no-repeat;
         margin-top:-0.6rem;
       }
       ul.list__files {

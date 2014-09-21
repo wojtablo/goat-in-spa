@@ -1,0 +1,58 @@
+<f:layout name="Default" />
+
+<f:comment>
+    Do not use this file as a foundation for new templates!
+    Use file in subdirectory /Specials/DefaultTemplate.html
+</f:comment>
+
+
+<f:section name="main">
+    <f:flashMessages />
+
+    <div class="row">
+        <f:for each="{clients}" as="client" iteration="ix">
+		<!--
+            {ix.index}
+            <f:if condition="{ix.index} % 3">
+                {ix.index}
+            </f:if>
+			-->
+            <div class="small-12 medium-4 columns">
+                <div class="partner">
+                    <div class="imp--wrapper"> <img src="fileadmin/templates/fundacjakozminski/gfx/{client.image}" alt="" title=""></div>
+                    <h4 class="partner--name">{client.name}</h4>
+					 <f:if condition="{client.address}">
+						<f:then>
+							 <p class="partner--description">
+								{client.address}
+							</p>
+						</f:then>
+						<f:else>
+							 <p class="partner--description">
+								Polska niepubliczna uczelnia
+								akademicka, specjalizująca się
+								w zakresie nauk ekonomicznych,
+								humanistycznych i prawnych.
+							</p>
+						</f:else>
+					</f:if>
+                    <f:if condition="{client.url}">
+						<f:then>
+							<a class="partner_www" href="www.kozminski.edu.pl">
+								{client.url}
+							</a>
+						</f:then>
+						<f:else>
+							<a class="partner_www" href="www.kozminski.edu.pl">
+								www.kozminski.edu.pl
+							</a>
+						</f:else>
+					</f:if>
+                    
+                </div>
+            </div>
+        </f:for>
+    </div>
+
+
+</f:section>

@@ -13,7 +13,7 @@ javascripts_dir     =   "js"
 fonts_dir           =   "fonts"
 
 ## otherwise load from absolute path:
-http_path           =   "http://beta.kozminski.edu.pl/fileadmin/templates/fundacjakozminski/_tmpl/"
+http_path           =   "http://beta.kozminski.edu.pl/fileadmin/templates/fundacjakozminski/"
 http_images_dir     =   "gfx/"
 http_images_fonts   =   "fonts/"
 http_images_js      =   "js/"

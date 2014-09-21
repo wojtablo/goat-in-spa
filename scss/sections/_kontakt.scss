@@ -79,7 +79,7 @@
   }
 
   h2.kontakt_form--label {
-    background:transparent url("10_ikonka_formularz.png") no-repeat;
+    background:transparent image-url("10_ikonka_formularz.png") no-repeat;
     background-position: left center ;
     padding-left:40px;
   }
@@ -98,7 +98,7 @@
     .kontakt__address {
       margin-top:3em;
       .kontakt__icon {
-        background:transparent url("10_ikonka_fundacja.png") no-repeat;
+        background:transparent image-url("10_ikonka_fundacja.png") no-repeat;
         background-position: left center ;
         padding-left:40px;
         font-size:1.5em;
@@ -109,21 +109,21 @@
     }
     .kontakt__email {
       .kontakt__icon {
-        background:transparent url("10_ikonka_email.png") no-repeat;
+        background:transparent image-url("10_ikonka_email.png") no-repeat;
         background-position: left center ;
         padding-left:40px;
       }
     }
     .kontakt__tel {
       .kontakt__icon {
-        background:transparent url("10_ikonka_telefon.png") no-repeat;
+        background:transparent image-url("10_ikonka_telefon.png") no-repeat;
         background-position: left center ;
         padding-left:40px;
       }
     }
     .kontakt__bank {
       .kontakt__icon {
-        background:transparent url("10_ikonka_konto.png") no-repeat;
+        background:transparent image-url("10_ikonka_konto.png") no-repeat;
         background-position: left center ;
         padding-left:40px;
       }

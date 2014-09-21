@@ -90,7 +90,7 @@
         }
         a.person__image {
           display:block;
-          background:transparent url("5_prezes_szklo.png") top right no-repeat;
+          background:transparent image-url("5_prezes_szklo.png") top right no-repeat;
           img {
 
           }
@@ -128,7 +128,7 @@
     // Grid
     .row__decoration {
       .columns {
-        background:transparent url("2_time_line.jpg") center center repeat-x;
+        background:transparent image-url("2_time_line.jpg") center center repeat-x;
         padding-right:0px;
         a {
           margin-top:30%;

@@ -131,7 +131,7 @@ section.rowWrapper {
 
 %btn__arrow--down {
   display:inline-block;
-  background: transparent url("1_strzalkaD.png") center center no-repeat;
+  background: transparent image-url("1_strzalkaD.png") center center no-repeat;
   background-size: 70%;
 //  -webkit-animation: pulsate 1s ease-out;
 //  -webkit-animation-iteration-count: infinite;
@@ -712,14 +712,14 @@ This mixin put border in the position.
     .rsArrowLeft {
       visibility: hidden;
       .rsArrowIcn {
-        background: url('http://launchr.pl/goat-in-spa/gfx/3_strzalka.png');
+        background: image-url('3_strzalka.png');
         background-size:$arrow-width;
       }
     }
     .rsArrowRight {
       visibility: hidden;
       .rsArrowIcn {
-        background: url('http://launchr.pl/goat-in-spa/gfx/3_strzalka.png');
+        background: image-url('3_strzalka.png');
         background-size:$arrow-width;
         @include transform(rotate(-180deg));
       }
