@@ -7,6 +7,12 @@
 
 .section__statut {
 
+
+  $header-configuration: (
+          color3:#fff !important,
+          title-margin: 0em 0 0.7em 0 !important,
+          subtitle-margin: 0 0 1.2em 0 !important
+  );
   //---------------------------------------------------------------
   // Media Queries
   //---------------------------------------------------------------
@@ -43,18 +49,7 @@
   // SECTION's header
   //---------------------------------------------------------------
   .section__header {
-    .section__title {
-      @extend %font__size--large;
-      margin-bottom:0.3em;
-    }
-    .section__subtitle {
-      @extend %font__size--medium;
-      padding-bottom:0.4em;
-      span {
-        font-family:"OpenSans-Regular" !important;
-        color:#fff;
-      }
-    }
+    @include module__header($header-configuration);
   }
 
   // ---------------------------------------------------------------

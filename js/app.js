@@ -87,15 +87,23 @@ requirejs([ "jquery.min",
         }, false);
 
         $(window).resize(function() {
-            // the call to checkMq here will execute every time the window is resized
-            //callResize();
 
             if(callResize()){
-                //$("#top--nav #section-10").parent().hide();
                 $('#top--nav a[href$="#section-10"]').parent().hide();
             }
             else {
                 $('#top--nav a[href$="#section-10"]').parent().show();
+            }
+        });
+
+        $( "#slider-dzialalnosc .__events--slide .__event:last-child" ).addClass( "last" );
+
+
+        console.log("Removed containers for empty subtitles from following sections: ")
+        $( "section .section__subtitle > p" ).each(function( index ) {
+            if($(this).is(":empty")){
+                console.log( "-- " + $(this).parent().prev().text() );
+                $(this).parent().remove();
             }
         });
 

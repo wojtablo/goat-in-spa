@@ -53,23 +53,23 @@ if (Modernizr.mq('only all and (max-width: 720px)')) {
         navigateByClick: false,
         transitionSpeed: 200
     });
-    $('#slider-dzialalnosc').royalSlider({
-        autoHeight: true,
-        arrowsNav: false,
-        fadeinLoadedSlide: true,
-        arrowsNavAutoHide: false,
-        controlNavigationSpacing: 0,
-        controlNavigation: 'bullets',
-        imageScaleMode: 'none',
-        imageAlignCenter: false,
-        loop: false,
-        loopRewind: false,
-        numImagesToPreload: 2,
-        keyboardNavEnabled: true,
-        usePreloader: true,
-        navigateByClick: false,
-        transitionSpeed: 200
-    });
+//    $('#slider-dzialalnosc').royalSlider({
+//        autoHeight: false,
+//        arrowsNav: false,
+//        fadeinLoadedSlide: true,
+//        arrowsNavAutoHide: false,
+//        controlNavigationSpacing: 0,
+//        controlNavigation: 'bullets',
+//        imageScaleMode: 'none',
+//        imageAlignCenter: false,
+//        loop: false,
+//        loopRewind: false,
+//        numImagesToPreload: 2,
+//        keyboardNavEnabled: true,
+//        usePreloader: true,
+//        navigateByClick: false,
+//        transitionSpeed: 200
+//    });
 
 }
 else if (Modernizr.mq('(min-width: 760px) and (max-width: 770px)')) {

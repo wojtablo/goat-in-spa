@@ -88,7 +88,7 @@
         font-family: "OpenSans-Regular";
         font-size: 1.25em;
         line-height: 1.2em;
-        text-shadow: -1px -1px 0px #752A2A;
+//        text-shadow: -1px -1px 0px #752A2A;
         margin-bottom: 0.2em;
       }
       .news__intro {
@@ -98,6 +98,9 @@
         color:#fff;
         margin-bottom:3px;
         padding-bottom:3px;
+      }
+      a:hover {
+        text-decoration:underline;
       }
       .news__more {
         font-family:"OpenSans-Bold";
@@ -109,6 +112,8 @@
           color:#203c52;
           opacity:0.8;
           font-family: "OpenSans-Light";
+          text-decoration:none;
+
           &:before {
             content: "- ";
           }
@@ -205,6 +210,30 @@
           .__sep {
             display:block !important;
           }
+          .xx {
+            h5 {
+              width: 23px;
+              height: 22px;
+              border-radius: 50%;
+              background: #e7375b;
+              text-align: center;
+              display: inline-block;
+              margin-right: 10px;
+              opacity:0.9;
+            }
+          }
+        }
+
+        &.last {
+          .__info {
+            margin-bottom:-40px !important;
+          }
+          .__sep {
+            .__icon {
+              top:auto !important;
+              bottom:0px;
+            }
+          }
         }
 
         // Right side ----------------------------------------------
@@ -222,7 +251,14 @@
             background: transparent image-url("2_kropka-line.png") 0 top repeat-y;
             .__icon { top:$icon-distance-top; margin-left:0px; }
           }
+          .xx {
+            ul {
+              text-align: right;
+              list-style-position: inside;
+            }
+          }
         }
+
 
         // Regular styles ------------------------------------------
         .__wrapper {
