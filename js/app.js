@@ -5,7 +5,7 @@
  * Require config
  */
 require.config({
-    baseUrl: 'fileadmin/templates/fundacjakozminski/_tmpl/js/',
+    baseUrl: 'fileadmin/templates/fundacjakozminski/js/',
     //baseUrl: 'js/',
     paths: {
         'jquery': 'jquery.min',
