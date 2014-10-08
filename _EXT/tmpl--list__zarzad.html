@@ -9,8 +9,8 @@
 <f:section name="main">
     <f:flashMessages />
     <img src="fileadmin/templates/fundacjakozminski/gfx/right.png" alt="" class="right-join" />
-    <div class="section__content small-only-text-center">
 
+    <div class="section__content small-only-text-center hide-for-small-only">
         <div class="row row__zarzad">
             <div class="columns medium-3">
                 <h3 class="extra__label">Prezes <br/>Fundacji</h3>
@@ -29,7 +29,14 @@
                         <dd data-equalizer-watch class="small-12 medium-3 columns">
                             <a class="hide-for-medium-up" href="#" data-reveal-id="rada{client.uid}">{client.name}</a>
                             <a class="person__image hidden-for-small-only" data-reveal-id="rada{client.uid}" href="#">
-                                <img alt="{client.name}" src="http://beta.kozminski.edu.pl/fileadmin/templates/fundacjakozminski/gfx/{client.image}" alt=""/>
+                                <f:if condition="{client.image}">
+                                    <f:then>
+                                        <img src="{f:uri.image(src: 'uploads/tx_thecrew/{client.image}')}" alt="" />
+                                    </f:then>
+                                    <f:else>
+                                        <img src="fileadmin/templates/fundacjakozminski/gfx/herb_cale.jpg" alt="" />
+                                    </f:else>
+                                </f:if>
                             </a>
                         </dd>
                         <dd data-equalizer-watch class="small-12 medium-1 columns">&nbsp;</dd>
@@ -39,7 +46,14 @@
                         <dd data-equalizer-watch class="small-12 medium-2 columns">
                             <a class="hide-for-medium-up" href="#" data-reveal-id="rada{client.uid}">{client.name} </a>
                             <a class="person__image hidden-for-small-only" data-reveal-id="rada{client.uid}" href="#">
-                                <img alt="{client.name}" src="http://beta.kozminski.edu.pl/fileadmin/templates/fundacjakozminski/gfx/{client.image}" alt=""/>
+                                <f:if condition="{client.image}">
+                                    <f:then>
+                                        <img src="{f:uri.image(src: 'uploads/tx_thecrew/{client.image}')}" alt="" />
+                                    </f:then>
+                                    <f:else>
+                                        <img src="fileadmin/templates/fundacjakozminski/gfx/herb_cale.jpg" alt="" />
+                                    </f:else>
+                                </f:if>
                             </a>
                         </dd>
                     </f:if>
@@ -53,46 +67,90 @@
                 <div class="content" id="panel{client.uid}">
                     <h2>{client.name}</h2>
 
-                    <p><strong>Wybór Prof. Leona Koźmińskiego na patrona fundacji nie był przypadkowy. Profesor urodził się 1904 roku na
-                        Ukrainie. Szkołę średnią ukończył w Lozannie, w Szwajcarii. Następnie studiował w kraju, w Szkole Głównej
-                        Handlowej, w której uzyskał magisterium.</strong></p>
+                    <f:if condition="{client.roleTask}">
+                        <f:then>
+                            <f:format.raw>{client.roleTask}</f:format.raw>
+                        </f:then>
+                        <f:else>
+                            <p><strong>Wybór Prof. Leona Koźmińskiego na patrona fundacji nie był przypadkowy. Profesor urodził się 1904 roku na Ukrainie. Szkołę średnią ukończył w Lozannie, w Szwajcarii. Następnie studiował w kraju, w Szkole Głównej Handlowej, w której uzyskał magisterium.</strong></p>
+                            <p>Stopień doktora obronił na Sorbonie, w Paryżu, w wieku 26 lat. Był to rok 1929. Habilitował się w latach 30-tych. Był docentem w SGH specjalizującym się w organizacji i technice handlu. Uczył tam też języka francuskiego. </p>
+                        </f:else>
+                    </f:if>
 
-                    <p>Stopień doktora obronił na Sorbonie, w Paryżu, w wieku 26 lat. Był to rok 1929. Habilitował się w latach 30-tych.
-                        Był docentem w SGH specjalizującym się w organizacji i technice handlu. Uczył tam też języka francuskiego. </p>
-
-                    <p>This is the first panel of the basic tab example. This is the first panel of the basic tab example.</p>
                     <a class="slide--more" data-reveal-id="rada{client.uid}" href="#">Szczegóły</a>
 
                     <div id="rada{client.uid}" class="reveal-modal member__details" data-reveal>
-                        <h3 class="slide__subTitle">{client.name}</h3>
-                        <figure class="text-center">
-                            <img alt="{client.name}" src="http://beta.kozminski.edu.pl/fileadmin/templates/fundacjakozminski/gfx/{client.image}" alt="" data-rsw="340" data-rsh="225">
-                        </figure>
-                        <p class="slide__intro">
-                        <p>
-                            Wybór Prof. Leona Koźmińskiego na patrona fundacji nie był przypadkowy. Profesor
-                            urodził się 1904 roku na Ukrainie. Szkołę średnią ukończył w Lozannie, w
-                            Szwajcarii. Następnie studiował w kraju, w Szkole Głównej Handlowej, w której
-                            uzyskał magisterium.
-                        </p>
-                        <p>Stopień doktora obronił na Sorbonie, w Paryżu, w wieku 26 lat. Był to rok 1929.
-                            Habilitował się w latach 30-tych. Był docentem w SGH specjalizującym się w
-                            organizacji i technice handlu. Uczył tam też języka francuskiego. </p>
-                        <p>We wrześniu 1939 roku walczył jako porucznik w 21 pułku piechoty. Udało mu się
-                            uniknąć niewoli rosyjskiej. Idea szerzenia wiedzy była zawsze bardzo Mu bliska.
-                            W czasie okupacji niemieckiej uczył w Miejskiej Szkole Handlowej w Warszawie,
-                            która była faktycznie zakonspirowaną SGH oraz w Instytucie Morskim przy tajnym
-                            Uniwersytecie Ziem Zachodnich. Był wielki patriotą. Działał w konspiracji, w
-                            komórce „Z”- „Ziemie Zachodnie”, przy Delegaturze rządu londyńskiego na kraj. W
-                            stopniu porucznika walczył na Mokotowie w Powstaniu Warszawskim jako członek
-                            dowództwa Zgrupowania AK „Baszta”. Po upadku Powstania został wywieziony do
-                            Niemiec. </p>
-                        </p>
+                        <div class="descWrapper">
+                            <figure class="text-center">
+                                <f:if condition="{client.image}">
+                                    <f:then>
+                                        <img src="{f:uri.image(src: 'uploads/tx_thecrew/{client.image}')}" data-rsw="340" data-rsh="225" alt="" />
+                                    </f:then>
+                                    <f:else>
+                                        <img src="fileadmin/templates/fundacjakozminski/gfx/herb_cale.jpg" data-rsw="340" data-rsh="225" alt="" />
+                                    </f:else>
+                                </f:if>
+                            </figure>
+                            <h3 class="slide__subTitle">{client.name}</h3>
+                            <h4>{client.rolePosition}</h4>
+                            <span class="sep sep--top"></span>
+                            <p class="slide__intro">
+                                <f:if condition="{client.roleTask}">
+                                    <f:then>
+                                        <f:format.raw>{client.roleTask}</f:format.raw>
+                                    </f:then>
+                                    <f:else>
+                                        <p><strong>Wybór Prof. Leona Koźmińskiego na patrona fundacji nie był przypadkowy. Profesor urodził się 1904 roku na Ukrainie. Szkołę średnią ukończył w Lozannie, w Szwajcarii. Następnie studiował w kraju, w Szkole Głównej Handlowej, w której uzyskał magisterium.</strong></p>
+                                        <p>Stopień doktora obronił na Sorbonie, w Paryżu, w wieku 26 lat. Był to rok 1929. Habilitował się w latach 30-tych. Był docentem w SGH specjalizującym się w organizacji i technice handlu. Uczył tam też języka francuskiego. </p>
+                                    </f:else>
+                                </f:if>
+                                <f:if condition="{client.address}">
+                                    <f:format.raw>{client.address}</f:format.raw>
+                                </f:if>
+                            </p>
+                        </div>
                         <a class="close-reveal-modal">&#215;</a>
                     </div>
                 </div>
             </f:for>
         </div>
     </div>
+
+    <div class="show-for-small-only text-center">
+        <h3 class="extra__label">Prezes <br/>Fundacji</h3>
+
+        <dl class="accordion" data-accordion="myAccordionGroup">
+            <f:for each="{clients}" as="client" iteration="i">
+                <f:if condition="{i.index} == 0">
+                    <dd class="accordion-navigation">
+                        <a href="#panel{client.uid}">{client.name}</a>
+                        <div id="panel{client.uid}" class="content">
+                            <f:format.raw>{client.roleTask}</f:format.raw>
+                            <f:format.raw>{client.address}</f:format.raw>
+                        </div>
+                    </dd>
+                </f:if>
+            </f:for>
+        </dl>
+
+        <h3 class="extra__label">Członkowie&nbsp;<span>Zarządu</span></h3>
+
+        <dl class="accordion" data-accordion="myAccordionGroup">
+            <f:for each="{clients}" as="client" iteration="i">
+                <f:if condition="{i.index} > 0 0">
+                    <dd class="accordion-navigation">
+                        <a href="#panel{client.uid}">{client.name}</a>
+                        <div id="panel{client.uid}" class="content">
+                            <f:format.raw>{client.roleTask}</f:format.raw>
+                            <f:format.raw>{client.address}</f:format.raw>
+                        </div>
+                    </dd>
+                </f:if>
+            </f:for>
+        </dl>
+
+    </div>
+
+
 
 </f:section>

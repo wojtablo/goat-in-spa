@@ -65,6 +65,18 @@ html.wf-inactive {
   }
 }
 
+figure {
+  margin:0px;
+  padding:0px;
+}
+
+@media #{$small-only} {
+  .subtitle-hide-for-small {
+    .section__subtitle {
+      display:none;
+    }
+  }
+}
 
 /*------------------------------------*\
     SETTINGS

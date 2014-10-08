@@ -60,7 +60,8 @@
       @extend %put-sliderArrowsMain;
       @extend %slider__arrows;
       @extend .rsBullets;
-      p {
+      p,ul,li {
+        font-size:1.1em;
         font-family:"OpenSans-Light";
       }
     }

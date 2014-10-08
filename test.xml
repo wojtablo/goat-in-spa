@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+    <meta type="array">
+        <langDisable>1</langDisable>
+    </meta>
+    <ROOT type="array">
+        <tx_templavoila type="array">
+            <title>ROOT</title>
+            <description>Select the HTML element on the page which you want to be the overall container element for the template.</description>
+        </tx_templavoila>
+        <type>array</type>
+        <el type="array">
+            <section_title type="array">
+                <tx_templavoila type="array">
+                    <title>Tytuł sekcji</title>
+                    <sample_data type="array">
+                        <numIndex index="0"></numIndex>
+                    </sample_data>
+                    <eType>input</eType>
+                    <TypoScript type="NULL"></TypoScript>
+                    <proc type="array">
+                        <int>0</int>
+                        <HSC>1</HSC>
+                        <stdWrap></stdWrap>
+                    </proc>
+                    <preview></preview>
+                </tx_templavoila>
+                <TCEforms type="array">
+                    <label>Tytuł sekcji</label>
+                    <config type="array">
+                        <type>input</type>
+                        <size>25</size>
+                        <eval>trim</eval>
+                    </config>
+                </TCEforms>
+            </section_title>
+            <section_subtitle type="array">
+                <tx_templavoila type="array">
+                    <title>Podtytuł</title>
+                    <sample_data type="array">
+                        <numIndex index="0"></numIndex>
+                    </sample_data>
+                    <eType>text</eType>
+                    <TypoScript></TypoScript>
+                    <proc type="array">
+                        <int>0</int>
+                        <HSC>1</HSC>
+                        <stdWrap></stdWrap>
+                    </proc>
+                    <preview></preview>
+                </tx_templavoila>
+                <TCEforms type="array">
+                    <label>Podtytuł</label>
+                    <config type="array">
+                        <type>text</type>
+                        <cols>48</cols>
+                        <rows>5</rows>
+                    </config>
+                </TCEforms>
+            </section_subtitle>
+            <field_con_id type="array">
+                <type>attr</type>
+                <tx_templavoila type="array">
+                    <title>ID Sekcji</title>
+                    <sample_data type="array">
+                        <numIndex index="0"></numIndex>
+                    </sample_data>
+                    <eType>input</eType>
+                    <proc type="array">
+                        <HSC type="integer">1</HSC>
+                        <stdWrap></stdWrap>
+                    </proc>
+                    <preview></preview>
+                    <TypoScript type="NULL"></TypoScript>
+                </tx_templavoila>
+                <TCEforms type="array">
+                    <label>ID Sekcji</label>
+                    <config type="array">
+                        <type>input</type>
+                        <size>48</size>
+                        <eval>trim</eval>
+                    </config>
+                </TCEforms>
+            </field_con_id>
+            <field_con_class_custom type="array">
+                <type>no_map</type>
+                <tx_templavoila type="array">
+                    <title>Cechy sekcji (class)</title>
+                    <sample_data type="array">
+                        <numIndex index="0"></numIndex>
+                    </sample_data>
+                    <eType>input</eType>
+                    <proc type="array">
+                        <HSC type="integer">1</HSC>
+                        <stdWrap></stdWrap>
+                    </proc>
+                    <preview></preview>
+                    <TypoScript type="NULL"></TypoScript>
+                </tx_templavoila>
+                <TCEforms type="array">
+                    <label>Cechy sekcji (class)</label>
+                    <config type="array">
+                        <type>input</type>
+                        <size>48</size>
+                        <eval>trim</eval>
+                    </config>
+                </TCEforms>
+            </field_con_class_custom>
+            <field_con_class type="array">
+                <type>attr</type>
+                <tx_templavoila type="array">
+                    <title>Ustawienia dot. wizualizacji sekcji</title>
+                    <sample_data type="array">
+                        <numIndex index="0"></numIndex>
+                    </sample_data>
+                    <eType>select</eType>
+                    <TypoScript><![CDATA[# klasa(y) z selecta
+lib.con1 = TEXT
+lib.con1.field = field_con_class
+lib.con1.split{
+	token = ,
+	cObjNum = 1
+	1{
+		10 = TEXT
+		10.current = 1
+		20 = TEXT
+		20.char = 32
+	}
+}
+
+# klasa(y) z input-a
+lib.con2 = TEXT
+lib.con2.field = field_con_class_custom
+
+10 = COA
+10.1 < lib.con1
+10.2 < lib.con2
+              			]]></TypoScript>
+                    <proc type="array">
+                        <int>0</int>
+                        <HSC>0</HSC>
+                        <stdWrap></stdWrap>
+                    </proc>
+                    <preview></preview>
+                </tx_templavoila>
+                <TCEforms type="array">
+                    <config type="array">
+                        <type>select</type>
+                        <maxitems>20</maxitems>
+                        <minitems>0</minitems>
+                        <multiple>1</multiple>
+                        <items type="array">
+                            <numIndex index="0" type="array">
+                                <numIndex index="0"></numIndex>
+                                <numIndex index="1"></numIndex>
+                            </numIndex>
+                            <numIndex index="1" type="array">
+                                <numIndex index="0">Dodaj strzałkę przejścia między sekcjami</numIndex>
+                                <numIndex index="1">fArrow</numIndex>
+                            </numIndex>
+                            <numIndex index="2" type="array">
+                                <numIndex index="0">Lewa strona</numIndex>
+                                <numIndex index="1">fArrow--left</numIndex>
+                            </numIndex>
+                            <numIndex index="3" type="array">
+                                <numIndex index="0">Prawa strona</numIndex>
+                                <numIndex index="1">fArrow--right</numIndex>
+                            </numIndex>
+                            <numIndex index="4" type="array">
+                                <numIndex index="0">Separator podtytułu (góra)</numIndex>
+                                <numIndex index="1">fLine--top</numIndex>
+                            </numIndex>
+                            <numIndex index="5" type="array">
+                                <numIndex index="0">Separator podtytułu (dół)</numIndex>
+                                <numIndex index="1">fLine--bottom</numIndex>
+                            </numIndex>
+                        </items>
+                        <default>0</default>
+                    </config>
+                    <label>Klasa kontenera</label>
+                </TCEforms>
+            </field_con_class>
+            <field_section_content_class type="array">
+                <type>attr</type>
+                <tx_templavoila type="array">
+                    <title>Ustawienia dot. wizualizacji sekcji</title>
+                    <sample_data type="array">
+                        <numIndex index="0"></numIndex>
+                    </sample_data>
+                    <eType>select</eType>
+                    <TypoScript><![CDATA[# klasa(y) z selecta
+lib.con1 = TEXT
+lib.con1.field = field_section_content_class
+lib.con1.split{
+	token = ,
+	cObjNum = 1
+	1{
+		10 = TEXT
+		10.current = 1
+		20 = TEXT
+		20.char = 32
+	}
+}
+
+# klasa(y) z input-a
+#lib.con2 = TEXT
+#lib.con2.field = field_con_class_custom
+
+10 = COA
+10.1 < lib.con1
+#10.2 < lib.con2
+              			]]></TypoScript>
+                    <proc type="array">
+                        <int>0</int>
+                        <HSC>0</HSC>
+                        <stdWrap></stdWrap>
+                    </proc>
+                    <preview></preview>
+                </tx_templavoila>
+                <TCEforms type="array">
+                    <config type="array">
+                        <type>select</type>
+                        <maxitems>20</maxitems>
+                        <minitems>0</minitems>
+                        <multiple>1</multiple>
+                        <items type="array">
+                            <numIndex index="0" type="array">
+                                <numIndex index="0"></numIndex>
+                                <numIndex index="1"></numIndex>
+                            </numIndex>
+                            <numIndex index="1" type="array">
+                                <numIndex index="0">Szeroka kolumna (Sekcja "Organizacja Pożytku...")</numIndex>
+                                <numIndex index="1">section__content columns  xlarge-</numIndex>
+                            </numIndex>
+                            <numIndex index="2" type="array">
+                                <numIndex index="0">Sekcja z wyśrodkowanym tekstem</numIndex>
+                                <numIndex index="1">section__content text-center</numIndex>
+                            </numIndex>
+                        </items>
+                        <default>0</default>
+                    </config>
+                    <label>Klasa kontenera</label>
+                </TCEforms>
+            </field_section_content_class>
+
+            <field_con_body type="array">
+                <tx_templavoila type="array">
+                    <title>Kontener</title>
+                    <sample_data type="array">
+                        <numIndex index="0"></numIndex>
+                    </sample_data>
+                    <eType>ce</eType>
+                    <TypoScript>
+                        10= RECORDS
+                        10.source.current=1
+                        10.tables = tt_content
+                    </TypoScript>
+                    <oldStyleColumnNumber type="integer">0</oldStyleColumnNumber>
+                </tx_templavoila>
+                <TCEforms type="array">
+                    <config type="array">
+                        <type>group</type>
+                        <internal_type>db</internal_type>
+                        <allowed>tt_content</allowed>
+                        <size>5</size>
+                        <maxitems>200</maxitems>
+                        <minitems>0</minitems>
+                        <multiple>1</multiple>
+                        <show_thumbs>1</show_thumbs>
+                    </config>
+                    <label>Kontener</label>
+                </TCEforms>
+            </field_con_body>
+        </el>
+    </ROOT>
+</T3DataStructure>

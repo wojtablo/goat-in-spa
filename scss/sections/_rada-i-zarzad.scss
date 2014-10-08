@@ -36,6 +36,8 @@
   h1,h2,h3,h4,h5,h6 { color:$blue5-color; }
   background-color: $background-color;
 
+
+
   // Section margines
   > .row {
     @include setSectionMobile(0 0 0 0);
@@ -53,9 +55,10 @@
   }
 
   img.right-join {
+    visibility: hidden;
     position: absolute;
     right:0px;
-    top: 40%;
+    top: 36.3%;
     width: 5.95%;
   }
 
@@ -73,18 +76,19 @@
   .section__content {
 
     &:first-of-type {
-      margin-bottom:4em;
+      margin-bottom:6.7em;
     }
     .extra__label {
       font-family:"OpenSans-Regular";
-      font-size:2.8em;
+      font-size:2em;
       line-height:1.2em;
       span {
         color: #8fc6d6;
       }
     }
-    .tabs {
-      dd {
+    .tabs,
+    .row__decoration{
+      div {
         a {
           padding:0 !important;
         }
@@ -128,7 +132,7 @@
     // Grid
     .row__decoration {
       .columns {
-        background:transparent image-url("2_time_line.jpg") center center repeat-x;
+
         padding-right:0px;
         a {
           margin-top:30%;
@@ -145,6 +149,32 @@
     }
 
   }
+  @media #{$medium-up} {
+    img.right-join {
+      visibility: visible;
+    }
+    .extra__label {
+      font-size:2.8em;
+    }
+      // Grid
+    .row__decoration {
+      .columns {
+        background:transparent image-url("2_time_line.jpg") center center repeat-x;
+        padding-right:0px;
+        a {
+          margin-top:30%;
+        }
+        &:first-of-type{
+          padding-left:0px;
+          a {
+            margin-top:0%;
+          }
+        }
+        &:last-of-type{
+        }
+      }
+    }
+  }
   @media #{$large-up} {
     .crossSectionArrow--right {
       right: 0% !important;
@@ -156,8 +186,140 @@
     .crossSectionArrow--right {
       right: -11% !important;
       height: 203px !important;
-      bottom: -19em;
+      bottom: -8em;
     }
   }
 
 }
+
+.descWrapper {
+  figure {
+    margin-bottom: 2.8em;
+  }
+
+  h1,h2,h3,h4,h5 {
+    color:#fff;
+  }
+  h3{
+    font-size: 2.1em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color:#ececec;
+    font-family:"OpenSans-Light";
+  }
+  h4 {
+    color:#8ec6d5 !important;
+    margin-bottom: 1em;
+    font-family:"OpenSans-Light";
+  }
+  a, a:visited {
+    color:#8ec6d5;
+  }
+  text-align: center;
+  color: #dbdbd9;
+  padding: 5% 10%;
+  font-family:"OpenSans-Light";
+  font-size:1.3em;
+  p {
+    font-size:1em;
+  }
+
+  .sep {
+    &.sep--top {
+      @include putSeparator( #9fc9d7, 60%);
+      margin-bottom:0.5em;
+    }
+    &.sep--bottom {
+      @include putSeparator( #9fc9d7, 40%);
+      margin-top:0.5em;
+    }
+  }
+}
+
+.reveal-modal-bg-thecrewx {
+  @include reveal-modal-base(
+    // Provides reveal base styles, can be set to false to override.
+  $base-style:true,
+    // Sets reveal width Default: $reveal-default-width or 80%
+  $width:$reveal-default-width
+  );
+}
+
+.close-reveal-modal {
+  text-indent: -9999px;
+  width: 204px;
+  height: 64px;
+  background:transparent image-url("close-reveal.jpg") center center no-repeat;
+}
+
+.member__details.reveal-modal{
+  z-index:99995;
+  @include reveal-modal-style(
+    // Sets background color of reveal modal. Default: $reveal-modal-bg or #fff
+  $bg:#206181,
+    // Set reveal border style. Default: $reveal-border-style or solid
+  $border:false,
+    // Width of border (i.e. 1px). Default: $reveal-border-width.
+  $border-style:$reveal-border-style,
+    // Color of border. Default: $reveal-border-color.
+  $border-width:$reveal-border-width,
+    // Color of border. Default: $reveal-border-color.
+  $border-color:$reveal-border-color,
+    // Choose whether or not to include the default box-shadow. Default: true, Options: false
+  $box-shadow:true,
+    // Default: $reveal-position-top or 50px
+  $top-offset:$reveal-position-top
+  );
+  max-width:100%;
+  height:100%;
+}
+
+//.reveal-modal.member__details,
+//dialog.member__details {
+//  height: 100%;
+//  max-width: 100%;
+//  margin: 0px;
+//  padding: 0px;
+//  background-color: rgba(9, 135, 206, 0.95);
+//  text-align: center;
+//}
+//
+//.reveal-modal.member__details,
+//dialog.member__detail {
+//  .member__details--wrapper {
+//    .sep.sep--top {
+//      display: block;
+//      height: 1px;
+//      max-height: 1px;
+//      width: 60%;
+//      margin: 0 auto;
+//      background: white;
+//      margin-top: 3%;
+//      margin-bottom: 3%;
+//    }
+//  }
+//}
+//
+//
+///* line 199, ../scss/sections/_rada-i-zarzad.scss */
+//.reveal-modal-bg-thecrew {
+//  position: fixed;
+//  top: 0;
+//  bottom: 0;
+//  left: 0;
+//  right: 0;
+//  background: black;
+//  background: rgba(0, 0, 0, 0.9);
+//  z-index: 1004;
+//  display: none;
+//  left: 0;
+//  background-color: transparent;
+//  border: 3px 0px red;
+//  box-shadow: none;
+//}
+//@media only screen and (min-width: 45rem) {
+//  /* line 199, ../scss/sections/_rada-i-zarzad.scss */
+//  .reveal-modal-bg-thecrew {
+//    top: auto !important;
+//  }
+//}

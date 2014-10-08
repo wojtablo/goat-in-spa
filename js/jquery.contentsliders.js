@@ -82,7 +82,7 @@ else if (Modernizr.mq('(min-width: 760px) and (max-width: 770px)')) {
         controlNavigation: 'bullets',
         arrowsNavAutoHide: false,
         loop: false,
-        loopRewind: true,
+        loopRewind: false,
         imageScaleMode: 'fit-if-smaller',
         imageAlignCenter: false,
         transitionSpeed: 300,
@@ -114,7 +114,7 @@ else {
         arrowsNav: true,
         controlNavigation: 'bullets',
         arrowsNavAutoHide: false,
-        loop: true,
+        loop: false,
         loopRewind: false,
 
         imageScaleMode: 'fit',

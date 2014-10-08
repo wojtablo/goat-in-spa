@@ -60,6 +60,7 @@
     text-align:center !important;
     margin:0px 20px;
     margin-bottom: 1em;
+    min-height:345px;
 
     .imp--wrapper{
       display: block;
@@ -93,6 +94,12 @@
       line-height: 10em;
     }
   }
+  .section__partnerzy2 {
+    [class*="column"] + [class*="column"]:last-child {
+      float: left;
+    }
+  }
+
 }
 
 @media #{$large-up} {

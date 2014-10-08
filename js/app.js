@@ -74,7 +74,7 @@ requirejs([ "jquery.min",
             Modernizr = window.Modernizr;
 
         var options = {
-            bg: '#50CE09'
+            bg: '#0099cc'
         };
         var nanobar = new Nanobar(options);
         nanobar.go(50);
@@ -157,6 +157,11 @@ requirejs([ "jquery.min",
             }, 600);
         });
 
+        if (Modernizr.mq('only all and (max-width: 720px)')) {
+            $('#section-6 .row__decoration').removeAttr('data-equalizer');
+            $('#section-6 dd').removeAttr('data-equalizer-watch');
+        }
+
 
 
         /**
@@ -207,27 +212,27 @@ requirejs([ "jquery.min",
          * Include Foundation settings
          */
         $(document).foundation({
-            reveal: {
-                animation: 'fadeAndPop',
-                animation_speed: 15,
-                close_on_background_click: false,
-                dismiss_modal_class: 'close-reveal-modal',
-                bg_class: 'reveal-modal-bg',
-                root_element: '#slider-news',
-                bg: $('.reveal-modal-bg'),
-                css: {
-                    open: {
-                        'opacity': 0,
-                        'visibility': 'visible',
-                        'display': 'block'
-                    },
-                    close: {
-                        'opacity': 1,
-                        'visibility': 'hidden',
-                        'display': 'none'
-                    }
-                }
-            },
+//            reveal: {
+//                animation: 'fadeAndPop',
+//                animation_speed: 15,
+//                close_on_background_click: false,
+//                dismiss_modal_class: 'close-reveal-modal',
+//                bg_class: 'reveal-modal-bg',
+//                root_element: '#slider-news',
+//                bg: $('.reveal-modal-bg'),
+//                css: {
+//                    open: {
+//                        'opacity': 0,
+//                        'visibility': 'visible',
+//                        'display': 'block'
+//                    },
+//                    close: {
+//                        'opacity': 1,
+//                        'visibility': 'hidden',
+//                        'display': 'none'
+//                    }
+//                }
+//            },
             equalizer : {
                 // Specify if Equalizer should make elements equal height once they become stacked.
                 equalize_on_stack: true
@@ -238,6 +243,30 @@ requirejs([ "jquery.min",
             topbar : {
                 scrolltop: false,
                 back_text: 	'Wróć'
+            }
+        });
+
+        $('.section__news .news__details').foundation({
+            reveal: {
+                animation: 'fadeAndPop',
+                animation_speed: 15,
+                close_on_background_click: false,
+                dismiss_modal_class: 'close-reveal-modal',
+                bg_class: 'custom-reveal-class',
+                root_element: '#slider-news',
+                bg: $('.reveal-modal-bg')
+            }
+        });
+
+        $('.section__radaizarzad .member__details').foundation({
+            reveal: {
+                animation: 'fadeAndPop',
+                animation_speed: 15,
+                close_on_background_click: false,
+                dismiss_modal_class: 'reveal-modal-bg-thecrew',
+                bg_class: 'reveal-modal-bg-thecrew',
+                root_element: 'body',
+                bg: $('.reveal-modal-bg-thecrew')
             }
         });
 
@@ -279,9 +308,18 @@ requirejs([ "jquery.min",
             var that = $(this);
             that.prev().toggle("fast", function() {
                 that.parent().toggleClass("selected");
+                that.toggleClass("opened");
                 that.text($(this).is(':visible') ? "Ukryj" : "Czytaj więcej");
             });
+            if(that.hasClass("opened")){
+                $('html, body').animate({
+                    scrollTop: $("#section-3").offset().top
+                }, 200);
+            }
         });
+        $(".top-bar-section li").click(function() {
+            $('.top-bar').removeClass('expanded');
+         });
 
         // Section 3. Patroni
         $(".section__patroni .full-desc").hide();
@@ -290,9 +328,17 @@ requirejs([ "jquery.min",
             var that = $(this);
             that.prev().toggle("fast", function() {
                 that.parent().toggleClass("selected");
+                that.toggleClass("opened");
                 that.text($(this).is(':visible') ? "Zwiń" : "Czytaj więcej");
             });
+            if(that.hasClass("opened")){
+                $('html, body').animate({
+                    scrollTop: $("#section-8").offset().top
+                }, 200);
+            }
         });
+
+
 
 
         //------------------------------------------------------
@@ -321,8 +367,11 @@ requirejs([ "jquery.min",
 
 function callResize(){
     if (Modernizr.mq('only all and (min-width: 1010px) and (max-width: 1400px)')) {
-        //console.log("------------------------------")
-        //console.log("BREAKPOINT REACHED! (min-width: 1010px && max-width: 1400px)")
+        console.log("BREAKPOINT REACHED! (min-width: 1010px && max-width: 1400px)")
+        return true;
+    }
+    else if (Modernizr.mq('only all and (max-width: 720px)')) {
+        console.log("BREAKPOINT REACHED! ( max-width: 720px)")
         return true;
     }
     else {

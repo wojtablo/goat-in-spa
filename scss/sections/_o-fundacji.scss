@@ -36,6 +36,14 @@
   .crossSectionArrow--left {
     bottom: -4rem;
   }
+  @media #{$small-only} {
+    .row {
+       .columns {
+        padding:0px;
+        margin:0px;
+      }
+    }
+  }
   @media #{$medium-up} { }
   @media #{$large-up} {
     .crossSectionArrow--left {
@@ -112,17 +120,26 @@
       line-height:1.2em;
       font-family:'OpenSans-Light';
     }
-    .section__subtitle {
+    .section__subtitle,
+    h1,h2,h3,h4,h5,h6{ // frr TYPO3 CE RTE text+images
       font-family:'OpenSans-Regular';
-      font-size: 3.0em;
+      font-size: 1.2em;
       color: #bae1ed;
       position: relative;
-      margin-top: -20px;
+      margin-top: 0px;
       margin-left: auto;
       margin-right: auto;
       text-align: center;
     }
+
+
     @media #{$medium-up} {
+
+      h1,h2,h3,h4,h5,h6{ // frr TYPO3 CE RTE text+images
+        font-size: 3.0em;
+        color: #bae1ed;
+        margin-top: -20px;
+      }
 
       p {
         color:#bae1ed;

@@ -156,9 +156,12 @@ LINK_NEXT - used in the pagebrowser
         Template for a single item
     -->
         <div class="">
-            ###NEWS_IMAGE###
+
+            <a class="img-pro" data-reveal-id="news-###NEWS_UID###" href="#">
+                ###NEWS_IMAGE###
+            </a>
             <h3 class="slide__title">###NEWS_TITLE###</h3>
-            <h3 class="slide__subTitle">###NEWS_DATE### Fundacja Nowoczesna Polska</h3>
+            <h3 class="slide__subTitle">###NEWS_DATE### ###NEWS_AUTHOR###</h3>
             <span class="sep sep--top"></span>
             <p class="slide__intro">###NEWS_SUBHEADER###</p>
             <a class="slide--more" data-reveal-id="news-###NEWS_UID###" href="#">Czytaj więcej</a>

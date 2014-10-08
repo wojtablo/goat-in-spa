@@ -19,7 +19,9 @@
 			-->
             <div class="small-12 medium-4 columns">
                 <div class="partner">
-                    <div class="imp--wrapper"> <img src="fileadmin/templates/fundacjakozminski/gfx/{client.image}" alt="" title=""></div>
+                    <div class="imp--wrapper">
+                        <img src="{f:uri.image(src: 'uploads/tx_thecrew/{client.image}')}" alt="" title="">
+                    </div>
                     <h4 class="partner--name">{client.name}</h4>
 					 <f:if condition="{client.address}">
 						<f:then>

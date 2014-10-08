@@ -16,9 +16,11 @@
 
   // Section margines
   .row {
-    max-width: 80%;
+
+    max-width: 52%;
+
     @media #{$medium-only} {
-      max-width: 95%;
+      max-width: 62%;
     }
     @media #{$sliders-gap} {
       max-width: 89%;
@@ -45,7 +47,11 @@
   .section__header {
 
   }
-
+  .section__title {
+    @extend %font__size--large;
+    font-size: 2.1em !important;
+    margin-bottom: 0.1em !important;
+  }
   .section__content {
 
     @media #{$sliders-gap} {
@@ -64,6 +70,8 @@
               "5_procent.png","", "","",
               0% 192px, none , none, none );
     }
+
+
 
 
     padding-left: 204px;
@@ -89,6 +97,16 @@
     }
   }
 
+  &.herb-bg {
+    .section__content {
+      @media #{$medium-up} {
+        @include putSectionImage( $background-color,
+                "herb_ico.png","", "","",
+                0% 10px, none , none, none );
+      }
+    }
+  }
+
   @media #{$large-up} {
     .crossSectionArrow--left {
       right: -3% !important;
@@ -104,4 +122,20 @@
       bottom: -1em !important;
     }
   }
+}
+
+
+#section-7a {
+  &.section__orgpubliczna {
+    padding: 5em 0 2em 0;
+
+    //---------------------------------------------------------------
+    // Media Queries
+    //---------------------------------------------------------------
+    @media #{$medium-up} {
+      @include putSectionImage(transparent,"8_motywDl.png","8_motywDs.png", "","",top left,"bottom right","","");
+      background-repeat:no-repeat, repeat-x;
+    }
+  }
+
 }

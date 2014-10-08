@@ -92,11 +92,16 @@
         }
         > a {
           padding:0 !important;
+          display:block;
+          height:286px;
+          max-height:286px !important;
 
           img {
             &:hover {
               @extend %partner--hover;
             }
+            max-height:286px !important;
+
           }
         }
         &.active {
@@ -104,8 +109,9 @@
             visibility: visible;
           }
           a {
+            background:transparent !important;
             img {
-              opacity:0.6;
+//              opacity:0.6;
               @extend %partner--hover;
             }
           }
@@ -132,6 +138,9 @@
       .slide--more {
         display:block;
         text-align:center;
+        font-family: "OpenSans-Bold";
+        color: #138fbb;
+        font-size: 1.5em;
       }
     }
   }
