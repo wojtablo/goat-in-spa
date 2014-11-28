@@ -55,6 +55,9 @@
 
       &:first-of-type{
         padding-left:0px;
+        @media #{$medium} {
+          padding-right:14px;
+        }
         a {
           margin-top:0%;
         }
@@ -116,6 +119,9 @@
           display:block;
           height:286px;
           max-height:286px !important;
+          &:hover {
+            background:transparent !important;
+          }
 
           img {
             &:hover {
