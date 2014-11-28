@@ -36,11 +36,21 @@
   background:$background-color;
   h1,h2,h3,h4,h5,h6 { color:#fff; }
   @include setSectionMobile(4em 0 0 0);
-  @include setSectionPc(5em 0 2em 0);
+  @include setSectionPc(4em 0 2em 0);
+
+  // O co tu chodzi?
+  @media #{$sliders-gap} {
+//    max-width: 89%;
+  }
 
 
   h1,h2,h3,h4,h5,h6 { color:$blue5-color; }
 
+  .crossSectionArrow--left {
+    height: 180px;
+    bottom: -11rem;
+    left: 1.5rem;
+  }
 
   // Styles
   .section__header {

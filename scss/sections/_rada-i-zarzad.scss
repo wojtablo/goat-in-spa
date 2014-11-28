@@ -18,6 +18,18 @@
 
 =========================================================================*/
 
+html:lang(en) {
+  .extra__label {
+    font-size:1.8em !important;
+  }
+  .close-reveal-modal {
+    text-indent: -9999px;
+    width: 204px;
+    height: 64px;
+    background:transparent image-url("close.png") center center no-repeat;
+  }
+}
+
 .section__radaizarzad {
 
   //---------------------------------------------------------------
@@ -36,13 +48,17 @@
   h1,h2,h3,h4,h5,h6 { color:$blue5-color; }
   background-color: $background-color;
 
+  *:focus {
+    outline: none !important;
+  }
+
 
 
   // Section margines
   > .row {
     @include setSectionMobile(0 0 0 0);
     @include setSectionTablet(7em 0 2em 0);
-    @include setSectionPc(7em 0 6em 0);
+    @include setSectionPc(7em 0 4em 0);
     > .columns {
       padding-right:$column-gutter*2;
     }
@@ -75,6 +91,14 @@
   //---------------------------------------------------------------
   .section__content {
 
+    .person__image {
+      img {
+        &:hover {
+          box-shadow: 0px 0px 26px #222;
+        }
+      }
+    }
+
     &:first-of-type {
       margin-bottom:6.7em;
     }
@@ -95,9 +119,7 @@
         a.person__image {
           display:block;
           background:transparent image-url("5_prezes_szklo.png") top right no-repeat;
-          img {
 
-          }
           &:hover {
             img {
               display:block;
@@ -147,9 +169,55 @@
         }
       }
     }
-
   }
+
+//  .layer--name,
+//  .layer--name2 {
+//    display: none;
+//  }
+
   @media #{$medium-up} {
+
+    .layer--name {
+      display: block;
+      position: absolute;
+      bottom:25px;
+      width:100%;
+      text-align:center;
+      background: none;
+      color:#fff;
+      font-size: 18px;
+      font-family:"OpenSans-Light";
+      &:hover {
+        background: none;
+      }
+    }
+
+    .person__image {
+      .layer--name2 {
+        display: block;
+        text-align: center;
+        color: #fff;
+        margin-top: -36px;
+        font-size: 13px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-family:"OpenSans-Light";
+        line-height:16px;
+
+      }
+    }
+
+    .rada10,
+    .rada8,
+    .rada12,
+    .rada13{
+      .layer--name2 {
+        margin-top:-28px;
+        line-height: 17px;
+      }
+    }
+
     img.right-join {
       visibility: visible;
     }
@@ -179,7 +247,7 @@
     .crossSectionArrow--right {
       right: 0% !important;
       height: 203px !important;
-      bottom: -19em;
+      bottom: -9em;
     }
   }
   @media #{$xlarge-up} {
@@ -221,7 +289,7 @@
   font-family:"OpenSans-Light";
   font-size:1.3em;
   p {
-    font-size:1em;
+    font-size:0.8em;
   }
 
   .sep {
@@ -232,6 +300,14 @@
     &.sep--bottom {
       @include putSeparator( #9fc9d7, 40%);
       margin-top:0.5em;
+    }
+  }
+}
+
+@media #{$medium-up} {
+  .descWrapper {
+    p {
+      font-size:1em;
     }
   }
 }
@@ -250,6 +326,38 @@
   width: 204px;
   height: 64px;
   background:transparent image-url("close-reveal.jpg") center center no-repeat;
+}
+
+#customModal1 {
+  text-align:center;
+  color:#fff;
+
+  h1,h2,h3,h4,h5 {
+    color:#fff;
+  }
+  h3{
+    font-size: 2.1em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color:#ececec;
+    font-family:"OpenSans-Light";
+  }
+  h4 {
+    color:#8ec6d5 !important;
+    margin-bottom: 1em;
+    font-family:"OpenSans-Light";
+  }
+  a, a:visited {
+    color:#8ec6d5;
+  }
+  text-align: center;
+  color: #dbdbd9;
+  padding: 5% 10%;
+  font-family:"OpenSans-Light";
+  font-size:1.3em;
+  p {
+    font-size:0.8em;
+  }
 }
 
 .member__details.reveal-modal{
@@ -271,7 +379,31 @@
   $top-offset:$reveal-position-top
   );
   max-width:100%;
-  height:100%;
+  height: auto;
+  min-height: 100%;
+}
+
+.modal-in-tce.reveal-modal{
+  z-index:99995;
+  @include reveal-modal-style(
+    // Sets background color of reveal modal. Default: $reveal-modal-bg or #fff
+  $bg:#206181,
+    // Set reveal border style. Default: $reveal-border-style or solid
+  $border:false,
+    // Width of border (i.e. 1px). Default: $reveal-border-width.
+  $border-style:$reveal-border-style,
+    // Color of border. Default: $reveal-border-color.
+  $border-width:$reveal-border-width,
+    // Color of border. Default: $reveal-border-color.
+  $border-color:$reveal-border-color,
+    // Choose whether or not to include the default box-shadow. Default: true, Options: false
+  $box-shadow:true,
+    // Default: $reveal-position-top or 50px
+  $top-offset:$reveal-position-top
+  );
+  max-width:100%;
+  height: auto;
+  min-height: 100%;
 }
 
 //.reveal-modal.member__details,

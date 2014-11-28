@@ -45,7 +45,14 @@
                                     </f:else>
                                 </f:if>
                             </a>
-                            <figure class="crossSectionArrow--left"><img src="fileadmin/templates/fundacjakozminski/gfx/5_strzalkaD.png" alt="" title=""/></figure>
+                            <f:if condition="{i.index} < 2">
+                                <f:then>
+                                    <figure class="crossSectionArrow--left"><img src="fileadmin/templates/fundacjakozminski/gfx/5_strzalkaD.png" alt="" title=""/></figure>
+                                </f:then>
+                                <f:else>
+                                    <figure class="crossSectionArrow--right"><img src="fileadmin/templates/fundacjakozminski/gfx/5_strzalkaG.png" alt="" title=""/></figure>
+                                </f:else>
+                            </f:if>
                         </dd>
                     </f:else>
                 </f:if>
@@ -61,15 +68,17 @@
                             <div class="text-center">
                                 <h2>{client.name}</h2>
                             </div>
-                            <f:if condition="{client.roleTask}">
-                                <f:then>
-                                    <f:format.raw>{client.roleTask}</f:format.raw>
-                                </f:then>
-                                <f:else>
-                                    <p><strong>Wybór Prof. Leona Koźmińskiego na patrona fundacji nie był przypadkowy. Profesor urodził się 1904 roku na Ukrainie. Szkołę średnią ukończył w Lozannie, w Szwajcarii. Następnie studiował w kraju, w Szkole Głównej Handlowej, w której uzyskał magisterium.</strong></p>
-                                    <p>Stopień doktora obronił na Sorbonie, w Paryżu, w wieku 26 lat. Był to rok 1929. Habilitował się w latach 30-tych. Był docentem w SGH specjalizującym się w organizacji i technice handlu. Uczył tam też języka francuskiego. </p>
-                                </f:else>
-                            </f:if>
+                            <div class="intro-desc">
+                                <f:if condition="{client.roleTask}">
+                                    <f:then>
+                                        <f:format.raw>{client.roleTask}</f:format.raw>
+                                    </f:then>
+                                    <f:else>
+                                        <p><strong>Wybór Prof. Leona Koźmińskiego na patrona fundacji nie był przypadkowy. Profesor urodził się 1904 roku na Ukrainie. Szkołę średnią ukończył w Lozannie, w Szwajcarii. Następnie studiował w kraju, w Szkole Głównej Handlowej, w której uzyskał magisterium.</strong></p>
+                                        <p>Stopień doktora obronił na Sorbonie, w Paryżu, w wieku 26 lat. Był to rok 1929. Habilitował się w latach 30-tych. Był docentem w SGH specjalizującym się w organizacji i technice handlu. Uczył tam też języka francuskiego. </p>
+                                    </f:else>
+                                </f:if>
+                            </div>
 
                             <div class="full-desc">
                                 <f:if condition="{client.address}">

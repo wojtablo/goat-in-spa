@@ -26,6 +26,13 @@
   // Media Queries
   //---------------------------------------------------------------
 
+  @media #{$medium-only} {
+    .kontakt__data {
+      p {
+        font-size: 1.1em !important;
+      }
+    }
+  }
   @media #{$medium-up} {
     @include putSectionImage(transparent,"11_motywl.png","11_motyws.png", "","",bottom left,bottom right,bottom right,bottom right);
     background-repeat: no-repeat, repeat-x;
@@ -41,7 +48,7 @@
   // Section margines
   > .row {
     @include setSectionMobile(0 0 5em 0);
-    @include setSectionTablet(3em 0 8em 0);
+    @include setSectionTablet(3em 0 11em 0);
     @include setSectionPc(3em 0 8em 0);
   }
   > .row:first-of-type {
@@ -70,7 +77,8 @@
     padding-left:0px;
     color:$blue5-color;
     font-family: "OpenSans-Light";
-    font-size:1.6em;
+    font-size:1.4em;
+    font-weight: bold;
   }
 
   input, textarea {
@@ -90,6 +98,7 @@
       padding-left: 45px;
       font-family: "OpenSans-Light";
       font-size:1.3em;
+      line-height: 1.2em;
     }
     li {
       list-style:none;

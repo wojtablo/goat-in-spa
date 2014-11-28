@@ -20,7 +20,7 @@
     max-width: 52%;
 
     @media #{$medium-only} {
-      max-width: 62%;
+      max-width: 70%;
     }
     @media #{$sliders-gap} {
       max-width: 89%;
@@ -59,6 +59,12 @@
       width:90% !important;
     }
 
+    .csc-textpic-text {
+      h1,h2,h3,h4,h5,h6 {
+        font-family:"OpenSans-Bold";
+      }
+    }
+
 
 
     .section__content--wrapper {
@@ -66,9 +72,13 @@
     }
 
     @media #{$medium-up} {
-      @include putSectionImage( $background-color,
+      @include putSectionImage( transparent,
               "5_procent.png","", "","",
-              0% 192px, none , none, none );
+              0% 200px, none , none, none );
+    }
+
+    .contenttable {
+      visibility: hidden;
     }
 
 
@@ -102,7 +112,7 @@
       @media #{$medium-up} {
         @include putSectionImage( $background-color,
                 "herb_ico.png","", "","",
-                0% 10px, none , none, none );
+                0% 25px, none , none, none );
       }
     }
   }

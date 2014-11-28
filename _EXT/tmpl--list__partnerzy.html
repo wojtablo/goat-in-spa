@@ -26,7 +26,7 @@
 					 <f:if condition="{client.address}">
 						<f:then>
 							 <p class="partner--description">
-								{client.address}
+								<f:format.raw>{client.address}</f:format.raw>
 							</p>
 						</f:then>
 						<f:else>
@@ -39,16 +39,9 @@
 						</f:else>
 					</f:if>
                     <f:if condition="{client.url}">
-						<f:then>
-							<a class="partner_www" href="www.kozminski.edu.pl">
+							<a target="_blank" class="partner_www" href="http://{client.url}">
 								{client.url}
 							</a>
-						</f:then>
-						<f:else>
-							<a class="partner_www" href="www.kozminski.edu.pl">
-								www.kozminski.edu.pl
-							</a>
-						</f:else>
 					</f:if>
                     
                 </div>

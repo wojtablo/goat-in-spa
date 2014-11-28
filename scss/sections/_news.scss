@@ -87,6 +87,14 @@
     }
   }
 
+  .reveal-modal.news__details.open {
+
+    .fright {
+      float:right;
+      width:56%;
+    }
+  }
+
   .section__content {
     //Slider
     .slide__title {
@@ -132,6 +140,8 @@
       margin-right: 2em;
     }
 
+
+
     // Reveal
     .contentSlider.withRelativeReveal {
 
@@ -142,6 +152,9 @@
         display: inline-block;
         margin-bottom:10px;
         color:$blue3-color;
+      }
+      .slide__intro {
+
       }
       .slide__subTitle2 {
         font-family:"OpenSans-Regular";

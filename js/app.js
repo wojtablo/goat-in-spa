@@ -69,6 +69,12 @@ requirejs([ "jquery.min",
 
         var $ =jQuery.noConflict();
 
+        console.log(navigator.userAgent);
+        /* Adjustments for Safari on Mac */
+        if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Mac') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+            // console.log('Safari on Mac detected, applying class...');
+            $('html').addClass('safari-mac'); // provide a class for the safari-mac specific css to filter with
+        }
 
         var $doc = $(document),
             Modernizr = window.Modernizr;
@@ -141,7 +147,7 @@ requirejs([ "jquery.min",
          * This part causes smooth scrolling using scrollto.js
          * We target all a tags inside the nav, and apply the scrollto.js to it.
          */
-        $(".top-bar-section a").click(function(evn){
+        $(".top-bar-section li:not(.lang) a").click(function(evn){
             evn.preventDefault();
             $('html,body').scrollTo(this.hash, this.hash);
         });
@@ -154,6 +160,11 @@ requirejs([ "jquery.min",
         $("#section-1 .btn__arrow--down").click(function() {
             $('html, body').animate({
                 scrollTop: $("#section-2").offset().top
+            }, 600);
+        });
+        $("#section-8 .section__content .hidden-for-small-only").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#section-8  .section__content").offset().top - 80
             }, 600);
         });
 
@@ -246,17 +257,7 @@ requirejs([ "jquery.min",
             }
         });
 
-        $('.section__news .news__details').foundation({
-            reveal: {
-                animation: 'fadeAndPop',
-                animation_speed: 15,
-                close_on_background_click: false,
-                dismiss_modal_class: 'close-reveal-modal',
-                bg_class: 'custom-reveal-class',
-                root_element: '#slider-news',
-                bg: $('.reveal-modal-bg')
-            }
-        });
+
 
         $('.section__radaizarzad .member__details').foundation({
             reveal: {
@@ -270,6 +271,44 @@ requirejs([ "jquery.min",
             }
         });
 
+
+        $('#slider-news .rsContainer .news__details').foundation({
+            reveal: {
+                animation: 'fadeAndPop',
+                animation_speed: 25,
+                close_on_background_click: false,
+                dismiss_modal_class: 'close-reveal-modal',
+                //bg_class: 'custom-reveal-class',
+                root_element: '#slider-news',
+                bg: $('.reveal-modal-bg')
+            }
+        });
+
+
+        $('#section-7 .modal-in-tce').foundation({
+            reveal: {
+                animation: 'fadeAndPop',
+                animation_speed: 15,
+                close_on_background_click: false,
+                dismiss_modal_class: 'reveal-modal-bg-thecrew',
+                bg_class: 'reveal-modal-bg-thecrew',
+                root_element: 'body',
+                bg : $('.reveal-modal-bg')
+            }
+        });
+
+
+        $('#section-7 .modal-in-tce').append("<a class=\"close-reveal-modal xcx2\">&#215;</a>")
+
+        $('#section-7 .modal-in-tce').on('click', '.xcx2', function () {
+            $('#section-7 .modal-in-tce').foundation('reveal', 'close');
+            $('#customModal1').remove();
+        });
+
+
+
+
+
 //        var bullets = true;
 //
 //        si.ev.on('rsAfterSlideChange', function(event) {
@@ -281,6 +320,8 @@ requirejs([ "jquery.min",
 //                $("#slider-news .rsBullets").toggleClass("selected");
 //            });
 //        });
+
+        $( "#section-5 .section__content--wrapper .csc-textpic-text h3" ).after( "<span class='sep sep--top'></span>" );
 
 
         $("#slider-news .slide--more").click(function(event) {
@@ -298,6 +339,16 @@ requirejs([ "jquery.min",
             });
         });
 
+        if ( $('html').attr('lang') == 'en' ) {
+            $(".section__news .slide--more").text("Details");
+            $(".section__patroni .slide--more").text("Details");
+            $("#section-6 .row__zarzad .medium-3 .extra__label").text("President of the Foundation");
+            $("#section-6 .row__zarzad .medium-8 .extra__label").html("Foundation <span>Board</span>");
+
+            $("#section-6 .row__rada .medium-3 .extra__label").text("Founder");
+            $("#section-6 .row__rada .medium-6 .extra__label").html("Foundation <span>Council</span>");
+        }
+
         /**
          * Custom jQuery
          */
@@ -306,10 +357,13 @@ requirejs([ "jquery.min",
         $(".section__dzialalnosc .news__more").click(function(event) {
             event.preventDefault();
             var that = $(this);
+            var labelHide = $(this).data("label-hide");
+            var labelShow = $(this).data("label-show");
             that.prev().toggle("fast", function() {
                 that.parent().toggleClass("selected");
                 that.toggleClass("opened");
-                that.text($(this).is(':visible') ? "Ukryj" : "Czytaj więcej");
+                that.text($(this).is(':visible') ? labelHide : labelShow);
+                //that.text($(this).is(':visible') ? "Ukryj" : "Czytaj więcej");
             });
             if(that.hasClass("opened")){
                 $('html, body').animate({
@@ -326,10 +380,20 @@ requirejs([ "jquery.min",
         $(".section__patroni .slide--more").click(function(event) {
             event.preventDefault();
             var that = $(this);
+            var labelHide = "Zwiń";
+            var labelShow = "Szczegóły";
+
+
+            if ( $('html').attr('lang') == 'en' ) {
+                labelHide = "Hide";
+                labelShow = "Details";
+
+            }
+
             that.prev().toggle("fast", function() {
                 that.parent().toggleClass("selected");
                 that.toggleClass("opened");
-                that.text($(this).is(':visible') ? "Zwiń" : "Czytaj więcej");
+                that.text($(this).is(':visible') ? labelHide : labelShow);
             });
             if(that.hasClass("opened")){
                 $('html, body').animate({

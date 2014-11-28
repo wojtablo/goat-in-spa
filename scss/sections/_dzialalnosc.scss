@@ -118,6 +118,9 @@
             content: "- ";
           }
         }
+        &.opened {
+          padding-left:1.45em;
+        }
       }
       .__sep {
         display:none;
@@ -125,6 +128,9 @@
       .xx {
         color:#eee9dc;
         margin-top:0.5em;
+        p,ul,li {
+//          line-height:1.3em;
+        }
       }
       .__icon { display:none;}
     }
@@ -151,6 +157,7 @@
         and following class is needed to wrap some portions of events. Otherwise we'd have single event as single slider.
       */
       .__events--slide {
+        position: relative;
         float:none !important;
         text-align:left;
 
@@ -173,8 +180,8 @@
                   top:-55px !important;
                 }
               }
-            }
 
+            }
           }
         }
 
@@ -197,6 +204,7 @@
         Styles for single event and timeline
       */
       .__event {
+        position: relative;
         float:none !important;
         margin-top:-1px;
         margin-bottom:0px !important;

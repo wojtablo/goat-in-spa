@@ -94,12 +94,12 @@ section {
 @media #{$small-only} {
    @include media-conf( $small-only,   $small-range,  $small-range-label, #488008); // Disable it for LIVE!!
 }
-@media #{$medium-only} {
-   @include media-conf( $medium-only,   $medium-range,  $medium-range-label, #e84615); // Disable it for LIVE!!
-}
-@media #{$large-only} {
-  @include media-conf( $large-only,   $large-range,  $large-range-label, #6e47e8); // Disable it for LIVE!!
-}
-@media #{$xlarge-only} {
-  @include media-conf( $xlarge-only,   $xlarge-range,  $xlarge-range-label, #65e86b); // Disable it for LIVE!!
-}
+//@media #{$medium-only} {
+//   @include media-conf( $medium-only,   $medium-range,  $medium-range-label, #e84615); // Disable it for LIVE!!
+//}
+//@media #{$large-only} {
+//  @include media-conf( $large-only,   $large-range,  $large-range-label, #6e47e8); // Disable it for LIVE!!
+//}
+//@media #{$xlarge-only} {
+//  @include media-conf( $xlarge-only,   $xlarge-range,  $xlarge-range-label, #65e86b); // Disable it for LIVE!!
+//}

@@ -18,6 +18,8 @@
 
 .section__footer {
 
+//  @include putSectionImage($blue3-color,"11_motyw_szklo.png","", "","",top right,"","","");
+
   @media #{$medium-up} {
     border-top:none !important;
   }
@@ -27,7 +29,10 @@
   }
 
   // COLOURS SCHEME ------------------------------------------------------
-  h1,h2,h3,h4,h5,h6 { color:#fff; }
+  h1,h2,h3,h4,h5,h6 { color:#203d53; }
+  p {
+    color:#203d53;
+  }
 
   // BACKGROUND ----------------------------------------------------------
   @extend %row--footer;
@@ -35,8 +40,11 @@
   // HEADER --------------------------------------------------------------
   .section__header {
     p {
-      font-size:0.8em;
-      line-height: 3em;
+      line-height: 1.5em;
+      &:first-of-type {
+        font-size:0.8em;
+        line-height: 3em;
+      }
     }
   }
 }

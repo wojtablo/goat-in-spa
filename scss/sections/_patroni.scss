@@ -31,6 +31,10 @@
     background-repeat: no-repeat, repeat-x;
   }
 
+  *:focus {
+    outline: none !important;
+  }
+
   //---------------------------------------------------------------
   // General look
   //---------------------------------------------------------------
@@ -60,12 +64,25 @@
     }
   }
 
+  // Separator
+  .sep {
+    visibility: visible !important;
+    &.sep--top {
+      @include putSeparator( $blue3-color, 60%);
+      margin-bottom:0.5em;
+    }
+    &.sep--bottom {
+      @include putSeparator( $blue3-color, 40%);
+      margin-top:0.5em;
+    }
+  }
+
   .crossSectionArrow--right,
   .crossSectionArrow--left {
     height:130px !important;
     bottom:-4rem !important;
   }
-  // ---------------------------------------------------------------
+  // -------------------- -------------------------------------------
   // SECTION's header
   //---------------------------------------------------------------
   .section__header {
@@ -74,13 +91,17 @@
     .section__title {
       @extend %font__size--large;
     }
+
     .section__subtitle {
-      display:none;
       &::first-line       { color:$blue3-color; }
       padding:            0.8rem 0px;
       @extend             %font__size--medium;
-      @include putBorder  (top, $blue3-color, 2px);
-      @include putBorder  (bottom, $blue6-color, 1px);
+      p {
+        &::first-line       { color:$blue3-color; }
+        font-size: inherit;
+        line-height:inherit !important;
+      }
+
     }
   }
   .section__content {
@@ -98,7 +119,8 @@
 
           img {
             &:hover {
-              @extend %partner--hover;
+//              @extend %partner--hover;
+              box-shadow: 0px 0px 26px #222;
             }
             max-height:286px !important;
 
@@ -127,8 +149,8 @@
         font-size:2.5em;
         display: inline-block !important;
         //  line-height: 2em;
-        line-height: 1.1em;
-        margin:0.5em 0 0.9em;
+        line-height: 2em;
+        margin: 1em 0 0.9em;
         color:#255A78;
       }
       p {

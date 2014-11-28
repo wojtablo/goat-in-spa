@@ -13,11 +13,13 @@
     <div class="section__content small-only-text-center hide-for-small-only">
         <div class="row row__zarzad">
             <div class="columns medium-3">
-                <h3 class="extra__label">Prezes <br/>Fundacji</h3>
+                <h3 class="extra__label">Prezes <br/>Fundacji</h3> 
+				<!-- <h3 class="extra__label"><f:translate key='tx_thecrew_domain_model_client.prezes'>_Prezes Fundacji</f:translate></h3> -->
             </div>
             <dd class="medium-1 columns">&nbsp;</dd>
             <div class="columns medium-8">
-                <h3 class="extra__label">Członkowie&nbsp;<span>Zarządu</span></h3>
+                <h3 class="extra__label">Członkowie&nbsp;<span>Zarządu</span></h3> 
+				<!--<h3 class="extra__label"><f:translate key='tx_thecrew_domain_model_client.czlonkowiezarzadu'>_Czlonkowie zarzadu</f:translate></h3>-->
             </div>
         </div>
 
@@ -28,6 +30,7 @@
                     <f:if condition="{i.index} == 0">
                         <dd data-equalizer-watch class="small-12 medium-3 columns">
                             <a class="hide-for-medium-up" href="#" data-reveal-id="rada{client.uid}">{client.name}</a>
+                            <a class="show-for-medium-up layer--name" href="#">{client.name}</a>
                             <a class="person__image hidden-for-small-only" data-reveal-id="rada{client.uid}" href="#">
                                 <f:if condition="{client.image}">
                                     <f:then>
@@ -43,7 +46,7 @@
                     </f:if>
 
                     <f:if condition="{i.index} > 0 ">
-                        <dd data-equalizer-watch class="small-12 medium-2 columns">
+                        <dd data-equalizer-watch class="small-12 medium-2 columns rada{client.uid}">
                             <a class="hide-for-medium-up" href="#" data-reveal-id="rada{client.uid}">{client.name} </a>
                             <a class="person__image hidden-for-small-only" data-reveal-id="rada{client.uid}" href="#">
                                 <f:if condition="{client.image}">
@@ -54,6 +57,7 @@
                                         <img src="fileadmin/templates/fundacjakozminski/gfx/herb_cale.jpg" alt="" />
                                     </f:else>
                                 </f:if>
+                                <span class="layer--name2">{client.name}</span>
                             </a>
                         </dd>
                     </f:if>
@@ -82,12 +86,19 @@
                     <div id="rada{client.uid}" class="reveal-modal member__details" data-reveal>
                         <div class="descWrapper">
                             <figure class="text-center">
-                                <f:if condition="{client.image}">
+                                <f:if condition="{client.image2}">
                                     <f:then>
-                                        <img src="{f:uri.image(src: 'uploads/tx_thecrew/{client.image}')}" data-rsw="340" data-rsh="225" alt="" />
+                                        <img src="{f:uri.image(src: 'uploads/tx_thecrew/{client.image2}')}" data-rsw="340" data-rsh="225" alt="" />
                                     </f:then>
                                     <f:else>
-                                        <img src="fileadmin/templates/fundacjakozminski/gfx/herb_cale.jpg" data-rsw="340" data-rsh="225" alt="" />
+                                        <f:if condition="{client.image}">
+                                            <f:then>
+                                                <img src="{f:uri.image(src: 'uploads/tx_thecrew/{client.image}')}" data-rsw="340" data-rsh="225" alt="" />
+                                            </f:then>
+                                            <f:else>
+                                                <img src="fileadmin/templates/fundacjakozminski/gfx/herb_cale.jpg" data-rsw="340" data-rsh="225" alt="" />
+                                            </f:else>
+                                        </f:if>
                                     </f:else>
                                 </f:if>
                             </figure>

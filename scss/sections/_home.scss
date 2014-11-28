@@ -61,15 +61,50 @@ html {
   }
 
   // Logotyp
+  ._content {
+    position:             absolute;
+    top:                  1rem;
+    right:                1rem;
+  }
   .fundacja__logo {
     .logo {
       @media #{$medium-up}  { width:180px; }
       @media #{$large-up}   { width:231px; height:126px; max-width:231px !important; }
-      position:             absolute;
-      top:                  1rem;
-      right:                1rem;
       width:                45%;
       max-width:            155px;
+    }
+  }
+
+  #lang-ui {
+    margin-top:7px;
+    padding-top:4px;
+    border-top:1px solid #305568;
+    text-align:center;
+    ul {
+      li {
+        display: inline-block;
+        font-size:1.3em;
+        color:#005593;
+        &:first-of-type {
+          &:after {
+            content:"/";
+          }
+        }
+        a {
+          font-family:"OpenSans-Light";
+          color:#005593;
+          font-weight: bold;
+          padding:3px 7px;
+          &:hover {
+            color:#e7375b;
+          }
+        }
+        &.active {
+          a {
+            color:#e7375b;
+          }
+        }
+      }
     }
   }
 
@@ -82,6 +117,7 @@ html {
       @extend               %font__size--xlarge;
       @include              putBorder(top, $blue4-color, 4px);
       @include              putBorder(bottom, $blue4-color, 4px);
+      display:              inline-block;
     }
     @media #{$xlarge-only} {
       position: absolute;

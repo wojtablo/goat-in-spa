@@ -161,18 +161,29 @@ LINK_NEXT - used in the pagebrowser
                 ###NEWS_IMAGE###
             </a>
             <h3 class="slide__title">###NEWS_TITLE###</h3>
-            <h3 class="slide__subTitle">###NEWS_DATE### ###NEWS_AUTHOR###</h3>
+            <h3 class="slide__subTitle">###NEWS_DATE###</h3>
             <span class="sep sep--top"></span>
-            <p class="slide__intro">###NEWS_SUBHEADER###</p>
+            <p class="slide__intro">
+                <a data-reveal-id="news-###NEWS_UID###" href="#">
+                    ###NEWS_SUBHEADER###
+                </a>
+            </p>
             <a class="slide--more" data-reveal-id="news-###NEWS_UID###" href="#">Czytaj więcej</a>
             <div id="news-###NEWS_UID###" class="reveal-modal news__details" data-reveal>
                 <figure class="news__image">
                     ###NEWS_IMAGE###
                 </figure>
-                <p class="slide__dateTime2">###NEWS_DATE### Fundacja Nowoczesna Polska</p>
-                <h3 class="slide__subTitle2">###NEWS_TITLE###</h3>
-                <p class="slide__intro">###NEWS_CONTENT###</p>
-                <a class="close-reveal-modal">Powrót do aktualności</a>
+                <div class="fright">
+                    <p class="slide__dateTime2">###NEWS_DATE###</p>
+                    <h3 class="slide__subTitle2">###NEWS_TITLE###</h3>
+                    <p class="slide__intro">
+                        ###NEWS_SUBHEADER###
+                        <br/>
+                        <br/>
+                        ###NEWS_CONTENT###
+                    </p>
+                    <a class="close-reveal-modal">Powrót do aktualności</a>
+                </div>
             </div>
         </div>
 

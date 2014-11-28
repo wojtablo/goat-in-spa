@@ -11,6 +11,22 @@
         font-weight:bold;
       }
     }
+    &.lang {
+      a {
+        padding:0px !important;
+      }
+    }
+    &.lang {
+      padding-left:8px !important;
+      a {
+        padding-left:8px !important;
+      }
+    }
+    &.lang.active {
+      a {
+        color:#ea5170 !important;
+      }
+    }
   }
 }
 
@@ -47,4 +63,24 @@
 
 #side--nav {
   display:none;
+}
+
+.top-bar {
+  .name {
+    h1 {
+      a {
+        padding: 0 10px !important;
+      }
+    }
+  }
+}
+
+.top-bar-section {
+  li:not(.has-form) {
+    a:not(.button) {
+      padding: 0 8px;
+      line-height: 80px;
+      background: white;
+    }
+  }
 }

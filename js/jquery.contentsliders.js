@@ -107,7 +107,7 @@ else {
     var si = $('#slider-news').royalSlider({
         autoScaleSlider: true,
         autoScaleSliderWidth:200,
-        autoScaleSliderHeight:122,
+        autoScaleSliderHeight:123,
         addActiveClass: true,
         navigateByClick: false,
         imageScalePadding: 6,
@@ -116,6 +116,7 @@ else {
         arrowsNavAutoHide: false,
         loop: false,
         loopRewind: false,
+        numImagesToPreload: 15,
 
         imageScaleMode: 'fit',
         imageAlignCenter: false,

@@ -68,6 +68,7 @@
 
   @media #{$medium-only} {
     .section__content {
+      padding-left: 5em;
       font-size: 1.3em;
       line-height: 1.4em;
       &:before {
